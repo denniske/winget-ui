@@ -1,0 +1,8 @@
+node_modules
+*.log
+*.zip
+apps.json
+.next
+app
+dist
+winget-pkgs-master
