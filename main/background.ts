@@ -1,6 +1,7 @@
 import {app, ipcMain} from 'electron';
 import serve from 'electron-serve';
 import {createWindow} from './helpers';
+import {IApp} from "../renderer/helper/types";
 
 const isProd: boolean = process.env.NODE_ENV === 'production';
 
@@ -37,14 +38,24 @@ const exec = util.promisify(require('child_process').exec);
 var fs = require('fs');
 
 
-ipcMain.handle('get-apps', async (event, arg) => {
-    // const {stdout, stderr} = await exec('ls');
+ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
+    console.log('upgrading ', app.PackageIdentifier, app.PackageVersion);
+    // return 'test';
+    // const {stdout1, stderr1} = await exec(`winget upgrade ${arg}`);
+    const {stdout1, stderr1} = await exec(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h`);
+    console.log(stdout1);
+    return stdout1;
+});
+
+ipcMain.handle('get-installed', async (event, arg) => {
     const {stdout1, stderr1} = await exec('winget export installed.json --include-versions');
-    // const {stdout2, stderr2} = await exec('cat installed.json');
-
     const data = fs.readFileSync('installed.json', 'utf8');
-    console.log(data.toString());
+    // console.log(data.toString());
+    return data.toString();
+});
 
+ipcMain.handle('get-apps', async (event, arg) => {
+    const data = fs.readFileSync('main/data/apps.json', 'utf8');
     return data.toString();
 });
 

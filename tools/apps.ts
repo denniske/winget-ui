@@ -81,14 +81,10 @@ const apps = [] as any[];
 
 const charFolder = './winget-pkgs-master/manifests/';
 
-async function loadApp(char: string, company: string, ...name: string[]) {
+function loadApp(char: string, company: string, ...name: string[]) {
     let folder = `${charFolder}/${char}/${company}/${name.join('/')}`;
 
-    if (release) {
-        folder += `/${release}`;
-    }
-
-    console.log();
+    // console.log();
     console.log(folder);
 
     const folders = fs.readdirSync(folder);
@@ -106,10 +102,7 @@ async function loadApp(char: string, company: string, ...name: string[]) {
 
         folder += `/${latestVersion}`;
 
-        let fileName = `${company}.${name}`;
-        if (release) {
-            fileName += `.${release}`;
-        }
+        let fileName = `${company}.${name.join('.')}`;
 
         const appPath = `${folder}/${fileName}.yaml`;
         const appEnUsPath = `${folder}/${fileName}.locale.en-US.yaml`;
@@ -134,10 +127,10 @@ async function loadApp(char: string, company: string, ...name: string[]) {
         apps.push(app);
     }
 
-    releases.forEach(r => loadApp(char, company, name, r));
+    releases.forEach(r => loadApp(char, company, ...name, r));
 }
 
-async function loadApps() {
+function loadApps() {
     // await downloadPackages();
     // await extract('packages.zip', { dir: process.cwd() });
     // console.log('Extraction complete');
@@ -157,6 +150,9 @@ async function loadApps() {
                 // const char = 'j';
                 // const company = 'JetBrains';
                 // const name = 'DataGrip';
+                // const char = 'm';
+                // const company = 'Microsoft';
+                // const name = 'VisualStudio';
 
                 // const folders = fs.readdirSync(charFolder + '/' + char + '/' + company + '/' + name);
                 // const files = fs.readdirSync(charFolder + '/' + char + '/' + company + '/' + name + '/' + folders[0]);
