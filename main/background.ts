@@ -11,10 +11,12 @@ if (isProd) {
     app.setPath('userData', `${app.getPath('userData')} (development)`);
 }
 
+let mainWindow: Electron.BrowserWindow = null;
+
 (async () => {
     await app.whenReady();
 
-    const mainWindow = createWindow('main', {
+    mainWindow = createWindow('main', {
         width: 1000,
         height: 600,
     });
@@ -35,16 +37,89 @@ app.on('window-all-closed', () => {
 
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
-var fs = require('fs');
+const fs = require('fs');
+import * as pty from "node-pty";
+const {spawn} = require('child_process');
 
+const shellArgs = ['--login', '/k', 'C:\\Portable\\Cmder\\vendor\\init.bat'];
+
+const env = {
+    ...(process.env as any),
+    ConEmuDir: 'C:\\Portable\\Cmder\\vendor\\conemu-maximus5',
+};
+
+const shell = ''; // cmd.exe
+const ptyProcess = pty.spawn(shell, shellArgs, {
+    name: 'xterm-color',
+    // cols: 10000,
+    // rows: 200,
+    cols: 80,
+    rows: 24,
+    cwd: process.env.HOME,
+    // env: process.env
+    // cwd: PROJECT_DIR, // process.env.HOME,
+    env: env,
+});
+
+ptyProcess.on('data', (chunk: string) => {
+    // console.log('data', chunk);
+    console.log('sent to browser window');
+    mainWindow.webContents.send('terminal', chunk);
+});
+
+ipcMain.handle('pty', async (event, data: any) => {
+    console.log('sent to terminal');
+    ptyProcess.write(data);
+})
 
 ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
     console.log('upgrading ', app.PackageIdentifier, app.PackageVersion);
-    // return 'test';
-    // const {stdout1, stderr1} = await exec(`winget upgrade ${arg}`);
-    const {stdout1, stderr1} = await exec(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h`);
-    console.log(stdout1);
-    return stdout1;
+
+    // const program = 'winget.exe';
+    // const args = [`install`, `${app.PackageIdentifier}`, `-v`, `${app.PackageVersion}`, `-h`];
+
+    ptyProcess.write(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h` + '\n');
+
+
+    // const ptyProcess = pty.spawn(program, args, {
+    //     name: 'xterm-color',
+    //     // cols: 10000,
+    //     // rows: 200,
+    //     cols: 80,
+    //     rows: 24,
+    //     cwd: process.env.HOME,
+    //     env: process.env
+    //     // cwd: PROJECT_DIR, // process.env.HOME,
+    //     // env: env,
+    // });
+    //
+    // ptyProcess.on('data', (chunk: string) => {
+    //     console.log('data', chunk);
+    //     event.sender.send('terminal', chunk);
+    // });
+
+    // const child = spawn(program, args);
+    //
+    // child.stdout.setEncoding('utf8');
+    // child.stdout.on('data', (chunk) => {
+    //     console.log('data', chunk);
+    //
+    //     event.sender.send('terminal', chunk);
+    //     // data from standard output is here as buffers
+    // });
+    //
+    // // since these are streams, you can pipe them elsewhere
+    // // child.stderr.pipe(dest);
+    //
+    // child.on('close', (code) => {
+    //     console.log(`child process exited with code ${code}`);
+    // });
+
+    return 'test';
+
+    // const {stdout1, stderr1} = await exec(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h`);
+    // console.log(stdout1);
+    // return stdout1;
 });
 
 ipcMain.handle('get-installed', async (event, arg) => {

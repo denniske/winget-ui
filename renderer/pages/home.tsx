@@ -4,9 +4,20 @@ import Link from 'next/link';
 import {ipcRenderer} from 'electron';
 import {IApp, IInstalledApps} from "../helper/types";
 import {sortBy} from 'lodash';
+import {type} from "os";
+// import XTerm from '../helper/XTerm';
+// import { XTerm } from 'react-xterm';
+// import {XTerm} from "xterm-for-react";
+
+// import dynamic from 'next/dynamic'
+//
+// const TerminalComponent = dynamic(() => import('../helper/XTerm'), {
+//     ssr: false
+// });
 
 function Home() {
     const [installedApps, setInstalledApps] = useState<IApp[]>([]);
+    const [cmdProgress, setCmdProgress] = useState(-1);
 
     const updateApp = async (app: IApp) => {
         const resultStr = await ipcRenderer.invoke('winget-upgrade', app);
@@ -50,12 +61,87 @@ function Home() {
         loadApps();
     }, []);
 
+    // const inputRef = React.useRef(null)
+
+    const xtermRef = React.useRef(null)
+
+    useEffect(() => {
+
+        ipcRenderer.on('terminal', (event, args) => {
+            console.log('client terminal', args);
+            xtermRef.current.terminal.write(args);
+
+            const progressRegex = /9;4;1;(\d+)/;
+            if (progressRegex.test(args)) {
+                const match = progressRegex.exec(args);
+                const progress = parseInt(match[1]);
+                console.log('==> progress', progress);
+                setCmdProgress(progress / 100);
+            }
+            const progressIndRegex = /9;4;3;0/;
+            if (progressIndRegex.test(args)) {
+                console.log('==> progress indetermined');
+                setCmdProgress(2);
+            }
+            const progressFinRegex = /9;4;0;0/;
+            if (progressFinRegex.test(args)) {
+                console.log('==> progress finished');
+                setCmdProgress(-1);
+            }
+        });
+        console.log('xterm', xtermRef.current);
+        // xtermRef.current.terminal.writeln("Hello, World!")
+    }, []);
+
+    const doData = async (x: any) => {
+        console.log('doData', x);
+        await ipcRenderer.invoke('pty', x);
+    };
+
+    let ImportedComponent = null
+    if (global?.window && window !== undefined) {
+        // const importing = require("insert path here");
+        const importing = require('../helper/XTerm');
+        const MyComponent = importing.default //can also be a different export
+        // @ts-ignore
+        ImportedComponent = <MyComponent ref={xtermRef} onData={doData}/>
+    } else { //for build purposes only
+        ImportedComponent = <div><p>Component not available.</p></div>;
+    }
+
+    let cmdProgressStr = 'Idle';
+    if (cmdProgress > 1) {
+        cmdProgressStr = 'Working...';
+    }
+    if (cmdProgress >= 0 && cmdProgress <= 1) {
+        cmdProgressStr = `Working ${cmdProgress * 100}%`;
+    }
+
     return (
         <React.Fragment>
             <Head>
                 <title>Winget</title>
             </Head>
             <div className='grid grid-col-1 w-full p-4 space-y-3'>
+
+                {ImportedComponent}
+
+                <div>
+                    {cmdProgressStr}
+                </div>
+
+                {/*<TerminalComponent />*/}
+                {/*<TerminalComponent ref={xtermRef} />*/}
+                {/*<XTerm ref={xtermRef} />*/}
+
+                {/*<XTerm ref={inputRef}*/}
+                {/*       addons={['fit', 'fullscreen', 'search']}*/}
+                {/*       style={{*/}
+                {/*           overflow: 'hidden',*/}
+                {/*           position: 'relative',*/}
+                {/*           width: '100%',*/}
+                {/*           height: '100%'*/}
+                {/*       }}/>*/}
 
                 {
                     installedApps.map(app => (
