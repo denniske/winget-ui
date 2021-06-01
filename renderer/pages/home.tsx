@@ -3,8 +3,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import {ipcRenderer} from 'electron';
 import {IApp, IInstalledApps} from "../helper/types";
-import {sortBy} from 'lodash';
+import {sortBy, uniq} from 'lodash';
 import {type} from "os";
+import {toCamelCase} from "../helper/util";
+import {useMutate, useSelector} from "../state/store";
+import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
 // import XTerm from '../helper/XTerm';
 // import { XTerm } from 'react-xterm';
 // import {XTerm} from "xterm-for-react";
@@ -16,8 +19,11 @@ import {type} from "os";
 // });
 
 function Home() {
-    const [installedApps, setInstalledApps] = useState<IApp[]>([]);
+    const [localApps, setLocalApps] = useState<IApp[]>([]);
     const [cmdProgress, setCmdProgress] = useState(-1);
+    const [search, setSearch] = useState('Vivaldi');
+    const allLocalApps = useSelector(selectLocalApps);
+    const mutate = useMutate();
 
     const updateApp = async (app: IApp) => {
         const resultStr = await ipcRenderer.invoke('winget-upgrade', app);
@@ -28,38 +34,55 @@ function Home() {
     };
 
     const loadApps = async () => {
+        const appsStr = await ipcRenderer.invoke('get-apps');
+        const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
+        console.log('apps', apps);
+        mutate(setAvailableApps(apps));
+
         const installedStr = await ipcRenderer.invoke('get-installed');
-        const installed = JSON.parse(installedStr) as IInstalledApps;
+        const installed = JSON.parse(installedStr, toCamelCase) as IInstalledApps;
         console.log('installed', installed);
 
-        const appsStr = await ipcRenderer.invoke('get-apps');
-        const apps = JSON.parse(appsStr) as IApp[];
-        console.log('apps', apps);
-
-        const _installedApps = installed.Sources
-            .flatMap(s => s.Packages)
-            .map(p => {
-                // if (!apps.find(a => a.PackageIdentifier === p.PackageIdentifier)) {
-                //     console.log('not found', p.PackageIdentifier);
-                // }
-                const foundApp = apps.find(a => a.PackageIdentifier === p.PackageIdentifier);
-                return {
-                    ...foundApp,
-                    InstalledVersion: p.Version,
-                };
-            })
-            .filter(x => x)
-            .filter(x => x.PackageName?.includes('Fire'))
+        const _installedApps = installed.sources
+                .flatMap(s => s.packages)
+                .filter(p => apps.find(a => a.packageIdentifier === p.packageIdentifier))
+            // .filter(x => x.packageName?.includes('Fire'))
+            // .filter(x => x.packageName?.includes('Vivaldi'))
         ;
 
-        setInstalledApps(sortBy(_installedApps, a => a.PackageName));
+        mutate(setInstalledApps(_installedApps));
 
-        console.log(installedApps);
+        // console.log(apps.length, uniq(apps.map(a => a.packageIdentifier)).length);
+
+        // const _installedApps2 = installed.sources
+        //     .flatMap(s => s.packages)
+        //     .map(p => {
+        //         // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
+        //         //     console.log('not found', p.packageIdentifier);
+        //         // }
+        //         const foundApp = apps.find(a => a.packageIdentifier === p.packageIdentifier);
+        //         return {
+        //             ...foundApp,
+        //             InstalledVersion: p.version,
+        //         };
+        //     })
+        //     .filter(x => x)
+        //     // .filter(x => x.packageName?.includes('Fire'))
+        //     .filter(x => x.packageName?.includes('Vivaldi'))
+        // ;
+        //
+        // setLocalApps(sortBy(_installedApps2, a => a.packageName));
+
+        console.log(localApps);
     };
 
     useEffect(() => {
         loadApps();
     }, []);
+
+    useEffect(() => {
+        setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
+    }, [search, allLocalApps]);
 
     // const inputRef = React.useRef(null)
 
@@ -94,8 +117,8 @@ function Home() {
     }, []);
 
     const doData = async (x: any) => {
-        console.log('doData', x);
-        await ipcRenderer.invoke('pty', x);
+        // console.log('doData', x);
+        // await ipcRenderer.invoke('pty', x);
     };
 
     let ImportedComponent = null
@@ -122,63 +145,61 @@ function Home() {
             <Head>
                 <title>Winget</title>
             </Head>
-            <div className='grid grid-col-1 w-full p-4 space-y-3'>
+            <div className='flex flex-col w-full h-full space-y-3'>
 
-                {ImportedComponent}
+                <div className="p-4">
+                    <input
+                        className="text-black px-2 py-1 rounded"
+                        type="text" value={search} onChange={e => setSearch(e.target.value)}/>
+                </div>
 
-                <div>
+                <div className="flex flex-col flex-1 overflow-auto p-4 space-y-4">
+                    {
+                        localApps.map(app => (
+                            <div
+                                key={`${app.packageIdentifier}-${app.installedVersion}`}
+                                className=""
+                            >
+                                <div className="flex flex-row items-end space-x-2">
+                                    <div className="font-bold">
+                                        {app.packageName}
+                                    </div>
+                                    <div className="text-sm">
+                                        {app.installedVersion}
+                                    </div>
+                                </div>
+
+                                <div className="text-sm mt-1 mb-2">
+                                    {app.shortDescription}
+                                </div>
+
+                                <div className="text-sm mt-1 mb-2">
+                                    {app.packageIdentifier}
+                                </div>
+
+                                <div className="text-sm mt-1 mb-2">
+                                    {app.versions?.join(' ')}
+                                </div>
+
+                                {/*{*/}
+                                {/*    app.InstalledVersion !== app.packageVersion &&*/}
+                                <button className="bg-gray-600 rounded px-2 py-1 text-sm"
+                                        onClick={() => updateApp(app)}>
+                                    Update to {app.packageVersion} ({app.packageIdentifier})
+                                </button>
+                                {/*}*/}
+                            </div>
+                        ))
+                    }
+                </div>
+
+                <div className="p-4">
                     {cmdProgressStr}
                 </div>
 
-                {/*<TerminalComponent />*/}
-                {/*<TerminalComponent ref={xtermRef} />*/}
-                {/*<XTerm ref={xtermRef} />*/}
-
-                {/*<XTerm ref={inputRef}*/}
-                {/*       addons={['fit', 'fullscreen', 'search']}*/}
-                {/*       style={{*/}
-                {/*           overflow: 'hidden',*/}
-                {/*           position: 'relative',*/}
-                {/*           width: '100%',*/}
-                {/*           height: '100%'*/}
-                {/*       }}/>*/}
-
-                {
-                    installedApps.map(app => (
-                        <div
-                            key={`${app.PackageIdentifier}-${app.InstalledVersion}`}
-                            className=""
-                        >
-                            <div className="flex flex-row items-end space-x-2">
-                                <div className="font-bold">
-                                    {app.PackageName}
-                                </div>
-                                <div className="text-sm">
-                                    {app.InstalledVersion}
-                                </div>
-                            </div>
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.ShortDescription}
-                            </div>
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.PackageIdentifier}
-                            </div>
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.Versions?.join(' ')}
-                            </div>
-
-                            {/*{*/}
-                            {/*    app.InstalledVersion !== app.PackageVersion &&*/}
-                                <button className="bg-gray-600 rounded px-2 py-1 text-sm" onClick={() => updateApp(app)}>
-                                    Update to {app.PackageVersion} ({app.PackageIdentifier})
-                                </button>
-                            {/*}*/}
-                        </div>
-                    ))
-                }
+                <div className="border-t-2 border-gray-700">
+                    {ImportedComponent}
+                </div>
 
             </div>
 

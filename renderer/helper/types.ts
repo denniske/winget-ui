@@ -1,95 +1,103 @@
 export interface InstallerSwitches {
-    Custom: string;
-    Silent: string;
-    SilentWithProgress: string;
-    Log: string;
-    InstallLocation: string;
-    Interactive: string;
+    custom: string;
+    silent: string;
+    silentWithProgress: string;
+    log: string;
+    installLocation: string;
+    interactive: string;
 }
 
 export interface Installer {
-    Architecture: string;
-    InstallerUrl: string;
-    InstallerSha256: string;
-    InstallerType: string;
-    InstallerSwitches: InstallerSwitches;
-    ProductCode: string;
-    Scope: string;
-    InstallerLocale: string;
-    InstallerSuccessCodes: number[];
-    UpgradeBehavior: string;
-    SignatureSha256: string;
-    Silent: string;
-    PackageFamilyName: string;
+    architecture: string;
+    installerUrl: string;
+    installerSha256: string;
+    installerType: string;
+    installerSwitches: InstallerSwitches;
+    productCode: string;
+    scope: string;
+    installerLocale: string;
+    installerSuccessCodes: number[];
+    upgradeBehavior: string;
+    signatureSha256: string;
+    silent: string;
+    packageFamilyName: string;
 }
 
 export interface IApp {
-    InstalledVersion: string;
-    PackageIdentifier: string;
-    PackageVersion: any;
-    PackageName: string;
-    Publisher: string;
-    License: string;
-    LicenseUrl: string;
-    Moniker: string;
-    ShortDescription: string;
-    PackageUrl: string;
-    Tags: any[];
-    Installers: Installer[];
-    PackageLocale: string;
-    ManifestType: string;
-    ManifestVersion: string;
-    Versions: string[];
-    InstallerSwitches: InstallerSwitches;
-    DefaultLocale: string;
-    PublisherUrl: string;
-    PublisherSupportUrl: string;
-    Author: string;
-    Copyright: string;
-    CopyrightUrl: string;
-    Description: string;
-    Commands: string[];
-    InstallerType: string;
-    PrivacyUrl: string;
-    MinimumOSVersion: any;
-    InstallModes: string[];
-    FileExtensions: any[];
-    Protocols: string[];
-    Tag: string;
-    Scope: string;
-    Platform: string[];
-    AppMoniker: string;
-    Homepage: string;
-    Command: string;
-    InstallerSuccessCodes: number[];
-    ProductCode: string;
-    InstallerLocale: string;
+    installedVersion: string;
+    packageIdentifier: string;
+    packageVersion: any;
+    packageName: string;
+    publisher: string;
+    license: string;
+    licenseUrl: string;
+    moniker: string;
+    shortDescription: string;
+    packageUrl: string;
+    tags: any[];
+    installers: Installer[];
+    packageLocale: string;
+    manifestType: string;
+    manifestVersion: string;
+    versions: string[];
+    installerSwitches: InstallerSwitches;
+    defaultLocale: string;
+    publisherUrl: string;
+    publisherSupportUrl: string;
+    author: string;
+    copyright: string;
+    copyrightUrl: string;
+    description: string;
+    commands: string[];
+    installerType: string;
+    privacyUrl: string;
+    minimumOSVersion: any;
+    installModes: string[];
+    fileExtensions: any[];
+    protocols: string[];
+    tag: string;
+    scope: string;
+    platform: string[];
+    appMoniker: string;
+    homepage: string;
+    command: string;
+    installerSuccessCodes: number[];
+    productCode: string;
+    installerLocale: string;
 }
 
+export interface IPendingApp {
+    progress: number;
+    action: 'install' | 'uninstall';
+}
 
-
+export interface IInstalledApp {
+    packageIdentifier: string;
+    version: string;
+    sourceDetails?: SourceDetails;
+}
 
 
 export interface Package {
-    PackageIdentifier: string;
-    Version: string;
+    packageIdentifier: string;
+    version: string;
 }
 
 export interface SourceDetails {
-    Argument: string;
-    Identifier: string;
-    Name: string;
-    Type: string;
+    argument: string;
+    identifier: string;
+    name: string;
+    type: string;
 }
 
 export interface Source {
-    Packages: Package[];
-    SourceDetails: SourceDetails;
+    packages: Package[];
+    sourceDetails: SourceDetails;
 }
 
 export interface IInstalledApps {
     $schema: string;
-    CreationDate: Date;
-    Sources: Source[];
-    WinGetVersion: string;
+    creationDate: Date;
+    sources: Source[];
+    winGetVersion: string;
 }

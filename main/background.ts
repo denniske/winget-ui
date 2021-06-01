@@ -48,55 +48,60 @@ const env = {
     ConEmuDir: 'C:\\Portable\\Cmder\\vendor\\conemu-maximus5',
 };
 
-const shell = ''; // cmd.exe
-const ptyProcess = pty.spawn(shell, shellArgs, {
-    name: 'xterm-color',
-    // cols: 10000,
-    // rows: 200,
-    cols: 80,
-    rows: 24,
-    cwd: process.env.HOME,
-    // env: process.env
-    // cwd: PROJECT_DIR, // process.env.HOME,
-    env: env,
-});
-
-ptyProcess.on('data', (chunk: string) => {
-    // console.log('data', chunk);
-    console.log('sent to browser window');
-    mainWindow.webContents.send('terminal', chunk);
-});
-
-ipcMain.handle('pty', async (event, data: any) => {
-    console.log('sent to terminal');
-    ptyProcess.write(data);
-})
+// const shell = ''; // cmd.exe
+// const ptyProcess = pty.spawn(shell, shellArgs, {
+//     name: 'xterm-color',
+//     // cols: 10000,
+//     // rows: 200,
+//     cols: 80,
+//     rows: 24,
+//     cwd: process.env.HOME,
+//     // env: process.env
+//     // cwd: PROJECT_DIR, // process.env.HOME,
+//     env: env,
+// });
+//
+// ptyProcess.on('data', (chunk: string) => {
+//     // console.log('data', chunk);
+//     console.log('sent to browser window');
+//     mainWindow.webContents.send('terminal', chunk);
+// });
+//
+// ipcMain.handle('pty', async (event, data: any) => {
+//     console.log('sent to terminal');
+//     ptyProcess.write(data);
+// })
 
 ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
-    console.log('upgrading ', app.PackageIdentifier, app.PackageVersion);
-
-    // const program = 'winget.exe';
-    // const args = [`install`, `${app.PackageIdentifier}`, `-v`, `${app.PackageVersion}`, `-h`];
-
-    ptyProcess.write(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h` + '\n');
+    console.log('upgrading ', app.packageIdentifier, app.packageVersion);
+    // ptyProcess.write(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h` + '\n');
 
 
-    // const ptyProcess = pty.spawn(program, args, {
-    //     name: 'xterm-color',
-    //     // cols: 10000,
-    //     // rows: 200,
-    //     cols: 80,
-    //     rows: 24,
-    //     cwd: process.env.HOME,
-    //     env: process.env
-    //     // cwd: PROJECT_DIR, // process.env.HOME,
-    //     // env: env,
-    // });
-    //
-    // ptyProcess.on('data', (chunk: string) => {
-    //     console.log('data', chunk);
-    //     event.sender.send('terminal', chunk);
-    // });
+    return new Promise((resolve => {
+        const program = 'winget.exe';
+        const args = [`install`, `${app.packageIdentifier}`, `-v`, `${app.packageVersion}`, `-h`];
+
+        const ptyProcess = pty.spawn(program, args, {
+            name: 'xterm-color',
+            cols: 80,
+            rows: 24,
+            cwd: process.env.HOME,
+            env: process.env
+        });
+
+        ptyProcess.on('data', (chunk: string) => {
+            console.log('sent to browser window');
+            event.sender.send('terminal', chunk);
+        });
+
+        ptyProcess.on('exit', (exitCode: number, signal?: number) => {
+            console.log('sent to browser window exit');
+            // event.sender.send('terminal-exit', exitCode, signal);
+            resolve({ exitCode, signal });
+        });
+
+    }));
+
 
     // const child = spawn(program, args);
     //
@@ -115,7 +120,7 @@ ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
     //     console.log(`child process exited with code ${code}`);
     // });
 
-    return 'test';
+    // return 'test';
 
     // const {stdout1, stderr1} = await exec(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h`);
     // console.log(stdout1);
