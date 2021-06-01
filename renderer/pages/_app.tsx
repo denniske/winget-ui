@@ -4,6 +4,7 @@ import type {AppProps} from 'next/app';
 import '../styles/globals.css';
 import {Provider} from "react-redux";
 import {useStore} from "../state/store";
+import Layout from "../components/layout";
 
 function SafeHydrate({ children }) {
     return (
@@ -19,7 +20,9 @@ function MyApp({Component, pageProps}: AppProps) {
     return (
         <Provider store={store}>
             <React.Fragment>
-                <SafeHydrate><Component {...pageProps} /></SafeHydrate>
+                <Layout>
+                    <SafeHydrate><Component {...pageProps} /></SafeHydrate>
+                </Layout>
             </React.Fragment>
         </Provider>
     )

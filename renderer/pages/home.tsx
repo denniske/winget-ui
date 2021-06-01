@@ -7,14 +7,17 @@ import {useMutate, useSelector} from "../state/store";
 import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
 import {addTaskToQueue, getTaskId, loadApps, loadAvailableApps, loadInstalledApps} from "../helper/executor";
 import ProgressBar from "../components/progress-bar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBox, faCoffee, faDownload, faSearch, faStar} from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
 
 
-function Home() {
+export default function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
     const [cmdProgress, setCmdProgress] = useState(-1);
     const [terminalBuffer, setTerminalBuffer] = useState([]);
-    const [search, setSearch] = useState('Vivaldi');
     const allLocalApps = useSelector(selectLocalApps);
+    const search = useSelector(state => state.search);
     const queue = useSelector(state => state.queue);
     const tasks = useSelector(state => state.tasks);
     const mutate = useMutate();
@@ -89,13 +92,32 @@ function Home() {
             <Head>
                 <title>Winget</title>
             </Head>
-            <div className='flex flex-col w-full h-full space-y-3'>
+            {/*<div className='flex flex-row w-full h-full'>*/}
+            {/*    <div className='flex flex-col w-96 bg-gray-300 space-y-6 px-5 py-16'>*/}
 
-                <div className="p-4">
-                    <input
-                        className="text-black px-2 py-1 rounded"
-                        type="text" value={search} onChange={e => setSearch(e.target.value)}/>
-                </div>
+            {/*        <div className='flex items-center space-x-3'>*/}
+            {/*            <FontAwesomeIcon icon={faStar} className="text-gray-600"/>*/}
+            {/*            <div>Explore</div>*/}
+            {/*        </div>*/}
+            {/*        <div className='flex items-center space-x-3'>*/}
+            {/*            <FontAwesomeIcon icon={faBox} className="text-gray-600"/>*/}
+            {/*            <div>Installed</div>*/}
+            {/*        </div>*/}
+            {/*        <div className='flex items-center space-x-3'>*/}
+            {/*            <FontAwesomeIcon icon={faDownload} className="text-gray-600"/>*/}
+            {/*            <div>Updates</div>*/}
+            {/*        </div>*/}
+
+            {/*    </div>*/}
+
+            {/*<div className='flex flex-col w-full h-full space-y-3'>*/}
+
+            {/*    <div className="p-4 border-b-2 border-gray-300 space-x-4">*/}
+            {/*        <FontAwesomeIcon icon={faSearch} className="text-gray-600"/>*/}
+            {/*        <input*/}
+            {/*            className="text-black px-2 py-1 rounded focus:outline-none"*/}
+            {/*            type="text" value={search} onChange={e => setSearch(e.target.value)}/>*/}
+            {/*    </div>*/}
 
                 <div className="flex flex-col flex-1 overflow-auto p-4 space-y-4">
                     {
@@ -109,9 +131,15 @@ function Home() {
                                 </div>
 
                                 <div className="flex flex-row items-end space-x-2">
-                                    <div className="font-bold">
-                                        {app.packageName}
-                                    </div>
+
+                                    <Link href={`/app/${encodeURIComponent(app.packageIdentifier)}`}>
+                                        <a className="font-bold">{app.packageName}</a>
+                                    </Link>
+
+
+                                    {/*<div className="font-bold">*/}
+                                    {/*    {app.packageName}*/}
+                                    {/*</div>*/}
                                     <div className="text-sm">
                                         {app.installedVersion}
                                     </div>
@@ -163,7 +191,7 @@ function Home() {
 
                                 {/*{*/}
                                 {/*    app.InstalledVersion !== app.packageVersion &&*/}
-                                <button className="bg-gray-600 rounded px-2 py-1 text-sm"
+                                <button className="bg-blue-600 text-white rounded px-2 py-1 text-sm"
                                         onClick={() => updateApp(app)}>
                                     Update to {app.packageVersion} ({app.packageIdentifier})
                                 </button>
@@ -207,13 +235,8 @@ function Home() {
                     </>
                 }
 
-            </div>
+            {/*</div>*/}
+            {/*</div>*/}
         </React.Fragment>
     );
 }
-
-export default Home;
-function deepClone(buffer: any[]): React.SetStateAction<any[]> {
-    throw new Error('Function not implemented.');
-}
-

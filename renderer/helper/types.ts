@@ -38,6 +38,7 @@ export interface Installer {
 }
 
 export interface IApp {
+    Description: string;
     packageImage: string;
     packageIcon: string;
     installedVersion: string;

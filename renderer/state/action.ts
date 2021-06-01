@@ -49,6 +49,12 @@ export function setTasks(tasks: ITask[]) {
     };
 }
 
+export function setSearch(search: string) {
+    return (state: AppState) => {
+        state.search = search;
+    };
+}
+
 // export function addToQueue(task: ITask) {
 //     return (state: AppState) => {
 //         state.queue.push(task);
@@ -61,6 +67,7 @@ export interface AppState {
     pendingApps: IPendingApp[];
     queue: ITask[];
     tasks: ITask[];
+    search: string;
 }
 
 export const initialState: AppState = {
@@ -69,4 +76,5 @@ export const initialState: AppState = {
     pendingApps: [],
     queue: [],
     tasks: [],
+    search: 'Vivaldi',
 }
