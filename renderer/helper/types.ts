@@ -38,6 +38,8 @@ export interface Installer {
 }
 
 export interface IApp {
+    packageImage: string;
+    packageIcon: string;
     installedVersion: string;
     task: ITask;
 

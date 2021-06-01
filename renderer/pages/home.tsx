@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
-import {ipcRenderer} from 'electron';
 import {IApp, IInstalledApps, ITask} from "../helper/types";
 import {sortBy, uniq} from 'lodash';
-import {toCamelCase} from "../helper/util";
+import {fixPackageIcon, toCamelCase} from "../helper/util";
 import {useMutate, useSelector} from "../state/store";
 import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
 import {addTaskToQueue, getTaskId, loadApps, loadAvailableApps, loadInstalledApps} from "../helper/executor";
@@ -37,6 +36,7 @@ function Home() {
 
     useEffect(() => {
         setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
+        // console.log(localApps);
     }, [search, allLocalApps]);
 
     const xtermRef = React.useRef(null);
@@ -65,15 +65,16 @@ function Home() {
     };
 
     let ImportedComponent = null
-    if (global?.window && window !== undefined) {
+    // if (global?.window && window !== undefined) {
+    // if (global?.window && window !== undefined) {
         // const importing = require("insert path here");
         const importing = require('../helper/XTerm');
         const MyComponent = importing.default //can also be a different export
         // @ts-ignore
         ImportedComponent = <MyComponent ref={xtermRef} onData={doData}/>
-    } else { //for build purposes only
-        ImportedComponent = <div><p>Component not available.</p></div>;
-    }
+    // } else { //for build purposes only
+    //     ImportedComponent = <div><p>Component not available.</p></div>;
+    // }
 
     let cmdProgressStr = 'Idle';
     if (cmdProgress > 1) {
@@ -103,6 +104,10 @@ function Home() {
                                 key={`${app.packageIdentifier}-${app.installedVersion}`}
                                 className=""
                             >
+                                <div className="text-sm mt-1 mb-2">
+                                    <img src={fixPackageIcon(app.packageIcon)} className="w-6 h-6" />
+                                </div>
+
                                 <div className="flex flex-row items-end space-x-2">
                                     <div className="font-bold">
                                         {app.packageName}
@@ -163,6 +168,10 @@ function Home() {
                                     Update to {app.packageVersion} ({app.packageIdentifier})
                                 </button>
                                 {/*}*/}
+
+                                {/*<div className="text-sm mt-1 mb-2">*/}
+                                {/*    <img src={app.packageImage} />*/}
+                                {/*</div>*/}
                             </div>
                         ))
                     }

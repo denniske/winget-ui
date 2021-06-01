@@ -9,6 +9,7 @@ import {compare} from "semver";
 import semver from "semver/preload";
 import {customVersionSort} from "./helper";
 import {release} from "os";
+import {log} from "util";
 
 function sleep(ms: number) {
     return new Promise((resolve) => {
@@ -121,41 +122,39 @@ async function loadApp(char: string, company: string, ...name: string[]) {
             }
         );
 
-        // console.log(path);
-        console.log(app);
-
-        const metascraper = require('metascraper')([
-            // require('metascraper-author')(),
-            // require('metascraper-date')(),
-            // require('metascraper-description')(),
-            require('metascraper-image')(),
-            require('metascraper-logo')(),
-            // require('metascraper-clearbit')(),
-            // require('metascraper-publisher')(),
-            // require('metascraper-title')(),
-            // require('metascraper-url')()
-        ])
-
-        const got = require('got')
-
         const targetUrl = app.PackageUrl;
-        // const targetUrl = 'http://www.bloomberg.com/news/articles/2016-05-24/as-zenefits-stumbles-gusto-goes-head-on-by-selling-insurance'
 
-        const { body: html, url } = await got(targetUrl)
-        const metadata = await metascraper({ html, url })
-        console.log(metadata)
+        if (targetUrl && !targetUrl.includes('aegisub') && company !== 'HamsterRepublic') {
+            try {
+                const urls = [targetUrl];
+                const logosResult = await LogoScrape.getLogos(urls) as any[];
+                console.log(logosResult);
 
+                if (logosResult.length > 0) {
+                    const logosUrls = logosResult[0];
 
-        const urls = [targetUrl];
-        const logoUrls = await LogoScrape.getLogo(urls);
-        const logosUrls = await LogoScrape.getLogos(urls);
-        console.log({logoUrls, logosUrls});
+                    if (logosUrls.length > 0) {
+                        app.PackageIcon = logosUrls[0].url;
+                    }
 
+                    const image = logosUrls.find(l => l.type == 'og:image');
+                    if (image) {
+                        app.PackageImage = image.url;
+                    }
+                }
+            } catch(e) {
+                console.log('error', e);
+            }
+        }
+
+        // console.log(app);
 
         apps.push(app);
     }
 
-    releases.forEach(r => loadApp(char, company, ...name, r));
+    for (const r of releases) {
+        await loadApp(char, company, ...name, r);
+    }
 }
 
 async function loadApps() {
@@ -165,9 +164,21 @@ async function loadApps() {
 
     const fs = require('fs');
 
-    // fs.readdirSync(charFolder).forEach((char: string) => {
-    //     fs.readdirSync(charFolder + '/' + char).forEach((company: string) => {
-    //         fs.readdirSync(charFolder + '/' + char + '/' + company).forEach((name: string) => {
+    // const char = 'h';
+
+    // console.log(fs.readdirSync(charFolder));
+    // return;
+
+    // const chars = ['i',
+    //     'j', 'k', 'l', 'm', 'n', 'o',
+    //     'p', 'q', 'r', 's', 't', 'u',
+    //     'v', 'w', 'x', 'y', 'z'];
+
+    // for (const char of chars) {
+
+    // for (const char of fs.readdirSync(charFolder)) {
+    //     for (const company of fs.readdirSync(charFolder + '/' + char)) {
+    //         for (const name of fs.readdirSync(charFolder + '/' + char + '/' + company)) {
 
                 // const char = 'z';
                 // const company = 'Zoom';
@@ -181,15 +192,18 @@ async function loadApps() {
                 // const char = 'm';
                 // const company = 'Microsoft';
                 // const name = 'VisualStudio';
+                // const char = 'v';
+                // const company = 'VivaldiTechnologies';
+                // const name = 'Vivaldi';
                 const char = 'v';
-                const company = 'VivaldiTechnologies';
-                const name = 'Vivaldi';
+                const company = 'VideoLAN';
+                const name = 'VLC';
 
                 await loadApp(char, company, name);
 
-            // });
-        // });
-    // });
+            // }
+        // }
+    // }
 
     fs.writeFileSync('apps.json', JSON.stringify(apps, null, 4));
 }

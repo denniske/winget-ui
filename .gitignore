@@ -2,6 +2,7 @@ node_modules
 *.log
 *.zip
 apps.json
+archived-apps.json
 installed.json
 .next
 app
