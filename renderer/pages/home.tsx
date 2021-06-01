@@ -36,44 +36,15 @@ function Home() {
     const loadApps = async () => {
         const appsStr = await ipcRenderer.invoke('get-apps');
         const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-        console.log('apps', apps);
         mutate(setAvailableApps(apps));
 
         const installedStr = await ipcRenderer.invoke('get-installed');
         const installed = JSON.parse(installedStr, toCamelCase) as IInstalledApps;
-        console.log('installed', installed);
 
         const _installedApps = installed.sources
                 .flatMap(s => s.packages)
-                .filter(p => apps.find(a => a.packageIdentifier === p.packageIdentifier))
-            // .filter(x => x.packageName?.includes('Fire'))
-            // .filter(x => x.packageName?.includes('Vivaldi'))
-        ;
-
+                .filter(p => apps.find(a => a.packageIdentifier === p.packageIdentifier));
         mutate(setInstalledApps(_installedApps));
-
-        // console.log(apps.length, uniq(apps.map(a => a.packageIdentifier)).length);
-
-        // const _installedApps2 = installed.sources
-        //     .flatMap(s => s.packages)
-        //     .map(p => {
-        //         // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
-        //         //     console.log('not found', p.packageIdentifier);
-        //         // }
-        //         const foundApp = apps.find(a => a.packageIdentifier === p.packageIdentifier);
-        //         return {
-        //             ...foundApp,
-        //             InstalledVersion: p.version,
-        //         };
-        //     })
-        //     .filter(x => x)
-        //     // .filter(x => x.packageName?.includes('Fire'))
-        //     .filter(x => x.packageName?.includes('Vivaldi'))
-        // ;
-        //
-        // setLocalApps(sortBy(_installedApps2, a => a.packageName));
-
-        console.log(localApps);
     };
 
     useEffect(() => {
@@ -83,8 +54,6 @@ function Home() {
     useEffect(() => {
         setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
     }, [search, allLocalApps]);
-
-    // const inputRef = React.useRef(null)
 
     const xtermRef = React.useRef(null)
 
@@ -113,7 +82,6 @@ function Home() {
             }
         });
         console.log('xterm', xtermRef.current);
-        // xtermRef.current.terminal.writeln("Hello, World!")
     }, []);
 
     const doData = async (x: any) => {
@@ -202,15 +170,6 @@ function Home() {
                 </div>
 
             </div>
-
-            {/*<button onClick={loadApps}>Load apps</button>*/}
-
-            {/*<div className='mt-1 w-full flex-wrap flex justify-center'>*/}
-            {/*    <Link href='/next'>*/}
-            {/*        <a className='btn-blue'>Go to next page</a>*/}
-            {/*    </Link>*/}
-            {/*</div>*/}
-
         </React.Fragment>
     );
 }
