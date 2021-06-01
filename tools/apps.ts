@@ -1,7 +1,7 @@
 import axios from "axios"
 import * as fs from "fs"
 import * as path from "path"
-
+import { LogoScrape } from 'logo-scrape';
 const extract = require('extract-zip')
 var semverSort = require('semver-sort');
 import YAML from 'yaml'
@@ -81,7 +81,7 @@ const apps = [] as any[];
 
 const charFolder = './winget-pkgs-master/manifests/';
 
-function loadApp(char: string, company: string, ...name: string[]) {
+async function loadApp(char: string, company: string, ...name: string[]) {
     let folder = `${charFolder}/${char}/${company}/${name.join('/')}`;
 
     // console.log();
@@ -122,7 +122,35 @@ function loadApp(char: string, company: string, ...name: string[]) {
         );
 
         // console.log(path);
-        // console.log(app);
+        console.log(app);
+
+        const metascraper = require('metascraper')([
+            // require('metascraper-author')(),
+            // require('metascraper-date')(),
+            // require('metascraper-description')(),
+            require('metascraper-image')(),
+            require('metascraper-logo')(),
+            // require('metascraper-clearbit')(),
+            // require('metascraper-publisher')(),
+            // require('metascraper-title')(),
+            // require('metascraper-url')()
+        ])
+
+        const got = require('got')
+
+        const targetUrl = app.PackageUrl;
+        // const targetUrl = 'http://www.bloomberg.com/news/articles/2016-05-24/as-zenefits-stumbles-gusto-goes-head-on-by-selling-insurance'
+
+        const { body: html, url } = await got(targetUrl)
+        const metadata = await metascraper({ html, url })
+        console.log(metadata)
+
+
+        const urls = [targetUrl];
+        const logoUrls = await LogoScrape.getLogo(urls);
+        const logosUrls = await LogoScrape.getLogos(urls);
+        console.log({logoUrls, logosUrls});
+
 
         apps.push(app);
     }
@@ -130,16 +158,16 @@ function loadApp(char: string, company: string, ...name: string[]) {
     releases.forEach(r => loadApp(char, company, ...name, r));
 }
 
-function loadApps() {
+async function loadApps() {
     // await downloadPackages();
     // await extract('packages.zip', { dir: process.cwd() });
     // console.log('Extraction complete');
 
     const fs = require('fs');
 
-    fs.readdirSync(charFolder).forEach((char: string) => {
-        fs.readdirSync(charFolder + '/' + char).forEach((company: string) => {
-            fs.readdirSync(charFolder + '/' + char + '/' + company).forEach((name: string) => {
+    // fs.readdirSync(charFolder).forEach((char: string) => {
+    //     fs.readdirSync(charFolder + '/' + char).forEach((company: string) => {
+    //         fs.readdirSync(charFolder + '/' + char + '/' + company).forEach((name: string) => {
 
                 // const char = 'z';
                 // const company = 'Zoom';
@@ -153,19 +181,15 @@ function loadApps() {
                 // const char = 'm';
                 // const company = 'Microsoft';
                 // const name = 'VisualStudio';
+                const char = 'v';
+                const company = 'VivaldiTechnologies';
+                const name = 'Vivaldi';
 
-                // const folders = fs.readdirSync(charFolder + '/' + char + '/' + company + '/' + name);
-                // const files = fs.readdirSync(charFolder + '/' + char + '/' + company + '/' + name + '/' + folders[0]);
+                await loadApp(char, company, name);
 
-                // Extra packages for versions
-                // if (!files.find(f => f.includes('.yaml'))) {
-                //     folders.forEach((release: string) => loadApp(char, company, name, release));
-                // } else {
-                    loadApp(char, company, name);
-                // }
-            });
-        });
-    });
+            // });
+        // });
+    // });
 
     fs.writeFileSync('apps.json', JSON.stringify(apps, null, 4));
 }

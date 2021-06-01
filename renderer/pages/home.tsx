@@ -1,40 +1,34 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import {ipcRenderer} from 'electron';
-import {IApp, IInstalledApps} from "../helper/types";
+import {IApp, IInstalledApps, ITask} from "../helper/types";
 import {sortBy, uniq} from 'lodash';
 import {toCamelCase} from "../helper/util";
 import {useMutate, useSelector} from "../state/store";
 import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
+import {addTaskToQueue, getTaskId, loadApps, loadAvailableApps, loadInstalledApps} from "../helper/executor";
+import ProgressBar from "../components/progress-bar";
 
 
 function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
     const [cmdProgress, setCmdProgress] = useState(-1);
+    const [terminalBuffer, setTerminalBuffer] = useState([]);
     const [search, setSearch] = useState('Vivaldi');
     const allLocalApps = useSelector(selectLocalApps);
+    const queue = useSelector(state => state.queue);
+    const tasks = useSelector(state => state.tasks);
     const mutate = useMutate();
 
+    const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
+
     const updateApp = async (app: IApp) => {
-        const resultStr = await ipcRenderer.invoke('winget-upgrade', app);
-        // const installed = JSON.parse(resultStr) as IInstalledApps;
-        // console.log('installed', installed);
-        console.log('resultStr', resultStr);
-        loadApps();
-    };
-
-    const loadApps = async () => {
-        const appsStr = await ipcRenderer.invoke('get-apps');
-        const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-        mutate(setAvailableApps(apps));
-
-        const installedStr = await ipcRenderer.invoke('get-installed');
-        const installed = JSON.parse(installedStr, toCamelCase) as IInstalledApps;
-
-        const _installedApps = installed.sources
-                .flatMap(s => s.packages)
-                .filter(p => apps.find(a => a.packageIdentifier === p.packageIdentifier));
-        mutate(setInstalledApps(_installedApps));
+        const task: ITask = {
+            id: getTaskId(),
+            packageIdentifier: app.packageIdentifier,
+            packageVersion: app.packageVersion,
+        };
+        addTaskToQueue(task);
     };
 
     useEffect(() => {
@@ -45,34 +39,25 @@ function Home() {
         setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
     }, [search, allLocalApps]);
 
-    const xtermRef = React.useRef(null)
+    const xtermRef = React.useRef(null);
 
     useEffect(() => {
+        if (!xtermRef.current) return;
+        if (!currentTask.buffer) return;
 
-        ipcRenderer.on('terminal', (event, args) => {
-            console.log('client terminal', args);
-            xtermRef.current.terminal.write(args);
+        const sameBuffer = terminalBuffer.length <= currentTask.buffer.length && terminalBuffer.every((data, i) => currentTask.buffer.length > i && currentTask.buffer[i] === data);
 
-            const progressRegex = /9;4;1;(\d+)/;
-            if (progressRegex.test(args)) {
-                const match = progressRegex.exec(args);
-                const progress = parseInt(match[1]);
-                console.log('==> progress', progress);
-                setCmdProgress(progress / 100);
-            }
-            const progressIndRegex = /9;4;3;0/;
-            if (progressIndRegex.test(args)) {
-                console.log('==> progress indetermined');
-                setCmdProgress(2);
-            }
-            const progressFinRegex = /9;4;0;0/;
-            if (progressFinRegex.test(args)) {
-                console.log('==> progress finished');
-                setCmdProgress(-1);
-            }
-        });
-        console.log('xterm', xtermRef.current);
-    }, []);
+        if (sameBuffer) {
+            currentTask.buffer.forEach((data, i) => {
+                if (terminalBuffer.length > i && terminalBuffer[i] === data) return; // continue
+                xtermRef.current.terminal.write(data);
+            });
+        } else {
+            xtermRef.current.terminal.clear();
+            currentTask.buffer.forEach(data => xtermRef.current.terminal.write(data));
+        }
+        setTerminalBuffer([...currentTask.buffer]);
+    }, [currentTask, xtermRef.current]);
 
     const doData = async (x: any) => {
         // console.log('doData', x);
@@ -127,6 +112,38 @@ function Home() {
                                     </div>
                                 </div>
 
+                                {
+                                    // true &&
+                                    app.task && app.task.exitCode != 0 &&
+                                    <div className="flex flex-row items-center space-x-2 mt-1">
+                                        {
+                                            app.task.progressTask == 'installing' &&
+                                            <>
+                                                <ProgressBar progress={1} width={50} />
+                                                <div className="text-sm">
+                                                    Installing...
+                                                </div>
+                                            </>
+                                        }
+                                        {
+                                            app.task.progressTask == 'downloading' &&
+                                            <>
+                                                <ProgressBar progress={app.task.progressReal} width={50} />
+                                                <div className="text-sm">
+                                                    Downloading...
+                                                </div>
+                                                {/*<div className="text-sm">*/}
+                                                {/*    Downloading... {app.task.progress}*/}
+                                                {/*</div>*/}
+                                            </>
+                                        }
+                                        {/*<ProgressBar progress={0.5} width={50} />*/}
+                                        {/*<div className="text-sm">*/}
+                                        {/*    {app.task.packageVersion}*/}
+                                        {/*</div>*/}
+                                    </div>
+                                }
+
                                 <div className="text-sm mt-1 mb-2">
                                     {app.shortDescription}
                                 </div>
@@ -155,9 +172,31 @@ function Home() {
                     {cmdProgressStr}
                 </div>
 
-                <div className="border-t-2 border-gray-700">
-                    {ImportedComponent}
+                <div className="p-4">
+                    {
+                        queue.map(item => (
+                            <div key={`${item.packageIdentifier}-${item.packageVersion}`}>
+                                {item.packageIdentifier} {item.packageVersion}
+                            </div>
+                        ))
+                    }
                 </div>
+
+                {
+                    currentTask &&
+                    <>
+                        <div className="p-4">
+                            <div>Current Task</div>
+                            <div>
+                                {currentTask.packageIdentifier} {currentTask.packageVersion}
+                            </div>
+                        </div>
+
+                        <div className="border-t-2 border-gray-700">
+                            {ImportedComponent}
+                        </div>
+                    </>
+                }
 
             </div>
         </React.Fragment>
@@ -165,3 +204,7 @@ function Home() {
 }
 
 export default Home;
+function deepClone(buffer: any[]): React.SetStateAction<any[]> {
+    throw new Error('Function not implemented.');
+}
+

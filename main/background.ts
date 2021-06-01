@@ -1,7 +1,7 @@
 import {app, ipcMain} from 'electron';
 import serve from 'electron-serve';
 import {createWindow} from './helpers';
-import {IApp} from "../renderer/helper/types";
+import {IApp, ITask} from "../renderer/helper/types";
 
 const isProd: boolean = process.env.NODE_ENV === 'production';
 
@@ -72,14 +72,14 @@ const env = {
 //     ptyProcess.write(data);
 // })
 
-ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
-    console.log('upgrading ', app.packageIdentifier, app.packageVersion);
+ipcMain.handle('winget-upgrade', async (event, task: ITask) => {
+    console.log('upgrading ', task.packageIdentifier, task.packageVersion);
     // ptyProcess.write(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h` + '\n');
 
 
     return new Promise((resolve => {
         const program = 'winget.exe';
-        const args = [`install`, `${app.packageIdentifier}`, `-v`, `${app.packageVersion}`, `-h`];
+        const args = [`install`, `${task.packageIdentifier}`, `-v`, `${task.packageVersion}`, `-h`];
 
         const ptyProcess = pty.spawn(program, args, {
             name: 'xterm-color',
@@ -91,7 +91,7 @@ ipcMain.handle('winget-upgrade', async (event, app: IApp) => {
 
         ptyProcess.on('data', (chunk: string) => {
             console.log('sent to browser window');
-            event.sender.send('terminal', chunk);
+            event.sender.send('terminal', task, chunk);
         });
 
         ptyProcess.on('exit', (exitCode: number, signal?: number) => {

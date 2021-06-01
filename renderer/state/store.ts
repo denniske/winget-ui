@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { createStore, applyMiddleware } from 'redux'
+import {createStore, applyMiddleware, Store} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { TypedUseSelectorHook, useDispatch, useSelector as useReduxSelector } from 'react-redux';
 import {produce} from "immer";
@@ -8,7 +8,11 @@ import {AppState, initialState} from "./action";
 
 export const useSelector: TypedUseSelectorHook<AppState> = useReduxSelector
 
-let store
+let store;
+
+export function getStore() {
+    return store as Store<AppState>;
+}
 
 
 export const EXEC = 'EXEC'

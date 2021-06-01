@@ -1,3 +1,17 @@
+
+export interface ITask {
+    signal?: any;
+    exitCode?: number;
+    id: string;
+    packageIdentifier: string;
+    packageVersion: string;
+    progress?: number;
+    progressReal?: number;
+    progressTask?: 'downloading' | 'installing';
+    buffer?: any[];
+    action?: 'install' | 'uninstall';
+}
+
 export interface InstallerSwitches {
     custom: string;
     silent: string;
@@ -25,6 +39,8 @@ export interface Installer {
 
 export interface IApp {
     installedVersion: string;
+    task: ITask;
+
     packageIdentifier: string;
     packageVersion: any;
     packageName: string;
