@@ -48,7 +48,7 @@ export default function App() {
         );
     }
 
-    const parts = app.packageIdentifier.split('.').filter((x, i, arr) => i < arr.length-1);
+    const parts = app.packageIdentifier.split('.'); //.filter((x, i, arr) => i < arr.length-1);
 
     const breadcrumbParts = parts.map((part, i) => ({
         path: parts.slice(0, i+1).join('.'),

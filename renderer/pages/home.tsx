@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
-import {IApp, IInstalledApps, ITask} from "../helper/types";
-import {sortBy, uniq} from 'lodash';
-import {fixPackageIcon, toCamelCase} from "../helper/util";
+import {IApp, ITask} from "../helper/types";
+import {fixPackageIcon} from "../helper/util";
 import {useMutate, useSelector} from "../state/store";
-import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
-import {addTaskToQueue, getTaskId, loadApps, loadAvailableApps, loadInstalledApps} from "../helper/executor";
+import {selectLocalApps} from "../state/action";
+import {addTaskToQueue, getTaskId, loadApps} from "../helper/executor";
 import ProgressBar from "../components/progress-bar";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBox, faCoffee, faDownload, faSearch, faStar} from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
+import ProgressBarFull from "../components/progress-bar-full";
+import AppItem from "../components/app-item";
 
 
 export default function Home() {
@@ -23,15 +22,6 @@ export default function Home() {
     const mutate = useMutate();
 
     const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
-
-    const updateApp = async (app: IApp) => {
-        const task: ITask = {
-            id: getTaskId(),
-            packageIdentifier: app.packageIdentifier,
-            packageVersion: app.packageVersion,
-        };
-        addTaskToQueue(task);
-    };
 
     useEffect(() => {
         loadApps();
@@ -96,74 +86,10 @@ export default function Home() {
             <div className="flex flex-col flex-1 overflow-auto p-4 space-y-4">
                 {
                     localApps.map(app => (
-                        <div
+                        <AppItem
                             key={`${app.packageIdentifier}-${app.installedVersion}`}
-                            className=""
-                        >
-                            <div className="text-sm mt-1 mb-2">
-                                <img src={fixPackageIcon(app.packageIcon)} className="w-6 h-6"/>
-                            </div>
-
-                            <div className="flex flex-row items-end space-x-2">
-
-                                <Link href={`/app/${encodeURIComponent(app.packageIdentifier)}`}>
-                                    <a className="font-bold">{app.packageName}</a>
-                                </Link>
-
-
-                                {/*<div className="font-bold">*/}
-                                {/*    {app.packageName}*/}
-                                {/*</div>*/}
-                                <div className="text-sm">
-                                    {app.installedVersion}
-                                </div>
-                            </div>
-
-                            {
-                                // true &&
-                                app.task && app.task.exitCode != 0 &&
-                                <div className="flex flex-row items-center space-x-2 mt-1">
-                                    {
-                                        app.task.progressTask == 'installing' &&
-                                        <>
-                                            <ProgressBar progress={1} width={50}/>
-                                            <div className="text-sm">
-                                                Installing...
-                                            </div>
-                                        </>
-                                    }
-                                    {
-                                        app.task.progressTask == 'downloading' &&
-                                        <>
-                                            <ProgressBar progress={app.task.progressReal} width={50}/>
-                                            <div className="text-sm">
-                                                Downloading...
-                                            </div>
-                                        </>
-                                    }
-                                </div>
-                            }
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.shortDescription}
-                            </div>
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.packageIdentifier}
-                            </div>
-
-                            <div className="text-sm mt-1 mb-2">
-                                {app.versions?.join(' ')}
-                            </div>
-
-                            {/*{*/}
-                            {/*    app.InstalledVersion !== app.packageVersion &&*/}
-                            <button className="bg-blue-600 text-white rounded px-2 py-1 text-sm"
-                                    onClick={() => updateApp(app)}>
-                                Update to {app.packageVersion} ({app.packageIdentifier})
-                            </button>
-                            {/*}*/}
-                        </div>
+                            app={app}
+                        />
                     ))
                 }
             </div>
