@@ -1,14 +1,29 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBox, faDownload, faSearch, faStar} from "@fortawesome/free-solid-svg-icons";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useMutate, useSelector} from "../state/store";
 import {setSearch} from "../state/action";
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 export default function Layout(props: any) {
     const {children} = props;
+    const router = useRouter();
     const mutate = useMutate();
     const search = useSelector(state => state.search);
+
+    const handleKeyDown = (e: any) => {
+        console.log(e);
+        if (e.key === 'Enter') {
+            router.push('/home');
+        }
+    };
+
+    useEffect(() => {
+        if (search.length >= 3) {
+            router.push('/home');
+        }
+    }, [search]);
 
     return (
         <div className='flex flex-row w-full h-full'>
@@ -37,7 +52,7 @@ export default function Layout(props: any) {
                     <FontAwesomeIcon icon={faSearch} className="text-gray-600"/>
                     <input
                         className="text-black px-2 py-1 rounded focus:outline-none"
-                        type="text" value={search} onChange={e => mutate(setSearch(e.target.value))}/>
+                        type="text" value={search} onKeyDown={handleKeyDown} onChange={e => mutate(setSearch(e.target.value))}/>
                 </div>
 
                 {children}

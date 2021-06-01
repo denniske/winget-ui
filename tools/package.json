@@ -19,7 +19,8 @@
     "executor": "ts-node src/executor.ts",
     "translate": "ts-node src/translate.ts",
     "reference": "ts-node src/reference.ts",
-    "apps": "ts-node apps.ts"
+    "apps": "ts-node apps.ts",
+    "packages": "ts-node packages.ts"
   },
   "author": "",
   "license": "ISC",

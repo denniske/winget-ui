@@ -1,10 +1,11 @@
 import {IApp, IInstalledApps, ITask} from "./types";
 import {exec, getStore} from "../state/store";
-import {setAvailableApps, setInstalledApps, setQueue, setTasks} from "../state/action";
+import {setAvailableApps, setInstalledApps, setPopularity, setQueue, setTasks} from "../state/action";
 // import {ipcRenderer} from "electron";
 import {toCamelCase} from "./util";
 import {dummyApps} from "../data/apps";
 import {dummyInstalled} from "../data/installed";
+import {dummyPopularity} from "../data/popularity";
 
 let executing = false;
 
@@ -92,17 +93,27 @@ function init() {
 
 export async function loadAvailableApps() {
     console.log('loadAvailableApps');
-    console.log(new Date());
+    // console.log(new Date());
     // const appsStr = await ipcRenderer.invoke('get-apps');
     // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
     const apps = JSON.parse(JSON.stringify(dummyApps), toCamelCase);
     getStore().dispatch(exec((setAvailableApps(apps))));
-    console.log(new Date());
+    // console.log(new Date());
+}
+
+export async function loadPopularity() {
+    console.log('loadPopularity');
+    // console.log(new Date());
+    // const appsStr = await ipcRenderer.invoke('get-apps');
+    // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
+    const popularity = JSON.parse(JSON.stringify(dummyPopularity), toCamelCase);
+    getStore().dispatch(exec((setPopularity(popularity))));
+    // console.log(new Date());
 }
 
 export async function loadInstalledApps() {
     console.log('loadInstalledApps');
-    console.log(new Date());
+    // console.log(new Date());
     const availableApps = getStore().getState().availableApps;
 
     // const installedStr = await ipcRenderer.invoke('get-installed');
@@ -113,11 +124,12 @@ export async function loadInstalledApps() {
         .flatMap(s => s.packages)
         .filter(p => availableApps.find(a => a.packageIdentifier === p.packageIdentifier));
     getStore().dispatch(exec((setInstalledApps(_installedApps))));
-    console.log(new Date());
+    // console.log(new Date());
 }
 
 export async function loadApps() {
     init();
     await loadAvailableApps();
+    await loadPopularity();
     await loadInstalledApps();
 }

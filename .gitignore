@@ -4,6 +4,8 @@ node_modules
 apps.json
 archived-apps.json
 installed.json
+popularity.json
+popularity-raw.json
 .next
 /app
 dist

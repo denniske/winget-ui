@@ -1,5 +1,5 @@
 import { cloneDeep } from "lodash";
-import {IApp, IInstalledApp, IPendingApp, ITask} from "../helper/types";
+import {IApp, IInstalledApp, IPendingApp, IPopularity, ITask} from "../helper/types";
 
 
 
@@ -10,18 +10,21 @@ export function selectLocalApps(state: AppState) {
         //     console.log('not found', p.packageIdentifier);
         // }
 
-        const foundTasks = state.tasks
-            .filter(a => a.packageIdentifier === foundApp.packageIdentifier);
+        const foundTasks = state.tasks.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
         const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+
+        const foundPop = state.popularity.find(a => a.id === foundApp.packageIdentifier);
 
         return {
             ...foundApp,
             installedVersion: null,
             task: foundTask,
+            views: foundPop?.views || 0,
         };
     })
-        .filter((x, i) => x.packageIdentifier.toLowerCase().includes('visual'))
-        .filter((x, i) => i < 50)
+        // .filter((x, i) => x.packageIdentifier.toLowerCase().includes('visual'))
+        .filter((x, i) => x.packageName)
+        // .filter((x, i) => i < 50)
         ;
 
     // return state.installedApps.map(installedApp => {
@@ -48,6 +51,12 @@ export function selectLocalApps(state: AppState) {
 export function setAvailableApps(availableApps: IApp[]) {
     return (state: AppState) => {
         state.availableApps = availableApps;
+    };
+}
+
+export function setPopularity(popularity: IPopularity[]) {
+    return (state: AppState) => {
+        state.popularity = popularity;
     };
 }
 
@@ -85,6 +94,7 @@ export interface AppState {
     availableApps: IApp[];
     installedApps: IInstalledApp[];
     pendingApps: IPendingApp[];
+    popularity: IPopularity[];
     queue: ITask[];
     tasks: ITask[];
     search: string;
@@ -94,6 +104,7 @@ export const initialState: AppState = {
     availableApps: [],
     installedApps: [],
     pendingApps: [],
+    popularity: [],
     queue: [],
     tasks: [],
     search: '',

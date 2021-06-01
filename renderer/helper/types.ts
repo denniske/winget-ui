@@ -38,7 +38,7 @@ export interface Installer {
 }
 
 export interface IApp {
-    Description: string;
+    views: number;
     packageImage: string;
     packageIcon: string;
     installedVersion: string;
@@ -83,6 +83,11 @@ export interface IApp {
     installerSuccessCodes: number[];
     productCode: string;
     installerLocale: string;
+}
+
+export interface IPopularity {
+    id: string;
+    views: number;
 }
 
 export interface IPendingApp {

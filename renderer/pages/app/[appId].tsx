@@ -86,9 +86,9 @@ export default function AppId() {
                     <img src={app.packageImage} className="max-h-[250px] rounded-lg bg-gray-300"/>
                 </div>
 
-                <div className="flex items-center mt-1 mb-2 space-x-4">
+                <div className="flex flex-wrap gap-4 items-center mt-1 mb-2">
                     {
-                        app.tags.map(tag => (
+                        app.tags?.map(tag => (
                             <Link key={tag} href={`/tag/${encodeURIComponent(tag)}`}>
                                 <a className="text-sm bg-gray-300 p-2 rounded">{tag}</a>
                             </Link>
@@ -97,7 +97,7 @@ export default function AppId() {
                 </div>
 
                 <div className="text-sm mt-1 mb-2">
-                    {app.Description}
+                    {app.description}
                 </div>
             </div>
         </React.Fragment>

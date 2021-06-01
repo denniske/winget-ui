@@ -9,7 +9,7 @@ import ProgressBar from "../components/progress-bar";
 import Link from 'next/link';
 import ProgressBarFull from "../components/progress-bar-full";
 import AppItem from "../components/app-item";
-
+import {orderBy} from "lodash";
 
 export default function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
@@ -28,7 +28,15 @@ export default function Home() {
     }, []);
 
     useEffect(() => {
-        setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
+        setLocalApps(
+            orderBy(
+                allLocalApps
+                    .filter(a => a.packageName.toLowerCase().includes(search.toLowerCase()))
+                ,
+                a => a.views, 'desc'
+            )
+                .filter((x, i) => i < 10)
+        );
         // console.log(localApps);
     }, [search, allLocalApps]);
 
@@ -83,7 +91,7 @@ export default function Home() {
                 <title>Winget</title>
             </Head>
 
-            <div className="flex flex-col flex-1 overflow-auto p-4 space-y-4">
+            <div className="flex flex-col flex-1 overflow-auto px-12 py-4 space-y-4">
                 {
                     localApps.map(app => (
                         <AppItem
@@ -91,6 +99,12 @@ export default function Home() {
                             app={app}
                         />
                     ))
+                }
+                {
+                    localApps.length === 0 &&
+                    <div>
+                        No results found.
+                    </div>
                 }
             </div>
 
