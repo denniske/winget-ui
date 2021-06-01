@@ -1,22 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import {ipcRenderer} from 'electron';
 import {IApp, IInstalledApps} from "../helper/types";
 import {sortBy, uniq} from 'lodash';
-import {type} from "os";
 import {toCamelCase} from "../helper/util";
 import {useMutate, useSelector} from "../state/store";
 import {selectLocalApps, setAvailableApps, setInstalledApps} from "../state/action";
-// import XTerm from '../helper/XTerm';
-// import { XTerm } from 'react-xterm';
-// import {XTerm} from "xterm-for-react";
 
-// import dynamic from 'next/dynamic'
-//
-// const TerminalComponent = dynamic(() => import('../helper/XTerm'), {
-//     ssr: false
-// });
 
 function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
