@@ -12,6 +12,7 @@ import {faBox, faCoffee, faDownload, faSearch, faStar} from "@fortawesome/free-s
 import Link from 'next/link';
 
 
+
 export default function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
     const [cmdProgress, setCmdProgress] = useState(-1);

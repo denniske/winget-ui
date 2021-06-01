@@ -13,11 +13,19 @@ export function toCamelCase(key, value) {
 
 export function fixPackageIcon(url: string) {
     if (!url) return;
+
     const httpIndex = url.indexOf('//');
-    const index = url.indexOf('///');
+    let index = url.indexOf('///', httpIndex+2);
     if (index >= 0) {
         // console.log('fixPackageIcon', url);
         return url.substr(0, httpIndex+2) + url.substr(index+3);
     }
+
+    // index = url.indexOf('//', httpIndex+2);
+    // if (index >= 0) {
+    //     // console.log('fixPackageIcon', url);
+    //     return url.substr(0, httpIndex+2) + url.substr(index+2);
+    // }
+
     return url;
 }

@@ -3,6 +3,7 @@ import {faBox, faDownload, faSearch, faStar} from "@fortawesome/free-solid-svg-i
 import React, {useState} from "react";
 import {useMutate, useSelector} from "../state/store";
 import {setSearch} from "../state/action";
+import Link from "next/link";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -13,10 +14,12 @@ export default function Layout(props: any) {
         <div className='flex flex-row w-full h-full'>
             <div className='flex flex-col w-96 bg-gray-300 space-y-6 px-5 py-16'>
 
-                <div className='flex items-center space-x-3'>
-                    <FontAwesomeIcon icon={faStar} className="text-gray-600"/>
-                    <div>Explore</div>
-                </div>
+                <Link href={`/home`}>
+                    <a className='flex items-center space-x-3'>
+                        <FontAwesomeIcon icon={faStar} className="text-gray-600"/>
+                        <div>Explore</div>
+                    </a>
+                </Link>
                 <div className='flex items-center space-x-3'>
                     <FontAwesomeIcon icon={faBox} className="text-gray-600"/>
                     <div>Installed</div>

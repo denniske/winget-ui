@@ -2,26 +2,46 @@ import { cloneDeep } from "lodash";
 import {IApp, IInstalledApp, IPendingApp, ITask} from "../helper/types";
 
 
+
 export function selectLocalApps(state: AppState) {
 
-    return state.installedApps.map(installedApp => {
+    return state.availableApps.map(foundApp => {
         // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
         //     console.log('not found', p.packageIdentifier);
         // }
 
-        const foundApp = state.availableApps
-            .find(a => a.packageIdentifier === installedApp.packageIdentifier);
-
         const foundTasks = state.tasks
-            .filter(a => a.packageIdentifier === installedApp.packageIdentifier);
+            .filter(a => a.packageIdentifier === foundApp.packageIdentifier);
         const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
 
         return {
             ...foundApp,
-            installedVersion: installedApp.version,
+            installedVersion: null,
             task: foundTask,
         };
-    });
+    })
+        .filter((x, i) => x.packageIdentifier.toLowerCase().includes('visual'))
+        .filter((x, i) => i < 50)
+        ;
+
+    // return state.installedApps.map(installedApp => {
+    //     // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
+    //     //     console.log('not found', p.packageIdentifier);
+    //     // }
+    //
+    //     const foundApp = state.availableApps
+    //         .find(a => a.packageIdentifier === installedApp.packageIdentifier);
+    //
+    //     const foundTasks = state.tasks
+    //         .filter(a => a.packageIdentifier === installedApp.packageIdentifier);
+    //     const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+    //
+    //     return {
+    //         ...foundApp,
+    //         installedVersion: installedApp.version,
+    //         task: foundTask,
+    //     };
+    // });
 }
 
 
@@ -76,5 +96,5 @@ export const initialState: AppState = {
     pendingApps: [],
     queue: [],
     tasks: [],
-    search: 'Vivaldi',
+    search: '',
 }

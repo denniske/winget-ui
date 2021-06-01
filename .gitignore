@@ -5,6 +5,6 @@ apps.json
 archived-apps.json
 installed.json
 .next
-app
+/app
 dist
 winget-pkgs-master
