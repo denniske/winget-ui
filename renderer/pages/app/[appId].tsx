@@ -8,21 +8,15 @@ import {addTaskToQueue, getTaskId, loadApps} from "../../helper/executor";
 import ProgressBar from "../../components/progress-bar";
 import {useRouter} from "next/router";
 import Link from "next/link";
+import Breadcrumb from "../../components/breadcrumb";
 
 
-export default function App() {
+export default function AppId() {
     const router = useRouter();
-    const {id} = router.query;
+    const {appId} = router.query;
 
     const [app, setApp] = useState<IApp>(null);
-    const [cmdProgress, setCmdProgress] = useState(-1);
-    const [terminalBuffer, setTerminalBuffer] = useState([]);
     const allLocalApps = useSelector(selectLocalApps);
-    const queue = useSelector(state => state.queue);
-    const tasks = useSelector(state => state.tasks);
-    const mutate = useMutate();
-
-    const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
 
     const updateApp = async (app: IApp) => {
         const task: ITask = {
@@ -38,7 +32,7 @@ export default function App() {
     }, []);
 
     useEffect(() => {
-        setApp(allLocalApps.find(a => a.packageIdentifier === id));
+        setApp(allLocalApps.find(a => a.packageIdentifier === appId));
         console.log(app);
     }, [allLocalApps]);
 
@@ -50,12 +44,6 @@ export default function App() {
 
     const parts = app.packageIdentifier.split('.'); //.filter((x, i, arr) => i < arr.length-1);
 
-    const breadcrumbParts = parts.map((part, i) => ({
-        path: parts.slice(0, i+1).join('.'),
-        name: i === 0 ? app.publisher : part,
-        last: i === parts.length - 1,
-    }));
-
     return (
         <React.Fragment>
             <Head>
@@ -64,31 +52,12 @@ export default function App() {
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-4 space-y-4">
 
-
-                <div className="flex space-x-3">
-                    {
-                        breadcrumbParts.map(part => (
-                            <>
-                                <Link href={`/path/${encodeURIComponent(part.path)}`}>
-                                    <a className="text-sm hover:underline">{part.name}</a>
-                                </Link>
-                                {
-                                    !part.last &&
-                                    <div className="text-sm">
-                                        {'>'}
-                                    </div>
-                                }
-                            </>
-                        ))
-                    }
-                </div>
+                <Breadcrumb parts={parts} publisher={app.publisher}/>
 
                 <div className="flex space-x-8">
-                    {/*<div className="">*/}
-                        <img src={fixPackageIcon(app.packageIcon)} className="w-32 h-32 mt-1 mb-2"/>
-                    {/*</div>*/}
+                    <img src={fixPackageIcon(app.packageIcon)} className="w-32 h-32 mt-1 mb-2"/>
 
-                    <div className="flex flex-col pt-4">
+                    <div className="flex flex-col flex-1 pt-4">
                         <div className="text-2xl font-bold">
                             {app.packageName}
                         </div>
@@ -107,8 +76,6 @@ export default function App() {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div className="text-sm mt-1 mb-2">
@@ -122,7 +89,7 @@ export default function App() {
                 <div className="flex items-center mt-1 mb-2 space-x-4">
                     {
                         app.tags.map(tag => (
-                            <Link href={`/tag/${encodeURIComponent(tag)}`}>
+                            <Link key={tag} href={`/tag/${encodeURIComponent(tag)}`}>
                                 <a className="text-sm bg-gray-300 p-2 rounded">{tag}</a>
                             </Link>
                         ))

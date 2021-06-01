@@ -10,12 +10,11 @@ import Link from 'next/link';
 import ProgressBarFull from "../../components/progress-bar-full";
 import AppItem from "../../components/app-item";
 import {useRouter} from "next/router";
-import Breadcrumb from "../../components/breadcrumb";
 
 
-export default function Path() {
+export default function Tag() {
     const router = useRouter();
-    const {path} = router.query;
+    const {tag} = router.query;
 
     const [localApps, setLocalApps] = useState<IApp[]>([]);
     const allLocalApps = useSelector(selectLocalApps);
@@ -25,26 +24,22 @@ export default function Path() {
     }, []);
 
     useEffect(() => {
-        setLocalApps(allLocalApps.filter(a => a.packageIdentifier.startsWith(path as string)));
+        setLocalApps(allLocalApps.filter(a => a.tags?.includes(tag as string)));
         // setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
         // console.log(localApps);
-    }, [path, allLocalApps]);
-
-    if (localApps.length === 0 || !path) {
-        return <div>Empty</div>;
-    }
-
-    const parts = (path as string).split('.');
+    }, [tag, allLocalApps]);
 
     return (
         <React.Fragment>
             <Head>
-                <title>{path} | Winget</title>
+                <title>{tag} | Winget</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-4 space-y-4">
 
-                <Breadcrumb publisher={localApps[0].publisher} parts={parts} />
+                <div className="flex items-center mt-1 mb-2 space-x-4">
+                    <div className="text-sm bg-gray-300 p-2 rounded">{tag}</div>
+                </div>
 
                 {
                     localApps.map(app => (
