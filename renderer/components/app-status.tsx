@@ -6,10 +6,11 @@ import {addTaskToQueue, getTaskId} from "../helper/executor";
 
 interface Props {
     app: IApp;
+    uninstall?: boolean;
 }
 
 export default function AppStatus(props: Props) {
-    const {app} = props;
+    const {app, uninstall} = props;
 
     const updateApp = async (app: IApp) => {
         const task: ITask = {
@@ -29,10 +30,17 @@ export default function AppStatus(props: Props) {
     return (
         <>
             {
-                !app.task && !app.queuedtask &&
+                !app.task && !app.queuedtask && !uninstall &&
                 <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
-                    Install
+                    {app.installedVersion ? 'Update' : 'Install'}
+                </button>
+            }
+            {
+                !app.task && !app.queuedtask && uninstall &&
+                <button className="bg-[#ff1f1f] text-[14px] text-white rounded px-8 py-1"
+                        onClick={() => updateApp(app)}>
+                    Uninstall
                 </button>
             }
 

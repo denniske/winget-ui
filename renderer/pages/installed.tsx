@@ -30,7 +30,7 @@ export default function Installed() {
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">
 
                 <div className="flex items-center mt-1 mb-2 space-x-4">
-                    <div className="text-sm bg-gray-300 p-2 rounded">Installed</div>
+                    <div className="text-sm bg-gray-800 p-2 rounded">Installed</div>
                 </div>
 
                 {
@@ -38,6 +38,7 @@ export default function Installed() {
                         <AppItem
                             key={`${app.packageIdentifier}-${app.installedVersion}`}
                             app={app}
+                            uninstall={true}
                         />
                     ))
                 }

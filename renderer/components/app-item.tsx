@@ -6,10 +6,11 @@ import AppStatus from "./app-status";
 
 interface Props {
     app: IApp;
+    uninstall?: boolean;
 }
 
 export default function AppItem(props: Props) {
-    const {app} = props;
+    const {app, uninstall} = props;
 
     if (!app) {
         return (
@@ -37,7 +38,7 @@ export default function AppItem(props: Props) {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <AppStatus app={app} />
+                    <AppStatus app={app} uninstall={uninstall} />
 
                     <div className="text-sm">
                         Version {app.packageVersion}
