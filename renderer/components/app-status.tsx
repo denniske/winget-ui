@@ -38,7 +38,7 @@ export default function AppStatus(props: Props) {
             }
             {
                 !app.task && !app.queuedtask && uninstall &&
-                <button className="bg-[#ff1f1f] text-[14px] text-white rounded px-8 py-1"
+                <button className="bg-[#c21717] text-[14px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
                     Uninstall
                 </button>

@@ -41,7 +41,7 @@ export default function AppItem(props: Props) {
                     <AppStatus app={app} uninstall={uninstall} />
 
                     <div className="text-sm">
-                        Version {app.packageVersion}
+                        Version {uninstall ? app.installedVersion : app.packageVersion}
                     </div>
                 </div>
             </div>
