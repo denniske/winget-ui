@@ -128,7 +128,7 @@ async function loadApp(char: string, company: string, ...name: string[]) {
             try {
                 const urls = [targetUrl];
                 const logosResult = await LogoScrape.getLogos(urls) as any[];
-                console.log(logosResult);
+                // console.log(logosResult);
 
                 if (logosResult.length > 0) {
                     const logosUrls = logosResult[0];
@@ -176,9 +176,9 @@ async function loadApps() {
 
     // for (const char of chars) {
 
-    // for (const char of fs.readdirSync(charFolder)) {
-    //     for (const company of fs.readdirSync(charFolder + '/' + char)) {
-    //         for (const name of fs.readdirSync(charFolder + '/' + char + '/' + company)) {
+    for (const char of fs.readdirSync(charFolder)) {
+        for (const company of fs.readdirSync(charFolder + '/' + char)) {
+            for (const name of fs.readdirSync(charFolder + '/' + char + '/' + company)) {
 
                 // const char = 'z';
                 // const company = 'Zoom';
@@ -195,15 +195,18 @@ async function loadApps() {
                 // const char = 'v';
                 // const company = 'VivaldiTechnologies';
                 // const name = 'Vivaldi';
-                const char = 'v';
-                const company = 'VideoLAN';
-                const name = 'VLC';
+                // const char = 'v';
+                // const company = 'VideoLAN';
+                // const name = 'VLC';
+                // const char = 'o';
+                // const company = 'OpenJS';
+                // const name = 'Nodejs';
 
                 await loadApp(char, company, name);
 
-            // }
-        // }
-    // }
+            }
+        }
+    }
 
     fs.writeFileSync('apps.json', JSON.stringify(apps, null, 4));
 }

@@ -33,7 +33,7 @@ export default function AppItem(props: Props) {
 
     return (
         <div className="flex space-x-8">
-            <img src={fixPackageIcon(app.packageIcon)} className="w-11 h-11 mt-1 mb-2"/>
+            <img src={fixPackageIcon(app.packageIdentifier, app.packageIcon)} className="w-11 h-11 mt-1 mb-2"/>
 
             <div className="flex flex-col flex-1">
 
