@@ -36,6 +36,7 @@ async function execute() {
 
     console.log('queue', queue);
     const task = queue.shift();
+    task.started = true;
     tasks.push(task);
     updateStore();
 

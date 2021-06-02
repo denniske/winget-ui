@@ -14,7 +14,8 @@ import {setSearch} from "../state/action";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {ipcRenderer} from "../helper/bridge";
-import Terminal from "./terminal";
+import TaskItem from "./task-item";
+import TaskList from "./task-list";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -68,9 +69,6 @@ export default function Layout(props: any) {
     };
 
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
-
-    const tasks = useSelector(state => state.tasks);
-    const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
 
     // let cmdProgressStr = 'Idle';
     // if (cmdProgress > 1) {
@@ -163,22 +161,7 @@ export default function Layout(props: any) {
                 {/*</div>*/}
             </div>
 
-            <div className="fixed bottom-0 left-0 right-0">
-            {
-                currentTask &&
-                <div className="flex flex-col bg-[#1B1B1B] p-4 overflow-auto min-h-[900px] border-t-[1px] border-[#4A4A4A]">
-                    {/*<div className="border-t-2 border-gray-700 bg-black p-4 rounded border-2 border-gray-300">*/}
-
-                    <div className="p-4">
-                        Install {currentTask.packageIdentifier} ({currentTask.packageVersion})
-                    </div>
-
-                    <div className="flex self-start">
-                        <Terminal task={currentTask} />
-                    </div>
-                </div>
-            }
-            </div>
+           <TaskList />
 
         </div>
     );

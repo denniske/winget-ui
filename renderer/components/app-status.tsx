@@ -21,6 +21,7 @@ export default function AppStatus(props: Props) {
         const task: ITask = {
             id: getTaskId(),
             packageIdentifier: app.packageIdentifier,
+            packageName: app.packageName,
             packageVersion: app.packageVersion,
         };
         addTaskToQueue(task);
@@ -49,7 +50,7 @@ export default function AppStatus(props: Props) {
                 </button>
             }
 
-            <ProgressBarFull task={task} queuedTask={queuedtask} />
+            <ProgressBarFull task={task && task.exitCode != 0 ? task : queuedtask} />
         </>
     );
 }

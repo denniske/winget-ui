@@ -24,6 +24,7 @@ export default function AppId() {
         const task: ITask = {
             id: getTaskId(),
             packageIdentifier: app.packageIdentifier,
+            packageName: app.packageName,
             packageVersion: app.packageVersion,
         };
         addTaskToQueue(task);

@@ -3,7 +3,9 @@ export interface ITask {
     signal?: any;
     exitCode?: number;
     id: string;
+    started?: boolean;
     packageIdentifier: string;
+    packageName: string;
     packageVersion: string;
     progress?: number;
     progressReal?: number;

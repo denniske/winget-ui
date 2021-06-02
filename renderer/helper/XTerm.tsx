@@ -161,7 +161,7 @@ export default class Xterm extends React.Component<IProps> {
             })
         }
 
-        console.log('size', this.terminal.rows, this.terminal.cols);
+        // console.log('size', this.terminal.rows, this.terminal.cols);
 
         // Create Listeners
         this.terminal.onBinary(this.onBinary)

@@ -5,17 +5,20 @@ import {ITask} from "../helper/types";
 
 interface Props {
     task: ITask;
-    queuedTask: ITask;
 }
 
 export default function ProgressBarFull(props: Props) {
-    const {task, queuedTask} = props;
+    const {task} = props;
 
-    if (task && task.exitCode != 0) {
+    if (!task) {
+        return (<div/>);
+    }
+
+    if (task.started && task.exitCode != 0) {
         return (
             <div className="flex flex-row items-center space-x-2 my-[4.5px]">
                 {
-                    task.progressTask == 'installing' &&
+                    !task.exitCode && task.progressTask == 'installing' &&
                     <>
                         <ProgressBar progress={1} width={50}/>
                         <div className="text-sm">
@@ -24,7 +27,7 @@ export default function ProgressBarFull(props: Props) {
                     </>
                 }
                 {
-                    task.progressTask == 'downloading' &&
+                    !task.exitCode && task.progressTask == 'downloading' &&
                     <>
                         <ProgressBar progress={task.progressReal} width={50}/>
                         <div className="text-sm">
@@ -32,11 +35,20 @@ export default function ProgressBarFull(props: Props) {
                         </div>
                     </>
                 }
+                {
+                    task.exitCode &&
+                    <>
+                        <ProgressBar progress={task.progressReal} width={50} color="bg-red-500"/>
+                        <div className="text-sm">
+                            Installation failed.
+                        </div>
+                    </>
+                }
             </div>
         );
     }
 
-    if (queuedTask) {
+    if (!task.started) {
         return (
             <div className="flex flex-row items-center space-x-2 my-[4.5px]">
                 <>
