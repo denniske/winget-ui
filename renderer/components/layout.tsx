@@ -14,7 +14,6 @@ import {setSearch} from "../state/action";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {ipcRenderer} from "../helper/bridge";
-import TaskItem from "./task-item";
 import TaskList from "./task-list";
 
 export default function Layout(props: any) {
@@ -47,7 +46,6 @@ export default function Layout(props: any) {
     }, [search]);
 
     useEffect(() => {
-       // console.log(router.route);
        ipcRenderer.invoke('browser-can-go-back').then(x => setCanGoBack(x));
        ipcRenderer.invoke('browser-can-go-forward').then(x => setCanGoForward(x));
     }, [router.route]);
@@ -69,14 +67,6 @@ export default function Layout(props: any) {
     };
 
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
-
-    // let cmdProgressStr = 'Idle';
-    // if (cmdProgress > 1) {
-    //     cmdProgressStr = 'Working...';
-    // }
-    // if (cmdProgress >= 0 && cmdProgress <= 1) {
-    //     cmdProgressStr = `Working ${cmdProgress * 100}%`;
-    // }
 
     return (
         <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5]'>
@@ -115,7 +105,6 @@ export default function Layout(props: any) {
             </div>
 
             <div className='flex flex-col flex-1 h-full'>
-
                 <div className="flex items-center p-4 border-b-[1px] border-[#4A4A4A] space-x-4 text-[#98979A] focus-within:text-[#C9C9C9] transition-color">
                     <FontAwesomeIcon icon={faSearch} className="" />
                     <input
@@ -142,27 +131,9 @@ export default function Layout(props: any) {
                 <div className={`overflow-auto transition-opacity ${searching && search.length === 0 ? 'opacity-50' : ''}`}>
                     {children}
                 </div>
-
-                {/*{*/}
-                {/*    currentTask &&*/}
-                {/*    <div className="p-4">*/}
-                {/*        {cmdProgressStr}*/}
-                {/*    </div>*/}
-                {/*}*/}
-
-                {/*<div className="p-4">*/}
-                {/*    {*/}
-                {/*        queue.map(item => (*/}
-                {/*            <div key={`${item.packageIdentifier}-${item.packageVersion}`}>*/}
-                {/*                {item.packageIdentifier} {item.packageVersion}*/}
-                {/*            </div>*/}
-                {/*        ))*/}
-                {/*    }*/}
-                {/*</div>*/}
             </div>
 
            <TaskList />
-
         </div>
     );
 }
