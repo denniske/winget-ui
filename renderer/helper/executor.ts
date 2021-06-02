@@ -49,7 +49,7 @@ async function execute() {
 
     console.log('execute', task);
 
-    const resultStr = await ipcRenderer.invoke('winget-upgrade', task);
+    const resultStr = await ipcRenderer.invoke('winget-task', task);
     // console.log('resultStr', resultStr);
     task.exitCode = resultStr.exitCode;
     task.signal = resultStr.signal;
@@ -62,9 +62,19 @@ async function execute() {
     await loadInstalledApps();
 
     executing = false;
-    // if (queue.length > 0) {
-    //     execute();
-    // }
+
+    if (task.exitCode != 0) {
+        while (queue.length > 0) {
+            const pendingTask = queue.shift();
+            pendingTask.canceled = true;
+            tasks.push(pendingTask);
+        }
+        updateStore();
+    }
+
+    if (task.exitCode == 0 && queue.length > 0) {
+        execute();
+    }
 }
 
 function init() {
@@ -135,24 +145,13 @@ export async function loadAvailableApps() {
     loadedAvailableApps = true;
 }
 
-// export async function loadPopularity() {
-//     console.log('loadPopularity');
-//     // console.log(new Date());
-//     // const appsStr = await ipcRenderer.invoke('get-apps');
-//     // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-//     const popularity = JSON.parse(JSON.stringify(dummyPopularity), toCamelCase);
-//     getStore().dispatch(exec((setPopularity(popularity))));
-//     // console.log(new Date());
-// }
-
 export async function loadInstalledApps() {
     console.log('loadInstalledApps');
     // console.log(new Date());
     const availableApps = getStore().getState().availableApps;
 
-    // const installedStr = await ipcRenderer.invoke('get-installed');
-    // const installed = JSON.parse(installedStr, toCamelCase) as IInstalledApps;
-    const installed = JSON.parse(JSON.stringify(dummyInstalled), toCamelCase);
+    const installedStr = await ipcRenderer.invoke('get-installed');
+    const installed = JSON.parse(installedStr, toCamelCase) as IInstalledApps;
 
     const _installedApps = installed.sources
         .flatMap(s => s.packages)
@@ -164,6 +163,5 @@ export async function loadInstalledApps() {
 export async function loadApps() {
     init();
     await loadAvailableApps();
-    // await loadPopularity();
     await loadInstalledApps();
 }

@@ -1,9 +1,12 @@
 
+export type TaskAction = 'install' | 'update' | 'uninstall';
+
 export interface ITask {
     signal?: any;
     exitCode?: number;
     id: string;
     started?: boolean;
+    canceled?: boolean;
     packageIdentifier: string;
     packageName: string;
     packageVersion: string;
@@ -11,7 +14,7 @@ export interface ITask {
     progressReal?: number;
     progressTask?: 'downloading' | 'installing';
     buffer?: any[];
-    action?: 'install' | 'uninstall';
+    action?: TaskAction;
 }
 
 export interface InstallerSwitches {

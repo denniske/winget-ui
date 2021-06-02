@@ -19,7 +19,7 @@ export default function TaskList(props: Props) {
     const queuedTasks = useSelector(state => state.queue);
     const tasks = useSelector(state => state.tasks);
 
-    const pendingTasks = [...tasks, ...queuedTasks].filter(t => t.exitCode == null);
+    const pendingTasks = [...tasks, ...queuedTasks].filter(t => t.exitCode == null && !t.canceled);
 
     return (
         <div className="fixed bottom-0 left-0 right-0 bg-[#1B1B1B] border-t-[1px] border-[#4A4A4A]">

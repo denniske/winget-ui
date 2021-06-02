@@ -72,14 +72,19 @@ const env = {
 //     ptyProcess.write(data);
 // })
 
-ipcMain.handle('winget-upgrade', async (event, task: ITask) => {
-    console.log('upgrading ', task.packageIdentifier, task.packageVersion);
-    // ptyProcess.write(`winget install ${app.PackageIdentifier} -v ${app.PackageVersion} -h` + '\n');
 
+ipcMain.handle('winget-task', async (event, task: ITask) => {
+    console.log('upgrading ', task.packageIdentifier, task.packageVersion);
 
     return new Promise((resolve => {
         const program = 'winget.exe';
-        const args = [`install`, `${task.packageIdentifier}`, `-v`, `${task.packageVersion}`, `-h`];
+
+        let args = [];
+        if (task.action === 'uninstall') {
+            args = [`uninstall`, `${task.packageIdentifier}`, `-h`];
+        } else {
+            args = [`install`, `${task.packageIdentifier}`, `-v`, `${task.packageVersion}`, `-h`];
+        }
 
         const ptyProcess = pty.spawn(program, args, {
             name: 'xterm-color',

@@ -21,7 +21,7 @@ export default function TaskFailedModal(props: Props) {
 
     const queuedTasks = useSelector(state => state.queue);
     const tasks = useSelector(state => state.tasks);
-    const pendingTasks = [...tasks, ...queuedTasks].filter(t => t.exitCode == null);
+    const pendingTasks = [...tasks, ...queuedTasks].filter(t => t.exitCode == null && !t.canceled);
 
     if (modal?.type !== 'task-failed') return <div/>;
 
