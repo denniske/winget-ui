@@ -104,10 +104,10 @@ export default function Layout(props: any) {
         // console.log('lf', terminal._core.buffer.y);
         // console.log('lf', terminal.cols, terminal._core.buffer.y + 2);
 
-        // setTimeout(() => {
-        //         terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2));
-        //     }
-        // );
+        setTimeout(() => {
+                terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2));
+            }
+        );
     };
 
     let ImportedComponent = null
@@ -121,7 +121,8 @@ export default function Layout(props: any) {
         ref={xtermRef}
         onLineFeed={handleLineFeed}
         onData={doData}
-        options={{ rows: 5 }}
+        options={{ rows: 5, cols: 80 }}
+        className="flex"
     />
     // } else { //for build purposes only
     //     ImportedComponent = <div><p>Component not available.</p></div>;
@@ -137,8 +138,8 @@ export default function Layout(props: any) {
 
 
     return (
-        <div className='flex flex-row w-full h-full bg-[#1B1B1B] text-[#C5C5C5]'>
-            <div className='flex flex-col w-96 bg-[#2F2F31] text-[#CCCCCC] space-y-6 px-5 py-4'>
+        <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5]'>
+            <div className='flex flex-col w-60 bg-[#2F2F31] text-[#CCCCCC] space-y-6 px-5 py-4'>
 
                 <div className="flex space-x-4 self-end">
                     <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1" onClick={goBack} disabled={!canGoBack}>
@@ -172,7 +173,7 @@ export default function Layout(props: any) {
 
             </div>
 
-            <div className='flex flex-col w-full h-full'>
+            <div className='flex flex-col flex-1 h-full'>
 
                 <div className="flex items-center p-4 border-b-[1px] border-[#4A4A4A] space-x-4 text-[#98979A] focus-within:text-[#C9C9C9] transition-color">
                     <FontAwesomeIcon icon={faSearch} className="" />
@@ -201,7 +202,6 @@ export default function Layout(props: any) {
                     {children}
                 </div>
 
-
                 {/*{*/}
                 {/*    currentTask &&*/}
                 {/*    <div className="p-4">*/}
@@ -222,15 +222,18 @@ export default function Layout(props: any) {
                 {
                     currentTask &&
                     <>
-                        <div className="p-4">
-                            <div>Current Task</div>
-                            <div>
-                                {currentTask.packageIdentifier} {currentTask.packageVersion}
-                            </div>
-                        </div>
+                        {/*<div className="p-4">*/}
+                        {/*    <div>Current Task</div>*/}
+                        {/*    <div>*/}
+                        {/*        {currentTask.packageIdentifier} {currentTask.packageVersion}*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
 
-                        <div className="border-t-2 border-gray-700">
-                            {ImportedComponent}
+                        <div className="flex bg-[#1B1B1B] p-4 overflow-auto min-h-[300px] border-t-[1px] border-[#4A4A4A]">
+                            {/*<div className="border-t-2 border-gray-700 bg-black p-4 rounded border-2 border-gray-300">*/}
+                            <div className="flex bg-[#333] p-4 rounded">
+                                {ImportedComponent}
+                            </div>
                         </div>
                     </>
                 }

@@ -8,6 +8,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   @apply flex flex-1 h-full w-full bg-[#2F2F31];
 }
 

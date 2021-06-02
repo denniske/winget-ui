@@ -49,7 +49,7 @@ export default function AppStatus(props: Props) {
                 </button>
             }
 
-            <ProgressBarFull task={app.task} queuedTask={app.queuedtask} />
+            <ProgressBarFull task={task} queuedTask={queuedtask} />
         </>
     );
 }

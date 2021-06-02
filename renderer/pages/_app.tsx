@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 
 function SafeHydrate({ children }) {
     return (
-        <div suppressHydrationWarning>
+        <div suppressHydrationWarning className="flex">
             {typeof window === 'undefined' ? null : children}
         </div>
     )
