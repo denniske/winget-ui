@@ -27,7 +27,7 @@ function updateStore() {
 export function addTaskToQueue(task: ITask) {
     queue.push(task);
     updateStore();
-    // execute();
+    execute();
 }
 
 async function execute() {
@@ -57,10 +57,11 @@ async function execute() {
 
 function init() {
     ipcRenderer.on('terminal', (event, taskInfo: ITask, data) => {
-        console.log('client terminal', taskInfo, data);
-        // console.log('tasks', tasks);
+        console.log('client terminal', taskInfo.id, data);
+        // console.log('tasks', tasks.length, tasks[0].id, tasks);
 
         const task = tasks.find(t => t.id == taskInfo.id);
+        console.log('found task', task);
         task.buffer ??= [];
         task.buffer.push(data);
 

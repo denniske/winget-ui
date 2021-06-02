@@ -7,7 +7,7 @@ export const ipcRendererMock = {
         fakes[channel] = callback;
     },
     invoke: (channel: string, ...args: any[]): Promise<any> => {
-        return fakes[channel](args);
+        return fakes[channel](...args);
     },
 
     on(channel: string, callback: any) {
@@ -15,6 +15,6 @@ export const ipcRendererMock = {
         listeners[channel].push(callback);
     },
     send: (channel: string, ...args: any[]) => {
-        listeners[channel].forEach(l => l(args));
+        listeners[channel].forEach(l => l({ event: true }, ...args));
     },
 };

@@ -105,5 +105,5 @@ export const initialState: AppState = {
     popularity: [],
     queue: [],
     tasks: [],
-    search: '',
+    search: 'vivaldi',
 }
