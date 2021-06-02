@@ -10,6 +10,7 @@ import {useRouter} from "next/router";
 import Link from "next/link";
 import Breadcrumb from "../../components/breadcrumb";
 import AppIcon from "../../components/app-icon";
+import AppStatus from "../../components/app-status";
 
 
 export default function AppId() {
@@ -68,10 +69,8 @@ export default function AppId() {
                         </div>
 
                         <div className="flex items-center space-x-4">
-                            <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
-                                    onClick={() => updateApp(app)}>
-                                Install
-                            </button>
+                            <AppStatus app={app} />
+
                             <div className="text-sm">
                                 Version {app.packageVersion}
                             </div>

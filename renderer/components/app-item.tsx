@@ -1,14 +1,8 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBox, faChevronLeft, faDownload, faSearch, faStar, faWindowMaximize} from "@fortawesome/free-solid-svg-icons";
-import React, {useState} from "react";
-import {useMutate, useSelector} from "../state/store";
-import {setSearch} from "../state/action";
+import React from "react";
 import Link from "next/link";
-import {IApp, ITask} from "../helper/types";
-import {fixPackageIcon} from "../helper/util";
-import ProgressBarFull from "./progress-bar-full";
-import {addTaskToQueue, getTaskId} from "../helper/executor";
+import {IApp} from "../helper/types";
 import AppIcon from "./app-icon";
+import AppStatus from "./app-status";
 
 interface Props {
     app: IApp;
@@ -16,15 +10,6 @@ interface Props {
 
 export default function AppItem(props: Props) {
     const {app} = props;
-
-    const updateApp = async (app: IApp) => {
-        const task: ITask = {
-            id: getTaskId(),
-            packageIdentifier: app.packageIdentifier,
-            packageVersion: app.packageVersion,
-        };
-        addTaskToQueue(task);
-    };
 
     if (!app) {
         return (
@@ -52,15 +37,7 @@ export default function AppItem(props: Props) {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    {
-                        !app.task && !app.queuedtask &&
-                        <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
-                                onClick={() => updateApp(app)}>
-                            Install
-                        </button>
-                    }
-
-                    <ProgressBarFull task={app.task} queuedTask={app.queuedtask} />
+                    <AppStatus app={app} />
 
                     <div className="text-sm">
                         Version {app.packageVersion}
