@@ -13,14 +13,14 @@ ipcRendererMock.fake('browser-can-go-forward', async () => false);
 
 ipcRendererMock.fake('winget-upgrade', async (sentTask: ITask) => {
     const task = {
-        // ...taskFailed,
-        ...taskSuccess,
+        ...taskFailed,
+        // ...taskSuccess,
         id: sentTask.id,
     };
 
     for (const data of task.buffer) {
         ipcRendererMock.send('terminal', task, data);
-        await sleep(10);
+        await sleep(50);
     }
 
     return { exitCode: task.exitCode, signal: null };

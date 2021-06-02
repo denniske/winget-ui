@@ -14,6 +14,7 @@ import {setSearch} from "../state/action";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {ipcRenderer} from "../helper/bridge";
+import Terminal from "./terminal";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -68,7 +69,6 @@ export default function Layout(props: any) {
 
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
 
-
     // const [cmdProgress, setCmdProgress] = useState(-1);
     const [terminalBuffer, setTerminalBuffer] = useState([]);
     const queue = useSelector(state => state.queue);
@@ -100,14 +100,7 @@ export default function Layout(props: any) {
     };
 
     const handleLineFeed = (terminal: any) => {
-        // console.log('lf', terminal);
-        // console.log('lf', terminal._core.buffer.y);
-        // console.log('lf', terminal.cols, terminal._core.buffer.y + 2);
-
-        setTimeout(() => {
-                terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2));
-            }
-        );
+        setTimeout(() => terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2)));
     };
 
     let ImportedComponent = null
@@ -135,7 +128,6 @@ export default function Layout(props: any) {
     // if (cmdProgress >= 0 && cmdProgress <= 1) {
     //     cmdProgressStr = `Working ${cmdProgress * 100}%`;
     // }
-
 
     return (
         <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5]'>
@@ -209,36 +201,34 @@ export default function Layout(props: any) {
                 {/*    </div>*/}
                 {/*}*/}
 
-                <div className="p-4">
-                    {
-                        queue.map(item => (
-                            <div key={`${item.packageIdentifier}-${item.packageVersion}`}>
-                                {item.packageIdentifier} {item.packageVersion}
-                            </div>
-                        ))
-                    }
-                </div>
-
-                {
-                    currentTask &&
-                    <>
-                        {/*<div className="p-4">*/}
-                        {/*    <div>Current Task</div>*/}
-                        {/*    <div>*/}
-                        {/*        {currentTask.packageIdentifier} {currentTask.packageVersion}*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        <div className="flex bg-[#1B1B1B] p-4 overflow-auto min-h-[300px] border-t-[1px] border-[#4A4A4A]">
-                            {/*<div className="border-t-2 border-gray-700 bg-black p-4 rounded border-2 border-gray-300">*/}
-                            <div className="flex bg-[#333] p-4 rounded">
-                                {ImportedComponent}
-                            </div>
-                        </div>
-                    </>
-                }
-
+                {/*<div className="p-4">*/}
+                {/*    {*/}
+                {/*        queue.map(item => (*/}
+                {/*            <div key={`${item.packageIdentifier}-${item.packageVersion}`}>*/}
+                {/*                {item.packageIdentifier} {item.packageVersion}*/}
+                {/*            </div>*/}
+                {/*        ))*/}
+                {/*    }*/}
+                {/*</div>*/}
             </div>
+
+            <div className="fixed bottom-0 left-0 right-0">
+            {
+                currentTask &&
+                <div className="flex flex-col bg-[#1B1B1B] p-4 overflow-auto min-h-[900px] border-t-[1px] border-[#4A4A4A]">
+                    {/*<div className="border-t-2 border-gray-700 bg-black p-4 rounded border-2 border-gray-300">*/}
+
+                    <div className="p-4">
+                        Install {currentTask.packageIdentifier} ({currentTask.packageVersion})
+                    </div>
+
+                    <div className="flex self-start">
+                        <Terminal />
+                    </div>
+                </div>
+            }
+            </div>
+
         </div>
     );
 }
