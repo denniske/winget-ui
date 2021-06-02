@@ -34,7 +34,7 @@ export const dummyApps = [
             "1.4.2",
             "1.4.3"
         ],
-        "PackageIcon": "https://robomongo.org//static/favicon-11ace079.ico"
+        "PackageIcon": "https://robomongo.org/static/favicon-11ace079.ico"
     },
     {
         "PackageIdentifier": "3T.Robo3TBeta",
@@ -67,7 +67,7 @@ export const dummyApps = [
         "Versions": [
             "1.4.2-beta"
         ],
-        "PackageIcon": "https://robomongo.org//static/favicon-11ace079.ico"
+        "PackageIcon": "https://robomongo.org/static/favicon-11ace079.ico"
     },
     {
         "PackageIdentifier": "720kb.ndm",
@@ -128,7 +128,7 @@ export const dummyApps = [
         "Versions": [
             "0.10.4"
         ],
-        "PackageIcon": "https://getaya.co//img/fav/apple-touch-icon.png",
+        "PackageIcon": "https://getaya.co/img/fav/apple-touch-icon.png",
         "PackageImage": "https://getaya.co/img/cover-1070x710.png"
     },
     {
@@ -163,7 +163,7 @@ export const dummyApps = [
             "16.0.4",
             "19.00.00.0"
         ],
-        "PackageIcon": "https://www.7-zip.org//7ziplogo.png"
+        "PackageIcon": "https://www.7-zip.org/7ziplogo.png"
     },
     {
         "PackageIdentifier": "7zip.7zipAlpha",
@@ -199,7 +199,7 @@ export const dummyApps = [
             "21.01-alpha",
             "21.02-alpha"
         ],
-        "PackageIcon": "https://www.7-zip.org//7ziplogo.png"
+        "PackageIcon": "https://www.7-zip.org/7ziplogo.png"
     },
     {
         "PackageIdentifier": "8x8.VirtualOfficeDesktop",
@@ -222,7 +222,7 @@ export const dummyApps = [
             "7.4.3.5",
             "7.7.4.1"
         ],
-        "PackageIcon": "https://www.8x8.com/products//favicon-32x32.png?v=34d63ccce2ad2b59d709decf27324b1c",
+        "PackageIcon": "https://www.8x8.com/favicon-32x32.png?v=34d63ccce2ad2b59d709decf27324b1c",
         "PackageImage": "https://ik.imagekit.io/8x8/v3/assets/blte621f0a2bd0e9f69/bltb2b0fb5d9e475fd6/5e017c1212af1140b8e77789/8x8_productinterface_2848_web.jpg?cache=1587749791&tr=fo-auto,w-1200,h-628"
     },
     {
@@ -255,7 +255,7 @@ export const dummyApps = [
         "Versions": [
             "2005.08.29"
         ],
-        "PackageIcon": "http://cubeengine.com//favicon.ico"
+        "PackageIcon": "http://cubeengine.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Aardappel.Cube2",
@@ -287,7 +287,7 @@ export const dummyApps = [
         "Versions": [
             "2020.11.29"
         ],
-        "PackageIcon": "http://sauerbraten.org//favicon.ico"
+        "PackageIcon": "http://sauerbraten.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Abacus.AbaClient",
@@ -522,7 +522,7 @@ export const dummyApps = [
         "Versions": [
             "0.10.0"
         ],
-        "PackageIcon": "https://activitywatch.net//img/logo.png"
+        "PackageIcon": "https://activitywatch.net/img/logo.png"
     },
     {
         "PackageIdentifier": "AdamMiskiewicz.GraphiQL",
@@ -547,7 +547,7 @@ export const dummyApps = [
             "0.7.2"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/437bf28f9ee411f0ccf06679836b90759fb60a9804c914ac8259ad44d5c4a90f/skevy/graphiql-app"
+        "PackageImage": "https://opengraph.githubassets.com/c606dad935d22ead600952406086a66d2898aea6d63e1e77821d9ae5896814cf/skevy/graphiql-app"
     },
     {
         "PackageIdentifier": "AdGuard.AdGuard",
@@ -592,7 +592,7 @@ export const dummyApps = [
         "Versions": [
             "7.6.3572.0"
         ],
-        "PackageIcon": "https://adguard.com/en/adguard-windows//img/favicons/favicon.ico?version=3076",
+        "PackageIcon": "https://adguard.com/img/favicons/favicon.ico?version=3076",
         "PackageImage": "https://adguard.com/img/social/og-product-windows.jpg"
     },
     {
@@ -630,7 +630,7 @@ export const dummyApps = [
             "2021.001.20140",
             "2021.001.20155"
         ],
-        "PackageIcon": "https://acrobat.adobe.com/us/en/acrobat//content/dam/dx-dc/favicons/favicon.ico"
+        "PackageIcon": "https://acrobat.adobe.com/content/dam/dx-dc/favicons/favicon.ico"
     },
     {
         "PackageIdentifier": "Adobe.AdobeDigitalEditions",
@@ -667,7 +667,7 @@ export const dummyApps = [
         "Versions": [
             "4.5.11"
         ],
-        "PackageIcon": "https://www.adobe.com/solutions/ebook//favicon.ico"
+        "PackageIcon": "https://www.adobe.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Adobe.Brackets",
@@ -961,7 +961,7 @@ export const dummyApps = [
             "1.5.15",
             "1.6.11"
         ],
-        "PackageIcon": "https://motrix.app//favicon.ico"
+        "PackageIcon": "https://motrix.app/favicon.ico"
     },
     {
         "PackageIdentifier": "AgileBits.1Password",
@@ -1002,7 +1002,7 @@ export const dummyApps = [
             "7.6.801",
             "7.7.805"
         ],
-        "PackageIcon": "https://1password.com//favicon.ico",
+        "PackageIcon": "https://1password.com/favicon.ico",
         "PackageImage": "https://1password.com/img/meta-og-image.png"
     },
     {
@@ -1039,7 +1039,7 @@ export const dummyApps = [
         "Versions": [
             "2.16.414"
         ],
-        "PackageIcon": "https://www.agilent.com/en/product/liquid-chromatography/hplc-ce-software/instrument-control-software//cs/agilent_images/favicon.ico"
+        "PackageIcon": "https://www.agilent.com/cs/agilent_images/favicon.ico"
     },
     {
         "PackageIdentifier": "AIMP.AIMP",
@@ -1068,7 +1068,7 @@ export const dummyApps = [
             "4.70.2248",
             "4.70.2251"
         ],
-        "PackageIcon": "https://www.aimp.ru//v2/theme/images/tile120.png"
+        "PackageIcon": "https://www.aimp.ru/v2/theme/images/tile120.png"
     },
     {
         "PackageIdentifier": "Airsquared.Blobsaver",
@@ -1139,7 +1139,7 @@ export const dummyApps = [
         "Versions": [
             "4.9.8"
         ],
-        "PackageIcon": "http://akelpad.sourceforge.net/en//img/icon.ico"
+        "PackageIcon": "http://akelpad.sourceforge.net/img/icon.ico"
     },
     {
         "PackageIdentifier": "Alacritty.Alacritty",
@@ -1276,7 +1276,7 @@ export const dummyApps = [
             "1.1.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/4747195d3f5077014db2a33391cc640fa00077c469f5d8d43358c19de80d00ac/aleksey-hoffman/sigma-file-manager"
+        "PackageImage": "https://opengraph.githubassets.com/e57383d28044fe9a970d93fffbb1e1041c666f74ce0b2b778c25d56b48232ec6/aleksey-hoffman/sigma-file-manager"
     },
     {
         "PackageIdentifier": "AlexanderKojevnikov.Spek",
@@ -1631,7 +1631,7 @@ export const dummyApps = [
         "Versions": [
             "4.0"
         ],
-        "PackageIcon": "https://www.altap.cz//favicon.1508784171.ico"
+        "PackageIcon": "https://www.altap.cz/favicon.1508784171.ico"
     },
     {
         "PackageIdentifier": "AltDrag.AltDrag",
@@ -1661,7 +1661,7 @@ export const dummyApps = [
         "Versions": [
             "1.1"
         ],
-        "PackageIcon": "https://stefansundin.github.io/altdrag//altdrag/img/icon32.png",
+        "PackageIcon": "https://stefansundin.github.io/altdrag/img/icon32.png",
         "PackageImage": "https://stefansundin.github.io/altdrag/img/icon256.png"
     },
     {
@@ -2119,7 +2119,7 @@ export const dummyApps = [
         "Versions": [
             "5.5.0"
         ],
-        "PackageIcon": "https://getferdi.com//icons/icon-48x48.png?v=82051aac8bee2aaffa68a233b233438f",
+        "PackageIcon": "https://getferdi.com/icons/icon-48x48.png?v=82051aac8bee2aaffa68a233b233438f",
         "PackageImage": "https://repository-images.githubusercontent.com/169383267/0190e000-f2cd-11e9-85ca-66f5ab21e57a"
     },
     {
@@ -2145,7 +2145,7 @@ export const dummyApps = [
             "2020.11",
             "2021.05"
         ],
-        "PackageIcon": "https://www.anaconda.com/products//assets/build/favicons/apple-touch-icon-5bbdb087c5.png",
+        "PackageIcon": "https://www.anaconda.com/assets/build/favicons/apple-touch-icon-5bbdb087c5.png",
         "PackageImage": "https://assets-cdn.anaconda.com/assets/_1200x630_fit_center-center_82_none/anaconda-meta.jpg?mtime=20200506175707&focal=none&tmtime=20210216163404"
     },
     {
@@ -2275,7 +2275,7 @@ export const dummyApps = [
         "Versions": [
             "3.7.1"
         ],
-        "PackageIcon": "https://angryip.org//images/icon.png"
+        "PackageIcon": "https://angryip.org/images/icon.png"
     },
     {
         "PackageIdentifier": "AngusJohnson.ResourceHacker",
@@ -2340,7 +2340,7 @@ export const dummyApps = [
             "2.1.43",
             "2.1.44"
         ],
-        "PackageIcon": "https://apps.ankiweb.net//favicon.ico"
+        "PackageIcon": "https://apps.ankiweb.net/favicon.ico"
     },
     {
         "PackageIdentifier": "AntibodySoftware.BulkImageDownloader",
@@ -2372,7 +2372,7 @@ export const dummyApps = [
         "Versions": [
             "5.88"
         ],
-        "PackageIcon": "https://bulkimagedownloader.com//apple-touch-icon.png"
+        "PackageIcon": "https://bulkimagedownloader.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "AntibodySoftware.WizFile",
@@ -2469,7 +2469,7 @@ export const dummyApps = [
         "Versions": [
             "1.7.0.3"
         ],
-        "PackageIcon": "https://antibody-software.com//apple-touch-icon.png"
+        "PackageIcon": "https://antibody-software.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "AntibodySoftware.WizTree",
@@ -2507,7 +2507,7 @@ export const dummyApps = [
         "Versions": [
             "3.41"
         ],
-        "PackageIcon": "https://wiztreefree.com//apple-touch-icon.png"
+        "PackageIcon": "https://wiztreefree.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "AntiMicro.AntiMicro",
@@ -2697,7 +2697,7 @@ export const dummyApps = [
         "Versions": [
             "2.0.0-M16"
         ],
-        "PackageIcon": "https://directory.apache.org/studio//images/server-icon_16x16.png"
+        "PackageIcon": "https://directory.apache.org/images/server-icon_16x16.png"
     },
     {
         "PackageIdentifier": "Apache.OpenOffice",
@@ -2764,7 +2764,7 @@ export const dummyApps = [
             "8.0.5-0",
             "8.0.6-0"
         ],
-        "PackageIcon": "https://www.apachefriends.org//images/favicon-18f9bd42.png"
+        "PackageIcon": "https://www.apachefriends.org/images/favicon-18f9bd42.png"
     },
     {
         "PackageIdentifier": "appget.appget",
@@ -2794,7 +2794,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.12.0"
         ],
-        "PackageIcon": "https://appget.net//favicon.ico"
+        "PackageIcon": "https://appget.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Apple.iTunes",
@@ -2856,8 +2856,8 @@ export const dummyApps = [
         "Versions": [
             "3.12.3272.0"
         ],
-        "PackageIcon": "https://simplyfortran.com//static/favicon.png",
-        "PackageImage": "https://simplyfortran.com//static/screenshots/debug_bphGUAr.png"
+        "PackageIcon": "https://simplyfortran.com/static/favicon.png",
+        "PackageImage": "https://simplyfortran.com/static/screenshots/start_lD6WxTh.png"
     },
     {
         "PackageIdentifier": "AppWork.JDownloader",
@@ -2880,7 +2880,7 @@ export const dummyApps = [
         "Versions": [
             "2.0"
         ],
-        "PackageIcon": "https://jdownloader.org//lib/tpl/arctic/images/favicon.ico"
+        "PackageIcon": "https://jdownloader.org/lib/tpl/arctic/images/favicon.ico"
     },
     {
         "PackageIdentifier": "Arduino.Arduino",
@@ -2912,7 +2912,7 @@ export const dummyApps = [
             "1.8.12",
             "1.8.13"
         ],
-        "PackageIcon": "https://www.arduino.cc/en/software//wiki/favicon-32x32.png?v=23330209a9e4870226e34963941206b6",
+        "PackageIcon": "https://www.arduino.cc/wiki/favicon-32x32.png?v=23330209a9e4870226e34963941206b6",
         "PackageImage": "https://content.arduino.cc/assets/arduino_logo_1200x630-01.png"
     },
     {
@@ -3017,7 +3017,7 @@ export const dummyApps = [
             "0.2.8.3.5",
             "0.2.9.1.0"
         ],
-        "PackageIcon": "http://www.armagetronad.org//favicon.ico"
+        "PackageIcon": "http://www.armagetronad.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Armin2208.WindowsAutoNightMode",
@@ -3076,7 +3076,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.3"
         ],
-        "PackageIcon": "http://artha.sourceforge.net/wiki/index.php//wiki/skins/common/images/favicon.ico"
+        "PackageIcon": "http://artha.sourceforge.net/wiki/skins/common/images/favicon.ico"
     },
     {
         "PackageIdentifier": "ArtifexSoftware.GhostScript",
@@ -3148,7 +3148,7 @@ export const dummyApps = [
         "Versions": [
             "4.2.3.1"
         ],
-        "PackageIcon": "https://www.artsoft.org/rocksndiamonds//apple-touch-icon.png"
+        "PackageIcon": "https://www.artsoft.org/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "AshleyStone.DefaultAudio",
@@ -3404,7 +3404,7 @@ export const dummyApps = [
             "1.7.8",
             "1.7.9"
         ],
-        "PackageIcon": "https://authpass.app//favicon.ico"
+        "PackageIcon": "https://authpass.app/favicon.ico"
     },
     {
         "PackageIdentifier": "Autodesk.Fusion360",
@@ -3645,7 +3645,7 @@ export const dummyApps = [
         "Versions": [
             "2.6.0"
         ],
-        "PackageIcon": "http://www.avisynth.org//images/avisynth-logo-gears-favicon.ico"
+        "PackageIcon": "http://www.avisynth.org/images/avisynth-logo-gears-favicon.ico"
     },
     {
         "PackageIdentifier": "AxCrypt.AxCrypt",
@@ -3675,7 +3675,7 @@ export const dummyApps = [
         "Versions": [
             "2.1.1617.0"
         ],
-        "PackageIcon": "https://www.axantum.com/LegacyAxCrypt//Images/favicon.ico"
+        "PackageIcon": "https://www.axantum.com/Images/favicon.ico"
     },
     {
         "PackageIdentifier": "AxisCommunications.AxisCameraStation",
@@ -3710,7 +3710,7 @@ export const dummyApps = [
             "5.36.292",
             "5.37.301"
         ],
-        "PackageIcon": "https://www.axis.com/products//sites/all/themes/axis_bootstrap_subtheme/favicon.ico"
+        "PackageIcon": "https://www.axis.com/sites/all/themes/axis_bootstrap_subtheme/favicon.ico"
     },
     {
         "PackageIdentifier": "AxisCommunications.AxisCameraStation-Preview",
@@ -3752,7 +3752,7 @@ export const dummyApps = [
             "0.2120.46",
             "0.2121.47"
         ],
-        "PackageIcon": "https://www.axis.com/products//sites/all/themes/axis_bootstrap_subtheme/favicon.ico"
+        "PackageIcon": "https://www.axis.com/sites/all/themes/axis_bootstrap_subtheme/favicon.ico"
     },
     {
         "PackageIdentifier": "Axosoft.GitKraken",
@@ -3781,7 +3781,7 @@ export const dummyApps = [
         "Versions": [
             "7.6.1"
         ],
-        "PackageIcon": "https://www.gitkraken.com//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://www.gitkraken.com/apple-touch-icon-57x57.png",
         "PackageImage": "https://www.gitkraken.com/img/og/og-git-client.png"
     },
     {
@@ -3932,7 +3932,7 @@ export const dummyApps = [
             "1.12",
             "1.13"
         ],
-        "PackageIcon": "https://renderdoc.org//favicon.ico"
+        "PackageIcon": "https://renderdoc.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Balena.BalenaCLI",
@@ -3983,7 +3983,7 @@ export const dummyApps = [
             "12.44.8",
             "12.44.9"
         ],
-        "PackageIcon": "https://www.balena.io/docs/reference/balena-cli//docs/favicon.png",
+        "PackageIcon": "https://www.balena.io/docs/favicon.png",
         "PackageImage": "https://www.balena.io/docs/img/logo.png"
     },
     {
@@ -4022,7 +4022,7 @@ export const dummyApps = [
             "1.5.88",
             "1.5.95"
         ],
-        "PackageIcon": "https://www.balena.io/etcher//static/favicon-1cca17fb2763770422e49a1e4a9ae6b2.ico",
+        "PackageIcon": "https://www.balena.io/static/favicon-1cca17fb2763770422e49a1e4a9ae6b2.ico",
         "PackageImage": "https://www.balena.io/etcher/avatar.png"
     },
     {
@@ -4069,7 +4069,7 @@ export const dummyApps = [
             "7.16"
         ],
         "PackageIcon": "https://www.bandisoft.com/img/logo.png",
-        "PackageImage": "https://www.bandisoft.com/bandizip//img/og/bandizip.png?2"
+        "PackageImage": "https://www.bandisoft.com/img/og/bandizip.png?2"
     },
     {
         "PackageIdentifier": "Bandisoft.Honeyview",
@@ -4101,7 +4101,7 @@ export const dummyApps = [
             "5.38"
         ],
         "PackageIcon": "https://www.bandisoft.com/img/bandisoft.png",
-        "PackageImage": "https://www.bandisoft.com/honeyview//img/og/honeyview.png"
+        "PackageImage": "https://www.bandisoft.com/img/og/honeyview.png"
     },
     {
         "PackageIdentifier": "basilisk.basilisk",
@@ -4245,7 +4245,7 @@ export const dummyApps = [
             "1.11.6"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/c709a2b3319b1bb6a25e64413fbc7e92132d768811cb37ed279d45152bd72161/beekeeper-studio/beekeeper-studio"
+        "PackageImage": "https://opengraph.githubassets.com/05a86d2d0512c17d5fc8bc444eee6ee050e6104311dd173eb914cfe1d4c6f8df/beekeeper-studio/beekeeper-studio"
     },
     {
         "PackageIdentifier": "Belarc.Advisor",
@@ -4321,7 +4321,7 @@ export const dummyApps = [
             "11.0.9.101",
             "11.0.9.11"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4365,7 +4365,7 @@ export const dummyApps = [
             "11.0.9.101",
             "11.0.9.11"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4403,7 +4403,7 @@ export const dummyApps = [
             "14.0.1.8",
             "14.0.2.13"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4443,7 +4443,7 @@ export const dummyApps = [
             "14.0.1.8",
             "14.0.2.13"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4482,7 +4482,7 @@ export const dummyApps = [
             "15.0.1.9",
             "15.0.2.10"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4523,7 +4523,7 @@ export const dummyApps = [
             "15.0.1.9",
             "15.0.2.10"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4561,7 +4561,7 @@ export const dummyApps = [
             "16.0.0.36",
             "16.0.1.9"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4601,7 +4601,7 @@ export const dummyApps = [
             "16.0.0.36",
             "16.0.1.9"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4644,7 +4644,7 @@ export const dummyApps = [
             "8.0.282.8",
             "8.0.292.10"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4689,7 +4689,7 @@ export const dummyApps = [
             "8.0.282.8",
             "8.0.292.10"
         ],
-        "PackageIcon": "https://bell-sw.com//assets/images/favicon.ico",
+        "PackageIcon": "https://bell-sw.com/assets/images/favicon.ico",
         "PackageImage": "https://bell-sw.com/assets/images/logo-bellsoft.svg"
     },
     {
@@ -4790,7 +4790,7 @@ export const dummyApps = [
             "2.5.0.0",
             "2.7.0.2"
         ],
-        "PackageIcon": "https://www.biglybt.com//apple-touch-icon.png",
+        "PackageIcon": "https://www.biglybt.com/apple-touch-icon.png",
         "PackageImage": "https://www.biglybt.com/android-chrome-256x256.png"
     },
     {
@@ -4827,7 +4827,7 @@ export const dummyApps = [
         "Versions": [
             "3.15.0.1649"
         ],
-        "PackageIcon": "https://live.bilibili.com///www.bilibili.com/favicon.ico"
+        "PackageIcon": "https://www.bilibili.com/favicon.ico"
     },
     {
         "PackageIdentifier": "BinaryFortress.ClipboardFusion",
@@ -4862,7 +4862,7 @@ export const dummyApps = [
             "5.8.4.0",
             "5.9.0.0"
         ],
-        "PackageIcon": "https://www.clipboardfusion.com//favicon.ico",
+        "PackageIcon": "https://www.clipboardfusion.com/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/ClipboardFusion.png"
     },
     {
@@ -4894,7 +4894,7 @@ export const dummyApps = [
             "9.7.0.0",
             "9.8.0.0"
         ],
-        "PackageIcon": "https://www.displayfusion.com//favicon.ico",
+        "PackageIcon": "https://www.displayfusion.com/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/DisplayFusion.png"
     },
     {
@@ -4926,7 +4926,7 @@ export const dummyApps = [
             "6.4.0.0",
             "6.6.0.0"
         ],
-        "PackageIcon": "https://www.fileseek.ca//favicon.ico",
+        "PackageIcon": "https://www.fileseek.ca/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/FileSeek.png"
     },
     {
@@ -4961,7 +4961,7 @@ export const dummyApps = [
             "6.4.1.0",
             "6.5.0.0"
         ],
-        "PackageIcon": "https://www.logfusion.ca//favicon.ico",
+        "PackageIcon": "https://www.logfusion.ca/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/LogFusion.png"
     },
     {
@@ -4992,7 +4992,7 @@ export const dummyApps = [
             "4.4.0.0",
             "4.5.0.0"
         ],
-        "PackageIcon": "https://www.traystatus.com//favicon.ico",
+        "PackageIcon": "https://www.traystatus.com/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/TrayStatus.png"
     },
     {
@@ -5024,7 +5024,7 @@ export const dummyApps = [
             "3.7.1.0",
             "3.7.2.0"
         ],
-        "PackageIcon": "https://www.voicebot.net//favicon.ico",
+        "PackageIcon": "https://www.voicebot.net/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/VoiceBot.png"
     },
     {
@@ -5051,7 +5051,7 @@ export const dummyApps = [
             "2.5.0.0",
             "2.6.0.0"
         ],
-        "PackageIcon": "https://www.binaryfortress.com/WindowInspector//favicon.ico",
+        "PackageIcon": "https://www.binaryfortress.com/favicon.ico",
         "PackageImage": "https://www.binaryfortress.com/MediaCommon/Products/256/WindowInspector.png"
     },
     {
@@ -5093,7 +5093,7 @@ export const dummyApps = [
             "1.6.2",
             "1.6.4"
         ],
-        "PackageIcon": "https://bisq.network//images/apple-touch-icon.png",
+        "PackageIcon": "https://bisq.network/images/apple-touch-icon.png",
         "PackageImage": "https://bisq.network/images/bisq-og.jpg"
     },
     {
@@ -5123,7 +5123,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://www.bitvise.com//files/n-logo.svg"
+        "PackageIcon": "https://www.bitvise.com/files/n-logo.svg"
     },
     {
         "PackageIdentifier": "Bitwarden.Bitwarden",
@@ -5168,7 +5168,7 @@ export const dummyApps = [
             "1.26.3",
             "1.26.4"
         ],
-        "PackageIcon": "https://bitwarden.com//images/icons/apple-touch-icon.png",
+        "PackageIcon": "https://bitwarden.com/images/icons/apple-touch-icon.png",
         "PackageImage": "https://bitwarden.com/images/social-banner.png"
     },
     {
@@ -5205,7 +5205,7 @@ export const dummyApps = [
             "3.3.6",
             "3.3.7"
         ],
-        "PackageIcon": "https://www.bitwig.com//static/img/favicon/ios/57x57.png"
+        "PackageIcon": "https://www.bitwig.com/static/img/favicon/ios/57x57.png"
     },
     {
         "PackageIdentifier": "Blade.Shadow",
@@ -5237,7 +5237,7 @@ export const dummyApps = [
         "Versions": [
             "5.0.963.7431"
         ],
-        "PackageIcon": "https://shadow.tech//favicon-32x32.png"
+        "PackageIcon": "https://shadow.tech/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "BleachBit.BleachBit",
@@ -5425,7 +5425,7 @@ export const dummyApps = [
             "5.11",
             "6.3"
         ],
-        "PackageIcon": "https://www.embarcadero.com/de/free-tools//templates/t3_bs3_blank/favicon.ico"
+        "PackageIcon": "https://www.embarcadero.com/templates/t3_bs3_blank/favicon.ico"
     },
     {
         "PackageIdentifier": "bluecfd.bluecfd",
@@ -5692,7 +5692,7 @@ export const dummyApps = [
             "1.0.3",
             "1.1.4"
         ],
-        "PackageIcon": "https://glogg.bonnefon.org//images/favicon.png"
+        "PackageIcon": "https://glogg.bonnefon.org/images/favicon.png"
     },
     {
         "PackageName": "Wavebox",
@@ -5728,7 +5728,7 @@ export const dummyApps = [
             "10.0.462.2",
             "10.0.518.2"
         ],
-        "PackageIcon": "https://wavebox.io//favicon.ico",
+        "PackageIcon": "https://wavebox.io/favicon.ico",
         "PackageImage": "https://wavebox.io/images/wavebox_work_browser.jpg"
     },
     {
@@ -5767,7 +5767,7 @@ export const dummyApps = [
             "0.17.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/0d840aa56e5172a63728803bbeb3d7b4454d0912392b72bb36304076acaf7178/BoostIO/BoostNote.next"
+        "PackageImage": "https://opengraph.githubassets.com/26a7bdd154c7ef7d0415d98aacc89df7a280a5e3f7b6187c8f79a429f83b7c6a/BoostIO/BoostNote.next"
     },
     {
         "PackageIdentifier": "Bopsoft.Listary",
@@ -5838,7 +5838,7 @@ export const dummyApps = [
             "4.8.0",
             "4.8.1"
         ],
-        "PackageIcon": "https://www.httpmaster.net//favicon.ico"
+        "PackageIcon": "https://www.httpmaster.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Borvid.HttpMasterProfessional",
@@ -5878,7 +5878,7 @@ export const dummyApps = [
             "4.8.0",
             "4.8.1"
         ],
-        "PackageIcon": "https://www.httpmaster.net//favicon.ico"
+        "PackageIcon": "https://www.httpmaster.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Boxstar.deepvocal",
@@ -6217,7 +6217,7 @@ export const dummyApps = [
             "2.2.4_5",
             "2.2.5_1"
         ],
-        "PackageIcon": "https://www.bricklink.com/v2/build///static.bricklink.com/renovate/img/favicon/apple-touch-icon.png"
+        "PackageIcon": "https://static.bricklink.com/renovate/img/favicon/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Brother.CanvasWorkspace",
@@ -6251,7 +6251,7 @@ export const dummyApps = [
         "Versions": [
             "2.5.0"
         ],
-        "PackageIcon": "https://canvasworkspace.brother.com//brother_icon.ico"
+        "PackageIcon": "https://canvasworkspace.brother.com/brother_icon.ico"
     },
     {
         "PackageIdentifier": "BrutalChess.BrutalChess",
@@ -6281,7 +6281,7 @@ export const dummyApps = [
         "Versions": [
             "0.5.2"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/brutalchess///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://sourceforge.net//a.fsdn.com/con/app/proj/brutalchess/screenshots/69159.jpg/1"
     },
     {
@@ -6333,7 +6333,7 @@ export const dummyApps = [
             "1.19.0",
             "1.20.0"
         ],
-        "PackageIcon": "https://buttercup.pw//static/img/buttercup.ico"
+        "PackageIcon": "https://buttercup.pw/static/img/buttercup.ico"
     },
     {
         "PackageIdentifier": "bytedance.bytedance-devtool",
@@ -6400,7 +6400,7 @@ export const dummyApps = [
             "2.4.20",
             "2.4.22"
         ],
-        "PackageIcon": "https://www.bzflag.org//assets/images/macos.svg",
+        "PackageIcon": "https://www.bzflag.org/assets/images/macos.svg",
         "PackageImage": "https://www.bzflag.org/assets/images/opengraph.jpg"
     },
     {
@@ -6466,7 +6466,7 @@ export const dummyApps = [
             "4.3.5.10"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/18e1fbfc6ddf0b3316910e22ccdc1aa68e9852b105d9f8975115e2e3cdb0895b/c0re100/qBittorrent-Enhanced-Edition"
+        "PackageImage": "https://opengraph.githubassets.com/107192c2b9bd04ceebecf21afe516a8d32c352653b4147c64ef88953cd55690a/c0re100/qBittorrent-Enhanced-Edition"
     },
     {
         "PackageIdentifier": "calibre.calibre",
@@ -6513,7 +6513,7 @@ export const dummyApps = [
             "5.8.1",
             "5.9.0"
         ],
-        "PackageIcon": "https://calibre-ebook.com//favicon.png"
+        "PackageIcon": "https://calibre-ebook.com/favicon.png"
     },
     {
         "PackageIdentifier": "cangzhang.champ-r",
@@ -6547,7 +6547,7 @@ export const dummyApps = [
             "1.0.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/88528f398c3ab021cea311c9ea1d1ff51a81582d747a77924d5fa091831baa2d/cangzhang/champ-r"
+        "PackageImage": "https://opengraph.githubassets.com/3b691010a34bddfd3005fa659a2455be2a206a40086626e8046df26abb27ea8f/cangzhang/champ-r"
     },
     {
         "PackageIdentifier": "Canneverbe.CDBurnerXP",
@@ -6740,7 +6740,7 @@ export const dummyApps = [
         "Versions": [
             "18.3"
         ],
-        "PackageIcon": "https://www.advancedinstaller.com//favicons/apple-icon-57x57.png",
+        "PackageIcon": "https://www.advancedinstaller.com/favicons/apple-icon-57x57.png",
         "PackageImage": "http://www.advancedinstaller.com/img/all/advanced-installer-og.png"
     },
     {
@@ -6772,7 +6772,7 @@ export const dummyApps = [
         "Versions": [
             "1.1.0.0"
         ],
-        "PackageIcon": "https://www.advancedinstaller.com//favicons/apple-icon-57x57.png",
+        "PackageIcon": "https://www.advancedinstaller.com/favicons/apple-icon-57x57.png",
         "PackageImage": "http://www.advancedinstaller.com/img/all/advanced-installer-og.png"
     },
     {
@@ -6838,7 +6838,7 @@ export const dummyApps = [
         "Versions": [
             "8.0.0"
         ],
-        "PackageIcon": "https://mathewsachin.github.io/Captura//Captura/assets/favicon.ico"
+        "PackageIcon": "https://mathewsachin.github.io/Captura/assets/favicon.ico"
     },
     {
         "PackageIdentifier": "Caret.Caret",
@@ -6863,7 +6863,7 @@ export const dummyApps = [
             "3.4.6",
             "4.0"
         ],
-        "PackageIcon": "https://caret.io//favicon.ico",
+        "PackageIcon": "https://caret.io/favicon.ico",
         "PackageImage": "https://caret.io/social.png"
     },
     {
@@ -7099,7 +7099,7 @@ export const dummyApps = [
             "1.1.9"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/b0cbed624dbbb83164f0cf10f2c977fbf65b3943d9ab0c1bec0efae6d7a47b9b/ChanpleCai/SmartTaskbar"
+        "PackageImage": "https://opengraph.githubassets.com/0189a4c3076b01fb90b06a40fd8fbfd07592062f6dcc42d20189bf57109f9706/ChanpleCai/SmartTaskbar"
     },
     {
         "PackageIdentifier": "Chatty.Chatty",
@@ -7148,8 +7148,8 @@ export const dummyApps = [
             "4.12.0",
             "4.13.3"
         ],
-        "PackageIcon": "https://downloads.chef.io/tools//img/Downloads_Meta_Meta-Image_800x800.png",
-        "PackageImage": "https://downloads.chef.io/tools//img/Downloads_Meta_Meta-Image_800x800.png"
+        "PackageIcon": "https://downloads.chef.io/img/Downloads_Meta_Meta-Image_800x800.png",
+        "PackageImage": "https://downloads.chef.io/img/Downloads_Meta_Meta-Image_800x800.png"
     },
     {
         "PackageIdentifier": "ChemAxon.instantjchem",
@@ -7429,7 +7429,7 @@ export const dummyApps = [
             "1.2.9"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/0533ad49e5c266c6cdd5840f61bbf3bb1957e001ba0a15e2579ede2da708379a/chrisant996/clink"
+        "PackageImage": "https://opengraph.githubassets.com/fa7f7ea3285250b8d4b6d10174c9bb52424f89e101faa2c5e3d89c6a686cc48d/chrisant996/clink"
     },
     {
         "PackageIdentifier": "ChristianAviBulan.GlassCannon",
@@ -7512,7 +7512,7 @@ export const dummyApps = [
         "Versions": [
             "2.4"
         ],
-        "PackageIcon": "https://lightscreen.com.ar//images/favicon.ico"
+        "PackageIcon": "https://lightscreen.com.ar/images/favicon.ico"
     },
     {
         "PackageIdentifier": "ChristianSchenk.MiKTeX",
@@ -7625,7 +7625,7 @@ export const dummyApps = [
             "41.5.5.12",
             "41.5.6.9"
         ],
-        "PackageIcon": "https://www.webex.com//etc/designs/wbx/eopi/images/favicon.ico",
+        "PackageIcon": "https://www.webex.com/etc/designs/wbx/eopi/images/favicon.ico",
         "PackageImage": "https://www.webex.com/content/dam/wbx/global/images/branding/cisco-webex-logo291x291.png"
     },
     {
@@ -7677,7 +7677,7 @@ export const dummyApps = [
         "Versions": [
             "41.5.0.18911"
         ],
-        "PackageIcon": "https://www.webex.com//etc/designs/wbx/eopi/images/favicon.ico",
+        "PackageIcon": "https://www.webex.com/etc/designs/wbx/eopi/images/favicon.ico",
         "PackageImage": "https://www.webex.com/content/dam/wbx/global/images/branding/cisco-webex-logo291x291.png"
     },
     {
@@ -7778,7 +7778,7 @@ export const dummyApps = [
             "0.6.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/aba29e6d3ada00709b68d0fb759678e9e7ebcec3d1ea4d1f431e8a41e524496a/ClementTsang/bottom"
+        "PackageImage": "https://opengraph.githubassets.com/57dde63989d89b05ad29fdf9d844a43e10817801f58c5960bad71341ba104eac/ClementTsang/bottom"
     },
     {
         "PackageIdentifier": "Clementine.Clementine",
@@ -7814,7 +7814,7 @@ export const dummyApps = [
             "1.3.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/00b6ea68c3acf1991da965873379cf5939eadb12ef73b1e106dcb7173d1a3cd2/clementine-player/Clementine"
+        "PackageImage": "https://opengraph.githubassets.com/3d29d23037f37f5076e74c92dec772792569c7d258956904b9e774dfc612cb22/clementine-player/Clementine"
     },
     {
         "PackageIdentifier": "CloudApp.CloudApp",
@@ -7988,7 +7988,7 @@ export const dummyApps = [
         "Versions": [
             "1.28"
         ],
-        "PackageIcon": "https://www.cockos.com/licecap//favicon.ico"
+        "PackageIcon": "https://www.cockos.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Cockos.REAPER",
@@ -8122,7 +8122,7 @@ export const dummyApps = [
         "Versions": [
             "20.03"
         ],
-        "PackageIcon": "https://www.codeblocks.org//images/logo48.png"
+        "PackageIcon": "https://www.codeblocks.org/images/logo48.png"
     },
     {
         "PackageIdentifier": "CodecGuide.K-LiteCodecPackBasic",
@@ -8299,7 +8299,7 @@ export const dummyApps = [
             "14.0.0",
             "15.0.0"
         ],
-        "PackageIcon": "https://codelite.org//favicon.ico"
+        "PackageIcon": "https://codelite.org/favicon.ico"
     },
     {
         "PackageIdentifier": "CodeSector.TeraCopy",
@@ -8333,7 +8333,7 @@ export const dummyApps = [
         "Versions": [
             "3.8.2.0"
         ],
-        "PackageIcon": "https://www.codesector.com//img/favicon.png"
+        "PackageIcon": "https://www.codesector.com/img/favicon.png"
     },
     {
         "PackageIdentifier": "Codeusa.BorderlessGaming",
@@ -8363,7 +8363,7 @@ export const dummyApps = [
             "9.5.6"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/59c66407417dd45371655a82aaf8e6c308fdbc6143ceed9f53336ca8b5751caa/Codeusa/Borderless-Gaming"
+        "PackageImage": "https://opengraph.githubassets.com/b22559aa310f32dc482e51a8e082dff2639acd4ab8c1bb84d71b04c24415786c/Codeusa/Borderless-Gaming"
     },
     {
         "PackageIdentifier": "ColdTurkeySoftware.ColdTurkeyBlocker",
@@ -8395,8 +8395,8 @@ export const dummyApps = [
         "Versions": [
             "4.3"
         ],
-        "PackageIcon": "https://getcoldturkey.com///getcoldturkey.com/assets/icons/favicon.ico",
-        "PackageImage": "https://getcoldturkey.com///getcoldturkey.com/assets/icons/og-logo.png"
+        "PackageIcon": "https://getcoldturkey.com/assets/icons/favicon.ico",
+        "PackageImage": "https://getcoldturkey.com/assets/icons/og-logo.png"
     },
     {
         "PackageIdentifier": "colinharrison.xming",
@@ -8426,7 +8426,7 @@ export const dummyApps = [
         "Versions": [
             "6.9.0.31"
         ],
-        "PackageIcon": "http://www.straightrunning.com/XmingNotes//favicon.ico"
+        "PackageIcon": "http://www.straightrunning.com/favicon.ico"
     },
     {
         "PackageIdentifier": "CollegeBoard.2021DigitalAPExams",
@@ -8586,7 +8586,7 @@ export const dummyApps = [
             "0.10.2",
             "0.12.0"
         ],
-        "PackageIcon": "https://cxong.github.io/cdogs-sdl//cdogs-sdl/favicon.ico"
+        "PackageIcon": "https://cxong.github.io/cdogs-sdl/favicon.ico"
     },
     {
         "PackageIdentifier": "Contasimple.ContasimpleDesktop",
@@ -8674,7 +8674,7 @@ export const dummyApps = [
         "Versions": [
             "9.1.0"
         ],
-        "PackageIcon": "https://copytranslator.github.io//icon.png"
+        "PackageIcon": "https://copytranslator.github.io/icon.png"
     },
     {
         "PackageIdentifier": "Coq.CoqPlatform",
@@ -8720,7 +8720,7 @@ export const dummyApps = [
             "24.0.14033",
             "25.0.14273"
         ],
-        "PackageIcon": "https://www.winzip.com/mac/en//static/images/layout/wz-logo.png",
+        "PackageIcon": "https://www.winzip.com/static/images/layout/wz-logo.png",
         "PackageImage": "https://www.winzip.com/static/images/social/winzip.jpg"
     },
     {
@@ -8764,7 +8764,7 @@ export const dummyApps = [
             "4.11.274",
             "4.9.350"
         ],
-        "PackageIcon": "https://www.corsair.com/us/en//_ui/responsive/theme-alpha/images/favicon.ico"
+        "PackageIcon": "https://www.corsair.com/_ui/responsive/theme-alpha/images/favicon.ico"
     },
     {
         "PackageIdentifier": "CorsixTH.CorsixTH",
@@ -8869,7 +8869,7 @@ export const dummyApps = [
         "Versions": [
             "6.5.1"
         ],
-        "PackageIcon": "https://www.couchbase.com//webfiles/1621509098989/images/favicon.ico"
+        "PackageIcon": "https://www.couchbase.com/webfiles/1622629224392/images/favicon.ico"
     },
     {
         "PackageIdentifier": "Couchbase.ServerEnterprise",
@@ -8902,7 +8902,7 @@ export const dummyApps = [
             "6.5.1",
             "6.6.9213"
         ],
-        "PackageIcon": "https://www.couchbase.com//webfiles/1621509098989/images/favicon.ico"
+        "PackageIcon": "https://www.couchbase.com/webfiles/1622629224392/images/favicon.ico"
     },
     {
         "PackageIdentifier": "CozyCloud.CozyDrive",
@@ -8962,7 +8962,7 @@ export const dummyApps = [
         "Versions": [
             "2.3"
         ],
-        "PackageIcon": "http://cppcheck.sourceforge.net//favicon.ico"
+        "PackageIcon": "http://cppcheck.sourceforge.net/favicon.ico"
     },
     {
         "PackageIdentifier": "CPUID.CPU-Z",
@@ -9121,8 +9121,8 @@ export const dummyApps = [
             "8.8.9",
             "8.9.0a"
         ],
-        "PackageIcon": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
-        "PackageImage": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
+        "PackageIcon": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
+        "PackageImage": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
     },
     {
         "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfoKureiKeiEdition",
@@ -9166,8 +9166,8 @@ export const dummyApps = [
             "8.8.9",
             "8.9.0a"
         ],
-        "PackageIcon": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
-        "PackageImage": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
+        "PackageIcon": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
+        "PackageImage": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
     },
     {
         "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfoShizukuEdition",
@@ -9211,8 +9211,8 @@ export const dummyApps = [
             "8.8.9",
             "8.9.0a"
         ],
-        "PackageIcon": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
-        "PackageImage": "https://crystalmark.info/en/software/crystaldiskinfo//wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
+        "PackageIcon": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg",
+        "PackageImage": "https://crystalmark.info/wp-content/uploads/CrystalDiskInfo7_300x250.jpg"
     },
     {
         "PackageIdentifier": "CrystalDewWorld.CrystalDiskMark",
@@ -9345,7 +9345,7 @@ export const dummyApps = [
             "3.3.4.139",
             "3.4.2"
         ],
-        "PackageIcon": "https://lockhunter.com//assets/images/logo2.png"
+        "PackageIcon": "https://lockhunter.com/assets/images/logo2.png"
     },
     {
         "PackageIdentifier": "CrystalRich.USBSafelyRemove",
@@ -9374,7 +9374,7 @@ export const dummyApps = [
         "Versions": [
             "6.3.2"
         ],
-        "PackageIcon": "https://safelyremove.com//assets/images/sr-logo.png",
+        "PackageIcon": "https://safelyremove.com/assets/images/sr-logo.png",
         "PackageImage": "http://safelyremove.com/assets/images/sr/sr-icon-huge.png"
     },
     {
@@ -9404,7 +9404,7 @@ export const dummyApps = [
         "Versions": [
             "2.3.2"
         ],
-        "PackageIcon": "https://zentimo.com//images/logo4.png"
+        "PackageIcon": "https://zentimo.com/images/logo4.png"
     },
     {
         "PackageIdentifier": "CubicSDR.CubicSDR",
@@ -9502,7 +9502,7 @@ export const dummyApps = [
         "Versions": [
             "6.1.2"
         ],
-        "PackageIcon": "https://www.naps2.com//images/scanner.ico"
+        "PackageIcon": "https://www.naps2.com/images/scanner.ico"
     },
     {
         "PackageIdentifier": "da2x.edgedeflector",
@@ -9635,8 +9635,8 @@ export const dummyApps = [
             "6.2112.0.44395",
             "6.2116.0.45187"
         ],
-        "PackageIcon": "https://d38muu3h4xeqr1.cloudfront.net/website/static/DL-5798/images/dashlane/favicon-16x16.png",
-        "PackageImage": "https://d38muu3h4xeqr1.cloudfront.net/website/static/DL-5798/images/dashlane/icon_og_400x400.png"
+        "PackageIcon": "https://d38muu3h4xeqr1.cloudfront.net/website/static/DL-5801/images/dashlane/favicon-16x16.png",
+        "PackageImage": "https://d38muu3h4xeqr1.cloudfront.net/website/static/DL-5801/images/dashlane/icon_og_400x400.png"
     },
     {
         "PackageIdentifier": "DasKeyboard.DasKeyboard",
@@ -9671,7 +9671,7 @@ export const dummyApps = [
         "Versions": [
             "3.2.6"
         ],
-        "PackageIcon": "https://www.daskeyboard.io//images/favicon.png"
+        "PackageIcon": "https://www.daskeyboard.io/images/favicon.png"
     },
     {
         "PackageIdentifier": "Datadog.dd-trace-dotnet",
@@ -9756,7 +9756,7 @@ export const dummyApps = [
             "2021.2.5595",
             "2021.2.5647"
         ],
-        "PackageIcon": "https://datalust.co//favicon.png"
+        "PackageIcon": "https://datalust.co/favicon.png"
     },
     {
         "PackageIdentifier": "Datronicsoft.SpacedeskDriver.Client",
@@ -9786,7 +9786,7 @@ export const dummyApps = [
         "Versions": [
             "0.9.1015.0"
         ],
-        "PackageIcon": "https://spacedesk.net//favicon.ico"
+        "PackageIcon": "https://spacedesk.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Datronicsoft.SpacedeskDriver.Server",
@@ -9816,7 +9816,7 @@ export const dummyApps = [
             "0.9.1077.0",
             "0.9.1078.0"
         ],
-        "PackageIcon": "https://spacedesk.net//favicon.ico"
+        "PackageIcon": "https://spacedesk.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Daum.PotPlayer",
@@ -9876,7 +9876,7 @@ export const dummyApps = [
         "Versions": [
             "1.0"
         ],
-        "PackageIcon": "https://djoffe.com/gnukem//images/david_32.png"
+        "PackageIcon": "https://djoffe.com/images/david_32.png"
     },
     {
         "PackageIdentifier": "DavidMoore.IPFilterUpdater",
@@ -9960,7 +9960,7 @@ export const dummyApps = [
         "Versions": [
             "2.14.1"
         ],
-        "PackageIcon": "https://daxstudio.org//img/daxstudio-logo-144.png"
+        "PackageIcon": "https://daxstudio.org/img/daxstudio-logo-144.png"
     },
     {
         "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite",
@@ -9992,7 +9992,7 @@ export const dummyApps = [
             "3.12.1",
             "3.12.2"
         ],
-        "PackageIcon": "https://sqlitebrowser.org//favicon.ico"
+        "PackageIcon": "https://sqlitebrowser.org/favicon.ico"
     },
     {
         "PackageIdentifier": "dbeaver.dbeaver",
@@ -10121,7 +10121,7 @@ export const dummyApps = [
             "2.3.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/cd2d8b876be621f1dfb0e100c1801320f25d286ccb789f7437829860c215f91c/debauchee/barrier"
+        "PackageImage": "https://opengraph.githubassets.com/08b54eed56ae0c6c46659c974e85b3f35eba1034ac46eb157a5ca3b04e741e5a/debauchee/barrier"
     },
     {
         "PackageIdentifier": "Debian.Debian",
@@ -10424,7 +10424,7 @@ export const dummyApps = [
             "2020.1.20.0",
             "2021.1.27.0"
         ],
-        "PackageIcon": "https://remotedesktopmanager.com//favicon/remote-desktop-manager/apple-touch-icon.png",
+        "PackageIcon": "https://remotedesktopmanager.com/favicon/remote-desktop-manager/apple-touch-icon.png",
         "PackageImage": "https://webdevolutions.blob.core.windows.net/images/og/devolutions-bw-1200x1200.jpg"
     },
     {
@@ -10465,7 +10465,7 @@ export const dummyApps = [
             "2020.1.20.0",
             "2021.1.27.0"
         ],
-        "PackageIcon": "https://remotedesktopmanager.com//favicon/remote-desktop-manager/apple-touch-icon.png",
+        "PackageIcon": "https://remotedesktopmanager.com/favicon/remote-desktop-manager/apple-touch-icon.png",
         "PackageImage": "https://webdevolutions.blob.core.windows.net/images/og/devolutions-bw-1200x1200.jpg"
     },
     {
@@ -10506,7 +10506,7 @@ export const dummyApps = [
         "Versions": [
             "2020.1.7.0"
         ],
-        "PackageIcon": "https://wayk.devolutions.net//favicon/wayk-bastion/apple-touch-icon.png",
+        "PackageIcon": "https://wayk.devolutions.net/favicon/wayk-bastion/apple-touch-icon.png",
         "PackageImage": "https://webdevolutions.blob.core.windows.net/images/og/devolutions-bw-1200x1200.jpg"
     },
     {
@@ -10557,7 +10557,7 @@ export const dummyApps = [
         "Versions": [
             "19.3.5"
         ],
-        "PackageIcon": "https://www.dialpad.com/download//assets/img/favicons/apple-touch-icon.png",
+        "PackageIcon": "https://www.dialpad.com/assets/img/favicons/apple-touch-icon.png",
         "PackageImage": "https://storage.googleapis.com/dialpad-cms.appspot.com/cms/_1200x630_crop_center-center_82_none/Dialpad-Logo.png?mtime=20191113103818&focal=none&tmtime=20210225140820"
     },
     {
@@ -10599,7 +10599,7 @@ export const dummyApps = [
         "Versions": [
             "3.7.8.8"
         ],
-        "PackageIcon": "https://www.dida365.com///cdn.dida365.com/static/img/favicon.ico"
+        "PackageIcon": "https://cdn.dida365.com/static/img/favicon.ico"
     },
     {
         "PackageIdentifier": "DigiDNA.iMazing",
@@ -10635,7 +10635,7 @@ export const dummyApps = [
         "Versions": [
             "2.13.8.0"
         ],
-        "PackageIcon": "https://imazing.com//img/favicon.png"
+        "PackageIcon": "https://imazing.com/img/favicon.png"
     },
     {
         "PackageIdentifier": "Digimezzo.Dopamine",
@@ -10672,7 +10672,7 @@ export const dummyApps = [
             "2.0.8"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/cbaa22bc60af414e4e10a9cf4d75d92c9543f9105dca4f2a6c9bf711ad0675c6/digimezzo/dopamine-windows"
+        "PackageImage": "https://opengraph.githubassets.com/e9dae493b16c8e76a15783e17c279f4dc51409082dc379fcfc1f0c36ca6cc059/digimezzo/dopamine-windows"
     },
     {
         "PackageIdentifier": "DigiPen.NitronicRush",
@@ -10718,7 +10718,7 @@ export const dummyApps = [
             "2.0.1",
             "2.1.5"
         ],
-        "PackageIcon": "https://maxto.net//assets/dc.svg"
+        "PackageIcon": "https://maxto.net/assets/dc.svg"
     },
     {
         "PackageIdentifier": "DigitalVolcanoSoftware.DuplicateCleanerFree",
@@ -10775,7 +10775,7 @@ export const dummyApps = [
             "1.1.0",
             "1.2.0"
         ],
-        "PackageIcon": "https://webproxy.diladele.com//apple-touch-icon.png"
+        "PackageIcon": "https://webproxy.diladele.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "dillonkearns.mobster",
@@ -10879,7 +10879,7 @@ export const dummyApps = [
             "1.0.9001",
             "1.0.9002"
         ],
-        "PackageIcon": "https://discord.com//assets/847541504914fd33810e70a0ea73177e.ico",
+        "PackageIcon": "https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico",
         "PackageImage": "https://discord.com/assets/652f40427e1f5186ad54836074898279.png"
     },
     {
@@ -10929,7 +10929,7 @@ export const dummyApps = [
             "1.0.33",
             "1.0.34"
         ],
-        "PackageIcon": "https://discord.com//assets/847541504914fd33810e70a0ea73177e.ico",
+        "PackageIcon": "https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico",
         "PackageImage": "https://discord.com/assets/652f40427e1f5186ad54836074898279.png"
     },
     {
@@ -10985,7 +10985,7 @@ export const dummyApps = [
             "1.0.588",
             "1.0.598"
         ],
-        "PackageIcon": "https://discord.com//assets/847541504914fd33810e70a0ea73177e.ico",
+        "PackageIcon": "https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico",
         "PackageImage": "https://discord.com/assets/652f40427e1f5186ad54836074898279.png"
     },
     {
@@ -11014,7 +11014,7 @@ export const dummyApps = [
             "1.0.1007",
             "1.0.1008"
         ],
-        "PackageIcon": "https://discord.com//assets/847541504914fd33810e70a0ea73177e.ico",
+        "PackageIcon": "https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico",
         "PackageImage": "https://discord.com/assets/652f40427e1f5186ad54836074898279.png"
     },
     {
@@ -11345,7 +11345,7 @@ export const dummyApps = [
         "Versions": [
             "4.12"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/djvu///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://sourceforge.net//a.fsdn.com/con/app/proj/djvu/screenshots/djview.jpg/1"
     },
     {
@@ -11452,7 +11452,7 @@ export const dummyApps = [
             "3.3.2.63878",
             "3.3.3"
         ],
-        "PackageIcon": "https://www.docker.com//sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png",
+        "PackageIcon": "https://www.docker.com/sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png",
         "PackageImage": "https://www.docker.com/sites/default/files/social/docker_facebook_share.png"
     },
     {
@@ -11503,7 +11503,7 @@ export const dummyApps = [
             "2.5.3.50261",
             "2.5.4.50534"
         ],
-        "PackageIcon": "https://www.docker.com//sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png",
+        "PackageIcon": "https://www.docker.com/sites/default/files/d8/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png",
         "PackageImage": "https://www.docker.com/sites/default/files/social/docker_facebook_share.png"
     },
     {
@@ -11602,7 +11602,7 @@ export const dummyApps = [
         "Versions": [
             "5.0"
         ],
-        "PackageIcon": "https://dolphin-emu.org///dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico",
+        "PackageIcon": "https://dolphin-emu.org/m/static/img/favicon.0885422b72c1.ico",
         "PackageImage": "https://sphotos-a.ak.fbcdn.net/hphotos-ak-prn1/73367_365599063538538_1010982140_n.png"
     },
     {
@@ -11642,7 +11642,7 @@ export const dummyApps = [
             "0.26.5",
             "0.26.6"
         ],
-        "PackageIcon": "https://www.dolthub.com//favicon/apple-touch-icon.png"
+        "PackageIcon": "https://www.dolthub.com/favicon/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "DominikReichl.KeePass",
@@ -11802,7 +11802,7 @@ export const dummyApps = [
         "Versions": [
             "2.1.17"
         ],
-        "PackageIcon": "https://drawpile.net//media/s/favicon/16x16.5140dfffbd83.png"
+        "PackageIcon": "https://drawpile.net/media/s/favicon/16x16.5140dfffbd83.png"
     },
     {
         "PackageIdentifier": "DrewNaylor.guinget",
@@ -12025,7 +12025,7 @@ export const dummyApps = [
             "4.1.0",
             "4.1.1"
         ],
-        "PackageIcon": "https://dupeguru.voltaicideas.net//apple-touch-icon.png"
+        "PackageIcon": "https://dupeguru.voltaicideas.net/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Duplicati.Duplicati",
@@ -12047,7 +12047,7 @@ export const dummyApps = [
             "2.0.5.1",
             "2.0.6.1"
         ],
-        "PackageIcon": "https://www.duplicati.com//favicon/apple-icon-57x57.png",
+        "PackageIcon": "https://www.duplicati.com/favicon/apple-icon-57x57.png",
         "PackageImage": "https://www.duplicati.com/images/duplicati-fb-share-v1.png"
     },
     {
@@ -12149,7 +12149,7 @@ export const dummyApps = [
         "Versions": [
             "8.2.3"
         ],
-        "PackageIcon": "https://pcon-planner.com/fr//favicon.ico"
+        "PackageIcon": "https://pcon-planner.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Ebbflow.Ebbflow",
@@ -12289,7 +12289,7 @@ export const dummyApps = [
             "4.0.4.5",
             "4.0.5.15"
         ],
-        "PackageIcon": "https://www.classin.com/en//en/images/pcNewLogo.svg"
+        "PackageIcon": "https://www.classin.com/en/images/pcNewLogo.svg"
     },
     {
         "PackageIdentifier": "egoist.devdocs-desktop",
@@ -12353,7 +12353,7 @@ export const dummyApps = [
         "Versions": [
             "5.5.2.0"
         ],
-        "PackageIcon": "https://www.elby.ch/en/products//img/logo/logo-elby.svg"
+        "PackageIcon": "https://www.elby.ch/img/logo/logo-elby.svg"
     },
     {
         "PackageIdentifier": "Elastic.Elasticsearch",
@@ -12389,7 +12389,7 @@ export const dummyApps = [
             "7.9.2",
             "7.9.3"
         ],
-        "PackageIcon": "https://www.elastic.co/elasticsearch//apple-icon-57x57.png",
+        "PackageIcon": "https://www.elastic.co/apple-icon-57x57.png",
         "PackageImage": "https://www.elastic.co/static-res/images/elastic-logo-200.png"
     },
     {
@@ -12417,7 +12417,7 @@ export const dummyApps = [
             "7.9.2",
             "7.9.3"
         ],
-        "PackageIcon": "https://www.elastic.co/downloads/beats//apple-icon-57x57.png",
+        "PackageIcon": "https://www.elastic.co/apple-icon-57x57.png",
         "PackageImage": "https://www.elastic.co/static-res/images/elastic-logo-200.png"
     },
     {
@@ -12476,7 +12476,7 @@ export const dummyApps = [
             "0.22.0",
             "0.23.1"
         ],
-        "PackageIcon": "https://www.electronjs.org//images/favicon.b7a59262df48d6563400baf5671da548.ico"
+        "PackageIcon": "https://www.electronjs.org/images/favicon.b7a59262df48d6563400baf5671da548.ico"
     },
     {
         "PackageIdentifier": "Electrum.Electrum",
@@ -12577,7 +12577,7 @@ export const dummyApps = [
             "4.9.3.13222",
             "4.9.4.13228"
         ],
-        "PackageIcon": "https://www.elgato.com/en//themes/custom/smalcode/image/general/favicon-gaming.png"
+        "PackageIcon": "https://www.elgato.com/themes/custom/smalcode/image/general/favicon-gaming.png"
     },
     {
         "PackageIdentifier": "elgato.wavelink",
@@ -12608,7 +12608,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.0.2452"
         ],
-        "PackageIcon": "https://www.elgato.com/en//themes/custom/smalcode/image/general/favicon-gaming.png",
+        "PackageIcon": "https://www.elgato.com/themes/custom/smalcode/image/general/favicon-gaming.png",
         "PackageImage": "https://www.elgato.com/sites/default/files/social_media/sm-wave-3.jpg"
     },
     {
@@ -12691,7 +12691,7 @@ export const dummyApps = [
             "89.0.4389.90"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/474d564b7d06a9454fc908085bff5f816b9b71bf0b79e36192a505abc7dca9f2/Eloston/ungoogled-chromium"
+        "PackageImage": "https://opengraph.githubassets.com/c8499664834db4e0ca864b6bb7a05ba9e5a0c1269caa0c3c2c05270ffe4bee2a/Eloston/ungoogled-chromium"
     },
     {
         "PackageIdentifier": "elvirbrk.notehighlight2016",
@@ -12793,7 +12793,7 @@ export const dummyApps = [
         "Versions": [
             "4.000"
         ],
-        "PackageIcon": "https://www.remotemouse.net//public/img/favicon-rm/apple-icon-57x57.png"
+        "PackageIcon": "https://www.remotemouse.net/public/img/favicon-rm/apple-icon-57x57.png"
     },
     {
         "PackageIdentifier": "Empoche.Empoche",
@@ -12825,7 +12825,7 @@ export const dummyApps = [
             "0.4.0",
             "0.4.5"
         ],
-        "PackageIcon": "https://empoche.com//user/themes/empoche/images/favicon-96x96.png",
+        "PackageIcon": "https://empoche.com/user/themes/empoche/images/favicon-96x96.png",
         "PackageImage": "https://empoche.com/user/pages/01.home/light_dashboard.jpg?g-03b21bef"
     },
     {
@@ -13029,7 +13029,7 @@ export const dummyApps = [
             "6.2.0.2989",
             "6.2.0.2991"
         ],
-        "PackageIcon": "https://eraser.heidi.ie///eraser.heidi.ie/wp-content/uploads/2015/06/favicon.ico"
+        "PackageIcon": "https://eraser.heidi.ie/wp-content/uploads/2015/06/favicon.ico"
     },
     {
         "PackageIdentifier": "erengy.Taiga",
@@ -13145,7 +13145,7 @@ export const dummyApps = [
         "Versions": [
             "2.2.7"
         ],
-        "PackageIcon": "https://esteem.app//icon.png",
+        "PackageIcon": "https://esteem.app/icon.png",
         "PackageImage": "https://esteem.app/og.jpg"
     },
     {
@@ -13227,7 +13227,7 @@ export const dummyApps = [
         "Versions": [
             "1.6.2"
         ],
-        "PackageIcon": "https://grid.ethereum.org//assets/img/grid-logo-expanded.png"
+        "PackageIcon": "https://grid.ethereum.org/assets/img/grid-logo-expanded.png"
     },
     {
         "PackageIdentifier": "Eugeny.Terminus",
@@ -13307,7 +13307,7 @@ export const dummyApps = [
             "3.8.2",
             "3.8.3"
         ],
-        "PackageIcon": "https://hide.me/resources/294/images/logo/os_windows.svg",
+        "PackageIcon": "https://hide.me/resources/294/images/logo/vpnmentor_circle.png",
         "PackageImage": "https://hide.me/resources/294/images/banner/default_og.jpg"
     },
     {
@@ -13462,7 +13462,7 @@ export const dummyApps = [
             "7.12.0.12",
             "7.8.7.7"
         ],
-        "PackageIcon": "https://www.expressvpn.com//frtr/assets/images/edsv2-favicon/apple-touch-icon.png",
+        "PackageIcon": "https://www.expressvpn.com/frtr/assets/images/edsv2-favicon/apple-touch-icon.png",
         "PackageImage": "https://xvdrop.imgix.net/ff-fb-badge-e0c00340498c9742be8948c3f6f7f2156a0b6c76.png"
     },
     {
@@ -13589,7 +13589,7 @@ export const dummyApps = [
         "Versions": [
             "0.8.0"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/extremetuxracer///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/extremetuxracer/icon?1465411091"
     },
     {
@@ -13668,7 +13668,7 @@ export const dummyApps = [
         "Versions": [
             "2.41.6817.0"
         ],
-        "PackageIcon": "https://www.f-secure.com/en/home/products//etc.clientlibs/f-secure/clientlibs/main/resources/apple-touch-icon.png",
+        "PackageIcon": "https://www.f-secure.com/etc.clientlibs/f-secure/clientlibs/main/resources/apple-touch-icon.png",
         "PackageImage": "https://www.f-secure.com/content/dam/f-secure/en/consumer/images/open-graph/freedome.jpg"
     },
     {
@@ -13739,7 +13739,7 @@ export const dummyApps = [
             "1.8.2"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/adc402e22216cf03226eb47eaa21df8ef695e4d9247d7d004b204bf164d848b6/FaisalUmair/udemy-downloader-gui"
+        "PackageImage": "https://opengraph.githubassets.com/a8610fb97ea29da6d50c66d5bc21a3fc57fa69d9e3fa3ded4b73cf85bab58885/FaisalUmair/udemy-downloader-gui"
     },
     {
         "PackageIdentifier": "Famatech.AdvancedPortScanner",
@@ -13842,8 +13842,8 @@ export const dummyApps = [
         "Versions": [
             "3.92"
         ],
-        "PackageIcon": "https://fastcopy.jp//img/fastcopy64.png",
-        "PackageImage": "https://fastcopy.jp//img/fastcopy64.png"
+        "PackageIcon": "https://fastcopy.jp/img/fastcopy64.png",
+        "PackageImage": "https://fastcopy.jp/img/fastcopy64.png"
     },
     {
         "PackageIdentifier": "FastStone.Capture",
@@ -13996,7 +13996,7 @@ export const dummyApps = [
         "Versions": [
             "1.1.1"
         ],
-        "PackageIcon": "https://gmi.skyjake.fi/lagrange//apple-icon-57x57.png"
+        "PackageIcon": "https://gmi.skyjake.fi/apple-icon-57x57.png"
     },
     {
         "PackageIdentifier": "Figma.Figma",
@@ -14262,7 +14262,7 @@ export const dummyApps = [
         "Versions": [
             "1.3.86.0"
         ],
-        "PackageIcon": "https://www.microsoft.com/de-de/p/8-zip-open-and-extract-rar-zip-7zip-7z-zipx-iso-cab-for-free///www.microsoft.com/favicon.ico?v2",
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2",
         "PackageImage": "https://store-images.s-microsoft.com/image/apps.62364.9007199266251986.d129166e-e5e5-4c4c-aea8-4df19af0b9bf.09ff04ee-57f0-4dce-a47a-5a99c225eed6?w=120&h=120&q=60"
     },
     {
@@ -14297,7 +14297,7 @@ export const dummyApps = [
         "Versions": [
             "1.4.28.0"
         ],
-        "PackageIcon": "https://www.microsoft.com/de-de/p/torrex-lite-torrent-downloader///www.microsoft.com/favicon.ico?v2",
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2",
         "PackageImage": "https://store-images.s-microsoft.com/image/apps.36903.9007199266251993.0e7f2c56-4561-441b-8ca4-babc9edec4a4.675a7684-af7e-41b6-a6f6-f81ec0076946?w=120&h=120&q=60"
     },
     {
@@ -14483,7 +14483,7 @@ export const dummyApps = [
         "Versions": [
             "4.119"
         ],
-        "PackageIcon": "https://justgetflux.com//favicon.png",
+        "PackageIcon": "https://justgetflux.com/favicon.png",
         "PackageImage": "http://justgetflux.com/flux-icon-big.png"
     },
     {
@@ -14537,7 +14537,7 @@ export const dummyApps = [
             "0.15.7"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/813e4adbccecf4028213f6e21a9b536b2048742228c1f54e8a9e12f614c55d44/Fndroid/clash_for_windows_pkg"
+        "PackageImage": "https://opengraph.githubassets.com/64eb95994fdc073d6fee8e04102d4e16e54f8b28f834de0a9e1955886cf773a9/Fndroid/clash_for_windows_pkg"
     },
     {
         "PackageIdentifier": "FoldingAtHome.FoldingAtHome",
@@ -14600,7 +14600,7 @@ export const dummyApps = [
             "2.11.3",
             "2.14.0"
         ],
-        "PackageIcon": "https://fontba.se//static/favicon.ico",
+        "PackageIcon": "https://fontba.se/static/favicon.ico",
         "PackageImage": "https://fontba.se/static/images/social/main.png"
     },
     {
@@ -14708,7 +14708,7 @@ export const dummyApps = [
         "Versions": [
             "1.4.4.0"
         ],
-        "PackageIcon": "https://airtable.com//images/favicon/baymax/apple-touch-icon.png",
+        "PackageIcon": "https://airtable.com/images/favicon/baymax/apple-touch-icon.png",
         "PackageImage": "https://static.airtable.com/images/oembed/airtable.png"
     },
     {
@@ -14789,7 +14789,7 @@ export const dummyApps = [
             "11.0.0.49893"
         ],
         "PackageIcon": "https://www.foxit.com/static/company/images/2021/pdf-editor/foxit-pdf-editor-logo.png",
-        "PackageImage": "https://www.foxit.com/pdf-editor//static/company/images/icons/phantompdf.png"
+        "PackageImage": "https://www.foxit.com/static/company/images/icons/phantompdf.png"
     },
     {
         "PackageIdentifier": "Foxit.PhantomPDF",
@@ -14822,7 +14822,7 @@ export const dummyApps = [
             "11.0.0.49893"
         ],
         "PackageIcon": "https://www.foxit.com/static/company/images/2021/pdf-editor/foxit-pdf-editor-logo.png",
-        "PackageImage": "https://www.foxit.com/pdf-editor//static/company/images/icons/phantompdf.png"
+        "PackageImage": "https://www.foxit.com/static/company/images/icons/phantompdf.png"
     },
     {
         "PackageIdentifier": "francescosorge.paste-into-file",
@@ -15065,7 +15065,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.8"
         ],
-        "PackageIcon": "https://www.feed-the-beast.com//favicon.ico?t=1"
+        "PackageIcon": "https://www.feed-the-beast.com/favicon.ico?t=1"
     },
     {
         "PackageIdentifier": "FXHOME.HitFilmExpress",
@@ -15172,7 +15172,7 @@ export const dummyApps = [
         "Versions": [
             "4.0.2012.0902"
         ],
-        "PackageIcon": "https://gamecaster.com/download//apple-touch-icon.png",
+        "PackageIcon": "https://gamecaster.com/apple-touch-icon.png",
         "PackageImage": "https://gamecaster.com/images/og-image.jpg"
     },
     {
@@ -15274,7 +15274,7 @@ export const dummyApps = [
         "Versions": [
             "1.37.1"
         ],
-        "PackageIcon": "https://www.geany.org//static/favicon.ico"
+        "PackageIcon": "https://www.geany.org/static/favicon.ico"
     },
     {
         "PackageIdentifier": "GenericMappingTools.gmt",
@@ -15346,7 +15346,7 @@ export const dummyApps = [
             "6.0.639.0",
             "6.0.640.0"
         ],
-        "PackageIcon": "https://www.geogebra.org//favicon.ico",
+        "PackageIcon": "https://www.geogebra.org/favicon.ico",
         "PackageImage": "https://www.geogebra.org/assets/img/logo_ellipse_og.1cbb7224.png"
     },
     {
@@ -15392,7 +15392,7 @@ export const dummyApps = [
             "6.0.639.0",
             "6.0.640.0"
         ],
-        "PackageIcon": "https://www.geogebra.org//favicon.ico",
+        "PackageIcon": "https://www.geogebra.org/favicon.ico",
         "PackageImage": "https://www.geogebra.org/assets/img/logo_ellipse_og.1cbb7224.png"
     },
     {
@@ -15432,7 +15432,7 @@ export const dummyApps = [
             "6.0.636.0",
             "6.0.637.0"
         ],
-        "PackageIcon": "https://www.geogebra.org//favicon.ico",
+        "PackageIcon": "https://www.geogebra.org/favicon.ico",
         "PackageImage": "https://www.geogebra.org/assets/img/logo_ellipse_og.1cbb7224.png"
     },
     {
@@ -15473,7 +15473,7 @@ export const dummyApps = [
             "6.0.636.0",
             "6.0.637.0"
         ],
-        "PackageIcon": "https://www.geogebra.org//favicon.ico",
+        "PackageIcon": "https://www.geogebra.org/favicon.ico",
         "PackageImage": "https://www.geogebra.org/assets/img/logo_ellipse_og.1cbb7224.png"
     },
     {
@@ -15509,7 +15509,7 @@ export const dummyApps = [
         "Versions": [
             "0.9.2"
         ],
-        "PackageIcon": "https://gephi.org//images/favicon.ico"
+        "PackageIcon": "https://gephi.org/images/favicon.ico"
     },
     {
         "PackageIdentifier": "gerardog.gsudo",
@@ -15546,7 +15546,7 @@ export const dummyApps = [
             "0.7.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/3c15db343a1b6d8b02a3e9db62c66c191725de6fa74f23f0d0b2527c7fe36b18/gerardog/gsudo"
+        "PackageImage": "https://opengraph.githubassets.com/f205f583311c9eaf431b87c725aa116aca0e5c878f65375d930063aeb8a7e50e/gerardog/gsudo"
     },
     {
         "PackageIdentifier": "gergelycsernak.euroscope",
@@ -15644,7 +15644,7 @@ export const dummyApps = [
             "0.9.2"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/0c6e8441fc1d69749809af8ceca7517cdf4ec8c4ae749822847c7cdabed73ac9/getgridea/gridea"
+        "PackageImage": "https://opengraph.githubassets.com/2a29ef0956b37ab77a93f096a428ca916f3d8bb14356394ce150f3b2d6d1fd4d/getgridea/gridea"
     },
     {
         "PackageIdentifier": "Ghisler.TotalCommander",
@@ -15676,7 +15676,7 @@ export const dummyApps = [
         "Versions": [
             "9.51"
         ],
-        "PackageIcon": "https://www.ghisler.com//favicon.ico"
+        "PackageIcon": "https://www.ghisler.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Ghostgum.GSview",
@@ -15729,7 +15729,7 @@ export const dummyApps = [
             "2.0.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/948586fd5b244cb278029895faa259ab782d819f90114e0de07d1b5faf1acd1c/gielcobben/caption"
+        "PackageImage": "https://opengraph.githubassets.com/5ba82954928ea89d6f4b87b82098a6cf2badc719a6b75cf6c117c1d92f4f915d/gielcobben/caption"
     },
     {
         "PackageIdentifier": "gileli121.windowtop",
@@ -15812,7 +15812,7 @@ export const dummyApps = [
             "2.10.6",
             "2.10.8"
         ],
-        "PackageIcon": "https://www.gimp.org//images/wilber16.png",
+        "PackageIcon": "https://www.gimp.org/images/wilber16.png",
         "PackageImage": "https://www.gimp.org/images/frontpage/wilber-big.png"
     },
     {
@@ -16049,7 +16049,7 @@ export const dummyApps = [
             "1.56.0",
             "1.57.0"
         ],
-        "PackageIcon": "https://atom.io//favicon.ico",
+        "PackageIcon": "https://atom.io/favicon.ico",
         "PackageImage": "http://og.github.com/atom-mark/atom-mark@1200x630.png"
     },
     {
@@ -16326,7 +16326,7 @@ export const dummyApps = [
             "4.1.0",
             "5.1.0"
         ],
-        "PackageIcon": "https://gitter.im///cdn03.gitter.im/_s/0418734ff/images/favicon-normal.ico",
+        "PackageIcon": "https://cdn03.gitter.im/_s/0418734ff/images/favicon-normal.ico",
         "PackageImage": "https://avatars.gitter.im/default"
     },
     {
@@ -16481,7 +16481,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://www.glarysoft.com//images/logo_flat.png"
+        "PackageIcon": "https://www.glarysoft.com/images/logo_flat.png"
     },
     {
         "PackageIdentifier": "Glasswall.GlasswallDesktop",
@@ -16539,7 +16539,7 @@ export const dummyApps = [
         "Versions": [
             "2.3.318.0"
         ],
-        "PackageIcon": "https://www.glasswire.com/download//apple-touch-icon.png",
+        "PackageIcon": "https://www.glasswire.com/apple-touch-icon.png",
         "PackageImage": "https://www.glasswire.com/img/share-wide.jpg"
     },
     {
@@ -16583,7 +16583,7 @@ export const dummyApps = [
         "Versions": [
             "2.3.318.0"
         ],
-        "PackageIcon": "https://www.glasswire.com/download//apple-touch-icon.png",
+        "PackageIcon": "https://www.glasswire.com/apple-touch-icon.png",
         "PackageImage": "https://www.glasswire.com/img/share-wide.jpg"
     },
     {
@@ -16616,8 +16616,8 @@ export const dummyApps = [
         "Versions": [
             "2.8.59"
         ],
-        "PackageIcon": "https://www.tightvnc.com//apple-touch-icon.png",
-        "PackageImage": "https://www.tightvnc.com//logo/tightvnc-logo-80x80.jpg"
+        "PackageIcon": "https://www.tightvnc.com/apple-touch-icon.png",
+        "PackageImage": "https://www.tightvnc.com/logo/tightvnc-logo-80x80.jpg"
     },
     {
         "PackageIdentifier": "Glimpse.Glimpse",
@@ -16651,7 +16651,7 @@ export const dummyApps = [
             "0.1.2",
             "0.2.0"
         ],
-        "PackageIcon": "https://glimpse-editor.org//favicon-32x32.png"
+        "PackageIcon": "https://glimpse-editor.org/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "Glimpse.Glimpse-x86",
@@ -16684,7 +16684,7 @@ export const dummyApps = [
         "Versions": [
             "0.2.0"
         ],
-        "PackageIcon": "https://glimpse-editor.org//favicon-32x32.png"
+        "PackageIcon": "https://glimpse-editor.org/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "gnome.Dia",
@@ -16754,7 +16754,7 @@ export const dummyApps = [
         "Versions": [
             "3.20.1"
         ],
-        "PackageIcon": "https://gitlab.gnome.org/GNOME//uploads/-/system/appearance/favicon/1/GnomeLogoVertical.svg.png",
+        "PackageIcon": "https://gitlab.gnome.org/uploads/-/system/appearance/favicon/1/GnomeLogoVertical.svg.png",
         "PackageImage": "https://gitlab.gnome.org/GNOME/gedit/-/avatar"
     },
     {
@@ -16842,7 +16842,7 @@ export const dummyApps = [
             "4.8.24",
             "4.8.26"
         ],
-        "PackageIcon": "https://midnight-commander.org//chrome/site/MidnightCommander.ico"
+        "PackageIcon": "https://midnight-commander.org/chrome/site/MidnightCommander.ico"
     },
     {
         "PackageIdentifier": "GNU.Octave",
@@ -16899,7 +16899,7 @@ export const dummyApps = [
         "Versions": [
             "3.23.4"
         ],
-        "PackageIcon": "https://www.gnu.org/software/solfege//graphics/gnu-head-mini.png"
+        "PackageIcon": "https://www.gnu.org/graphics/gnu-head-mini.png"
     },
     {
         "PackageIdentifier": "GnuCash.GnuCash",
@@ -16977,7 +16977,7 @@ export const dummyApps = [
             "2.3.0",
             "2.3.1"
         ],
-        "PackageIcon": "https://gnupg.org//share/logo-gnupg-light-purple-bg.png"
+        "PackageIcon": "https://gnupg.org/share/logo-gnupg-light-purple-bg.png"
     },
     {
         "PackageIdentifier": "gnupg.Gpg4win",
@@ -17073,7 +17073,7 @@ export const dummyApps = [
         "Versions": [
             "3.7.13.5"
         ],
-        "PackageIcon": "https://www.gnuradio.org//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://www.gnuradio.org/apple-touch-icon-57x57.png",
         "PackageImage": "https://www.gnuradio.org/imgs/gnuradio_logo_icon-square.png"
     },
     {
@@ -17342,7 +17342,7 @@ export const dummyApps = [
             "1.16.3",
             "1.16.4"
         ],
-        "PackageIcon": "https://golang.org//lib/godoc/images/go-logo-blue.svg"
+        "PackageIcon": "https://golang.org/lib/godoc/images/go-logo-blue.svg"
     },
     {
         "PackageIdentifier": "Golang.Go-Unstable",
@@ -17376,7 +17376,7 @@ export const dummyApps = [
         "Versions": [
             "1.15-beta1"
         ],
-        "PackageIcon": "https://golang.org//lib/godoc/images/go-logo-blue.svg"
+        "PackageIcon": "https://golang.org/lib/godoc/images/go-logo-blue.svg"
     },
     {
         "PackageIdentifier": "GoldenDict.GoldenDict",
@@ -17407,7 +17407,7 @@ export const dummyApps = [
             "1.0.1-1",
             "1.5.0-rc2-372"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/goldendict///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/goldendict/icon?1513717487"
     },
     {
@@ -17443,7 +17443,7 @@ export const dummyApps = [
         "Versions": [
             "6.54"
         ],
-        "PackageIcon": "https://www.goldwave.com//favicon.png"
+        "PackageIcon": "https://www.goldwave.com/favicon.png"
     },
     {
         "PackageIdentifier": "GoldWave.VideoMeld",
@@ -17570,7 +17570,7 @@ export const dummyApps = [
         "Versions": [
             "68.94.77"
         ],
-        "PackageIcon": "https://www.google.com/chrome//chrome/static/images/favicons/favicon-16x16.png",
+        "PackageIcon": "https://www.google.com/chrome/static/images/favicons/favicon-16x16.png",
         "PackageImage": "https://www.google.com/chrome/static/images/homepage/homepage.png"
     },
     {
@@ -17604,7 +17604,7 @@ export const dummyApps = [
         "Versions": [
             "68.94.77"
         ],
-        "PackageIcon": "https://www.google.com/chrome/beta//chrome/static/images/favicons/favicon-16x16.png",
+        "PackageIcon": "https://www.google.com/chrome/static/images/favicons/favicon-16x16.png",
         "PackageImage": "https://www.google.com/chrome/static/images/beta/chrome-beta-logo.svg"
     },
     {
@@ -17645,7 +17645,7 @@ export const dummyApps = [
         "Versions": [
             "68.104.49172"
         ],
-        "PackageIcon": "https://www.google.com/chrome/dev//chrome/static/images/favicons/favicon-16x16.png",
+        "PackageIcon": "https://www.google.com/chrome/static/images/favicons/favicon-16x16.png",
         "PackageImage": "https://www.google.com/chrome/static/images/dev/chrome-dev-logo.svg"
     },
     {
@@ -18093,7 +18093,7 @@ export const dummyApps = [
             "1.8.10"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/2c8e1883ee15828c74d30408acaaa627c0ecdd502c592e6493ab2007a532e697/graphql/graphql-playground"
+        "PackageImage": "https://opengraph.githubassets.com/2549102a1209e1e02ba5c97f90125d9d27fa9d41740d34d9f653af3a1e0d7c7c/graphql/graphql-playground"
     },
     {
         "PackageIdentifier": "Graphviz.Graphviz",
@@ -18123,7 +18123,7 @@ export const dummyApps = [
             "2.47.0",
             "2.47.2"
         ],
-        "PackageIcon": "https://graphviz.gitlab.io//resources/favicon.png"
+        "PackageIcon": "https://graphviz.gitlab.io/resources/favicon.png"
     },
     {
         "PackageIdentifier": "GreenfootTeam.Greenfoot",
@@ -18165,7 +18165,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.10.6"
         ],
-        "PackageIcon": "https://getgreenshot.org//favicon.ico"
+        "PackageIcon": "https://getgreenshot.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Gridcoin.Client",
@@ -18195,7 +18195,7 @@ export const dummyApps = [
             "5.2.2.0",
             "5.3.1"
         ],
-        "PackageIcon": "https://gridcoin.us//assets/img/favicons/favicon.ico?v=2"
+        "PackageIcon": "https://gridcoin.us/assets/img/favicons/favicon.ico?v=2"
     },
     {
         "PackageIdentifier": "Guilded,Inc.Guilded",
@@ -18432,7 +18432,7 @@ export const dummyApps = [
             "3.2.2.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/b2199fecb47f1ddc9690c3c3252d0ca4bd99ad51e3e566bb857b5eb2c4111f9f/HandyOrg/HandyWinGet"
+        "PackageImage": "https://opengraph.githubassets.com/f5cc3e39dc6f3ba4655341286614d9213f83f8f8525f712a20492e312aeff040/HandyOrg/HandyWinGet"
     },
     {
         "PackageIdentifier": "Hashicorp.Vagrant",
@@ -18536,7 +18536,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.0"
         ],
-        "PackageIcon": "https://hedgewars.org//files/hedgewars_favicon.ico"
+        "PackageIcon": "https://hedgewars.org/files/hedgewars_favicon.ico"
     },
     {
         "PackageIdentifier": "HeidiSQL.HeidiSQL",
@@ -18567,7 +18567,7 @@ export const dummyApps = [
             "11.1",
             "11.2"
         ],
-        "PackageIcon": "https://www.heidisql.com//images/heidisql_logo.png"
+        "PackageIcon": "https://www.heidisql.com/images/heidisql_logo.png"
     },
     {
         "PackageIdentifier": "Helio.HelioWorkstation",
@@ -18599,8 +18599,8 @@ export const dummyApps = [
             "3.5",
             "3.6"
         ],
-        "PackageIcon": "https://helio.fm//images/apple-touch-icon.png",
-        "PackageImage": "https://helio.fm//images/og_image.png"
+        "PackageIcon": "https://helio.fm/images/apple-touch-icon.png",
+        "PackageImage": "https://helio.fm/images/og_image.png"
     },
     {
         "PackageIdentifier": "hello-efficiency-inc.raven-reader",
@@ -18668,7 +18668,7 @@ export const dummyApps = [
         "Versions": [
             "3.4.1"
         ],
-        "PackageIcon": "https://nagstamon.de//assets/images/nagstamon_logo.svg"
+        "PackageIcon": "https://nagstamon.de/assets/images/nagstamon_logo.svg"
     },
     {
         "PackageIdentifier": "Henry++.simplewall",
@@ -18785,7 +18785,7 @@ export const dummyApps = [
         "Versions": [
             "2.14.3"
         ],
-        "PackageIcon": "https://hexchat.github.io//favicon.ico"
+        "PackageIcon": "https://hexchat.github.io/favicon.ico"
     },
     {
         "PackageIdentifier": "HexRays.IDA-Freeware",
@@ -18977,7 +18977,7 @@ export const dummyApps = [
         "Versions": [
             "2.5.3"
         ],
-        "PackageIcon": "https://support.hp.com/us-en/document//hp-portal-theme-static/themes/Portal8.0/images/favicon.ico"
+        "PackageIcon": "https://support.hp.com/hp-portal-theme-static/themes/Portal8.0/images/favicon.ico"
     },
     {
         "PackageIdentifier": "hql287.manta",
@@ -19084,7 +19084,7 @@ export const dummyApps = [
             "0.1.22",
             "1.2.1"
         ],
-        "PackageIcon": "https://httptoolkit.tech//apple-touch-icon.png",
+        "PackageIcon": "https://httptoolkit.tech/apple-touch-icon.png",
         "PackageImage": "https://httptoolkit.tech/screenshot-social.png"
     },
     {
@@ -19216,7 +19216,7 @@ export const dummyApps = [
         "Versions": [
             "6.19.0.26"
         ],
-        "PackageIcon": "https://www.huaweicloud.com/product/ideahub///res-static3.huaweicloud.com/content/dam/cloudbu-site/archive/commons/web_resoure/framework/favicon/favicon.ico?sttl=202105312015"
+        "PackageIcon": "https://res-static3.huaweicloud.com/content/dam/cloudbu-site/archive/commons/web_resoure/framework/favicon/favicon.ico?sttl=202105312015"
     },
     {
         "PackageIdentifier": "huawei.mobilecloud",
@@ -19296,8 +19296,8 @@ export const dummyApps = [
             "3.2.1",
             "3.2.2"
         ],
-        "PackageIcon": "https://developer.huawei.com/consumer/en/quickApp-ide//dev_index/favicon.ico?v=hs202104071938",
-        "PackageImage": "https://developer.huawei.com/consumer/en/quickApp-ide//Enexport/system/modules/org.opencms.portal.template.core/resources/images/Huawei-LOGO.png"
+        "PackageIcon": "https://developer.huawei.com/dev_index/favicon.ico?v=hs202104071938",
+        "PackageImage": "https://developer.huawei.com/Enexport/system/modules/org.opencms.portal.template.core/resources/images/Huawei-LOGO.png"
     },
     {
         "PackageIdentifier": "Huawei.Welink",
@@ -19331,7 +19331,7 @@ export const dummyApps = [
         "Versions": [
             "7.5.24"
         ],
-        "PackageIcon": "https://www.huaweicloud.com/product///res-static3.huaweicloud.com/content/dam/cloudbu-site/archive/commons/web_resoure/framework/favicon/favicon.ico?sttl=202105312015"
+        "PackageIcon": "https://res-static3.huaweicloud.com/content/dam/cloudbu-site/archive/commons/web_resoure/framework/favicon/favicon.ico?sttl=202105312015"
     },
     {
         "PackageIdentifier": "Hyne.TimberDesign",
@@ -19369,7 +19369,7 @@ export const dummyApps = [
         "Versions": [
             "7.5.15.0"
         ],
-        "PackageIcon": "https://www.hyne.com.au/timber-design-software//Themes/BPDTHEME01/theme-client-updates/favicon.ico?v=20191206352"
+        "PackageIcon": "https://www.hyne.com.au/Themes/BPDTHEME01/theme-client-updates/favicon.ico?v=20191206352"
     },
     {
         "PackageIdentifier": "HyperspaceDev.HyperspaceDesktop",
@@ -19466,7 +19466,7 @@ export const dummyApps = [
         "Versions": [
             "6.9.0.577"
         ],
-        "PackageIcon": "https://www.helpndoc.com//favicon.ico",
+        "PackageIcon": "https://www.helpndoc.com/favicon.ico",
         "PackageImage": "https://www.helpndoc.com/img/pages/helpndoc-output-formats.png"
     },
     {
@@ -19501,7 +19501,7 @@ export const dummyApps = [
         "Versions": [
             "6.9.0"
         ],
-        "PackageIcon": "https://icons8.com//vue-static/landings/lunacy/favicon-16.png"
+        "PackageIcon": "https://icons8.com/vue-static/landings/lunacy/favicon-16.png"
     },
     {
         "PackageIdentifier": "ImageLine.FLStudio",
@@ -19577,7 +19577,7 @@ export const dummyApps = [
         "Versions": [
             "7.0.11-13"
         ],
-        "PackageIcon": "https://imagemagick.org//script/../image/wand.png",
+        "PackageIcon": "https://imagemagick.org/script/../image/wand.png",
         "PackageImage": "https://imagemagick.org/image/logo.png"
     },
     {
@@ -19762,7 +19762,7 @@ export const dummyApps = [
         "Versions": [
             "7.80"
         ],
-        "PackageIcon": "https://nmap.org//shared/images/tiny-eyeicon.png"
+        "PackageIcon": "https://nmap.org/shared/images/tiny-eyeicon.png"
     },
     {
         "PackageIdentifier": "Insomnia.Insomnia",
@@ -19799,8 +19799,8 @@ export const dummyApps = [
             "2021.1.0",
             "2021.1.1"
         ],
-        "PackageIcon": "https://insomnia.rest//images/insomnia-logo.svg",
-        "PackageImage": "https://insomnia.rest//images/card-promo.png"
+        "PackageIcon": "https://insomnia.rest/images/insomnia-logo.svg",
+        "PackageImage": "https://insomnia.rest/images/card-promo.png"
     },
     {
         "PackageIdentifier": "Insomnia.InsomniaDesigner",
@@ -19832,8 +19832,8 @@ export const dummyApps = [
             "2020.3.3",
             "2020.5.2"
         ],
-        "PackageIcon": "https://insomnia.rest//images/insomnia-logo.svg",
-        "PackageImage": "https://insomnia.rest//images/card-promo.png"
+        "PackageIcon": "https://insomnia.rest/images/insomnia-logo.svg",
+        "PackageImage": "https://insomnia.rest/images/card-promo.png"
     },
     {
         "PackageIdentifier": "Intel.IntelDriverAndSupportAssistant",
@@ -19863,7 +19863,7 @@ export const dummyApps = [
         "Versions": [
             "21.3.21.5"
         ],
-        "PackageIcon": "https://www.intel.com/content/www/us/en/support//etc.clientlibs/settings/wcm/designs/intel/default/resources/favicon-32x32.png",
+        "PackageIcon": "https://www.intel.com/etc.clientlibs/settings/wcm/designs/intel/default/resources/favicon-32x32.png",
         "PackageImage": "https://www.intel.com/etc.clientlibs/settings/wcm/designs/intel/us/en/images/resources/printlogo.png"
     },
     {
@@ -20029,7 +20029,7 @@ export const dummyApps = [
         "Versions": [
             "0.16.0"
         ],
-        "PackageIcon": "https://www.irccloud.com//static/favicon/apple-pinned-tab.svg"
+        "PackageIcon": "https://www.irccloud.com/static/favicon/apple-pinned-tab.svg"
     },
     {
         "PackageIdentifier": "IrfanSkiljan.IrfanView",
@@ -20110,7 +20110,7 @@ export const dummyApps = [
             "1.3.2",
             "1.4.0"
         ],
-        "PackageIcon": "https://ironmansoftware.com//img/universal-logo.png"
+        "PackageIcon": "https://ironmansoftware.com/img/universal-logo.png"
     },
     {
         "PackageIdentifier": "isaaclevin.presencelight",
@@ -20225,7 +20225,7 @@ export const dummyApps = [
             "7.9.0",
             "7.9.1"
         ],
-        "PackageIcon": "https://cyberduck.io//img/cyberduck-icon-rect-32.png"
+        "PackageIcon": "https://cyberduck.io/img/cyberduck-icon-rect-32.png"
     },
     {
         "PackageIdentifier": "ItsSim.fsolauncher",
@@ -20272,7 +20272,7 @@ export const dummyApps = [
         "Versions": [
             "4.4"
         ],
-        "PackageIcon": "https://www.izarc.org//images/favicon.ico",
+        "PackageIcon": "https://www.izarc.org/images/favicon.ico",
         "PackageImage": "https://www.izarc.org/images/ogLogo.png"
     },
     {
@@ -20312,7 +20312,7 @@ export const dummyApps = [
         "Versions": [
             "5.4.33519"
         ],
-        "PackageIcon": "https://www.jabra.com.de/software-and-services//favicons/jabra/apple-icon-57x57.png",
+        "PackageIcon": "https://www.jabra.com.de/favicons/jabra/apple-icon-57x57.png",
         "PackageImage": "https://www.jabra.com.de/-/media/Images/Products/Jabra-Direct/v2/direct_screens_v2.png"
     },
     {
@@ -20347,7 +20347,7 @@ export const dummyApps = [
             "5.1",
             "5.2"
         ],
-        "PackageIcon": "https://www.jabref.org//img/JabRef-icon-16.png",
+        "PackageIcon": "https://www.jabref.org/img/JabRef-icon-16.png",
         "PackageImage": "https://www.jabref.org/img/jabref-mainscreen.png"
     },
     {
@@ -20450,7 +20450,7 @@ export const dummyApps = [
             "0.18.96.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/46f01848990df0a2197aca4dd891cabccbcf1a024b6425d1157a5358d6c81f83/Jackett/Jackett"
+        "PackageImage": "https://opengraph.githubassets.com/fb83a018cc73d6753a9303e1fc3b833e9097f5379548071a79ee6a6f927c81af/Jackett/Jackett"
     },
     {
         "PackageIdentifier": "JackieLiu.NotepadsApp",
@@ -20637,7 +20637,7 @@ export const dummyApps = [
         "Versions": [
             "3.6.0"
         ],
-        "PackageIcon": "https://www.jam-software.com//themes/custom/jam_theme/favicon.ico"
+        "PackageIcon": "https://www.jam-software.com/themes/custom/jam_theme/favicon.ico"
     },
     {
         "PackageIdentifier": "JAMSoftware.TreeSize",
@@ -20668,7 +20668,7 @@ export const dummyApps = [
         "Versions": [
             "8.1.2.1575"
         ],
-        "PackageIcon": "https://www.jam-software.com//themes/custom/jam_theme/favicon.ico"
+        "PackageIcon": "https://www.jam-software.com/themes/custom/jam_theme/favicon.ico"
     },
     {
         "PackageIdentifier": "JAMSoftware.TreeSizeFree",
@@ -20703,7 +20703,7 @@ export const dummyApps = [
         "Versions": [
             "4.4.2"
         ],
-        "PackageIcon": "https://www.jam-software.com//themes/custom/jam_theme/favicon.ico"
+        "PackageIcon": "https://www.jam-software.com/themes/custom/jam_theme/favicon.ico"
     },
     {
         "PackageIdentifier": "JAMSoftware.Ultrasearch",
@@ -20731,7 +20731,7 @@ export const dummyApps = [
         "Versions": [
             "3.1.1.670"
         ],
-        "PackageIcon": "https://www.jam-software.com//themes/custom/jam_theme/favicon.ico"
+        "PackageIcon": "https://www.jam-software.com/themes/custom/jam_theme/favicon.ico"
     },
     {
         "PackageIdentifier": "JanFiala.PSpad",
@@ -20767,7 +20767,7 @@ export const dummyApps = [
         "Versions": [
             "5.0.4"
         ],
-        "PackageIcon": "http://www.pspad.com/en//favicon.ico"
+        "PackageIcon": "http://www.pspad.com/favicon.ico"
     },
     {
         "PackageIdentifier": "JannisX11.Blockbench",
@@ -20917,7 +20917,7 @@ export const dummyApps = [
         "Versions": [
             "1.2"
         ],
-        "PackageIcon": "https://www.legroom.net/software//core/misc/favicon.ico"
+        "PackageIcon": "https://www.legroom.net/core/misc/favicon.ico"
     },
     {
         "PackageIdentifier": "jbreland.uniextract",
@@ -20957,7 +20957,7 @@ export const dummyApps = [
         "Versions": [
             "1.6.1"
         ],
-        "PackageIcon": "https://www.legroom.net/software//core/misc/favicon.ico"
+        "PackageIcon": "https://www.legroom.net/core/misc/favicon.ico"
     },
     {
         "PackageIdentifier": "Jellyfin.Jellyfin",
@@ -21021,7 +21021,7 @@ export const dummyApps = [
             "2.0.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/ac0ddbb0f7c2b85c3f84cfcc670236092868d008c385908ce73e7e7c5aa9a072/jely2002/youtube-dl-gui"
+        "PackageImage": "https://opengraph.githubassets.com/8423e9b2728094f38c877a4ae81fd9cf2cb141d07dc461d60e01eb65eb266feb/jely2002/youtube-dl-gui"
     },
     {
         "PackageIdentifier": "JetBrains.CLion",
@@ -21059,7 +21059,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/clion//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/clion/img/meta/preview.png"
     },
     {
@@ -21100,7 +21100,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/datagrip//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/datagrip/img/meta/preview.png"
     },
     {
@@ -21138,7 +21138,7 @@ export const dummyApps = [
         "Versions": [
             "211.5538.21"
         ],
-        "PackageIcon": "https://www.jetbrains.com/datagrip/whatsnew//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://www.jetbrains.com/datagrip/whatsnew/http://resources.jetbrains.com/storage/products/datagrip/img/meta/preview.png\n    "
     },
     {
@@ -21185,7 +21185,7 @@ export const dummyApps = [
             "2021.1.2",
             "2021.1.3"
         ],
-        "PackageIcon": "https://www.jetbrains.com/dotnet//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/dotnet/img/meta/preview.png"
     },
     {
@@ -21224,7 +21224,7 @@ export const dummyApps = [
             "2021.1.1",
             "2021.1.2"
         ],
-        "PackageIcon": "https://www.jetbrains.com/go//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/goland/img/meta/preview.png"
     },
     {
@@ -21257,7 +21257,7 @@ export const dummyApps = [
         "Versions": [
             "211.5787.16"
         ],
-        "PackageIcon": "https://www.jetbrains.com/go/nextversion//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "http://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png"
     },
     {
@@ -21289,7 +21289,7 @@ export const dummyApps = [
             "2021.1.1",
             "211.7142.45"
         ],
-        "PackageIcon": "https://www.jetbrains.com/idea//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/preview.png"
     },
     {
@@ -21317,7 +21317,7 @@ export const dummyApps = [
             "2020.3.3",
             "2020.3.4"
         ],
-        "PackageIcon": "https://www.jetbrains.com/idea//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/preview.png"
     },
     {
@@ -21348,7 +21348,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/idea//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/preview.png"
     },
     {
@@ -21380,7 +21380,7 @@ export const dummyApps = [
         "Versions": [
             "2020.3.2"
         ],
-        "PackageIcon": "https://www.jetbrains.com/mps//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/mps/img/meta/preview.png"
     },
     {
@@ -21419,7 +21419,7 @@ export const dummyApps = [
             "2021.1.1",
             "2021.1.2"
         ],
-        "PackageIcon": "https://www.jetbrains.com/phpstorm//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/phpstorm/img/meta/2021_1/phpstorm_2021_1.png"
     },
     {
@@ -21451,7 +21451,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/pycharm//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/pycharm/img/meta/preview.png"
     },
     {
@@ -21489,7 +21489,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/pycharm//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/pycharm/img/meta/preview.png"
     },
     {
@@ -21529,7 +21529,7 @@ export const dummyApps = [
         "Versions": [
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/resharper//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/resharper/img/meta/webpagepreview_1280x800_ReSharper.png"
     },
     {
@@ -21569,7 +21569,7 @@ export const dummyApps = [
             "2021.1.2",
             "2021.1.3"
         ],
-        "PackageIcon": "https://www.jetbrains.com/rider//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/rider/img/meta/preview.png"
     },
     {
@@ -21605,7 +21605,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/ruby//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/rubymine/img/meta/preview.png"
     },
     {
@@ -21640,7 +21640,7 @@ export const dummyApps = [
             "2020.2.4",
             "2021.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/teamcity//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/teamcity/img/meta/preview.png"
     },
     {
@@ -21675,7 +21675,7 @@ export const dummyApps = [
             "1.20.8348.0",
             "1.20.8352.0"
         ],
-        "PackageIcon": "https://www.jetbrains.com/toolbox-app//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/toolbox/img/meta/preview.png"
     },
     {
@@ -21713,7 +21713,7 @@ export const dummyApps = [
             "2021.1",
             "2021.1.1"
         ],
-        "PackageIcon": "https://www.jetbrains.com/webstorm//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/webstorm/img/meta/preview.png"
     },
     {
@@ -21746,7 +21746,7 @@ export const dummyApps = [
             "21.1.15276",
             "21.2.16363"
         ],
-        "PackageIcon": "https://www.jetbrains.com/youtrack//apple-touch-icon.png",
+        "PackageIcon": "https://www.jetbrains.com/apple-touch-icon.png",
         "PackageImage": "https://resources.jetbrains.com/storage/products/youtrack/img/meta/preview.png"
     },
     {
@@ -21864,7 +21864,7 @@ export const dummyApps = [
             "14.6.13"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/8ef98cf2ff8441d04a5403d32e1ec010b8654866858fa62442f6f8ad18a61a06/jgraph/drawio-desktop"
+        "PackageImage": "https://opengraph.githubassets.com/eb70cc0b63a719fce7bf2a6c8c5811501eb24d6e7cdbd59296209f89a2e57591/jgraph/drawio-desktop"
     },
     {
         "PackageIdentifier": "Jianguoyun.Jianguoyun",
@@ -22062,7 +22062,7 @@ export const dummyApps = [
         "Versions": [
             "4.6"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/joe-editor///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/joe-editor/icon?1515575563"
     },
     {
@@ -22252,7 +22252,7 @@ export const dummyApps = [
             "1.20.2",
             "1.21.0"
         ],
-        "PackageIcon": "https://appium.io//ico/apple-touch-icon-144x144-precomposed.png"
+        "PackageIcon": "https://appium.io/ico/apple-touch-icon-144x144-precomposed.png"
     },
     {
         "PackageIdentifier": "jsimlo.tednotepad",
@@ -22341,7 +22341,7 @@ export const dummyApps = [
             "1.5.4",
             "1.6.1"
         ],
-        "PackageIcon": "https://julialang.org//assets/infra/julia.ico"
+        "PackageIcon": "https://julialang.org/assets/infra/julia.ico"
     },
     {
         "PackageIdentifier": "k6.k6",
@@ -22370,7 +22370,7 @@ export const dummyApps = [
             "0.30.0",
             "0.31.1"
         ],
-        "PackageIcon": "https://k6.io//favicon-32x32.png?v=b39a6f3e0dc925c8ec4f77e0a65490e9",
+        "PackageIcon": "https://k6.io/favicon-32x32.png?v=b39a6f3e0dc925c8ec4f77e0a65490e9",
         "PackageImage": "https://k6.io/images/k6-cover-image.png"
     },
     {
@@ -22404,7 +22404,7 @@ export const dummyApps = [
         "Versions": [
             "5.4.4"
         ],
-        "PackageIcon": "http://keystore-explorer.org//images/favicon.ico"
+        "PackageIcon": "http://keystore-explorer.org/images/favicon.ico"
     },
     {
         "PackageIdentifier": "kalilinux.kalilinux",
@@ -22470,7 +22470,7 @@ export const dummyApps = [
             "0.8.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/9cef951b3b26b95afe1a2038785d4175d9d2b5dd2c69cbff281b14ee9de62466/kamranahmedse/pennywise"
+        "PackageImage": "https://opengraph.githubassets.com/5de057624f86f1ff1e8d20ae6f31ef23ded8c310016a2bd852e0e9cf15f1faf3/kamranahmedse/pennywise"
     },
     {
         "PackageIdentifier": "Kamua.TinyVid",
@@ -22520,7 +22520,7 @@ export const dummyApps = [
         "Versions": [
             "4.21.0.0"
         ],
-        "PackageIcon": "https://www.kaspersky.de//icons/icon-144x144.png?v=d0af373291cbc4107eb4853f16a782fd"
+        "PackageIcon": "https://www.kaspersky.de/icons/icon-144x144.png?v=d0af373291cbc4107eb4853f16a782fd"
     },
     {
         "PackageIdentifier": "KCSoftwares.KCSoftwaresDUMo",
@@ -22602,7 +22602,7 @@ export const dummyApps = [
             "7.1.0",
             "7.2.0"
         ],
-        "PackageIcon": "https://www.digikam.org/download/binary//favicon-32x32.png"
+        "PackageIcon": "https://www.digikam.org/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "KDE.KDEConnect",
@@ -22641,7 +22641,7 @@ export const dummyApps = [
             "21.04.1.601",
             "21.04.1.602"
         ],
-        "PackageIcon": "https://kdeconnect.kde.org//assets/aether/media/192x192.png"
+        "PackageIcon": "https://kdeconnect.kde.org/assets/aether/media/192x192.png"
     },
     {
         "PackageIdentifier": "KDE.Kdenlive",
@@ -22721,7 +22721,7 @@ export const dummyApps = [
         "Versions": [
             "5.5.0"
         ],
-        "PackageIcon": "https://www.kdevelop.org//sites/www.kdevelop.org/files/kdevelop_0.ico"
+        "PackageIcon": "https://www.kdevelop.org/sites/www.kdevelop.org/files/kdevelop_0.ico"
     },
     {
         "PackageIdentifier": "KDE.KDiff3",
@@ -22759,7 +22759,7 @@ export const dummyApps = [
             "1.8.2",
             "1.8.4"
         ],
-        "PackageIcon": "https://invent.kde.org/sdk//uploads/-/system/appearance/favicon/1/kde-logo-white-blue-128x128.png",
+        "PackageIcon": "https://invent.kde.org/uploads/-/system/appearance/favicon/1/kde-logo-white-blue-128x128.png",
         "PackageImage": "https://invent.kde.org/sdk/kdiff3/-/avatar"
     },
     {
@@ -22863,7 +22863,7 @@ export const dummyApps = [
         "Versions": [
             "5.0.6"
         ],
-        "PackageIcon": "https://kmymoney.org//assets/aether/media/192x192.png"
+        "PackageIcon": "https://kmymoney.org/assets/aether/media/192x192.png"
     },
     {
         "PackageIdentifier": "KDE.Krita",
@@ -22962,7 +22962,7 @@ export const dummyApps = [
         "Versions": [
             "3.5.2"
         ],
-        "PackageIcon": "https://edu.kde.org/kstars//media/images/favicon.ico"
+        "PackageIcon": "https://edu.kde.org/media/images/favicon.ico"
     },
     {
         "PackageIdentifier": "kde.labplot",
@@ -23065,7 +23065,7 @@ export const dummyApps = [
         "Versions": [
             "0.7.2"
         ],
-        "PackageIcon": "https://rkward.kde.org//assets/aether/media/192x192.png"
+        "PackageIcon": "https://rkward.kde.org/assets/aether/media/192x192.png"
     },
     {
         "PackageIdentifier": "KDE.umbrello",
@@ -23101,7 +23101,7 @@ export const dummyApps = [
         "Versions": [
             "2.32.0"
         ],
-        "PackageIcon": "https://umbrello.kde.org//media/images/favicon.ico"
+        "PackageIcon": "https://umbrello.kde.org/media/images/favicon.ico"
     },
     {
         "PackageIdentifier": "Kebler.Kebler",
@@ -23177,7 +23177,7 @@ export const dummyApps = [
             "2.6.3",
             "2.6.4"
         ],
-        "PackageIcon": "https://keepassxc.org//favicon.ico"
+        "PackageIcon": "https://keepassxc.org/favicon.ico"
     },
     {
         "PackageIdentifier": "KeeWeb.KeeWeb",
@@ -23254,7 +23254,7 @@ export const dummyApps = [
             "5.6.0-20200528221358+040af40287",
             "5.6.0-20210125222411+2fce572e3b"
         ],
-        "PackageIcon": "https://keybase.io//images/icons/icon-keybase-logo-48.png"
+        "PackageIcon": "https://keybase.io/images/icons/icon-keybase-logo-48.png"
     },
     {
         "PackageIdentifier": "KhronosGroup.VulkanSDK",
@@ -23283,7 +23283,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.135.0"
         ],
-        "PackageIcon": "https://vulkan.lunarg.com/sdk//img/Valve_logo.png"
+        "PackageIcon": "https://vulkan.lunarg.com/img/Valve_logo.png"
     },
     {
         "PackageIdentifier": "KiCad.KiCad",
@@ -23539,7 +23539,7 @@ export const dummyApps = [
             "3.20.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/1aaa09e4054345a235dec0213cfadb92f1c5e5f3a34fbe5b260c874c9bf8fe51/Kitware/CMake"
+        "PackageImage": "https://opengraph.githubassets.com/6d840eda5e24309dd9aac275597661c43d933471cab4bdff585f95e12002327d/Kitware/CMake"
     },
     {
         "PackageIdentifier": "KKBOX.KKBOX",
@@ -23626,7 +23626,7 @@ export const dummyApps = [
             "6.9.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/65763c86a0d5c3b67793374c54bb1b901ea88079934f7723300ee37cc2175c29/klaussinani/ao"
+        "PackageImage": "https://opengraph.githubassets.com/5bd48ba6204a369db4a421b7117f9cf7514478b93b181e0f4d5168af6c3bb780/klaussinani/ao"
     },
     {
         "PackageIdentifier": "klaussinani.tusk",
@@ -23800,7 +23800,7 @@ export const dummyApps = [
             "1.18.1",
             "1.19.0"
         ],
-        "PackageIcon": "https://minikube.sigs.k8s.io/docs//favicons/favicon.ico"
+        "PackageIcon": "https://minikube.sigs.k8s.io/favicons/favicon.ico"
     },
     {
         "PackageIdentifier": "Kuro.Mery",
@@ -24034,7 +24034,7 @@ export const dummyApps = [
             "0.47.1",
             "0.49.4"
         ],
-        "PackageIcon": "https://lbry.tv//public/favicon.png",
+        "PackageIcon": "https://lbry.tv/public/favicon.png",
         "PackageImage": "https://lbry.tv/public/v2-og.png"
     },
     {
@@ -24098,7 +24098,7 @@ export const dummyApps = [
         "Versions": [
             "4.0.15"
         ],
-        "PackageIcon": "https://laragon.org//icon/apple-touch-icon-57x57.png"
+        "PackageIcon": "https://laragon.org/icon/apple-touch-icon-57x57.png"
     },
     {
         "PackageIdentifier": "Lenovo.MigrationAssistant",
@@ -24169,7 +24169,7 @@ export const dummyApps = [
             "5.07.0117",
             "5.07.0118"
         ],
-        "PackageIcon": "https://support.lenovo.com/au/en/downloads//esv4/images/l-favicon.ico "
+        "PackageIcon": "https://support.lenovo.com/esv4/images/l-favicon.ico "
     },
     {
         "PackageIdentifier": "LeonardoZide.LeoCAD",
@@ -24265,7 +24265,7 @@ export const dummyApps = [
             "2.14.0",
             "2.15.6"
         ],
-        "PackageIcon": "https://fontba.se//static/favicon.ico",
+        "PackageIcon": "https://fontba.se/static/favicon.ico",
         "PackageImage": "https://fontba.se/static/images/social/main.png"
     },
     {
@@ -24298,7 +24298,7 @@ export const dummyApps = [
             "1.1.33.08",
             "1.1.33.09"
         ],
-        "PackageIcon": "https://www.autohotkey.com//favicon.ico"
+        "PackageIcon": "https://www.autohotkey.com/favicon.ico"
     },
     {
         "PackageIdentifier": "LibreCAD.LibreCAD",
@@ -24330,7 +24330,7 @@ export const dummyApps = [
         "Versions": [
             "2.1.3"
         ],
-        "PackageIcon": "https://librecad.org//img/brlcad.png"
+        "PackageIcon": "https://librecad.org/img/brlcad.png"
     },
     {
         "PackageIdentifier": "LibreOffice.LibreOffice",
@@ -24402,7 +24402,7 @@ export const dummyApps = [
             "6.4.6.2",
             "7.1.3.2"
         ],
-        "PackageIcon": "https://www.libreoffice.org//themes/libreofficenew/favicon.ico"
+        "PackageIcon": "https://www.libreoffice.org/themes/libreofficenew/favicon.ico"
     },
     {
         "PackageIdentifier": "LibreOffice.LibreOffice-PreReleases",
@@ -24489,7 +24489,7 @@ export const dummyApps = [
         "Versions": [
             "88.0.1"
         ],
-        "PackageIcon": "https://librewolf-community.gitlab.io//images/logo.png"
+        "PackageIcon": "https://librewolf-community.gitlab.io/images/logo.png"
     },
     {
         "PackageIdentifier": "Lightform.LightformCreator",
@@ -24554,7 +24554,7 @@ export const dummyApps = [
             "0.8.4.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/8fff39b2951a1a9bbdf61d12856ab9efd9692264fd04ebacbf2be4bf9c4fcdd0/lightspark/lightspark"
+        "PackageImage": "https://opengraph.githubassets.com/02a64be98adbb3a411bf720a5162e433031b0f23b9c5598e63f82da5b0703562/lightspark/lightspark"
     },
     {
         "PackageIdentifier": "LINE.LINE",
@@ -24592,7 +24592,7 @@ export const dummyApps = [
         "Versions": [
             "7.0.0.2534"
         ],
-        "PackageIcon": "https://line.me/en//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://line.me/apple-touch-icon-57x57.png",
         "PackageImage": "https://line.me/static/115d5539e2d10b8da66d31ce22e6bccd/84249/favicon.png"
     },
     {
@@ -24690,7 +24690,7 @@ export const dummyApps = [
             "0.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/a0c4f538792590e5794107f1fa8fd77f6614a1abf1c154c3663d1e737067ec36/liri-project/liri-browser"
+        "PackageImage": "https://opengraph.githubassets.com/f04c60217e9d3e2f24e484a2166619d10a8b77bb2eafe51849c7915bdecd9057/liri-project/liri-browser"
     },
     {
         "PackageIdentifier": "LiskFoundation.LiskHub",
@@ -24714,7 +24714,7 @@ export const dummyApps = [
         "Versions": [
             "1.22.0"
         ],
-        "PackageIcon": "https://lisk.com//sites/default/files/favicons/apple-touch-icon.png",
+        "PackageIcon": "https://lisk.com/sites/default/files/favicons/apple-touch-icon.png",
         "PackageImage": "https://lisk.com/sites/default/files/styles/metatag_image/public/pictures/2021-03/walletog2x.png?itok=lsInYKkn"
     },
     {
@@ -24768,7 +24768,7 @@ export const dummyApps = [
             "2.21.4"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/c87ef54df755c59376deb9c715469738f78ddbc5ac413464b77f5c37b9447172/listen1/listen1_desktop"
+        "PackageImage": "https://opengraph.githubassets.com/3a191a84e1344e062638f47b260e06d4e5e3adac5e63152ca448ce51c058fa68/listen1/listen1_desktop"
     },
     {
         "PackageIdentifier": "listen1.listen1_fluent",
@@ -24874,7 +24874,7 @@ export const dummyApps = [
             "1.2.1",
             "1.2.2"
         ],
-        "PackageIcon": "https://lmms.io//img/logo_sm.png"
+        "PackageIcon": "https://lmms.io/img/logo_sm.png"
     },
     {
         "PackageIdentifier": "Logitech.CameraSettings",
@@ -24902,7 +24902,7 @@ export const dummyApps = [
         "Versions": [
             "2.12.8.0"
         ],
-        "PackageIcon": "https://support.logi.com/hc/en-us/articles///theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png",
+        "PackageIcon": "https://theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png",
         "PackageImage": "https://theme.zdassets.com/theme_assets/9049502/031090992817a7ff1b4d3416d1609ebf9b8c4059.png"
     },
     {
@@ -24964,7 +24964,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://gaming.logicool.co.jp/en-US/innovation//etc.clientlibs/gaming/clientlibs/gaming-pagelibs/resources/images/favicon.ico",
+        "PackageIcon": "https://gaming.logicool.co.jp/etc.clientlibs/gaming/clientlibs/gaming-pagelibs/resources/images/favicon.ico",
         "PackageImage": "https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto:best,f_auto,dpr_2.0/content/dam/gaming/en/nav/innovation/navigation-innovation-ghub.jpg?v=1"
     },
     {
@@ -25003,7 +25003,7 @@ export const dummyApps = [
         "Versions": [
             "9.02.65"
         ],
-        "PackageIcon": "https://support.logi.com/hc/en-gb/articles///theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png",
+        "PackageIcon": "https://theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png",
         "PackageImage": "https://theme.zdassets.com/theme_assets/9049502/031090992817a7ff1b4d3416d1609ebf9b8c4059.png"
     },
     {
@@ -25036,7 +25036,7 @@ export const dummyApps = [
         "Versions": [
             "8.36.86"
         ],
-        "PackageIcon": "https://www.logitech.com/it-it/product//apple-touch-icon.png"
+        "PackageIcon": "https://www.logitech.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Logitech.UnifyingSoftware",
@@ -25068,7 +25068,7 @@ export const dummyApps = [
         "Versions": [
             "2.50.25"
         ],
-        "PackageIcon": "https://support.logi.com/hc///theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png"
+        "PackageIcon": "https://theme.zdassets.com/theme_assets/9049502/13582ec0e36f7a35369913ccae326295b9750443.png"
     },
     {
         "PackageIdentifier": "LogMeIn.Hamachi",
@@ -25098,7 +25098,7 @@ export const dummyApps = [
         "Versions": [
             "2.2.0.633"
         ],
-        "PackageIcon": "https://vpn.net//Content/Images/hamachi-small.png"
+        "PackageIcon": "https://vpn.net/Content/Images/hamachi-small.png"
     },
     {
         "PackageIdentifier": "LogMeIn.LastPass",
@@ -25129,7 +25129,7 @@ export const dummyApps = [
         "Versions": [
             "4.72.0.2105"
         ],
-        "PackageIcon": "https://www.lastpass.com//-/media/43c6c6862a08410a8ef34ab46a3a750b.ico"
+        "PackageIcon": "https://www.lastpass.com/-/media/43c6c6862a08410a8ef34ab46a3a750b.ico"
     },
     {
         "PackageIdentifier": "long-woo.12306-electron",
@@ -25230,7 +25230,7 @@ export const dummyApps = [
         "Versions": [
             "0.16.1"
         ],
-        "PackageIcon": "https://loot.github.io//images/icon.ico"
+        "PackageIcon": "https://loot.github.io/images/icon.ico"
     },
     {
         "PackageIdentifier": "Love2d.Love2d",
@@ -25262,7 +25262,7 @@ export const dummyApps = [
         "Versions": [
             "11.3"
         ],
-        "PackageIcon": "http://www.love2d.org//apple-touch-icon.png?v=XBJe4KgJAz"
+        "PackageIcon": "http://www.love2d.org/apple-touch-icon.png?v=XBJe4KgJAz"
     },
     {
         "PackageIdentifier": "LovettSoftware.MyMoney.Net",
@@ -25581,7 +25581,7 @@ export const dummyApps = [
             "2019.1-beta6"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/91bab0878138f0ab93b3171c83ed94d3e5ac6e158784de2be1f30a29ae9cc685/snowie2000/mactype"
+        "PackageImage": "https://opengraph.githubassets.com/d09438baf4fae8c20ca3008e53322aa6678349858b312b600529aa90f2da6120/snowie2000/mactype"
     },
     {
         "PackageIdentifier": "madisvain.upcount",
@@ -25788,7 +25788,7 @@ export const dummyApps = [
         "Versions": [
             "8.0.30"
         ],
-        "PackageIcon": "http://manifold.net//apple-touch-icon.png"
+        "PackageIcon": "http://manifold.net/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "ManifoldSoftware.Manifold-Release-9",
@@ -25826,7 +25826,7 @@ export const dummyApps = [
             "9.0.173",
             "9.0.174"
         ],
-        "PackageIcon": "http://manifold.net//apple-touch-icon.png"
+        "PackageIcon": "http://manifold.net/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "ManifoldSoftware.Manifold-Viewer-Release-9",
@@ -25864,7 +25864,7 @@ export const dummyApps = [
             "9.0.173",
             "9.0.174"
         ],
-        "PackageIcon": "http://manifold.net//apple-touch-icon.png"
+        "PackageIcon": "http://manifold.net/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "MannheimUniversityLibrary.TesseractOCR",
@@ -26041,7 +26041,7 @@ export const dummyApps = [
         "Versions": [
             "1.20.9.0"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/vcxsrv///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://sourceforge.net//a.fsdn.com/con/app/proj/vcxsrv/screenshots/240118.jpg/1"
     },
     {
@@ -26220,7 +26220,7 @@ export const dummyApps = [
             "0.11.5"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/3a1b4159e344da4e9eed745bddca4d4c54af961d6976b00e8278b6ecda3692c5/martpie/museeks"
+        "PackageImage": "https://opengraph.githubassets.com/9618e9e081bcda9f929db114ea4015bc1e207340edc63e12ab4d41af67d2a261/martpie/museeks"
     },
     {
         "PackageIdentifier": "MasterPackager.MasterPackager",
@@ -26257,7 +26257,7 @@ export const dummyApps = [
             "20.4.7622.0",
             "21.1.7691.0"
         ],
-        "PackageIcon": "https://www.masterpackager.com//media/site/img/apple-touch-icon.png",
+        "PackageIcon": "https://www.masterpackager.com/media/site/img/apple-touch-icon.png",
         "PackageImage": "https://www.masterpackager.com/media/site/img/logo.png"
     },
     {
@@ -26286,7 +26286,7 @@ export const dummyApps = [
         "Versions": [
             "03.00.0009"
         ],
-        "PackageIcon": "https://mathpix.com//images/favicon/apple-touch-icon-57x57.png?v=2",
+        "PackageIcon": "https://mathpix.com/images/favicon/apple-touch-icon-57x57.png?v=2",
         "PackageImage": "http://mathpix.com/images/mathpix-page/snip_all@2x.png"
     },
     {
@@ -26322,7 +26322,7 @@ export const dummyApps = [
         "Versions": [
             "1.6.1.2"
         ],
-        "PackageIcon": "https://www.mathworks.com/products//etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/resources/images/favicon.20210503230154766.ico"
+        "PackageIcon": "https://www.mathworks.com/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/resources/images/favicon.20210503230154766.ico"
     },
     {
         "PackageIdentifier": "Mattermost.MattermostDesktop",
@@ -26435,7 +26435,7 @@ export const dummyApps = [
             "2.2.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/69383da9b33096770a1bc72acfc935644e24b0ec445658ff5c6b49c8125c1add/maurizuki/O2"
+        "PackageImage": "https://opengraph.githubassets.com/5ca1363cabe3e2453342cb7c1f7008985bb86c8083ff7ed698e3f96aba32de6e/maurizuki/O2"
     },
     {
         "PackageIdentifier": "MaximaTeam.Maxima",
@@ -26493,7 +26493,7 @@ export const dummyApps = [
             "21.03.14",
             "21.04.22"
         ],
-        "PackageIcon": "https://conemu.github.io/en//conemu.ico",
+        "PackageIcon": "https://conemu.github.io/conemu.ico",
         "PackageImage": "https://conemu.github.io/img/ConEmu-Maximus5.png"
     },
     {
@@ -26524,7 +26524,7 @@ export const dummyApps = [
         "Versions": [
             "5.3.8.2000"
         ],
-        "PackageIcon": "https://www.maxthon.com/mx5//images/maxthon5/logo-white@2x.png"
+        "PackageIcon": "https://www.maxthon.com/images/maxthon5/logo-white@2x.png"
     },
     {
         "PackageIdentifier": "maygo.tockler",
@@ -26640,7 +26640,7 @@ export const dummyApps = [
             "19.00-v1.4.5-R2"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/f84741f9d7cfbb1c5733ffbe74025a6dc6ff5ce63624e8f8ffa0a3c8ea3858e1/mcmilk/7-Zip-zstd"
+        "PackageImage": "https://opengraph.githubassets.com/a788b19ee305d4067f394ffd437b6e55f6ccaa748c40eb6cfaa58d207b7274ac/mcmilk/7-Zip-zstd"
     },
     {
         "PackageIdentifier": "MedalB.V.Medal",
@@ -26688,7 +26688,7 @@ export const dummyApps = [
         "Versions": [
             "20.09"
         ],
-        "PackageIcon": "https://mediaarea.net/en//images/f060656-00ec449.ico"
+        "PackageIcon": "https://mediaarea.net/images/f060656-00ec449.ico"
     },
     {
         "PackageIdentifier": "MediaArea.MediaInfo-GUI",
@@ -26865,7 +26865,7 @@ export const dummyApps = [
             "20.09",
             "21.03"
         ],
-        "PackageIcon": "https://mediaarea.net/en//images/f060656-00ec449.ico"
+        "PackageIcon": "https://mediaarea.net/images/f060656-00ec449.ico"
     },
     {
         "PackageIdentifier": "Mega.MEGASync",
@@ -26896,7 +26896,7 @@ export const dummyApps = [
         "Versions": [
             "4.5.1.0"
         ],
-        "PackageIcon": "https://mega.nz//favicon.ico?v=3",
+        "PackageIcon": "https://mega.nz/favicon.ico?v=3",
         "PackageImage": "https://cms2.mega.nz/0723d3ca8f856c90f39480c66b4f2646.png"
     },
     {
@@ -26998,7 +26998,7 @@ export const dummyApps = [
             "21.05.01",
             "21.05.18"
         ],
-        "PackageIcon": "https://www.shotcut.org//assets/img/favicon.ico"
+        "PackageIcon": "https://www.shotcut.org/assets/img/favicon.ico"
     },
     {
         "PackageIdentifier": "Melvin-Abraham.Google-Assistant",
@@ -27030,7 +27030,7 @@ export const dummyApps = [
             "1.0.0-rc.2"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/eb526f8e775af9de4afeb35de15ff1268f416f67d89f8443b0a860aa5bcedb1d/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client"
+        "PackageImage": "https://opengraph.githubassets.com/857c45f768e37ca0b56f853adc4793a9607fd4d1bb22003b27662fd0e69c7f85/Melvin-Abraham/Google-Assistant-Unofficial-Desktop-Client"
     },
     {
         "Installers": [
@@ -27068,7 +27068,7 @@ export const dummyApps = [
             "2.0.2",
             "2.0.3"
         ],
-        "PackageIcon": "https://www.memurai.com//static/favicon/favicon.ico"
+        "PackageIcon": "https://www.memurai.com/static/favicon/favicon.ico"
     },
     {
         "PackageIdentifier": "MeshHouse.MeshHouse",
@@ -27228,7 +27228,7 @@ export const dummyApps = [
         "Versions": [
             "2021.518.3.Signing-1174"
         ],
-        "PackageIcon": "https://accessibilityinsights.io//img/accessibilityinsights.png",
+        "PackageIcon": "https://accessibilityinsights.io/img/accessibilityinsights.png",
         "PackageImage": "https://accessibilityinsights.io/img/accessibilityinsights.png"
     },
     {
@@ -27262,7 +27262,7 @@ export const dummyApps = [
             "1.1.1467.01",
             "1.1.1562.01"
         ],
-        "PackageIcon": "https://accessibilityinsights.io//img/accessibilityinsights.png",
+        "PackageIcon": "https://accessibilityinsights.io/img/accessibilityinsights.png",
         "PackageImage": "https://accessibilityinsights.io/img/accessibilityinsights.png"
     },
     {
@@ -27529,7 +27529,7 @@ export const dummyApps = [
             "3.0.3477"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/84707204c79164b3b6811c539c01bc847defe135443ec2f1a17b1d889f307786/Azure/azure-functions-core-tools"
+        "PackageImage": "https://opengraph.githubassets.com/9965e21f3d96fb9ab55862acb3a21eb4071d79b4df2477c449b9e6d61b3da08b/Azure/azure-functions-core-tools"
     },
     {
         "PackageIdentifier": "Microsoft.AzureStorageEmulator",
@@ -27603,8 +27603,8 @@ export const dummyApps = [
             "1.15.1",
             "1.19.1"
         ],
-        "PackageIcon": "https://azure.microsoft.com/en-us/features/storage-explorer///azurecomcdn.azureedge.net/cvt-641f34962c26f278132943030fd9dfbcd0e1915bf79dd3cba76e960e46ef4bb3/images/icon/favicon.ico",
-        "PackageImage": "https://azurecomcdn.azureedge.net/cvt-641f34962c26f278132943030fd9dfbcd0e1915bf79dd3cba76e960e46ef4bb3/images/shared/social/azure-icon-250x250.png"
+        "PackageIcon": "https://azurecomcdn.azureedge.net/cvt-715c41f9756490f6915057045721859ffd81ee8fdc4fb194aa76b939bb9adacd/images/icon/favicon.ico",
+        "PackageImage": "https://azurecomcdn.azureedge.net/cvt-715c41f9756490f6915057045721859ffd81ee8fdc4fb194aa76b939bb9adacd/images/shared/social/azure-icon-250x250.png"
     },
     {
         "PackageIdentifier": "Microsoft.Bicep",
@@ -27645,7 +27645,7 @@ export const dummyApps = [
             "0.3.539"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/a14b2e1881880c4cb66092ebc7630b588229bcdaee6b0075360c67a65fed92f4/Azure/bicep"
+        "PackageImage": "https://opengraph.githubassets.com/48131fe11b7e4ac5f33496df22c95090a9ba06350788b351ce85d2a1319c8b84/Azure/bicep"
     },
     {
         "PackageIdentifier": "Microsoft.bitsmanager",
@@ -27718,7 +27718,7 @@ export const dummyApps = [
             "1.4.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/5b5311868790dd2a1c086918fa713eee639abf6448f109fc9c54850ef2950108/microsoft/BotFramework-Composer"
+        "PackageImage": "https://opengraph.githubassets.com/497ea7c37f66654ad03d01ad1a660c44b0468423e9866d88c3606f63a9b07d28/microsoft/BotFramework-Composer"
     },
     {
         "PackageIdentifier": "Microsoft.BotFrameworkEmulator",
@@ -27881,7 +27881,7 @@ export const dummyApps = [
             "4.7.1",
             "4.8"
         ],
-        "PackageIcon": "https://dotnet.microsoft.com/download//apple-touch-icon.png",
+        "PackageIcon": "https://dotnet.microsoft.com/apple-touch-icon.png",
         "PackageImage": "https://dotnet.microsoft.com/static/images/redesign/social/square.png"
     },
     {
@@ -27949,7 +27949,7 @@ export const dummyApps = [
             "5.0.5.29917",
             "5.0.6.30021"
         ],
-        "PackageIcon": "https://dotnet.microsoft.com/download/dotnet/current//apple-touch-icon.png",
+        "PackageIcon": "https://dotnet.microsoft.com/apple-touch-icon.png",
         "PackageImage": "https://dotnet.microsoft.com/static/images/redesign/social/square.png"
     },
     {
@@ -28092,7 +28092,7 @@ export const dummyApps = [
             "90.0.818.66",
             "91.0.864.37"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us//favicon.ico",
+        "PackageIcon": "https://www.microsoft.com/favicon.ico",
         "PackageImage": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ncJa?ver=adbf"
     },
     {
@@ -28140,7 +28140,7 @@ export const dummyApps = [
             "91.0.864.36",
             "91.0.864.37"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us//favicon.ico",
+        "PackageIcon": "https://www.microsoft.com/favicon.ico",
         "PackageImage": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ncJa?ver=adbf"
     },
     {
@@ -28179,7 +28179,7 @@ export const dummyApps = [
             "92.0.884.2",
             "92.0.891.1"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us//favicon.ico",
+        "PackageIcon": "https://www.microsoft.com/favicon.ico",
         "PackageImage": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ncJa?ver=adbf"
     },
     {
@@ -28341,7 +28341,7 @@ export const dummyApps = [
         "Versions": [
             "13.250"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.MouseWithoutBorder",
@@ -28560,7 +28560,7 @@ export const dummyApps = [
         "Versions": [
             "5.9.1.11"
         ],
-        "PackageIcon": "https://www.nuget.org//favicon.ico",
+        "PackageIcon": "https://www.nuget.org/favicon.ico",
         "PackageImage": "https://www.nuget.org/Content/gallery/img/logo-og-600x600.png"
     },
     {
@@ -28647,7 +28647,7 @@ export const dummyApps = [
             "16.0.13530.20376",
             "16.0.13628.20476"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.OneDrive",
@@ -29019,7 +29019,7 @@ export const dummyApps = [
         "Versions": [
             "2.93.981.0"
         ],
-        "PackageIcon": "https://powerbi.microsoft.com/en-us///powerbicdn.azureedge.net/cvt-90cdaf487716184e4034000935c605d1633926d348116d198f355a98b8c6cd21/pictures/favicon.ico",
+        "PackageIcon": "https://powerbicdn.azureedge.net/cvt-90cdaf487716184e4034000935c605d1633926d348116d198f355a98b8c6cd21/pictures/favicon.ico",
         "PackageImage": "https://powerbi.microsoft.com/pictures/shared/social/social-default-image.png"
     },
     {
@@ -29239,7 +29239,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.0.0"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.RemoteDesktopClient",
@@ -29891,7 +29891,7 @@ export const dummyApps = [
         "Versions": [
             "8.0.61000"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-au/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2005Redist-x86",
@@ -29922,7 +29922,7 @@ export const dummyApps = [
         "Versions": [
             "8.0.61001"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2008Redist-x64",
@@ -29954,7 +29954,7 @@ export const dummyApps = [
             "9.0.30729.4148",
             "9.0.30729.6161"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2008Redist-x86",
@@ -29985,7 +29985,7 @@ export const dummyApps = [
         "Versions": [
             "9.0.30729.6161"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2010Redist-x64",
@@ -30007,7 +30007,7 @@ export const dummyApps = [
             "10.0.40219.1",
             "10.0.40219.325"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2010Redist-x86",
@@ -30098,7 +30098,7 @@ export const dummyApps = [
         "Versions": [
             "11.0.61030"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2013Redist-x64",
@@ -30131,7 +30131,7 @@ export const dummyApps = [
             "12.0.40649",
             "12.0.40664.0"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2013Redist-x86",
@@ -30164,7 +30164,7 @@ export const dummyApps = [
             "12.0.40649",
             "12.0.40664.0"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2015-2019Redist-x64",
@@ -30203,7 +30203,7 @@ export const dummyApps = [
             "14.27.29016",
             "14.29.30037.0"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2015-2019Redist-x86",
@@ -30239,7 +30239,7 @@ export const dummyApps = [
             "14.27.29016",
             "14.29.30037.0"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2015Redist-x64",
@@ -30300,7 +30300,7 @@ export const dummyApps = [
         "Versions": [
             "14.0.24215.1"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2017Redist-x64",
@@ -30332,7 +30332,7 @@ export const dummyApps = [
         "Versions": [
             "14.16.27027.1"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VC++2017Redist-x86",
@@ -30364,7 +30364,7 @@ export const dummyApps = [
         "Versions": [
             "14.16.27027.1"
         ],
-        "PackageIcon": "https://support.microsoft.com/en-us/topic//apple-touch-icon.png"
+        "PackageIcon": "https://support.microsoft.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Microsoft.VFSforGit",
@@ -30399,7 +30399,7 @@ export const dummyApps = [
             "1.0.21085.9"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/0c6b015a4a64df44d75126b9201fda7684267755f5f21780845db9fff349c27d/microsoft/VFSForGit"
+        "PackageImage": "https://opengraph.githubassets.com/0566d96fa5f03c2628452c988b2a7eff3264ad828f439d6ab73f01627cb67e8a/microsoft/VFSForGit"
     },
     {
         "PackageIdentifier": "Microsoft.VisioViewer",
@@ -30433,7 +30433,7 @@ export const dummyApps = [
         "Versions": [
             "16.0.433.1001"
         ],
-        "PackageIcon": "https://www.microsoft.com/en-us/download///www.microsoft.com/favicon.ico?v2"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico?v2"
     },
     {
         "PackageIdentifier": "Microsoft.VisualStudio.2019.BuildTools",
@@ -31139,7 +31139,7 @@ export const dummyApps = [
             "1.56.1.e713fe9b05",
             "1.56.2"
         ],
-        "PackageIcon": "https://code.visualstudio.com//favicon.ico",
+        "PackageIcon": "https://code.visualstudio.com/favicon.ico",
         "PackageImage": "https://code.visualstudio.com/opengraphimg/opengraph-home.png"
     },
     {
@@ -31197,7 +31197,7 @@ export const dummyApps = [
             "1.57.8.659175fa39",
             "1.57.9.7771be8b98"
         ],
-        "PackageIcon": "https://code.visualstudio.com//favicon.ico",
+        "PackageIcon": "https://code.visualstudio.com/favicon.ico",
         "PackageImage": "https://code.visualstudio.com/opengraphimg/opengraph-home.png"
     },
     {
@@ -31245,7 +31245,7 @@ export const dummyApps = [
         "Versions": [
             "5.1"
         ],
-        "PackageIcon": "https://www.microsoft.com/web/downloads//favicon.ico"
+        "PackageIcon": "https://www.microsoft.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Microsoft.webview2-evergreen",
@@ -31942,7 +31942,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://www.mirc.com//images/barlogo.gif"
+        "PackageIcon": "https://www.mirc.com/images/barlogo.gif"
     },
     {
         "PackageIdentifier": "Mircearoata.SatisfactoryModLauncher",
@@ -32033,7 +32033,7 @@ export const dummyApps = [
             "3.20.1",
             "3.22.0"
         ],
-        "PackageIcon": "https://scratch.mit.edu//favicon.ico",
+        "PackageIcon": "https://scratch.mit.edu/favicon.ico",
         "PackageImage": "https://scratch.mit.edu/images/scratch-og.png"
     },
     {
@@ -32221,7 +32221,7 @@ export const dummyApps = [
             "0.9.3.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/b0d9d8546470d5b2b6eece0ba1a7066020413d46a5aa0c664559fae1b9fb56e2/ModernFlyouts-Community/ModernFlyouts"
+        "PackageImage": "https://opengraph.githubassets.com/23f3ec978ee54068472fe2088f0dfa89c59f8bb4316ceebc8a006007837640e0/ModernFlyouts-Community/ModernFlyouts"
     },
     {
         "PackageIdentifier": "ModuleArt.QuickPictureViewer",
@@ -32316,8 +32316,8 @@ export const dummyApps = [
         "Versions": [
             "1.0.0.0"
         ],
-        "PackageIcon": "https://www.minecraft.net//etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico",
-        "PackageImage": "https://www.minecraft.net//etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg"
+        "PackageIcon": "https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico",
+        "PackageImage": "https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg"
     },
     {
         "PackageIdentifier": "MolotovTV.Molotov",
@@ -32354,7 +32354,7 @@ export const dummyApps = [
             "4.4.0",
             "4.4.2"
         ],
-        "PackageIcon": "https://www.molotov.tv//favicon.ico",
+        "PackageIcon": "https://www.molotov.tv/favicon.ico",
         "PackageImage": "https://images.molotov.tv/data/landing/_1620222252_molotov-logo.png"
     },
     {
@@ -32389,7 +32389,7 @@ export const dummyApps = [
         "Versions": [
             "1.21.2"
         ],
-        "PackageIcon": "https://www.mongodb.com/products//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32426,7 +32426,7 @@ export const dummyApps = [
             "1.26.0",
             "1.26.1"
         ],
-        "PackageIcon": "https://www.mongodb.com/products//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32464,7 +32464,7 @@ export const dummyApps = [
             "1.26.0",
             "1.26.1"
         ],
-        "PackageIcon": "https://www.mongodb.com/products//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32502,7 +32502,7 @@ export const dummyApps = [
             "1.26.0",
             "1.26.1"
         ],
-        "PackageIcon": "https://www.mongodb.com/products//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32578,7 +32578,7 @@ export const dummyApps = [
             "4.4.5",
             "4.4.6"
         ],
-        "PackageIcon": "https://www.mongodb.com//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32617,7 +32617,7 @@ export const dummyApps = [
             "4.4.5",
             "4.4.6"
         ],
-        "PackageIcon": "https://www.mongodb.com//assets/images/global/favicon.ico",
+        "PackageIcon": "https://www.mongodb.com/assets/images/global/favicon.ico",
         "PackageImage": "http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/mongodb-for-giant-ideas-bbab5c3cf8.png"
     },
     {
@@ -32653,7 +32653,7 @@ export const dummyApps = [
             "1.17.0",
             "1.18.0"
         ],
-        "PackageIcon": "https://notejoy.com//static/notes/images/favicon3/favicon-196x196.png",
+        "PackageIcon": "https://notejoy.com/static/notes/images/favicon3/favicon-196x196.png",
         "PackageImage": "https://notejoy.com/static/notes/images/home_hero3.png"
     },
     {
@@ -32686,7 +32686,7 @@ export const dummyApps = [
         "Versions": [
             "2.12.45"
         ],
-        "PackageIcon": "https://www.mono-project.com/docs/gui/gtksharp//favicon.ico"
+        "PackageIcon": "https://www.mono-project.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Mono.Mono",
@@ -32776,7 +32776,7 @@ export const dummyApps = [
             "6.8.0.123",
             "6.8.0.72"
         ],
-        "PackageIcon": "https://www.mono-project.com//favicon.ico"
+        "PackageIcon": "https://www.mono-project.com/favicon.ico"
     },
     {
         "PackageIdentifier": "MonoGame.MonoGame",
@@ -32805,7 +32805,7 @@ export const dummyApps = [
         "Versions": [
             "3.7.1.0"
         ],
-        "PackageIcon": "https://www.monogame.net//apple-touch-icon.png"
+        "PackageIcon": "https://www.monogame.net/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Mooii.PhotoScape",
@@ -32856,7 +32856,7 @@ export const dummyApps = [
             "29.1.1",
             "29.2.0"
         ],
-        "PackageIcon": "https://www.palemoon.org///www.palemoon.org/images/pale_moon_logo_256.png"
+        "PackageIcon": "https://www.palemoon.org/images/pale_moon_logo_256.png"
     },
     {
         "PackageIdentifier": "MoonlightGameStreamingProject.Moonlight",
@@ -32893,7 +32893,7 @@ export const dummyApps = [
             "3.1.2.0",
             "3.1.3.0"
         ],
-        "PackageIcon": "https://moonlight-stream.org//images/touch/icons-57.png"
+        "PackageIcon": "https://moonlight-stream.org/images/touch/icons-57.png"
     },
     {
         "PackageIdentifier": "moshfeu.y2mp3",
@@ -33143,7 +33143,7 @@ export const dummyApps = [
             "78.8.1",
             "78.9.1"
         ],
-        "PackageIcon": "https://www.thunderbird.net/en-US//media/img/thunderbird/thunderbird-256.png",
+        "PackageIcon": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png",
         "PackageImage": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png"
     },
     {
@@ -33172,7 +33172,7 @@ export const dummyApps = [
             "88.0b2",
             "89.0b4"
         ],
-        "PackageIcon": "https://www.thunderbird.net/en-US//media/img/thunderbird/thunderbird-256.png",
+        "PackageIcon": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png",
         "PackageImage": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png"
     },
     {
@@ -33236,7 +33236,7 @@ export const dummyApps = [
             "1.7.13"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/746cd8d2291f7bcdbb37d0d104f670f4d694e4d11ab7a7d1829ea5c11aeabeb5/mpc-hc/mpc-hc"
+        "PackageImage": "https://opengraph.githubassets.com/18c880b47a8cd5f40b108ee33638efa77561f0222968f59c16ac2a9580f1994d/mpc-hc/mpc-hc"
     },
     {
         "PackageIdentifier": "mRemoteNG.mRemoteNG",
@@ -33362,7 +33362,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.4"
         ],
-        "PackageIcon": "https://mubu.com//favicon.ico"
+        "PackageIcon": "https://mubu.com/favicon.ico"
     },
     {
         "PackageIdentifier": "muffinista.before-dawn",
@@ -33431,7 +33431,7 @@ export const dummyApps = [
             "2021.2.0",
             "2021.3.0"
         ],
-        "PackageIcon": "https://mullvad.net/en//static/img/favicons/favicon-32x32.1076b7e2f506.png",
+        "PackageIcon": "https://mullvad.net/static/img/favicons/favicon-32x32.1076b7e2f506.png",
         "PackageImage": "https://mullvad.net/media/press/MullvadVPN_logo_Round_RGB_Color_positive.png"
     },
     {
@@ -33465,7 +33465,8 @@ export const dummyApps = [
         "ManifestVersion": "1.0.0",
         "Versions": [
             "9.2.0"
-        ]
+        ],
+        "PackageIcon": "data:,"
     },
     {
         "PackageIdentifier": "Mumble.Mumble",
@@ -33503,7 +33504,7 @@ export const dummyApps = [
             "1.3.2",
             "1.3.4"
         ],
-        "PackageIcon": "https://www.mumble.info//favicon.ico"
+        "PackageIcon": "https://www.mumble.info/favicon.ico"
     },
     {
         "PackageIdentifier": "Musescore.Musescore",
@@ -33551,7 +33552,7 @@ export const dummyApps = [
             "3.6.1",
             "3.6.2"
         ],
-        "PackageIcon": "https://musescore.org//themes/musescore_theme/favicon.ico"
+        "PackageIcon": "https://musescore.org/themes/musescore_theme/favicon.ico"
     },
     {
         "PackageIdentifier": "MusicBrainz.Picard",
@@ -33589,7 +33590,7 @@ export const dummyApps = [
             "2.4.2",
             "2.5.6"
         ],
-        "PackageIcon": "https://picard.musicbrainz.org//static/img/picard-icon.png"
+        "PackageIcon": "https://picard.musicbrainz.org/static/img/picard-icon.png"
     },
     {
         "PackageIdentifier": "MyGames.GameCenter",
@@ -33659,7 +33660,7 @@ export const dummyApps = [
             "2.0.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/cf4e9a3a857b459f49162d7e6e32716fb3e398490dc748f5f23cef566728067c/mypaint/mypaint"
+        "PackageImage": "https://opengraph.githubassets.com/54589a448888061e4e29bfa9d8ae948f52983a6f79e8a3b9dddf31d4cfb9d5c3/mypaint/mypaint"
     },
     {
         "PackageIdentifier": "MysteriumNetwork.Mysterium",
@@ -34170,7 +34171,7 @@ export const dummyApps = [
         "Versions": [
             "0.9.25"
         ],
-        "PackageIcon": "http://www.tuxpaint.org//favicon.ico"
+        "PackageIcon": "http://www.tuxpaint.org/favicon.ico"
     },
     {
         "PackageIdentifier": "NewBreedSoftware.TuxPaintStamps",
@@ -34195,7 +34196,7 @@ export const dummyApps = [
         "Versions": [
             "2018.09.01"
         ],
-        "PackageIcon": "http://www.tuxpaint.org//favicon.ico"
+        "PackageIcon": "http://www.tuxpaint.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Nextcloud.NextcloudDesktop",
@@ -34414,8 +34415,8 @@ export const dummyApps = [
         "Versions": [
             "6.38.8"
         ],
-        "PackageIcon": "https://nimbusweb.me//new-style-img/index.ico",
-        "PackageImage": "https://nimbusweb.me//new-style-img/preview-note.jpg"
+        "PackageIcon": "https://nimbusweb.me/new-style-img/index.ico",
+        "PackageImage": "https://nimbusweb.me/new-style-img/preview-note.jpg"
     },
     {
         "PackageIdentifier": "NimbusWeb.NimbusWeb",
@@ -34450,8 +34451,8 @@ export const dummyApps = [
         "Versions": [
             "6.38.8"
         ],
-        "PackageIcon": "https://nimbusweb.me//new-style-img/index.ico",
-        "PackageImage": "https://nimbusweb.me//new-style-img/preview-note.jpg"
+        "PackageIcon": "https://nimbusweb.me/new-style-img/index.ico",
+        "PackageImage": "https://nimbusweb.me/new-style-img/preview-note.jpg"
     },
     {
         "PackageIdentifier": "NirSoft.BlueScreenView",
@@ -34541,7 +34542,7 @@ export const dummyApps = [
             "13.22.0.414",
             "13.40.0.811"
         ],
-        "PackageIcon": "https://www.gonitro.com//img/favicon.ico",
+        "PackageIcon": "https://www.gonitro.com/img/favicon.ico",
         "PackageImage": "https://cdn.gonitro.com/images/sites/common/gonitro-OG-logo.png"
     },
     {
@@ -34642,7 +34643,7 @@ export const dummyApps = [
             "7.1.3",
             "7.4.1"
         ],
-        "PackageIcon": "https://www.nomachine.com//favicon.ico",
+        "PackageIcon": "https://www.nomachine.com/favicon.ico",
         "PackageImage": "https://www.nomachine.com/NMLogo.png"
     },
     {
@@ -34679,7 +34680,7 @@ export const dummyApps = [
             "7.3.2",
             "7.4.1"
         ],
-        "PackageIcon": "https://www.nomachine.com//favicon.ico",
+        "PackageIcon": "https://www.nomachine.com/favicon.ico",
         "PackageImage": "https://www.nomachine.com/NMLogo.png"
     },
     {
@@ -34874,7 +34875,7 @@ export const dummyApps = [
             "7.9.4",
             "7.9.5"
         ],
-        "PackageIcon": "https://notepad-plus-plus.org//apple-touch-icon.png"
+        "PackageIcon": "https://notepad-plus-plus.org/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Notepad2mod.Notepad2mod",
@@ -34983,7 +34984,7 @@ export const dummyApps = [
             "2.0.8",
             "2.0.9"
         ],
-        "PackageIcon": "https://www.notion.so//front-static/favicon.ico",
+        "PackageIcon": "https://www.notion.so/front-static/favicon.ico",
         "PackageImage": "https://www.notion.so/front-static/meta/default.png"
     },
     {
@@ -35003,7 +35004,7 @@ export const dummyApps = [
             "3.13",
             "3.19.0"
         ],
-        "PackageIcon": "https://nozbe.com//images/base/favicon.ico",
+        "PackageIcon": "https://nozbe.com/images/base/favicon.ico",
         "PackageImage": "https://nozbe.com/images/base/2048x1024_teams.png"
     },
     {
@@ -35063,7 +35064,7 @@ export const dummyApps = [
         "Versions": [
             "3.06.1"
         ],
-        "PackageIcon": "https://nsis.sourceforge.io//mediawiki/skins/nsis/logo.gif"
+        "PackageIcon": "https://nsis.sourceforge.io/mediawiki/skins/nsis/logo.gif"
     },
     {
         "PackageIdentifier": "NTWindSoftware.WindowSpace",
@@ -35228,7 +35229,7 @@ export const dummyApps = [
         "Versions": [
             "5.2.4"
         ],
-        "PackageIcon": "https://www.jianguoyun.com//static/images/logo.png"
+        "PackageIcon": "https://www.jianguoyun.com/static/images/logo.png"
     },
     {
         "PackageIdentifier": "NVAccess.NVDA",
@@ -35409,7 +35410,7 @@ export const dummyApps = [
             "1.4.2",
             "2.1.0"
         ],
-        "PackageIcon": "https://www.nvquicksite.com//Portals/0/favicon.ico?ver=uN3sVnCP81crtYHK5sxaCg%3d%3d"
+        "PackageIcon": "https://www.nvquicksite.com/Portals/0/favicon.ico?ver=uN3sVnCP81crtYHK5sxaCg%3d%3d"
     },
     {
         "PackageIdentifier": "nzbget.nzbget",
@@ -35475,8 +35476,8 @@ export const dummyApps = [
             "4.8.0",
             "4.9.2"
         ],
-        "PackageIcon": "https://nzxt.com/software//favicon.svg",
-        "PackageImage": "https://nzxt.com/software//assets/cms/34299/1621631896-newsroom-productupdate-h510elite.png?fit=max&fm=jpg&w=1000"
+        "PackageIcon": "https://nzxt.com/favicon.svg",
+        "PackageImage": "https://nzxt.com/assets/cms/34299/1621631896-newsroom-productupdate-h510elite.png?fit=max&fm=jpg&w=1000"
     },
     {
         "PackageIdentifier": "Obsidian.Obsidian",
@@ -35530,7 +35531,7 @@ export const dummyApps = [
         "Versions": [
             "26.1.1"
         ],
-        "PackageIcon": "https://obsproject.com//favicon-32x32.png"
+        "PackageIcon": "https://obsproject.com/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "Ocenaudio.Ocenaudio",
@@ -35558,7 +35559,7 @@ export const dummyApps = [
         "Versions": [
             "3.10.7"
         ],
-        "PackageIcon": "https://www.ocenaudio.com//favicon.ico"
+        "PackageIcon": "https://www.ocenaudio.com/favicon.ico"
     },
     {
         "PackageIdentifier": "OctopusDeploy.Server",
@@ -35608,7 +35609,7 @@ export const dummyApps = [
             "2021.1.7149",
             "2021.1.7198"
         ],
-        "PackageIcon": "https://octopus.com//images/(global)/favicon.png",
+        "PackageIcon": "https://octopus.com/images/(global)/favicon.png",
         "PackageImage": "https://octopus.com/images/logo.png"
     },
     {
@@ -35664,7 +35665,7 @@ export const dummyApps = [
             "6.1.670",
             "6.1.690"
         ],
-        "PackageIcon": "https://octopus.com/docs/infrastructure/deployment-targets//images/(global)/favicon.png",
+        "PackageIcon": "https://octopus.com/images/(global)/favicon.png",
         "PackageImage": "https://octopus.com/images/logo.png"
     },
     {
@@ -35698,7 +35699,7 @@ export const dummyApps = [
             "14.0.1-1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/2c498ebef9cca72e20de90c447105fa1ae46fca71bb29e2687392d62719f20d4/ojdkbuild/ojdkbuild"
+        "PackageImage": "https://opengraph.githubassets.com/9fd95b28e57ca9b579bcab512fd754864063c839f52f310a21fd347f54f15c20/ojdkbuild/ojdkbuild"
     },
     {
         "PackageIdentifier": "oldj.switchhosts",
@@ -35729,7 +35730,7 @@ export const dummyApps = [
             "4.0.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/83ee22c32f145497783b7a1a1c4f184dd69667c8e982fac672634acfb37f8791/oldj/SwitchHosts"
+        "PackageImage": "https://opengraph.githubassets.com/380e6ce1fd7e0bec817f062dd25fadb1460ab19c484715be49ec2e72e3614b14/oldj/SwitchHosts"
     },
     {
         "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor",
@@ -35760,7 +35761,7 @@ export const dummyApps = [
             "9.2 build 937",
             "9.2.0.937"
         ],
-        "PackageIcon": "https://www.rapidee.com/en//favicon.ico"
+        "PackageIcon": "https://www.rapidee.com/favicon.ico"
     },
     {
         "PackageIdentifier": "OliverSchwendener.Ueli",
@@ -35941,7 +35942,7 @@ export const dummyApps = [
         "Versions": [
             "5.6.0"
         ],
-        "PackageIcon": "https://www.omicronlab.com///www.omicronlab.com/favicon.ico",
+        "PackageIcon": "https://www.omicronlab.com/favicon.ico",
         "PackageImage": "https://www.omicronlab.com/assets/images/og/avro-keyboard.jpg"
     },
     {
@@ -36039,7 +36040,7 @@ export const dummyApps = [
             "4.4.160"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/2e1d49030148772f5ff0da645fc51bda81f615c2673cd40d67360188b34b1de0/Open-Shell/Open-Shell-Menu"
+        "PackageImage": "https://opengraph.githubassets.com/6a5fafb49737b66e52ba49e9bd338760fa02ee36caef07bacd4565d6ffd6d732/Open-Shell/Open-Shell-Menu"
     },
     {
         "PackageIdentifier": "OpenJS.Nodejs",
@@ -36108,7 +36109,7 @@ export const dummyApps = [
             "16.2.0",
             "7.1.0"
         ],
-        "PackageIcon": "https://nodejs.org/en//static/images/favicons/apple-touch-icon.png",
+        "PackageIcon": "https://nodejs.org/static/images/favicons/apple-touch-icon.png",
         "PackageImage": "https://nodejs.org/static/images/logo-hexagon-card.png"
     },
     {
@@ -36147,7 +36148,7 @@ export const dummyApps = [
             "14.16.1",
             "14.17.0"
         ],
-        "PackageIcon": "https://nodejs.org/en//static/images/favicons/apple-touch-icon.png",
+        "PackageIcon": "https://nodejs.org/static/images/favicons/apple-touch-icon.png",
         "PackageImage": "https://nodejs.org/static/images/logo-hexagon-card.png"
     },
     {
@@ -36361,7 +36362,7 @@ export const dummyApps = [
             "17.0.0-20210528",
             "17.0.0-20210529"
         ],
-        "PackageIcon": "https://nodejs.org/en//static/images/favicons/apple-touch-icon.png",
+        "PackageIcon": "https://nodejs.org/static/images/favicons/apple-touch-icon.png",
         "PackageImage": "https://nodejs.org/static/images/logo-hexagon-card.png"
     },
     {
@@ -36596,8 +36597,8 @@ export const dummyApps = [
         "Versions": [
             "20200503"
         ],
-        "PackageIcon": "https://www.openra.net//favicon.ico",
-        "PackageImage": "https://www.openra.net//images/social.jpg?t=2021-03-30-23-16"
+        "PackageIcon": "https://www.openra.net/favicon.ico",
+        "PackageImage": "https://www.openra.net/images/social.jpg?t=2021-03-30-23-16"
     },
     {
         "PackageIdentifier": "OpenRCT2.OpenRCT2",
@@ -36748,7 +36749,7 @@ export const dummyApps = [
         "Versions": [
             "2.5.1"
         ],
-        "PackageIcon": "https://www.openshot.org///cdn.openshot.org/static/img/favicon.png"
+        "PackageIcon": "https://cdn.openshot.org/static/img/favicon.png"
     },
     {
         "PackageIdentifier": "OpenSight.FlashFXP",
@@ -36783,7 +36784,7 @@ export const dummyApps = [
         "Versions": [
             "5.4.0"
         ],
-        "PackageIcon": "https://www.flashfxp.com//favicon.ico"
+        "PackageIcon": "https://www.flashfxp.com/favicon.ico"
     },
     {
         "PackageIdentifier": "OpenTTD.OpenTTD",
@@ -36811,7 +36812,7 @@ export const dummyApps = [
             "1.10.3",
             "1.11.1"
         ],
-        "PackageIcon": "https://www.openttd.org//static/favicon.ico"
+        "PackageIcon": "https://www.openttd.org/static/favicon.ico"
     },
     {
         "PackageIdentifier": "OpenVPNTechnologies.OpenVPN",
@@ -37163,7 +37164,7 @@ export const dummyApps = [
             "6.1.20",
             "6.1.22"
         ],
-        "PackageIcon": "https://www.virtualbox.org//graphics/VirtualBox.ico"
+        "PackageIcon": "https://www.virtualbox.org/graphics/VirtualBox.ico"
     },
     {
         "PackageIdentifier": "Oracle.VirtualBoxDevelopment",
@@ -37182,7 +37183,7 @@ export const dummyApps = [
         "Versions": [
             "6.1.97-142300"
         ],
-        "PackageIcon": "https://www.virtualbox.org//graphics/VirtualBox.ico"
+        "PackageIcon": "https://www.virtualbox.org/graphics/VirtualBox.ico"
     },
     {
         "PackageIdentifier": "Oracle.VirtualBoxTest",
@@ -37202,7 +37203,7 @@ export const dummyApps = [
             "6.1.21-143957",
             "6.1.21-144078"
         ],
-        "PackageIcon": "https://www.virtualbox.org//graphics/VirtualBox.ico"
+        "PackageIcon": "https://www.virtualbox.org/graphics/VirtualBox.ico"
     },
     {
         "PackageIdentifier": "OrbxSimulationSystemsPtyLtd.Volanta",
@@ -37360,7 +37361,7 @@ export const dummyApps = [
         "Versions": [
             "4.9.1.0"
         ],
-        "PackageIcon": "https://www.outertech.com/en//templates/outertech/favicon.ico"
+        "PackageIcon": "https://www.outertech.com/templates/outertech/favicon.ico"
     },
     {
         "PackageIdentifier": "OutSystems.ServiceStudio",
@@ -37395,7 +37396,7 @@ export const dummyApps = [
         "Versions": [
             "11.7.12.0"
         ],
-        "PackageIcon": "https://www.outsystems.com/Downloads/search/Development-Environment//PortalTheme/img/OSLogoRed.png"
+        "PackageIcon": "https://www.outsystems.com/PortalTheme/img/OSLogoRed.png"
     },
     {
         "PackageIdentifier": "ovital.OmapRevitPlugin",
@@ -37578,7 +37579,7 @@ export const dummyApps = [
         "Versions": [
             "21.1.1"
         ],
-        "PackageIcon": "https://www.paessler.com//static/common/img/favicon/apple-touch-icon-57x57.jpg?v=210128045531",
+        "PackageIcon": "https://www.paessler.com/static/common/img/favicon/apple-touch-icon-57x57.jpg?v=210128045531",
         "PackageImage": "https://hlassets.paessler.com/common/files/preview/fallback-preview.jpg"
     },
     {
@@ -37631,7 +37632,7 @@ export const dummyApps = [
         "Versions": [
             "1.8.4"
         ],
-        "PackageIcon": "https://play.paradoxplaza.com//assets/favicon/apple-touch-icon-99d88fb68ec5bb122ba1196751651dc7dfac1f7d8aaad6d5c6a9942593cb7c75.png",
+        "PackageIcon": "https://play.paradoxplaza.com/assets/favicon/apple-touch-icon-99d88fb68ec5bb122ba1196751651dc7dfac1f7d8aaad6d5c6a9942593cb7c75.png",
         "PackageImage": "https://play.paradoxplaza.com/assets/social/og-93a14049518d7a9a6499d99fe3fae04083ca74e5415c4dbba98dd71a3e77a88a.png"
     },
     {
@@ -37892,7 +37893,7 @@ export const dummyApps = [
             "4.2.3",
             "4.2.5"
         ],
-        "PackageIcon": "https://pdfsam.org///pdfsam.org/icns/favicon.ico",
+        "PackageIcon": "https://pdfsam.org/icns/favicon.ico",
         "PackageImage": "https://pdfsam.org/imgs/home.png"
     },
     {
@@ -37924,7 +37925,7 @@ export const dummyApps = [
         "Versions": [
             "202.30.4"
         ],
-        "PackageIcon": "https://www.cacher.io//assets/favicon/apple-touch-icon-57x57.png",
+        "PackageIcon": "https://www.cacher.io/assets/favicon/apple-touch-icon-57x57.png",
         "PackageImage": "https://www.cacher.io/assets/open-graph-banner.png"
     },
     {
@@ -38009,7 +38010,7 @@ export const dummyApps = [
             "2020.1",
             "2020.3"
         ],
-        "PackageIcon": "https://www.perforce.com/products/helix-core-apps//themes/custom/themekit/images/favicons/favicon-32x32.png"
+        "PackageIcon": "https://www.perforce.com/themes/custom/themekit/images/favicons/favicon-32x32.png"
     },
     {
         "PackageIdentifier": "PersepolisDownloadManager.Persepolis",
@@ -38145,7 +38146,7 @@ export const dummyApps = [
             "1.6.5",
             "1.6.6"
         ],
-        "PackageIcon": "https://www.foobar2000.org//favicon.ico"
+        "PackageIcon": "https://www.foobar2000.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Philips.HueSync",
@@ -38177,8 +38178,8 @@ export const dummyApps = [
         "Versions": [
             "1.6.1.12"
         ],
-        "PackageIcon": "https://www.philips-hue.com/en-hk/explore-hue/propositions//etc.clientlibs/signify-brand-hue/clientlibs/clientlib-main/resources/favicons/favicon.ico",
-        "PackageImage": "https://www.philips-hue.com/en-hk/explore-hue/propositions//b-dam/hue/masters/explore-hue/propositions/entertainment/entertainment-2-4-3.jpg"
+        "PackageIcon": "https://www.philips-hue.com/etc.clientlibs/signify-brand-hue/clientlibs/clientlib-main/resources/favicons/favicon.ico",
+        "PackageImage": "https://www.philips-hue.com/b-dam/hue/masters/explore-hue/propositions/entertainment/entertainment-2-4-3.jpg"
     },
     {
         "PackageIdentifier": "Phoner.PhonerLite",
@@ -38254,7 +38255,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://www.phraseexpress.com//site/assets/files/1026/apple-touch-icon-152x152-precomposed.57x57.png"
+        "PackageIcon": "https://www.phraseexpress.com/site/assets/files/1026/apple-touch-icon-152x152-precomposed.57x57.png"
     },
     {
         "PackageIdentifier": "PicGo.PicGo",
@@ -38319,7 +38320,7 @@ export const dummyApps = [
             "0.24.0",
             "0.25.0"
         ],
-        "PackageIcon": "https://picotorrent.org//favicon.ico"
+        "PackageIcon": "https://picotorrent.org/favicon.ico"
     },
     {
         "PackageIdentifier": "picpick.picpick",
@@ -38377,7 +38378,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://picpick.app//icons-32ef3f284ce5058bd11263e9796a5606/favicon.ico",
+        "PackageIcon": "https://picpick.app/icons-32ef3f284ce5058bd11263e9796a5606/favicon.ico",
         "PackageImage": "https://picpick.app/windows-best-screen-capture.png"
     },
     {
@@ -38456,7 +38457,7 @@ export const dummyApps = [
             "2.14.1",
             "2.14.4"
         ],
-        "PackageIcon": "https://pidgin.im//images/pidgin-circle-16.png",
+        "PackageIcon": "https://pidgin.im/images/pidgin-circle-16.png",
         "PackageImage": "https://pidgin.im/images/pidgin-circle-256.png"
     },
     {
@@ -38496,7 +38497,7 @@ export const dummyApps = [
             "5.79.8704",
             "5.80"
         ],
-        "PackageIcon": "https://www.ccleaner.com///s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
+        "PackageIcon": "https://s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Piriform.Defraggler",
@@ -38527,7 +38528,7 @@ export const dummyApps = [
         "Versions": [
             "2.22"
         ],
-        "PackageIcon": "https://www.ccleaner.com///s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
+        "PackageIcon": "https://s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Piriform.Recuva",
@@ -38558,7 +38559,7 @@ export const dummyApps = [
         "Versions": [
             "1.53"
         ],
-        "PackageIcon": "https://www.ccleaner.com///s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
+        "PackageIcon": "https://s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Piriform.Speccy",
@@ -38589,7 +38590,7 @@ export const dummyApps = [
         "Versions": [
             "1.32"
         ],
-        "PackageIcon": "https://www.ccleaner.com///s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
+        "PackageIcon": "https://s1.pir.fm/pf/favicons--AwgCBwYOBQc/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "pku.gateway",
@@ -38626,7 +38627,7 @@ export const dummyApps = [
         "Versions": [
             "0.9.9"
         ],
-        "PackageIcon": "https://its.pku.edu.cn//img/pkulogo_white.png"
+        "PackageIcon": "https://its.pku.edu.cn/img/pkulogo_white.png"
     },
     {
         "PackageIdentifier": "Playnite.Playnite",
@@ -39068,7 +39069,7 @@ export const dummyApps = [
         "Versions": [
             "3.21.53119.27704"
         ],
-        "PackageIcon": "https://www.poly.com/us/en/support/downloads-apps//etc.clientlibs/poly/clientlibs/clientlib-site/resources/images/poly-logo.svg",
+        "PackageIcon": "https://www.poly.com/etc.clientlibs/poly/clientlibs/clientlib-site/resources/images/poly-logo.svg",
         "PackageImage": "https://poly.scene7.com/is/image/plantronics/mobile-app?$mainprod$"
     },
     {
@@ -39099,7 +39100,7 @@ export const dummyApps = [
             "7.0.18",
             "7.0.46"
         ],
-        "PackageIcon": "https://www.postbox-inc.com//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://www.postbox-inc.com/apple-touch-icon-57x57.png",
         "PackageImage": "https://d1ctrvvfkbyl4b.cloudfront.net/blog/_1200x630_crop_center-center_82_none/postbox-logo@2x.png?mtime=20200504073726&focal=none&tmtime=20210416133033"
     },
     {
@@ -39138,7 +39139,7 @@ export const dummyApps = [
             "5.1",
             "5.2"
         ],
-        "PackageIcon": "https://www.pgadmin.org//static/COMPILED/assets/img/favicon.ico"
+        "PackageIcon": "https://www.pgadmin.org/static/COMPILED/assets/img/favicon.ico"
     },
     {
         "PackageIdentifier": "PostgreSQL.PostgreSQL",
@@ -39180,7 +39181,7 @@ export const dummyApps = [
             "13.3.1",
             "13.3.2"
         ],
-        "PackageIcon": "https://www.postgresql.org//favicon.ico",
+        "PackageIcon": "https://www.postgresql.org/favicon.ico",
         "PackageImage": "https://www.postgresql.org/media/img/about/press/elephant.png"
     },
     {
@@ -39237,7 +39238,7 @@ export const dummyApps = [
             "8.4.0",
             "8.5.1"
         ],
-        "PackageIcon": "https://www.postman.com//favicon-32x32.png?v=6fa10b9ee2b6e5dcec30e5027a14e7a4",
+        "PackageIcon": "https://www.postman.com/favicon-32x32.png?v=6fa10b9ee2b6e5dcec30e5027a14e7a4",
         "PackageImage": "https://assets.getpostman.com/common-share/postman-platform-for-api-development-social-card.jpg"
     },
     {
@@ -39305,7 +39306,7 @@ export const dummyApps = [
             "5.4.0",
             "5.4.1"
         ],
-        "PackageIcon": "https://www.geekbench.com//img/favicons/favicon.png"
+        "PackageIcon": "https://www.geekbench.com/img/favicons/favicon.png"
     },
     {
         "PackageIdentifier": "Primecount.Primecount",
@@ -39383,7 +39384,7 @@ export const dummyApps = [
             "7.6"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/73a1305eebfb2953bccd08ec936309cb7ab5bf31d2e5076f99c1c090da31eea0/kimwalisch/primesieve"
+        "PackageImage": "https://opengraph.githubassets.com/1effd2ddfbaec3fb60dfd5d128d5dcb712363d56750e66c4ea9576df17550540/kimwalisch/primesieve"
     },
     {
         "PackageIdentifier": "PrivateInternetAccess.PrivateInternetAccess",
@@ -39455,7 +39456,7 @@ export const dummyApps = [
         "Versions": [
             "1.8.3"
         ],
-        "PackageIcon": "https://protonmail.com/bridge//images/pm-logo.svg",
+        "PackageIcon": "https://protonmail.com/images/pm-logo.svg",
         "PackageImage": "https://protonmail.com/images/facebook_logo.jpg"
     },
     {
@@ -39521,7 +39522,7 @@ export const dummyApps = [
             "2.3",
             "2.3.1"
         ],
-        "PackageIcon": "https://www.prusa3d.com/prusaslicer//wp-content/uploads/2014/10/prusa_fav_144x144.jpg",
+        "PackageIcon": "https://www.prusa3d.com/wp-content/uploads/2014/10/prusa_fav_144x144.jpg",
         "PackageImage": "https://cdn.prusa3d.com/wp-content/uploads/2019/05/Layer-10.png"
     },
     {
@@ -39586,7 +39587,7 @@ export const dummyApps = [
         "Versions": [
             "1.3.5"
         ],
-        "PackageIcon": "https://punklabs.com//apple-touch-icon.png"
+        "PackageIcon": "https://punklabs.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Puppet.pdk",
@@ -39656,7 +39657,7 @@ export const dummyApps = [
             "7.5.0",
             "7.6.1"
         ],
-        "PackageIcon": "https://puppet.com/docs/puppet/6//images/logos/puppet-logo-white.svg",
+        "PackageIcon": "https://puppet.com/images/logos/puppet-logo-white.svg",
         "PackageImage": "https://puppet.com/docs/puppet/6/undefined"
     },
     {
@@ -39702,7 +39703,7 @@ export const dummyApps = [
             "3.9.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/1dc14a0a78b53e03255415f19b3353dbbf84c2f33ff0ad971bef4ea8bbb610ea/puppetlabs/bolt"
+        "PackageImage": "https://opengraph.githubassets.com/57500125b3874ddfdac9b0b3a35fd6269f4ceb8ac8baa4daf573de52cfda2dac/puppetlabs/bolt"
     },
     {
         "PackageIdentifier": "PurpleI2P.i2pd",
@@ -39789,7 +39790,7 @@ export const dummyApps = [
         "Versions": [
             "3.9.5"
         ],
-        "PackageIcon": "https://www.python.org//static/favicon.ico",
+        "PackageIcon": "https://www.python.org/static/favicon.ico",
         "PackageImage": "https://www.python.org/static/opengraph-icon-200x200.png"
     },
     {
@@ -39844,7 +39845,7 @@ export const dummyApps = [
             "2.7.8",
             "2.7.9"
         ],
-        "PackageIcon": "https://www.python.org//static/favicon.ico",
+        "PackageIcon": "https://www.python.org/static/favicon.ico",
         "PackageImage": "https://www.python.org/static/opengraph-icon-200x200.png"
     },
     {
@@ -39932,7 +39933,7 @@ export const dummyApps = [
             "3.9.4150.0",
             "3.9.5150.0"
         ],
-        "PackageIcon": "https://www.python.org//static/favicon.ico",
+        "PackageIcon": "https://www.python.org/static/favicon.ico",
         "PackageImage": "https://www.python.org/static/opengraph-icon-200x200.png"
     },
     {
@@ -40068,7 +40069,7 @@ export const dummyApps = [
             "3.6.8",
             "3.6.9"
         ],
-        "PackageIcon": "https://pooi.moe/QuickLook//apple-touch-icon.png?v=00BYaQJeyw"
+        "PackageIcon": "https://pooi.moe/apple-touch-icon.png?v=00BYaQJeyw"
     },
     {
         "PackageIdentifier": "QmmpDevelopmentTeam.qmmp",
@@ -40158,7 +40159,7 @@ export const dummyApps = [
         "Versions": [
             "2020.4.0.0"
         ],
-        "PackageIcon": "https://www.qoppa.com/pdfstudio//wp-content/uploads/2013/02/favicon.ico",
+        "PackageIcon": "https://www.qoppa.com/wp-content/uploads/2013/02/favicon.ico",
         "PackageImage": "https://www.qoppa.com/wp-content/uploads/symbol_dollar_euro.png"
     },
     {
@@ -40218,7 +40219,7 @@ export const dummyApps = [
         "Versions": [
             "6.3.5.244"
         ],
-        "PackageIcon": "https://www.questrade.com/self-directed-investing/trading-platforms//Resources/images/favicon.ico"
+        "PackageIcon": "https://www.questrade.com/Resources/images/favicon.ico"
     },
     {
         "PackageIdentifier": "QuestSoft.QTranslate",
@@ -40318,7 +40319,7 @@ export const dummyApps = [
         "Versions": [
             "2.0.0"
         ],
-        "PackageIcon": "https://www.redeclipse.net//favicon.ico"
+        "PackageIcon": "https://www.redeclipse.net/favicon.ico"
     },
     {
         "PackageIdentifier": "QuiteRSS.QuiteRSS",
@@ -40388,7 +40389,7 @@ export const dummyApps = [
             "2.6.1",
             "2.6.3"
         ],
-        "PackageIcon": "http://qv2ray.net//logo.svg",
+        "PackageIcon": "http://qv2ray.net/logo.svg",
         "PackageImage": "https://avatars.githubusercontent.com/u/60087221?s=400&v=4"
     },
     {
@@ -40446,7 +40447,7 @@ export const dummyApps = [
         "Versions": [
             "5.8.3660-Beta"
         ],
-        "PackageIcon": "https://www.winamp.com//favicon.png"
+        "PackageIcon": "https://www.winamp.com/favicon.png"
     },
     {
         "PackageIdentifier": "Rambox.RamboxCE",
@@ -41023,7 +41024,7 @@ export const dummyApps = [
             "1.11.0",
             "1.12.0"
         ],
-        "PackageIcon": "https://renode.io//assets/img/favicon/apple-touch-icon.png"
+        "PackageIcon": "https://renode.io/assets/img/favicon/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "RescueTime.RescueTime",
@@ -41055,7 +41056,7 @@ export const dummyApps = [
         "Versions": [
             "2.16.5.1"
         ],
-        "PackageIcon": "https://www.rescuetime.com//touch-icon-iphone.png",
+        "PackageIcon": "https://www.rescuetime.com/touch-icon-iphone.png",
         "PackageImage": "https://www.rescuetime.com/assets/RescueTime_Metabanner-c4dac381ee7cfd0a161300768a05eb3a676ae381e4e62ab2851d048364755bb3.png"
     },
     {
@@ -41356,7 +41357,7 @@ export const dummyApps = [
             "13.6.1.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/f492da10c8ee6616b0d2af7e6a453bf236d8f53193bac3050a38c353d60994f6/RicoSuter/NSwag"
+        "PackageImage": "https://opengraph.githubassets.com/fb8578e6849e01d1fa16f54e6af0b218eb20942bc184e21607c16b51cd3f8561/RicoSuter/NSwag"
     },
     {
         "PackageIdentifier": "rigsofrods.rigsofrods",
@@ -41393,7 +41394,7 @@ export const dummyApps = [
         "Versions": [
             "2021.02"
         ],
-        "PackageIcon": "https://www.rigsofrods.org//favicon.png",
+        "PackageIcon": "https://www.rigsofrods.org/favicon.png",
         "PackageImage": "https://cdn.rigsofrods.org/data/assets/og/RoR_2021_02.png"
     },
     {
@@ -41684,7 +41685,7 @@ export const dummyApps = [
             "5.04.60402.0",
             "5.04.60415.0"
         ],
-        "PackageIcon": "https://www.royalapps.com/ts/win//images/favicon.ico"
+        "PackageIcon": "https://www.royalapps.com/images/favicon.ico"
     },
     {
         "PackageIdentifier": "RProject.R",
@@ -41773,7 +41774,7 @@ export const dummyApps = [
             "1.3.959",
             "1.4.1106"
         ],
-        "PackageIcon": "https://www.rstudio.com//apple-touch-icon.png"
+        "PackageIcon": "https://www.rstudio.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "RubyInstallerTeam.Ruby",
@@ -41794,7 +41795,7 @@ export const dummyApps = [
             "3.0.0",
             "3.0.1.1"
         ],
-        "PackageIcon": "https://rubyinstaller.org//assets/favicon.png"
+        "PackageIcon": "https://rubyinstaller.org/assets/favicon.png"
     },
     {
         "PackageIdentifier": "RubyInstallerTeam.RubyWithDevKit",
@@ -41815,7 +41816,7 @@ export const dummyApps = [
             "3.0.0.1",
             "3.0.1.1"
         ],
-        "PackageIcon": "https://rubyinstaller.org//assets/favicon.png"
+        "PackageIcon": "https://rubyinstaller.org/assets/favicon.png"
     },
     {
         "PackageIdentifier": "Rufus.Rufus",
@@ -41871,7 +41872,7 @@ export const dummyApps = [
             "2.1.3",
             "2.1.6"
         ],
-        "PackageIcon": "https://runelite.net//favicon.ico"
+        "PackageIcon": "https://runelite.net/favicon.ico"
     },
     {
         "PackageIdentifier": "Rustlang.rust-gnu",
@@ -41901,7 +41902,7 @@ export const dummyApps = [
             "1.52.0",
             "1.52.1"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -41939,7 +41940,7 @@ export const dummyApps = [
             "1.45.0",
             "1.45.2"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -41977,7 +41978,7 @@ export const dummyApps = [
             "1.45.0",
             "1.45.2"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -42007,7 +42008,7 @@ export const dummyApps = [
             "1.52.0",
             "1.52.1"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -42045,7 +42046,7 @@ export const dummyApps = [
             "1.45.0",
             "1.45.2"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -42083,7 +42084,7 @@ export const dummyApps = [
             "1.45.0",
             "1.45.2"
         ],
-        "PackageIcon": "https://www.rust-lang.org//static/images/apple-touch-icon.png?v=ngJW8jGAmR",
+        "PackageIcon": "https://www.rust-lang.org/static/images/apple-touch-icon.png?v=ngJW8jGAmR",
         "PackageImage": "https://www.rust-lang.org/static/images/rust-social-wide.jpg"
     },
     {
@@ -42243,7 +42244,7 @@ export const dummyApps = [
         "Versions": [
             "0.5.2"
         ],
-        "PackageIcon": "https://safing.io/portmaster//assets/icons/apple-icon-57x57.png"
+        "PackageIcon": "https://safing.io/assets/icons/apple-icon-57x57.png"
     },
     {
         "PackageIdentifier": "SAGAUserGroupAssociation.SAGAGIS",
@@ -42411,7 +42412,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.0.65"
         ],
-        "PackageIcon": "https://www.samsung.com/sec/apps/samsung-dex//sec/static/_images/favicon.ico",
+        "PackageIcon": "https://www.samsung.com/sec/static/_images/favicon.ico",
         "PackageImage": "https://images.samsung.com/kdp/st/logo-square-letter.png"
     },
     {
@@ -42450,7 +42451,7 @@ export const dummyApps = [
         "Versions": [
             "4.2.20072.4"
         ],
-        "PackageIcon": "https://www.samsung.com/sec/apps/smart-switch//sec/static/_images/favicon.ico",
+        "PackageIcon": "https://www.samsung.com/sec/static/_images/favicon.ico",
         "PackageImage": "https://images.samsung.com/kdp/st/logo-square-letter.png"
     },
     {
@@ -42507,7 +42508,7 @@ export const dummyApps = [
             "3.3.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/2d67532bba30f8e562840799e2500673762f899596f4eeabd306f16f3712a57e/samuelmeuli/mini-diary"
+        "PackageImage": "https://opengraph.githubassets.com/a1042a3d4b5197400acd287db707fc8db513ac690cfe3fa9dbb782f6c72f059b/samuelmeuli/mini-diary"
     },
     {
         "PackageIdentifier": "SamuelRodberg.MinimalADBandFastboot",
@@ -42553,7 +42554,7 @@ export const dummyApps = [
             "0.7.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/34645992767356b5b0f9557739f8fa2c9d1c2debc2867f6ea0b5cceea4ec7d88/sandboxie-plus/Sandboxie"
+        "PackageImage": "https://opengraph.githubassets.com/05f1e3b3f10ed59ec0bcdd27b3edfe8371e7f39e0d55f94307ea11c211682bd9/sandboxie-plus/Sandboxie"
     },
     {
         "PackageIdentifier": "SanfordLP.DYMOConnect",
@@ -42834,7 +42835,7 @@ export const dummyApps = [
             "2.12.13",
             "2.13.5"
         ],
-        "PackageIcon": "https://www.scala-lang.org//resources/favicon.ico",
+        "PackageIcon": "https://www.scala-lang.org/resources/favicon.ico",
         "PackageImage": "https://www.scala-lang.org/resources/img/scala-spiral-3d-2-toned-down.png"
     },
     {
@@ -42925,7 +42926,7 @@ export const dummyApps = [
             "2.4.1",
             "2.5.0"
         ],
-        "PackageIcon": "https://pymol.org/2//sites/default/files/favicon_2.ico"
+        "PackageIcon": "https://pymol.org/sites/default/files/favicon_2.ico"
     },
     {
         "PackageIdentifier": "Scilab.Scilab",
@@ -43091,7 +43092,7 @@ export const dummyApps = [
         "Versions": [
             "2.2.0"
         ],
-        "PackageIcon": "https://www.scummvm.org//apple-touch-icon.png?v=oLBEjaJ9ag",
+        "PackageIcon": "https://www.scummvm.org/apple-touch-icon.png?v=oLBEjaJ9ag",
         "PackageImage": "https://www.scummvm.org/images/og-image.jpg"
     },
     {
@@ -43134,7 +43135,7 @@ export const dummyApps = [
         "Versions": [
             "2.53.7.1"
         ],
-        "PackageIcon": "https://www.seamonkey-project.org//images/seamonkey16.png"
+        "PackageIcon": "https://www.seamonkey-project.org/images/seamonkey16.png"
     },
     {
         "PackageIdentifier": "SearchDeflector.SearchDeflector",
@@ -43316,7 +43317,7 @@ export const dummyApps = [
         "Versions": [
             "6.0.8.0"
         ],
-        "PackageIcon": "https://www.sejda.com//images/icon_128.png"
+        "PackageIcon": "https://www.sejda.com/images/icon_128.png"
     },
     {
         "PackageIdentifier": "SelectCode.econap",
@@ -43348,7 +43349,7 @@ export const dummyApps = [
         "Versions": [
             "1.3.4.0"
         ],
-        "PackageIcon": "https://www.econap.de//images/favicons/apple-touch-icon.png"
+        "PackageIcon": "https://www.econap.de/images/favicons/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Seonglae.Intuiter",
@@ -43459,7 +43460,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.7811.37362"
         ],
-        "PackageIcon": "https://jami.net//assets/images/favicon/apple-touch-icon-57x57.png?v=e2f192f80c",
+        "PackageIcon": "https://jami.net/assets/images/favicon/apple-touch-icon-57x57.png?v=e2f192f80c",
         "PackageImage": "https://jami.net/assets/images/logo-jami.svg"
     },
     {
@@ -43526,7 +43527,7 @@ export const dummyApps = [
             "13.4.0",
             "13.5.0"
         ],
-        "PackageIcon": "https://getsharex.com//favicon.ico",
+        "PackageIcon": "https://getsharex.com/favicon.ico",
         "PackageImage": "https://getsharex.com/img/ShareX_Card_Large.png"
     },
     {
@@ -43643,7 +43644,7 @@ export const dummyApps = [
             "1.5.5",
             "1.5.6"
         ],
-        "PackageIcon": "https://sia.tech//apple-touch-icon.png"
+        "PackageIcon": "https://sia.tech/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "SideQuestVR.SideQuest",
@@ -43829,7 +43830,7 @@ export const dummyApps = [
             "5.2.1",
             "5.3.0"
         ],
-        "PackageIcon": "https://www.signal.org//assets/favicon/apple-icon-57x57-1e56b07703490ebba4713a0b5ea25a03ae8d86eabc4a961158edf5b46590fd3d.png",
+        "PackageIcon": "https://www.signal.org/assets/favicon/apple-icon-57x57-1e56b07703490ebba4713a0b5ea25a03ae8d86eabc4a961158edf5b46590fd3d.png",
         "PackageImage": "https://signal.org/assets/og/og-image-ff2096df535eee499356de64b19fa8cebb9681ab1e78cca7330e7f8b8d5ec6d5.png"
     },
     {
@@ -43897,7 +43898,7 @@ export const dummyApps = [
             "6.6.1.809",
             "6.6.2.827"
         ],
-        "PackageIcon": "https://www.enpass.io//wp-content/uploads/2018/12/fevicon.ico",
+        "PackageIcon": "https://www.enpass.io/wp-content/uploads/2018/12/fevicon.ico",
         "PackageImage": "https://www.enpass.io/wp-content/uploads/2019/12/enpass_detail_view@1x.png"
     },
     {
@@ -43925,7 +43926,7 @@ export const dummyApps = [
         "Versions": [
             "4.5.7"
         ],
-        "PackageIcon": "https://singularlabs.com/software/ccenhancer///singularlabs.com/wp-content/uploads/2015/07/singular-55b48d9dv1_site_icon-32x32.png",
+        "PackageIcon": "https://singularlabs.com/wp-content/uploads/2015/07/singular-55b48d9dv1_site_icon-32x32.png",
         "PackageImage": "https://singularlabs.com/wp-content/uploads/2010/06/451.jpg"
     },
     {
@@ -44030,7 +44031,7 @@ export const dummyApps = [
             "4.17.0",
             "4.18.0"
         ],
-        "PackageIcon": "https://www.autopsy.com//cyber-triage-logo.svg",
+        "PackageIcon": "https://www.autopsy.com/cyber-triage-logo.svg",
         "PackageImage": "https://www.autopsy.com/wp-content/uploads/2019/08/autopsy-logo-full-dog.jpg"
     },
     {
@@ -44100,7 +44101,7 @@ export const dummyApps = [
         "Versions": [
             "5.5.0"
         ],
-        "PackageIcon": "https://www.soapui.org//soapui/media/images/favicon.png"
+        "PackageIcon": "https://www.soapui.org/soapui/media/images/favicon.png"
     },
     {
         "PackageIdentifier": "SmartProjects.IsoBuster",
@@ -44131,7 +44132,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://www.isobuster.com//images/favicon.ico",
+        "PackageIcon": "https://www.isobuster.com/images/favicon.ico",
         "PackageImage": "https://www.isobuster.com/images/logo.png"
     },
     {
@@ -44163,7 +44164,7 @@ export const dummyApps = [
         "Versions": [
             "9.0.2850.0"
         ],
-        "PackageIcon": "https://www.smartftp.com/en-us//static/favicon.svg"
+        "PackageIcon": "https://www.smartftp.com/static/favicon.svg"
     },
     {
         "PackageIdentifier": "SMPlayer.SMPlayer",
@@ -44280,7 +44281,7 @@ export const dummyApps = [
             "3.0.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/c308fe473a796564f560ac9831da64e4035d627d458009ae4dbceeb25e7a849b/snoopwpf/snoopwpf"
+        "PackageImage": "https://opengraph.githubassets.com/55a511f36370b91544a1e899f0601f9474a9279300613f7c57b971238c6ecedd/snoopwpf/snoopwpf"
     },
     {
         "PackageIdentifier": "SoftDeluxe.FreeDownloadManager",
@@ -44348,7 +44349,7 @@ export const dummyApps = [
         "Versions": [
             "8.0.2"
         ],
-        "PackageIcon": "https://www.softperfect.com/products/networkscanner//favicon.ico"
+        "PackageIcon": "https://www.softperfect.com/favicon.ico"
     },
     {
         "PackageIdentifier": "SonicPi.sonicpi",
@@ -44635,7 +44636,7 @@ export const dummyApps = [
             "1.9.1",
             "1.9.3"
         ],
-        "PackageIcon": "https://sparklabs.com/viscosity//apple-touch-icon.png"
+        "PackageIcon": "https://sparklabs.com/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "speed.fan",
@@ -44805,7 +44806,7 @@ export const dummyApps = [
             "3.5.20357"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/bae937cc4feaa1372beb822af0a45b52a2fde3781695b98e511a9c17e0459a59/billziss-gh/sshfs-win"
+        "PackageImage": "https://opengraph.githubassets.com/02adff03bf1013d23f12813274185bd74580049a164a7400b6342adc833c7753/billziss-gh/sshfs-win"
     },
     {
         "PackageIdentifier": "stackless.stackless",
@@ -44887,7 +44888,7 @@ export const dummyApps = [
             "3.6.2",
             "3.7.1"
         ],
-        "PackageIcon": "https://standardnotes.org//assets/favicon/favicon-eadbb310b5a965fbc6c5aae35aac97b251a61cdec04451ba24b0bdffe4a2f486.ico"
+        "PackageIcon": "https://standardnotes.org/assets/favicon/favicon-eadbb310b5a965fbc6c5aae35aac97b251a61cdec04451ba24b0bdffe4a2f486.ico"
     },
     {
         "PackageIdentifier": "Stardock.Start10",
@@ -44964,7 +44965,7 @@ export const dummyApps = [
             "6.7.3.319",
             "6.7.3.81"
         ],
-        "PackageIcon": "https://knowledge.starface.de/pages//s/-gs7d05/8701/4ab2fd7acc79914c58393a7ecef6f9e51f1cca39/69/_/favicon.ico"
+        "PackageIcon": "https://knowledge.starface.de/s/-gs7d05/8701/4ab2fd7acc79914c58393a7ecef6f9e51f1cca39/69/_/favicon.ico"
     },
     {
         "PackageIdentifier": "StarfaceGmbH.StarfaceUCCBeta",
@@ -44997,7 +44998,7 @@ export const dummyApps = [
         "Versions": [
             "6.8.0.108"
         ],
-        "PackageIcon": "https://knowledge.starface.de/pages//s/-gs7d05/8701/4ab2fd7acc79914c58393a7ecef6f9e51f1cca39/69/_/favicon.ico"
+        "PackageIcon": "https://knowledge.starface.de/s/-gs7d05/8701/4ab2fd7acc79914c58393a7ecef6f9e51f1cca39/69/_/favicon.ico"
     },
     {
         "PackageIdentifier": "StarMessage.StarMessageScreensaver",
@@ -45068,7 +45069,7 @@ export const dummyApps = [
             "5.4.9.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/a93ac317a6ba428b46f47c20626ac7198046f94d2af089d05c79814acbf44204/stax76/mpv.net"
+        "PackageImage": "https://opengraph.githubassets.com/cd9465bab4141e890e4c104d021541a23b73baf83a08d5c9acf5cadb1df6320a/stax76/mpv.net"
     },
     {
         "PackageIdentifier": "Steelseries.GG",
@@ -45165,7 +45166,7 @@ export const dummyApps = [
             "5.5.0",
             "5.6.1"
         ],
-        "PackageIcon": "https://meetfranz.com//static/favicon.ico",
+        "PackageIcon": "https://meetfranz.com/static/favicon.ico",
         "PackageImage": "https://meetfranz.com/static/images/shareimage.png"
     },
     {
@@ -45386,7 +45387,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.4"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/coffee-sc///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/coffee-sc/icon?1566205897"
     },
     {
@@ -45452,7 +45453,7 @@ export const dummyApps = [
             "0.6.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/9a748594cdc2c99f545b44d54a33b4db1a7964fbdab628ffd33b448e78a109b1/stnkl/EverythingToolbar"
+        "PackageImage": "https://opengraph.githubassets.com/e2aa95f85107cd180be61444164583296d9038059ce6b2ae6007706192b0fe05/stnkl/EverythingToolbar"
     },
     {
         "PackageIdentifier": "StrawberryMusicPlayer.Strawberry",
@@ -45592,7 +45593,7 @@ export const dummyApps = [
             "2.0.0",
             "2.1.2"
         ],
-        "PackageIcon": "https://streamlink.github.io//_static/apple-touch-icon.png"
+        "PackageIcon": "https://streamlink.github.io/_static/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "Streamlink.StreamlinkTwitchGui",
@@ -45619,7 +45620,7 @@ export const dummyApps = [
             "1.10.0",
             "1.11.0"
         ],
-        "PackageIcon": "https://streamlink.github.io/streamlink-twitch-gui//streamlink-twitch-gui/favicon.ico"
+        "PackageIcon": "https://streamlink.github.io/streamlink-twitch-gui/favicon.ico"
     },
     {
         "PackageIdentifier": "Stremio.Stremio",
@@ -45653,7 +45654,7 @@ export const dummyApps = [
             "4.4",
             "4.4.137"
         ],
-        "PackageIcon": "https://www.stremio.com//favicon-32x32.png",
+        "PackageIcon": "https://www.stremio.com/favicon-32x32.png",
         "PackageImage": "https://www.stremio.com/website/stremio-purple-small.png"
     },
     {
@@ -45740,8 +45741,8 @@ export const dummyApps = [
         "Versions": [
             "5.0.5"
         ],
-        "PackageIcon": "https://stride3d.net//favicon.png",
-        "PackageImage": "https://stride3d.net//images/og/ogp.jpg"
+        "PackageIcon": "https://stride3d.net/favicon.png",
+        "PackageImage": "https://stride3d.net/images/og/ogp.jpg"
     },
     {
         "PackageIdentifier": "StylusLabs.Write",
@@ -45837,7 +45838,7 @@ export const dummyApps = [
             "2049",
             "2056"
         ],
-        "PackageIcon": "https://www.sublimemerge.com//favicon.ico",
+        "PackageIcon": "https://www.sublimemerge.com/favicon.ico",
         "PackageImage": "https://www.sublimemerge.com/images/og.png"
     },
     {
@@ -45868,7 +45869,7 @@ export const dummyApps = [
         "Versions": [
             "3.2.2"
         ],
-        "PackageIcon": "https://www.sublimetext.com//favicon.ico",
+        "PackageIcon": "https://www.sublimetext.com/favicon.ico",
         "PackageImage": "https://www.sublimetext.com/images/og-full.jpg"
     },
     {
@@ -45899,7 +45900,7 @@ export const dummyApps = [
         "Versions": [
             "4.0.0.410700"
         ],
-        "PackageIcon": "https://www.sublimetext.com//favicon.ico",
+        "PackageIcon": "https://www.sublimetext.com/favicon.ico",
         "PackageImage": "https://www.sublimetext.com/images/og-full.jpg"
     },
     {
@@ -46004,7 +46005,7 @@ export const dummyApps = [
             "1.3.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/97490282a57f7b5538e955e8e123cbc1ad6e6314d33bc912305db6c0833670a2/sunzongzheng/music"
+        "PackageImage": "https://opengraph.githubassets.com/230e5781895ce10c6f25d8e28b43a6811fbb15a0acf6f4f268989c636e1569b6/sunzongzheng/music"
     },
     {
         "PackageIdentifier": "SuperCollider.SuperCollider",
@@ -46045,7 +46046,7 @@ export const dummyApps = [
         "Versions": [
             "3.11.2"
         ],
-        "PackageIcon": "https://supercollider.github.io//images/favicon.png"
+        "PackageIcon": "https://supercollider.github.io/images/favicon.png"
     },
     {
         "PackageIdentifier": "SuperTux.SuperTux",
@@ -46081,7 +46082,7 @@ export const dummyApps = [
         "Versions": [
             "0.6.2"
         ],
-        "PackageIcon": "https://www.supertux.org//images/favicon.png"
+        "PackageIcon": "https://www.supertux.org/images/favicon.png"
     },
     {
         "PackageIdentifier": "SuperTuxKart.SuperTuxKart",
@@ -46114,7 +46115,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.0"
         ],
-        "PackageIcon": "https://supertuxkart.net//skins/SuperTuxKart/images/favicon.png"
+        "PackageIcon": "https://supertuxkart.net/skins/SuperTuxKart/images/favicon.png"
     },
     {
         "PackageIdentifier": "Surfshark.SurfsharkVPN",
@@ -46315,7 +46316,7 @@ export const dummyApps = [
             "1.1.28"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/112f3dfb78cfc7bd083609f77b01a41588f07ef6be5b10c24e486314e43b68dd/canton7/SyncTrayzor"
+        "PackageImage": "https://opengraph.githubassets.com/74239bbb907d9599124c1eaf2cfbf96569fe869dd3c153481a6d5e8e380162fd/canton7/SyncTrayzor"
     },
     {
         "PackageIdentifier": "Synology.DriveClient",
@@ -46428,7 +46429,7 @@ export const dummyApps = [
         "Versions": [
             "7.0.0"
         ],
-        "PackageIcon": "http://systemexplorer.net//media/fr_scan.png"
+        "PackageIcon": "http://systemexplorer.net/media/fr_scan.png"
     },
     {
         "PackageIdentifier": "szTheory.exifcleaner",
@@ -46521,7 +46522,7 @@ export const dummyApps = [
             "4.4.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/fd48ae64f530e89dac732dbb070a3b1ca077052da6d78fe5b6bee65d94e48452/t1m0thyj/WinDynamicDesktop"
+        "PackageImage": "https://opengraph.githubassets.com/431cc8f512fbfa3c3b024d6390a2fd998aab4eace16728ab5e29ca67be8cd6ec/t1m0thyj/WinDynamicDesktop"
     },
     {
         "PackageIdentifier": "Tableau.Desktop",
@@ -46559,7 +46560,7 @@ export const dummyApps = [
             "2021.1.1",
             "2021.1.2"
         ],
-        "PackageIcon": "https://www.tableau.com/products//themes/custom/tableau_www/favicon.ico"
+        "PackageIcon": "https://www.tableau.com/themes/custom/tableau_www/favicon.ico"
     },
     {
         "PackageIdentifier": "TablePlus.TablePlus",
@@ -46601,7 +46602,7 @@ export const dummyApps = [
             "4.0.3",
             "4.0.5"
         ],
-        "PackageIcon": "https://tableplus.com//resources/favicons/apple-icon-57x57.png",
+        "PackageIcon": "https://tableplus.com/resources/favicons/apple-icon-57x57.png",
         "PackageImage": "https://tableplus.com/resources/images/fb-thumbnail@2x.jpg"
     },
     {
@@ -46669,7 +46670,7 @@ export const dummyApps = [
             "1.3.1",
             "1.3.2"
         ],
-        "PackageIcon": "https://taisei-project.org//static/favicon.ico"
+        "PackageIcon": "https://taisei-project.org/static/favicon.ico"
     },
     {
         "PackageIdentifier": "tantowi.maven",
@@ -46744,7 +46745,7 @@ export const dummyApps = [
             "1.8.1.210430"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/f61b0f7c2d081234ae4920ebc7932a2fc57957975bd64dbe5affc772ecdd14ff/dbkangaroo/kangaroo"
+        "PackageImage": "https://opengraph.githubassets.com/f3799d69fbff0cd7ae86a0bfd192c814931aebe99bcac8e01bac842d821823c2/dbkangaroo/kangaroo"
     },
     {
         "PackageIdentifier": "tastyworks.tastyworks",
@@ -46852,8 +46853,8 @@ export const dummyApps = [
             "3.5.3.0",
             "3.5.6"
         ],
-        "PackageIcon": "https://www.teamspeak.com/en//user/themes/teamspeak/images/favicon.ico",
-        "PackageImage": "https://www.teamspeak.com/en//user/themes/teamspeak/images/ts-share-image.jpg"
+        "PackageIcon": "https://www.teamspeak.com/user/themes/teamspeak/images/favicon.ico",
+        "PackageImage": "https://www.teamspeak.com/user/themes/teamspeak/images/ts-share-image.jpg"
     },
     {
         "PackageIdentifier": "TeamViewer.TeamViewer",
@@ -47011,7 +47012,7 @@ export const dummyApps = [
             "2020.0.6",
             "2020.0.8"
         ],
-        "PackageIcon": "https://www.techsmith.com//favicon.ico",
+        "PackageIcon": "https://www.techsmith.com/favicon.ico",
         "PackageImage": "https://assets.techsmith.com/Images/content/techsmith-logo-opengraph.png"
     },
     {
@@ -47048,7 +47049,7 @@ export const dummyApps = [
             "20.1.4",
             "21.4.1.9895"
         ],
-        "PackageIcon": "https://www.techsmith.com//favicon.ico",
+        "PackageIcon": "https://www.techsmith.com/favicon.ico",
         "PackageImage": "https://assets.techsmith.com/Images/content/techsmith-logo-opengraph.png"
     },
     {
@@ -47093,7 +47094,7 @@ export const dummyApps = [
             "2.7.3",
             "2.7.4"
         ],
-        "PackageIcon": "https://desktop.telegram.org//img/td_favicon.ico",
+        "PackageIcon": "https://desktop.telegram.org/img/td_favicon.ico",
         "PackageImage": "https://telegram.org/img/td_icon.png"
     },
     {
@@ -47134,7 +47135,7 @@ export const dummyApps = [
         "Versions": [
             "v2.1.20"
         ],
-        "PackageIcon": "https://desktop.telegram.org//img/td_favicon.ico",
+        "PackageIcon": "https://desktop.telegram.org/img/td_favicon.ico",
         "PackageImage": "https://telegram.org/img/td_icon.png"
     },
     {
@@ -47162,7 +47163,7 @@ export const dummyApps = [
         "Versions": [
             "5.0.20204.45441"
         ],
-        "PackageIcon": "https://www.telerik.com//favicon.ico?v=rebv1",
+        "PackageIcon": "https://www.telerik.com/favicon.ico?v=rebv1",
         "PackageImage": "https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"
     },
     {
@@ -47193,7 +47194,7 @@ export const dummyApps = [
             "1.6.0",
             "1.6.1"
         ],
-        "PackageIcon": "https://www.telerik.com/fiddler//favicon.ico?v=rebv1",
+        "PackageIcon": "https://www.telerik.com/favicon.ico?v=rebv1",
         "PackageImage": "https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"
     },
     {
@@ -47213,7 +47214,7 @@ export const dummyApps = [
         "Versions": [
             "10.1.0-beta"
         ],
-        "PackageIcon": "https://www.telerik.com/fiddler//favicon.ico?v=rebv1",
+        "PackageIcon": "https://www.telerik.com/favicon.ico?v=rebv1",
         "PackageImage": "https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"
     },
     {
@@ -47243,7 +47244,7 @@ export const dummyApps = [
             "1.6.0-insiders",
             "1.6.1-insiders"
         ],
-        "PackageIcon": "https://www.telerik.com/fiddler//favicon.ico?v=rebv1",
+        "PackageIcon": "https://www.telerik.com/favicon.ico?v=rebv1",
         "PackageImage": "https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"
     },
     {
@@ -47271,7 +47272,7 @@ export const dummyApps = [
             "1.5.0-internal",
             "1.6.1-internal"
         ],
-        "PackageIcon": "https://www.telerik.com/fiddler//favicon.ico?v=rebv1",
+        "PackageIcon": "https://www.telerik.com/favicon.ico?v=rebv1",
         "PackageImage": "https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"
     },
     {
@@ -47305,7 +47306,7 @@ export const dummyApps = [
         "Versions": [
             "9.4.2.27655"
         ],
-        "PackageIcon": "https://tim.qq.com///mma.qq.com/timtest/img/logo-tim.png"
+        "PackageIcon": "https://mma.qq.com/timtest/img/logo-tim.png"
     },
     {
         "PackageIdentifier": "tencent.qq-devtool",
@@ -47375,7 +47376,7 @@ export const dummyApps = [
         "Versions": [
             "4.6.3.1104"
         ],
-        "PackageIcon": "https://player.qq.com///vm.gtimg.cn/tencentvideo/vstyle/qqplayer/style/img/home/favicon.ico"
+        "PackageIcon": "https://vm.gtimg.cn/tencentvideo/vstyle/qqplayer/style/img/home/favicon.ico"
     },
     {
         "PackageIdentifier": "Tencent.TencentMeeting",
@@ -47417,7 +47418,7 @@ export const dummyApps = [
             "2.5.0.470",
             "2.6.0.490"
         ],
-        "PackageIcon": "https://meeting.tencent.com//static/favicon.ico"
+        "PackageIcon": "https://meeting.tencent.com/static/favicon.ico"
     },
     {
         "PackageIdentifier": "Tencent.TencentVideo",
@@ -47446,7 +47447,7 @@ export const dummyApps = [
         "Versions": [
             "10.35.1044.0"
         ],
-        "PackageIcon": "https://v.qq.com///v.qq.com/favicon.ico"
+        "PackageIcon": "https://v.qq.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Tencent.TIM",
@@ -47480,7 +47481,7 @@ export const dummyApps = [
         "Versions": [
             "3.3.0.21970"
         ],
-        "PackageIcon": "https://tim.qq.com///mma.qq.com/timtest/img/logo-tim.png"
+        "PackageIcon": "https://mma.qq.com/timtest/img/logo-tim.png"
     },
     {
         "PackageIdentifier": "Tencent.VoovMeeting",
@@ -47509,7 +47510,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.10.510"
         ],
-        "PackageIcon": "https://voovmeeting.com//static/favicon.ico"
+        "PackageIcon": "https://voovmeeting.com/static/favicon.ico"
     },
     {
         "PackageIdentifier": "Tencent.WeChat",
@@ -47724,7 +47725,7 @@ export const dummyApps = [
         "Versions": [
             "4.105"
         ],
-        "PackageIcon": "https://ttssh2.osdn.jp//images/teraterm.ico",
+        "PackageIcon": "https://ttssh2.osdn.jp/images/teraterm.ico",
         "PackageImage": "https://ttssh2.osdn.jp/images/teraterm.png"
     },
     {
@@ -47825,7 +47826,7 @@ export const dummyApps = [
         "Versions": [
             "5.1.3"
         ],
-        "PackageIcon": "https://education.ti.com/en/products/computer-software//favicon.ico",
+        "PackageIcon": "https://education.ti.com/favicon.ico",
         "PackageImage": "https://education.ti.com/-/media/ti/education/images/global-images/logos/ti-edtech-og-social-400x.png?rev=ec2fd198-6664-4265-951e-8d68e29d91b5"
     },
     {
@@ -47863,7 +47864,7 @@ export const dummyApps = [
         "Versions": [
             "5.6"
         ],
-        "PackageIcon": "https://education.ti.com/en/software/details/en/13312f7cec074a2dafd7ee5646129839//favicon.ico"
+        "PackageIcon": "https://education.ti.com/favicon.ico"
     },
     {
         "PackageIdentifier": "Texmaker.Texmaker",
@@ -48136,7 +48137,7 @@ export const dummyApps = [
             "3.15.0",
             "3.15.1"
         ],
-        "PackageIcon": "https://ioninja.com//images/icons/favicon.png"
+        "PackageIcon": "https://ioninja.com/images/icons/favicon.png"
     },
     {
         "PackageIdentifier": "tibbo.tdevmon",
@@ -48169,7 +48170,7 @@ export const dummyApps = [
         "Versions": [
             "3.3.7"
         ],
-        "PackageIcon": "https://ioninja.com//images/icons/favicon.png"
+        "PackageIcon": "https://ioninja.com/images/icons/favicon.png"
     },
     {
         "PackageIdentifier": "TickTick.TickTick",
@@ -48200,7 +48201,7 @@ export const dummyApps = [
         "Versions": [
             "3.7.1.1"
         ],
-        "PackageIcon": "https://www.ticktick.com///d3qg9zffrnl4ph.cloudfront.net/web/static/img/favicon.ico",
+        "PackageIcon": "https://d3qg9zffrnl4ph.cloudfront.net/web/static/img/favicon.ico",
         "PackageImage": "https://d3qg9zffrnl4ph.cloudfront.net/web/static/build/resources/images/card.png"
     },
     {
@@ -48303,7 +48304,7 @@ export const dummyApps = [
             "1.5.0",
             "1.6.0"
         ],
-        "PackageIcon": "https://www.mapeditor.org//favicon.ico",
+        "PackageIcon": "https://www.mapeditor.org/favicon.ico",
         "PackageImage": "https://www.mapeditor.org/img/tiled-logo-filled.png"
     },
     {
@@ -48480,7 +48481,7 @@ export const dummyApps = [
             "0.6.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/1b1eaab5f82d5eff8a9f2a50fcb17fdc2b0e41bd3373a78deba745331f8ed3a1/bayleeadamoss/zazu"
+        "PackageImage": "https://opengraph.githubassets.com/de5395f5821daf7510603bc1a63e782aef35d5b2c60860fafefb425166b8e206/bayleeadamoss/zazu"
     },
     {
         "PackageIdentifier": "titinko.utsu",
@@ -48520,7 +48521,7 @@ export const dummyApps = [
             "0.4.4"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/b65da7a3095c3aad598dfe5f391ff3cf3c18b0e3ff08ba0b981f7472c80def50/titinko/utsu"
+        "PackageImage": "https://opengraph.githubassets.com/9d307742419ade25d6161b09041e22171f96f386edf5b4326a4400ce2bc9cec7/titinko/utsu"
     },
     {
         "PackageIdentifier": "Toggl.TogglDesktop",
@@ -48831,7 +48832,7 @@ export const dummyApps = [
             "2.11.0.0",
             "2.12.0"
         ],
-        "PackageIcon": "https://tortoisegit.org//favicon.ico"
+        "PackageIcon": "https://tortoisegit.org/favicon.ico"
     },
     {
         "PackageName": "TortoiseHg",
@@ -48897,7 +48898,7 @@ export const dummyApps = [
             "1.14.0",
             "1.14.1"
         ],
-        "PackageIcon": "https://tortoisesvn.net//assets/img/favicons/apple-touch-icon.69c56b08.png",
+        "PackageIcon": "https://tortoisesvn.net/assets/img/favicons/apple-touch-icon.69c56b08.png",
         "PackageImage": "http://tortoisesvn.net/assets/img/logo-256x256.png"
     },
     {
@@ -48935,7 +48936,7 @@ export const dummyApps = [
             "4.0.3",
             "4.0.4"
         ],
-        "PackageIcon": "https://www.photosync-app.com//files/content/icons/favicon32.png"
+        "PackageIcon": "https://www.photosync-app.com/files/content/icons/favicon32.png"
     },
     {
         "PackageIdentifier": "TradingView.TradingViewDesktop",
@@ -48965,7 +48966,7 @@ export const dummyApps = [
             "1.0.0-beta.2",
             "1.0.0-beta.3"
         ],
-        "PackageIcon": "https://www.tradingview.com/desktop//static/images/favicon.ico",
+        "PackageIcon": "https://www.tradingview.com/static/images/favicon.ico",
         "PackageImage": "https://www.tradingview.com/static/images/desktop-landing/desktop-landing-og.jpg"
     },
     {
@@ -49001,7 +49002,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.0-beta01"
         ],
-        "PackageIcon": "https://www.tradingview.com//static/images/favicon.ico",
+        "PackageIcon": "https://www.tradingview.com/static/images/favicon.ico",
         "PackageImage": "https://www.tradingview.com/static/images/logo-v-1200x630.png"
     },
     {
@@ -49101,7 +49102,7 @@ export const dummyApps = [
             "3.8.0",
             "4.0.1"
         ],
-        "PackageIcon": "https://www.fluentd.org//favicon.ico"
+        "PackageIcon": "https://www.fluentd.org/favicon.ico"
     },
     {
         "PackageIdentifier": "Trelby.Trelby",
@@ -49172,7 +49173,7 @@ export const dummyApps = [
             "6.4.0.2",
             "6.4.0.3"
         ],
-        "PackageIcon": "https://www.trillian.im//favicon.ico"
+        "PackageIcon": "https://www.trillian.im/favicon.ico"
     },
     {
         "PackageIdentifier": "Trimble.SketchUpMake",
@@ -49202,7 +49203,7 @@ export const dummyApps = [
         "Versions": [
             "17.2.2555.0"
         ],
-        "PackageIcon": "https://www.sketchup.com//themes/sketchup_www_terra/favicon.ico",
+        "PackageIcon": "https://www.sketchup.com/themes/sketchup_www_terra/favicon.ico",
         "PackageImage": "https://www.sketchup.com/sites/www.sketchup.com/files/opengraph/su-opengraph.jpg"
     },
     {
@@ -49233,7 +49234,7 @@ export const dummyApps = [
         "Versions": [
             "2.5.4"
         ],
-        "PackageIcon": "https://www.trufflesuite.com//img/favicons/favicon.ico",
+        "PackageIcon": "https://www.trufflesuite.com/img/favicons/favicon.ico",
         "PackageImage": "https://truffleframework.com/img/favicons/truffle-share.png"
     },
     {
@@ -49267,7 +49268,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://ttyplus.com//wp-content/uploads/Plus.svg"
+        "PackageIcon": "https://ttyplus.com/wp-content/uploads/Plus.svg"
     },
     {
         "PackageIdentifier": "TUG.TeXLive",
@@ -49335,7 +49336,7 @@ export const dummyApps = [
         "Versions": [
             "4.4.3.0"
         ],
-        "PackageIcon": "https://www.tunnelbear.com//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://www.tunnelbear.com/apple-touch-icon-57x57.png",
         "PackageImage": "https://www.tunnelbear.com/static/images/social-meta/share_graphic.jpg"
     },
     {
@@ -49372,7 +49373,7 @@ export const dummyApps = [
         "Versions": [
             "3.84.0"
         ],
-        "PackageIcon": "https://tutanota.com//resources/favicon/logo-favicon-152.png",
+        "PackageIcon": "https://tutanota.com/resources/favicon/logo-favicon-152.png",
         "PackageImage": "https://tutanota.com/resources/images/share_image.png"
     },
     {
@@ -49403,7 +49404,7 @@ export const dummyApps = [
         "Versions": [
             "1.8.3"
         ],
-        "PackageIcon": "https://authy.com//wp-content/themes/authy/assets/images/icons/chrome-touch-icon-196x196.png",
+        "PackageIcon": "https://authy.com/wp-content/themes/authy/assets/images/icons/chrome-touch-icon-196x196.png",
         "PackageImage": "https://authy.com/wp-content/uploads/authy-social-share-1.jpg"
     },
     {
@@ -49453,7 +49454,7 @@ export const dummyApps = [
             "7.6.2000.2103",
             "7.7.1000.2104"
         ],
-        "PackageIcon": "https://www.twinkstar.com///image.twinkstar.com/20180703icon.png"
+        "PackageIcon": "https://image.twinkstar.com/20180703icon.png"
     },
     {
         "PackageIdentifier": "Twitch.Twitch",
@@ -49518,7 +49519,7 @@ export const dummyApps = [
         "Versions": [
             "2.7.2"
         ],
-        "PackageIcon": "https://www.electronjs.org/apps//images/favicon.b7a59262df48d6563400baf5671da548.ico",
+        "PackageIcon": "https://www.electronjs.org/images/favicon.b7a59262df48d6563400baf5671da548.ico",
         "PackageImage": "https://raw.githubusercontent.com/Tympanix/Electorrent/master/assets/screen1-win.png"
     },
     {
@@ -49544,7 +49545,7 @@ export const dummyApps = [
         "Versions": [
             "0.4.2"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/typefaster///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://sourceforge.net//a.fsdn.com/con/app/proj/typefaster/screenshots/23236.jpg/1"
     },
     {
@@ -49587,7 +49588,7 @@ export const dummyApps = [
             "0.9.96",
             "0.9.98"
         ],
-        "PackageIcon": "https://typora.io//img/favicon-16.png"
+        "PackageIcon": "https://typora.io/img/favicon-16.png"
     },
     {
         "PackageIdentifier": "Tyrrrz.LightBulb",
@@ -49627,7 +49628,7 @@ export const dummyApps = [
             "2.2.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/737045ef4ca7ad6ac9f82150268115d74102805aa632e3610d05bf202e893de8/Tyrrrz/LightBulb"
+        "PackageImage": "https://opengraph.githubassets.com/d67a2c313417a61d59f884172508ef7365cf16bcac58a3586b980ebbd9f07650/Tyrrrz/LightBulb"
     },
     {
         "PackageIdentifier": "Ubiquiti.UniFiNetworkController",
@@ -49765,7 +49766,7 @@ export const dummyApps = [
             "4.8.0",
             "4.9.1"
         ],
-        "PackageIcon": "https://ultimaker.com/software//dist/favicon.ico",
+        "PackageIcon": "https://ultimaker.com/dist/favicon.ico",
         "PackageImage": "https://images.ctfassets.net/7cnpidfipnrw/1vT66JmUElLgovzTS1um6b/6f4d85ffe07d6209d46185c4a5c91f97/ultimaker-cura-software-3d-printing-og.jpg"
     },
     {
@@ -49824,7 +49825,7 @@ export const dummyApps = [
         "Versions": [
             "1.2.4.0"
         ],
-        "PackageIcon": "https://www.uvnc.com//images/favicon.ico"
+        "PackageIcon": "https://www.uvnc.com/images/favicon.ico"
     },
     {
         "PackageIdentifier": "UMEZAWATakeshi.UtvideoCodecSuite",
@@ -49884,7 +49885,7 @@ export const dummyApps = [
             "1.2"
         ],
         "PackageIcon": "https://unchecky.com/assets/ico/favicon.ico",
-        "PackageImage": "https://unchecky.com///unchecky.com/assets/img/fb-unchecky-logo.png"
+        "PackageImage": "https://unchecky.com/assets/img/fb-unchecky-logo.png"
     },
     {
         "PackageIdentifier": "UnifiedIntents.UnifiedRemote",
@@ -49914,7 +49915,7 @@ export const dummyApps = [
             "3.7.0.2352",
             "3.8.0.2453"
         ],
-        "PackageIcon": "https://www.unifiedremote.com//favicon.ico"
+        "PackageIcon": "https://www.unifiedremote.com/favicon.ico"
     },
     {
         "PackageIdentifier": "UnityTechnologies.Unity",
@@ -50051,7 +50052,7 @@ export const dummyApps = [
             "10.3.0",
             "10.5.0"
         ],
-        "PackageIcon": "https://www.universalmediaserver.com//assets/img/favicon.ico"
+        "PackageIcon": "https://www.universalmediaserver.com/assets/img/favicon.ico"
     },
     {
         "PackageIdentifier": "UniversityofLjubljana.Orange",
@@ -50077,7 +50078,7 @@ export const dummyApps = [
             "3.27.1",
             "3.28.0"
         ],
-        "PackageIcon": "https://orangedatamining.com//images/favicon.ico"
+        "PackageIcon": "https://orangedatamining.com/images/favicon.ico"
     },
     {
         "PackageIdentifier": "UniversityOfWaikato.Weka",
@@ -50138,7 +50139,7 @@ export const dummyApps = [
         "Versions": [
             "20180312-1714f56737-win_x86"
         ],
-        "PackageIcon": "https://fold.it//portal/files/favicon.ico"
+        "PackageIcon": "https://fold.it/portal/files/favicon.ico"
     },
     {
         "PackageIdentifier": "unofficial-protonmail-desktop.unofficial-protonmail-desktop",
@@ -50234,7 +50235,7 @@ export const dummyApps = [
             "1.5.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/75f3a1272e68ff44495be3bdae96d85a72a93fde2a66d322b7e3888937972f1f/uw-labs/bloomrpc"
+        "PackageImage": "https://opengraph.githubassets.com/b1522cffb25e253c4fd72f179db10b297693d92451530f9c93906f8ac105b37d/uw-labs/bloomrpc"
     },
     {
         "PackageIdentifier": "uxmal.reko",
@@ -50313,8 +50314,8 @@ export const dummyApps = [
         "Versions": [
             "2.10.91.91"
         ],
-        "PackageIcon": "https://store.steampowered.com//favicon.ico",
-        "PackageImage": "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg"
+        "PackageIcon": "https://store.steampowered.com/favicon.ico",
+        "PackageImage": "https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg"
     },
     {
         "PackageIdentifier": "variar.klogg",
@@ -50602,7 +50603,7 @@ export const dummyApps = [
             "3.0.13",
             "3.0.14"
         ],
-        "PackageIcon": "https://www.videolan.org/vlc///images.videolan.org/images/favicon.ico"
+        "PackageIcon": "https://images.videolan.org/images/favicon.ico"
     },
     {
         "PackageIdentifier": "VideoLAN.VLCNightly",
@@ -50770,7 +50771,7 @@ export const dummyApps = [
             "4.0.0-20210527",
             "4.0.0-20210528"
         ],
-        "PackageIcon": "https://www.videolan.org/vlc///images.videolan.org/images/favicon.ico"
+        "PackageIcon": "https://images.videolan.org/images/favicon.ico"
     },
     {
         "PackageIdentifier": "vim.vim",
@@ -50827,7 +50828,7 @@ export const dummyApps = [
             "8.2.2897",
             "8.2.2907"
         ],
-        "PackageIcon": "https://www.vim.org//images/vim_shortcut.ico"
+        "PackageIcon": "https://www.vim.org/images/vim_shortcut.ico"
     },
     {
         "PackageIdentifier": "VincentL.Harmony",
@@ -51179,7 +51180,7 @@ export const dummyApps = [
             "1.4.1.988",
             "1.4.1.992"
         ],
-        "PackageIcon": "https://www.voidtools.com//favicon.ico?v=2"
+        "PackageIcon": "https://www.voidtools.com/favicon.ico?v=2"
     },
     {
         "PackageIdentifier": "voidtools.EverythingLite",
@@ -51211,7 +51212,7 @@ export const dummyApps = [
         "Versions": [
             "1.4.1.988"
         ],
-        "PackageIcon": "https://www.voidtools.com//favicon.ico?v=2"
+        "PackageIcon": "https://www.voidtools.com/favicon.ico?v=2"
     },
     {
         "PackageIdentifier": "VoyagerX.Vrew",
@@ -51240,7 +51241,7 @@ export const dummyApps = [
             "0.4.18",
             "0.7.15"
         ],
-        "PackageIcon": "https://vrew.voyagerx.com/en//favicon.ico?v=20201230",
+        "PackageIcon": "https://vrew.voyagerx.com/favicon.ico?v=20201230",
         "PackageImage": "https://vrew.voyagerx.com/thumbnail.png?v=20181226"
     },
     {
@@ -51378,7 +51379,7 @@ export const dummyApps = [
             "1.1.1"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/89cc7dc3a2bf578a9e7224ea9abd59e4fbd7bc4f9cd8d80fe8382b7046365383/wahao/Electron-iGot"
+        "PackageImage": "https://opengraph.githubassets.com/86a62c96f747f636bc237cfc3ca821b292cd90aac0e86a0f55f2883545b5a16a/wahao/Electron-iGot"
     },
     {
         "PackageIdentifier": "wandersick.AeroZoom",
@@ -51524,7 +51525,7 @@ export const dummyApps = [
             "3.4.1",
             "4.0.1"
         ],
-        "PackageIcon": "https://wz2100.net//favicon.ico",
+        "PackageIcon": "https://wz2100.net/favicon.ico",
         "PackageImage": "https://wz2100.net/img/wz2100-open-graph-template.png"
     },
     {
@@ -51581,7 +51582,7 @@ export const dummyApps = [
         "Versions": [
             "G3.2.1"
         ],
-        "PackageIcon": "https://www.waterfox.net//images/app/apple-icon-57x57.png"
+        "PackageIcon": "https://www.waterfox.net/images/app/apple-icon-57x57.png"
     },
     {
         "PackageIdentifier": "Waterfox.WaterfoxClassic",
@@ -51613,7 +51614,7 @@ export const dummyApps = [
         "Versions": [
             "56.5"
         ],
-        "PackageIcon": "https://www.waterfox.net//images/app/apple-icon-57x57.png"
+        "PackageIcon": "https://www.waterfox.net/images/app/apple-icon-57x57.png"
     },
     {
         "PackageIdentifier": "WeakAuras.WeakAurasCompanion",
@@ -51729,7 +51730,7 @@ export const dummyApps = [
         "Versions": [
             "9.0.30.75"
         ],
-        "PackageIcon": "https://www.webroot.com/us/en/home/products//application/favicons/favicon.ico"
+        "PackageIcon": "https://www.webroot.com/application/favicons/favicon.ico"
     },
     {
         "PackageIdentifier": "WebTorrent.Desktop",
@@ -51773,8 +51774,8 @@ export const dummyApps = [
             "0.21.0",
             "0.23.0"
         ],
-        "PackageIcon": "https://webtorrent.io/desktop//apple-touch-icon-76x76.png",
-        "PackageImage": "https://webtorrent.io/desktop//img/WebTorrent.png"
+        "PackageIcon": "https://webtorrent.io/apple-touch-icon-76x76.png",
+        "PackageImage": "https://webtorrent.io/img/WebTorrent.png"
     },
     {
         "PackageIdentifier": "WebyogInc.SQLyogCommunity",
@@ -51907,7 +51908,7 @@ export const dummyApps = [
             "1.8.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/5cfc62d7065e9e7cb8a1aeb3f9a885eb6100442dd01a56afc23e0b0f9f33aff2/wereturtle/ghostwriter"
+        "PackageImage": "https://opengraph.githubassets.com/99db71849091989a05d75fecdf4ebd5c5462081b5fac9c408c48b90a483d5e9b/wereturtle/ghostwriter"
     },
     {
         "PackageIdentifier": "Wesnoth.BattleForWesnoth",
@@ -51943,7 +51944,7 @@ export const dummyApps = [
             "1.15.11",
             "1.15.13"
         ],
-        "PackageIcon": "https://wesnoth.org//wesmere/img/apple-touch-icon.png"
+        "PackageIcon": "https://wesnoth.org/wesmere/img/apple-touch-icon.png"
     },
     {
         "PackageIdentifier": "WestWind.MarkdownMonster",
@@ -52065,7 +52066,7 @@ export const dummyApps = [
             "5.2.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/1c2369df48daa76ceedc7200e49abb3926f05f0597ef35588e93b9311cdc1ccb/wexond/browser-base"
+        "PackageImage": "https://opengraph.githubassets.com/fe52647c74c566e30cc452d8be0a48e78ec3337eebbaf58c5cc68ff86cff3fcf/wexond/browser-base"
     },
     {
         "PackageIdentifier": "WhatsApp.WhatsApp",
@@ -52225,7 +52226,7 @@ export const dummyApps = [
         "Versions": [
             "1.0.0"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/win32diskimager///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/win32diskimager/icon?1495137073"
     },
     {
@@ -52254,7 +52255,7 @@ export const dummyApps = [
         "Versions": [
             "3.6"
         ],
-        "PackageIcon": "https://ryzom.com//favicon.png"
+        "PackageIcon": "https://ryzom.com/favicon.png"
     },
     {
         "PackageIdentifier": "WinDirStat.WinDirStat",
@@ -52288,8 +52289,8 @@ export const dummyApps = [
         "Versions": [
             "1.1.2"
         ],
-        "PackageIcon": "https://windirstat.net//favicon.ico",
-        "PackageImage": "https://windirstat.net//images/wds_rich_preview.png"
+        "PackageIcon": "https://windirstat.net/favicon.ico",
+        "PackageImage": "https://windirstat.net/images/wds_rich_preview.png"
     },
     {
         "PackageIdentifier": "Windscribe.Windscribe",
@@ -52318,7 +52319,7 @@ export const dummyApps = [
         "Versions": [
             "latest"
         ],
-        "PackageIcon": "https://windscribe.com//favicon.ico",
+        "PackageIcon": "https://windscribe.com/favicon.ico",
         "PackageImage": "https://windscribe.com/favicon-128x128.png"
     },
     {
@@ -52413,7 +52414,7 @@ export const dummyApps = [
             "2.16.12.0",
             "2.16.6"
         ],
-        "PackageIcon": "https://winmerge.org//favicon.ico"
+        "PackageIcon": "https://winmerge.org/favicon.ico"
     },
     {
         "PackageIdentifier": "winpython.winpython",
@@ -52566,7 +52567,7 @@ export const dummyApps = [
             "5.17.5",
             "5.17.7"
         ],
-        "PackageIcon": "https://winscp.net/eng//favicon.ico",
+        "PackageIcon": "https://winscp.net/favicon.ico",
         "PackageImage": "https://winscp.net/eng/images/og_logo_240x240.jpg"
     },
     {
@@ -52608,7 +52609,7 @@ export const dummyApps = [
         "Versions": [
             "5.18.5-RC"
         ],
-        "PackageIcon": "https://winscp.net/eng//favicon.ico",
+        "PackageIcon": "https://winscp.net/favicon.ico",
         "PackageImage": "https://winscp.net/eng/images/og_logo_240x240.jpg"
     },
     {
@@ -52674,7 +52675,7 @@ export const dummyApps = [
             "3.4.4",
             "3.4.5"
         ],
-        "PackageIcon": "https://www.wireshark.org//assets/images/favicon.ico"
+        "PackageIcon": "https://www.wireshark.org/assets/images/favicon.ico"
     },
     {
         "PackageIdentifier": "wiznote.wiznote",
@@ -52706,7 +52707,7 @@ export const dummyApps = [
             "4.13",
             "4.13.15"
         ],
-        "PackageIcon": "https://www.wiz.cn///wcdn.wiz.cn/favicon.ico"
+        "PackageIcon": "https://wcdn.wiz.cn/favicon.ico"
     },
     {
         "PackageIdentifier": "Wiznote.Wiznotelite",
@@ -52756,7 +52757,7 @@ export const dummyApps = [
             "2.1.0",
             "2.1.1"
         ],
-        "PackageIcon": "https://www.wiz.cn///wcdn.wiz.cn/favicon.ico"
+        "PackageIcon": "https://wcdn.wiz.cn/favicon.ico"
     },
     {
         "PackageIdentifier": "WolframResearch.WolframEngine",
@@ -52822,7 +52823,7 @@ export const dummyApps = [
             "1.10.44",
             "1.10.45"
         ],
-        "PackageIcon": "https://workrave.org//images/favicon.ico"
+        "PackageIcon": "https://workrave.org/images/favicon.ico"
     },
     {
         "PackageIdentifier": "Wox.Wox",
@@ -52857,7 +52858,7 @@ export const dummyApps = [
             "1.4.1196"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/1b15d28187896b17f71694326763a2b48fdbb7fb1d3994d4e74149be61d26d77/Wox-launcher/Wox"
+        "PackageImage": "https://opengraph.githubassets.com/74c8a2b9f491a9fa7d79bb73163e4df89a91e5fee4bb7d0893b034697db0c6fd/Wox-launcher/Wox"
     },
     {
         "PackageIdentifier": "Woyun.Wolai",
@@ -52996,7 +52997,7 @@ export const dummyApps = [
         "Versions": [
             "4.1.2.2"
         ],
-        "PackageIcon": "https://jenkins.x2go.org:8443//static/6a253b94/favicon.ico"
+        "PackageIcon": "https://jenkins.x2go.org:8443/static/6a253b94/favicon.ico"
     },
     {
         "PackageIdentifier": "x64architecture.Wnmp",
@@ -53126,7 +53127,7 @@ export const dummyApps = [
         "Versions": [
             "3.49.2"
         ],
-        "PackageIcon": "https://www.httrack.com//favicon.ico"
+        "PackageIcon": "https://www.httrack.com/favicon.ico"
     },
     {
         "PackageIdentifier": "XBMCFoundation.Kodi",
@@ -53205,7 +53206,7 @@ export const dummyApps = [
         "Versions": [
             "2.2.1.666"
         ],
-        "PackageIcon": "https://plus.miui.com//site.png"
+        "PackageIcon": "https://plus.miui.com/site.png"
     },
     {
         "PackageIdentifier": "xiaozhu188.electron-vue-cloud-music",
@@ -53242,7 +53243,7 @@ export const dummyApps = [
             "1.2.3"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/3d5e8295695f11661356f3363b7cbae97e9a0d0da65dd25991f9b6dbe1315779/xiaozhu188/electron-vue-cloud-music"
+        "PackageImage": "https://opengraph.githubassets.com/0ea9be441a1ab59a397107df5e693b2347bb95e73f44172f956c5986fc2efe1e/xiaozhu188/electron-vue-cloud-music"
     },
     {
         "PackageIdentifier": "xiles.NexusFont",
@@ -53369,7 +53370,7 @@ export const dummyApps = [
         "Versions": [
             "10.2.1"
         ],
-        "PackageIcon": "https://www.xmind.net/desktop//favicon.ico",
+        "PackageIcon": "https://www.xmind.net/favicon.ico",
         "PackageImage": "https://www.xmind.net/og-images/xmind2020@3x.png"
     },
     {
@@ -53645,7 +53646,7 @@ export const dummyApps = [
         "Versions": [
             "10.1.34.800"
         ],
-        "PackageIcon": "http://x.xunlei.com//favicon.ico?v=4a363d6e1b66bc599cfd6f28a6bc39f4"
+        "PackageIcon": "http://x.xunlei.com/favicon.ico?v=4a363d6e1b66bc599cfd6f28a6bc39f4"
     },
     {
         "PackageIdentifier": "YACReader.YACReader",
@@ -53678,7 +53679,7 @@ export const dummyApps = [
             "9.7.1",
             "9.8.0"
         ],
-        "PackageIcon": "https://www.yacreader.com//templates/yacreader/favicon.ico"
+        "PackageIcon": "https://www.yacreader.com/templates/yacreader/favicon.ico"
     },
     {
         "PackageIdentifier": "YaCy.YaCy",
@@ -53829,7 +53830,7 @@ export const dummyApps = [
             "1.22.4",
             "1.22.5"
         ],
-        "PackageIcon": "https://yarnpkg.com//favicon-32x32.png?v=6143f50112ddba9fdb635b0af2f32aff",
+        "PackageIcon": "https://yarnpkg.com/favicon-32x32.png?v=6143f50112ddba9fdb635b0af2f32aff",
         "PackageImage": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTE1NC44IDUxOCI+PHN0eWxlPi5zdDB7ZmlsbDojMmM4ZWJifS5zdDF7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTcxOC42IDI1Ny44Yy04IDI3LjYtMjAuOCA0Ny42LTM1LjIgNjMuNlYxODFjMC05LjYtOC40LTE3LjYtMjEuNi0xNy42LTUuNiAwLTEwLjQgMi44LTEwLjQgNi44IDAgMi44IDEuNiA1LjIgMS42IDEyLjh2NjQuNGMtNC44IDI4LTE2LjggNTQtMzIuOCA1NC0xMS42IDAtMTguNC0xMS42LTE4LjQtMzMuMiAwLTMzLjYgNC40LTUxLjIgMTEuNi04MC44IDEuNi02IDEzLjItMjItNi40LTIyLTIxLjIgMC0xOC40IDgtMjEuMiAxNC44IDAgMC0xMy40IDQ3LjYtMTMuNCA5MCAwIDM0LjggMTQuNiA1Ny42IDQxLjQgNTcuNiAxNy4yIDAgMjkuNi0xMS42IDM5LjItMjcuNlYzNTFjLTI2LjQgMjMuMi00OS42IDQzLjYtNDkuNiA4NCAwIDI1LjYgMTYgNDYgMzguNCA0NiAyMC40IDAgNDEuNi0xNC44IDQxLjYtNTYuOFYzNTVjMjEuNi0xOC44IDQ0LjgtNDIuNCA1OC40LTg4LjguNC0xLjYuNC0zLjYuNC00IDAtNy42LTcuNi0xNi40LTE0LTE2LjQtNCAwLTcuMiAzLjYtOS42IDEyem0tNzYuOCAxOThjLTYuNCAwLTEwLjQtOS42LTEwLjQtMjIgMC0yNCA4LjgtMzkuMiAyMS42LTUyLjR2NDIuOGMwIDcuNiAxLjYgMzEuNi0xMS4yIDMxLjZ6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTgzMy40IDMwMWMtOS42IDAtMTMuNi05LjYtMTMuNi0xOC40di02NmMwLTkuNi04LjQtMTcuNi0yMS42LTE3LjYtNS42IDAtMTAuNCAyLjgtMTAuNCA2LjggMCAyLjggMS42IDUuMiAxLjYgMTIuOHY2MS42Qzc4NSAyOTEuNCA3NzcuOCAzMDEgNzY3IDMwMWMtMTQgMC0yMi44LTEyLTIyLjgtMzIuOCAwLTU3LjYgMzUuNi04My42IDY2LTgzLjYgNCAwIDggLjggMTEuNi44IDQgMCA1LjItMi40IDUuMi05LjIgMC0xMC40LTcuNi0xNi44LTE4LjQtMTYuOC00OC44IDAtOTUuMiA0MC44LTk1LjIgMTA3LjYgMCAzNCAxNi40IDYwLjQgNDcuNiA2MC40IDE1LjIgMCAyNi40LTcuMiAzNC40LTE2LjQgNiA5LjYgMTYuOCAxNi40IDMwLjggMTYuNCAzNC40IDAgNTAuNC0zNiA1Ny4yLTYyLjQuNC0xLjYuNC0yLjQuNC0yLjggMC03LjYtNy42LTE2LjQtMTQtMTYuNC00IDAtOCAzLjYtOS42IDEyLTMuNiAxNy42LTEwLjggNDMuMi0yNi44IDQzLjJ6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTk0OSAzMjcuNGMzNC40IDAgNTAtMzYgNTcuMi02Mi40IDAtLjguNC0xLjYuNC0yLjggMC03LjYtNy42LTE2LjQtMTQtMTYuNC00IDAtOCAzLjYtOS42IDEyLTMuNiAxNy42LTEwLjQgNDMuMi0yOC44IDQzLjItMTAuOCAwLTE2LTEwLjQtMTYtMjEuNiAwLTQwIDE4LTg3LjIgMTgtOTIgMS42LTkuMi0xNC40LTIyLjQtMTkuMi0yMi40aC0yMC44Yy00IDAtOCAwLTIxLjItMS42LTQuNC0xNi40LTE1LjYtMjEuMi0yNS4yLTIxLjItMTAuNCAwLTIwIDcuMi0yMCAxOC40IDAgMTEuNiA3LjIgMjAgMTcuMiAyNS42LS40IDIwLjQtMiA1My42LTYuNCA2OS42LTMuNiAxMy42IDE3LjIgMjggMjIuNCAxMS4yIDcuMi0yMy4yIDkuNi01OCAxMC03My42aDM0LjhjLTEyLjggMzQuNC0yMCA2Mi44LTIwIDg4LjQgMCAzNS4yIDIyLjQgNDUuNiA0MS4yIDQ1LjZ6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTk4NC42IDMwOS44YzAgMTQuOCAxMS4yIDE3LjYgMTkuMiAxNy42IDExLjYgMCAxMS4yLTkuNiAxMS4yLTE3LjJ2LTU4LjRjMi44LTMxLjYgMjcuNi02NiAzOS4yLTY2IDcuNiAwIDguNCAxMC40IDguNCAyMi44djgxLjJjMCAyMC40IDEyLjQgMzcuNiAzMy42IDM3LjYgMzQuNCAwIDUxLjQtMzYgNTguMi02Mi40LjQtMS42LjQtMi40LjQtMi44IDAtNy42LTcuNi0xNi40LTE0LTE2LjQtNCAwLTggMy42LTkuNiAxMi0zLjYgMTcuNi0xMS44IDQzLjItMjcuOCA0My4yLTEwLjQgMC0xMC40LTE0LjgtMTAuNC0xOC40di04Mi44YzAtMTguNC02LjQtNDAuNC0zMy4yLTQwLjQtMTkuNiAwLTM0IDE3LjItNDQuOCAzOS42di0xOGMwLTkuNi04LjQtMTcuNi0yMS42LTE3LjYtNS42IDAtMTAuNCAyLjgtMTAuNCA2LjggMCAyLjggMS42IDUuMiAxLjYgMTIuOHYxMjYuOHpNMjU5IDBjMTQzIDAgMjU5IDExNiAyNTkgMjU5UzQwMiA1MTggMjU5IDUxOCAwIDQwMiAwIDI1OSAxMTYgMCAyNTkgMHoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDM1LjIgMzM3LjVjLTEuOC0xNC4yLTEzLjgtMjQtMjkuMi0yMy44LTIzIC4zLTQyLjMgMTIuMi01NS4xIDIwLjEtNSAzLjEtOS4zIDUuNC0xMyA3LjEuOC0xMS42LjEtMjYuOC01LjktNDMuNS03LjMtMjAtMTcuMS0zMi4zLTI0LjEtMzkuNCA4LjEtMTEuOCAxOS4yLTI5IDI0LjQtNTUuNiA0LjUtMjIuNyAzLjEtNTgtNy4yLTc3LjgtMi4xLTQtNS42LTYuOS0xMC04LjEtMS44LS41LTUuMi0xLjUtMTEuOS40QzI5My4xIDk2IDI4OS42IDkzLjggMjg2LjkgOTJjLTUuNi0zLjYtMTIuMi00LjQtMTguNC0yLjEtOC4zIDMtMTUuNCAxMS0yMi4xIDI1LjItMSAyLjEtMS45IDQuMS0yLjcgNi4xLTEyLjcuOS0zMi43IDUuNS00OS42IDIzLjgtMi4xIDIuMy02LjIgNC0xMC41IDUuNmguMWMtOC44IDMuMS0xMi44IDEwLjMtMTcuNyAyMy4zLTYuOCAxOC4yLjIgMzYuMSA3LjEgNDcuNy05LjQgOC40LTIxLjkgMjEuOC0yOC41IDM3LjUtOC4yIDE5LjQtOS4xIDM4LjQtOC44IDQ4LjctNyA3LjQtMTcuOCAyMS4zLTE5IDM2LjktMS42IDIxLjggNi4zIDM2LjYgOS44IDQyIDEgMS42IDIuMSAyLjkgMy4zIDQuMi0uNCAyLjctLjUgNS42LjEgOC42IDEuMyA3IDUuNyAxMi43IDEyLjQgMTYuMyAxMy4yIDcgMzEuNiAxMCA0NS44IDIuOSA1LjEgNS40IDE0LjQgMTAuNiAzMS4zIDEwLjZoMWM0LjMgMCA1OC45LTIuOSA3NC44LTYuOCA3LjEtMS43IDEyLTQuNyAxNS4yLTcuNCAxMC4yLTMuMiAzOC40LTEyLjggNjUtMzAgMTguOC0xMi4yIDI1LjMtMTQuOCAzOS4zLTE4LjIgMTMuNi0zLjMgMjIuMS0xNS43IDIwLjQtMjkuNHptLTIzLjggMTQuN2MtMTYgMy44LTI0LjEgNy4zLTQzLjkgMjAuMi0zMC45IDIwLTY0LjcgMjkuMy02NC43IDI5LjNzLTIuOCA0LjItMTAuOSA2LjFjLTE0IDMuNC02Ni43IDYuMy03MS41IDYuNC0xMi45LjEtMjAuOC0zLjMtMjMtOC42LTYuNy0xNiA5LjYtMjMgOS42LTIzcy0zLjYtMi4yLTUuNy00LjJjLTEuOS0xLjktMy45LTUuNy00LjUtNC4zLTIuNSA2LjEtMy44IDIxLTEwLjUgMjcuNy05LjIgOS4zLTI2LjYgNi4yLTM2LjkuOC0xMS4zLTYgLjgtMjAuMS44LTIwLjFzLTYuMSAzLjYtMTEtMy44Yy00LjQtNi44LTguNS0xOC40LTcuNC0zMi43IDEuMi0xNi4zIDE5LjQtMzIuMSAxOS40LTMyLjFzLTMuMi0yNC4xIDcuMy00OC44YzkuNS0yMi41IDM1LjEtNDAuNiAzNS4xLTQwLjZzLTIxLjUtMjMuOC0xMy41LTQ1LjJjNS4yLTE0IDcuMy0xMy45IDktMTQuNSA2LTIuMyAxMS44LTQuOCAxNi4xLTkuNSAyMS41LTIzLjIgNDguOS0xOC44IDQ4LjktMTguOHMxMy0zOS41IDI1LTMxLjhjMy43IDIuNCAxNyAzMiAxNyAzMnMxNC4yLTguMyAxNS44LTUuMmM4LjYgMTYuNyA5LjYgNDguNiA1LjggNjgtNi40IDMyLTIyLjQgNDkuMi0yOC44IDYwLTEuNSAyLjUgMTcuMiAxMC40IDI5IDQzLjEgMTAuOSAyOS45IDEuMiA1NSAyLjkgNTcuOC4zLjUuNC43LjQuN3MxMi41IDEgMzcuNi0xNC41YzEzLjQtOC4zIDI5LjMtMTcuNiA0Ny40LTE3LjggMTcuNS0uMyAxOC40IDIwLjIgNS4yIDIzLjR6Ii8+PC9zdmc+"
     },
     {
@@ -54087,7 +54088,7 @@ export const dummyApps = [
         "Versions": [
             "2.9.0"
         ],
-        "PackageIcon": "https://www.zaproxy.org//img/favicon.ico",
+        "PackageIcon": "https://www.zaproxy.org/img/favicon.ico",
         "PackageImage": "https://www.zaproxy.org/img/zap-banner.png"
     },
     {
@@ -54112,7 +54113,7 @@ export const dummyApps = [
         "Versions": [
             "3.0.2.1510"
         ],
-        "PackageIcon": "https://hyper.is//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://hyper.is/apple-touch-icon-57x57.png",
         "PackageImage": "https://assets.vercel.com/image/upload/v1590627842/hyper/og-image-3.png"
     },
     {
@@ -54224,7 +54225,7 @@ export const dummyApps = [
             "3.1.0"
         ],
         "PackageIcon": "https://github.com/fluidicon.png",
-        "PackageImage": "https://opengraph.githubassets.com/4f9bb6f17295cdc3f9f4c2d9be54e2c499d11fcc2be6deb1e85bbb2f0dd8e226/zhaopengme/gitnote"
+        "PackageImage": "https://opengraph.githubassets.com/34de2b8fdb6d14460903af5cf2dcbf4a5d1db3349b2aa6c3d5568032f03b2ad2/zhaopengme/gitnote"
     },
     {
         "PackageIdentifier": "Zint.Zint",
@@ -54255,7 +54256,7 @@ export const dummyApps = [
         "Versions": [
             "2.4.2.0"
         ],
-        "PackageIcon": "https://sourceforge.net/projects/zint///a.fsdn.com/con/img/sandiego/logo-180x180.png",
+        "PackageIcon": "https://a.fsdn.com/con/img/sandiego/logo-180x180.png",
         "PackageImage": "https://a.fsdn.com/allura/p/zint/icon?22dafada34e02ead8dc35bc5487f6cbdc4cbfb6b578214f9ba4cd03362145f3f"
     },
     {
@@ -54315,8 +54316,8 @@ export const dummyApps = [
             "5.6.823",
             "5.6.961"
         ],
-        "PackageIcon": "https://zoom.us//zoom.ico",
-        "PackageImage": "https://zoom.us//docs/image/thumb.png"
+        "PackageIcon": "https://zoom.us/zoom.ico",
+        "PackageImage": "https://zoom.us/docs/image/thumb.png"
     },
     {
         "PackageIdentifier": "Zoom.zoomoutlookplugin",
@@ -54351,8 +54352,8 @@ export const dummyApps = [
             "5.6.1.61",
             "5.6.3.105"
         ],
-        "PackageIcon": "https://zoom.us//zoom.ico",
-        "PackageImage": "https://zoom.us//docs/image/thumb.png"
+        "PackageIcon": "https://zoom.us/zoom.ico",
+        "PackageImage": "https://zoom.us/docs/image/thumb.png"
     },
     {
         "PackageIdentifier": "Zotero.Zotero",
@@ -54395,7 +54396,7 @@ export const dummyApps = [
             "5.0.96",
             "5.0.96.2"
         ],
-        "PackageIcon": "https://www.zotero.org//static/images/bs4theme/zotero-logo.1519312231.svg"
+        "PackageIcon": "https://www.zotero.org/static/images/bs4theme/zotero-logo.1519312231.svg"
     },
     {
         "PackageIdentifier": "Zulip.Zulip",
@@ -54427,7 +54428,7 @@ export const dummyApps = [
             "5.6.0",
             "5.7.0"
         ],
-        "PackageIcon": "https://zulip.com//static/images/favicon.svg?v=4",
+        "PackageIcon": "https://zulip.com/static/images/favicon.svg?v=4",
         "PackageImage": "https://zulipchat.com/static/images/logo/zulip-icon-128x128.png"
     },
     {
@@ -54496,7 +54497,7 @@ export const dummyApps = [
             "4.3.8",
             "4.3.9"
         ],
-        "PackageIcon": "https://zygorguides.com//favicon.png"
+        "PackageIcon": "https://zygorguides.com/favicon.png"
     },
     {
         "PackageIdentifier": "Zype.Compass",
@@ -54521,7 +54522,7 @@ export const dummyApps = [
             "1.0.0",
             "1.1.0"
         ],
-        "PackageIcon": "https://hyper.is//apple-touch-icon-57x57.png",
+        "PackageIcon": "https://hyper.is/apple-touch-icon-57x57.png",
         "PackageImage": "https://assets.vercel.com/image/upload/v1590627842/hyper/og-image-3.png"
     }
 ];

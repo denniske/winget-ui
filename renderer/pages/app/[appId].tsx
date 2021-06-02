@@ -9,6 +9,7 @@ import ProgressBar from "../../components/progress-bar";
 import {useRouter} from "next/router";
 import Link from "next/link";
 import Breadcrumb from "../../components/breadcrumb";
+import AppIcon from "../../components/app-icon";
 
 
 export default function AppId() {
@@ -55,7 +56,7 @@ export default function AppId() {
                 <Breadcrumb parts={parts} publisher={app.publisher}/>
 
                 <div className="flex space-x-8">
-                    <img src={fixPackageIcon(app.packageIdentifier, app.packageIcon)} className="w-32 h-32 mt-1 mb-2"/>
+                    <AppIcon app={app} className="w-32 h-32"/>
 
                     <div className="flex flex-col flex-1 pt-4">
                         <div className="text-2xl font-bold text-white">

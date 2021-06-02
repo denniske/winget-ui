@@ -35,7 +35,7 @@ export default function Home() {
                 ,
                 a => a.views, 'desc'
             )
-                .filter((x, i) => i < 20)
+                .filter((x, i) => i < 100)
         );
         // console.log(localApps);
     }, [search, allLocalApps]);

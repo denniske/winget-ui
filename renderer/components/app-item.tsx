@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBox, faDownload, faSearch, faStar} from "@fortawesome/free-solid-svg-icons";
+import {faBox, faChevronLeft, faDownload, faSearch, faStar, faWindowMaximize} from "@fortawesome/free-solid-svg-icons";
 import React, {useState} from "react";
 import {useMutate, useSelector} from "../state/store";
 import {setSearch} from "../state/action";
@@ -8,6 +8,7 @@ import {IApp, ITask} from "../helper/types";
 import {fixPackageIcon} from "../helper/util";
 import ProgressBarFull from "./progress-bar-full";
 import {addTaskToQueue, getTaskId} from "../helper/executor";
+import AppIcon from "./app-icon";
 
 interface Props {
     app: IApp;
@@ -33,10 +34,9 @@ export default function AppItem(props: Props) {
 
     return (
         <div className="flex space-x-8">
-            <img src={fixPackageIcon(app.packageIdentifier, app.packageIcon)} className="w-11 h-11 mt-1 mb-2"/>
+            <AppIcon app={app} className="w-11 h-11"/>
 
             <div className="flex flex-col flex-1">
-
                 <Link href={`/app/${encodeURIComponent(app.packageIdentifier)}`}>
                     <a className="font-bold text-white">{app.packageName}</a>
                 </Link>

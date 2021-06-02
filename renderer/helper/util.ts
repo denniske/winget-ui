@@ -1,3 +1,4 @@
+import {IApp} from "./types";
 
 export function toCamelCase(key, value) {
     if (value && typeof value === 'object') {
@@ -11,7 +12,7 @@ export function toCamelCase(key, value) {
     return value;
 }
 
-export function fixPackageIcon(id: string, url: string) {
+export function fixPackageIcon(app: IApp) {
 
     const fallbackIcons = {
         "Spotify.Spotify": "spotify.webp",
@@ -36,8 +37,13 @@ export function fixPackageIcon(id: string, url: string) {
         "ShareX.ShareX": "sharex.webp",
     };
 
-    if (fallbackIcons[id]) {
-        return '/apps/' + fallbackIcons[id];
+    if (fallbackIcons[app.packageIdentifier]) {
+        return '/apps/' + fallbackIcons[app.packageIdentifier];
+    }
+
+    if (app.packageIcon === 'favicon.ico') {
+        const url = new URL(app.packageUrl);
+        return url.protocol + '//' + url.host + '/favicon.ico';
     }
 
     // const httpIndex = url.indexOf('//');
@@ -47,5 +53,5 @@ export function fixPackageIcon(id: string, url: string) {
     //     return url.substr(0, httpIndex+2) + url.substr(index+3);
     // }
 
-    return url;
+    return app.packageIcon;
 }
