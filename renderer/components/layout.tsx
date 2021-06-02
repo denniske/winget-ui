@@ -15,6 +15,7 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import {ipcRenderer} from "../helper/bridge";
 import TaskList from "./task-list";
+import TaskFailedModal from "./task-failed-modal";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -46,8 +47,8 @@ export default function Layout(props: any) {
     }, [search]);
 
     useEffect(() => {
-       ipcRenderer.invoke('browser-can-go-back').then(x => setCanGoBack(x));
-       ipcRenderer.invoke('browser-can-go-forward').then(x => setCanGoForward(x));
+        ipcRenderer.invoke('browser-can-go-back').then(x => setCanGoBack(x));
+        ipcRenderer.invoke('browser-can-go-forward').then(x => setCanGoForward(x));
     }, [router.route]);
 
     const goBack = () => {
@@ -73,31 +74,35 @@ export default function Layout(props: any) {
             <div className='flex flex-col w-60 bg-[#2F2F31] text-[#CCCCCC] space-y-6 px-5 py-4'>
 
                 <div className="flex space-x-4 self-end">
-                    <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1" onClick={goBack} disabled={!canGoBack}>
-                        <FontAwesomeIcon icon={faChevronLeft} className="text-[#98979A]" />
+                    <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1"
+                            onClick={goBack} disabled={!canGoBack}>
+                        <FontAwesomeIcon icon={faChevronLeft} className="text-[#98979A]"/>
                     </button>
-                    <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1" onClick={goForward} disabled={!canGoForward}>
-                        <FontAwesomeIcon icon={faChevronRight} className="text-[#98979A]" />
+                    <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1"
+                            onClick={goForward} disabled={!canGoForward}>
+                        <FontAwesomeIcon icon={faChevronRight} className="text-[#98979A]"/>
                     </button>
                 </div>
 
-                <div className="" />
+                <div className=""/>
 
                 <Link href={`/home`}>
                     <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${myExlorerActive ? 'bg-[#444348] text-white' : ''}`}>
-                        <FontAwesomeIcon icon={faStar} className={myExlorerActive ? 'text-white' : 'text-[#98979A]'} />
+                        <FontAwesomeIcon icon={faStar} className={myExlorerActive ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">My Explorer</div>
                     </a>
                 </Link>
                 <Link href={`/installed`}>
                     <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${isActive('/installed') ? 'bg-[#444348] text-white' : ''}`}>
-                        <FontAwesomeIcon icon={faBox} className={isActive('/installed') ? 'text-white' : 'text-[#98979A]'} />
+                        <FontAwesomeIcon icon={faBox}
+                                         className={isActive('/installed') ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">On This Computer</div>
                     </a>
                 </Link>
                 <Link href={`/updates`}>
                     <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${isActive('/updates') ? 'bg-[#444348] text-white' : ''}`}>
-                        <FontAwesomeIcon icon={faDownload} className={isActive('/updates') ? 'text-white' : 'text-[#98979A]'} />
+                        <FontAwesomeIcon icon={faDownload}
+                                         className={isActive('/updates') ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">Updates</div>
                     </a>
                 </Link>
@@ -105,8 +110,9 @@ export default function Layout(props: any) {
             </div>
 
             <div className='flex flex-col flex-1 h-full'>
-                <div className="flex items-center p-4 border-b-[1px] border-[#4A4A4A] space-x-4 text-[#98979A] focus-within:text-[#C9C9C9] transition-color">
-                    <FontAwesomeIcon icon={faSearch} className="" />
+                <div
+                    className="flex items-center p-4 border-b-[1px] border-[#4A4A4A] space-x-4 text-[#98979A] focus-within:text-[#C9C9C9] transition-color">
+                    <FontAwesomeIcon icon={faSearch} className=""/>
                     <input
                         placeholder="Search for apps..."
                         className="px-2 py-1 flex-1 rounded focus:outline-none bg-transparent"
@@ -123,17 +129,20 @@ export default function Layout(props: any) {
                     {
                         search.length > 0 &&
                         <button className="focus:outline-none" onClick={clearSearch}>
-                            <FontAwesomeIcon icon={faTimesCircle} className=""  />
+                            <FontAwesomeIcon icon={faTimesCircle} className=""/>
                         </button>
                     }
                 </div>
 
-                <div className={`overflow-auto transition-opacity ${searching && search.length === 0 ? 'opacity-50' : ''}`}>
+                <div
+                    className={`overflow-auto transition-opacity ${searching && search.length === 0 ? 'opacity-50' : ''}`}>
                     {children}
                 </div>
             </div>
 
-           <TaskList />
+            <TaskList/>
+
+            <TaskFailedModal />
         </div>
     );
 }

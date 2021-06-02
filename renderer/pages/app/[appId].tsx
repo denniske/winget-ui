@@ -20,16 +20,6 @@ export default function AppId() {
     const [app, setApp] = useState<IApp>(null);
     const allLocalApps = useSelector(selectLocalApps);
 
-    const updateApp = async (app: IApp) => {
-        const task: ITask = {
-            id: getTaskId(),
-            packageIdentifier: app.packageIdentifier,
-            packageName: app.packageName,
-            packageVersion: app.packageVersion,
-        };
-        addTaskToQueue(task);
-    };
-
     useEffect(() => {
         loadApps();
     }, []);
@@ -37,7 +27,7 @@ export default function AppId() {
     useEffect(() => {
         setApp(allLocalApps.find(a => a.packageIdentifier === appId));
         console.log(app);
-    }, [allLocalApps]);
+    }, [allLocalApps, appId]);
 
     if (!app) {
         return (

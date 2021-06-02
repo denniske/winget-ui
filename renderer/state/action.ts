@@ -104,11 +104,31 @@ export function setSearch(search: string) {
     };
 }
 
+export function showTaskFailedModal(task: ITask) {
+    return (state: AppState) => {
+        state.modal = {
+            type: 'task-failed',
+            task,
+        };
+    };
+}
+
+export function hideModal() {
+    return (state: AppState) => {
+        state.modal = null;
+    };
+}
+
 // export function addToQueue(task: ITask) {
 //     return (state: AppState) => {
 //         state.queue.push(task);
 //     };
 // }
+
+interface IModal {
+    type: 'task-failed',
+    task: ITask;
+}
 
 export interface AppState {
     availableApps: IApp[];
@@ -118,6 +138,7 @@ export interface AppState {
     queue: ITask[];
     tasks: ITask[];
     search: string;
+    modal: IModal;
 }
 
 export const initialState: AppState = {
@@ -128,4 +149,5 @@ export const initialState: AppState = {
     queue: [],
     tasks: [],
     search: '',
+    modal: null,
 }

@@ -1,6 +1,13 @@
 import {IApp, IInstalledApps, ITask} from "./types";
 import {exec, getStore} from "../state/store";
-import {setAvailableApps, setInstalledApps, setPopularity, setQueue, setTasks} from "../state/action";
+import {
+    setAvailableApps,
+    setInstalledApps,
+    setPopularity,
+    setQueue,
+    setTasks,
+    showTaskFailedModal
+} from "../state/action";
 // import {ipcRenderer} from "electron";
 import {toCamelCase} from "./util";
 import {dummyApps} from "../data/apps";
@@ -47,6 +54,10 @@ async function execute() {
     task.exitCode = resultStr.exitCode;
     task.signal = resultStr.signal;
     updateStore();
+
+    if (resultStr.exitCode != 0) {
+        getStore().dispatch(exec(showTaskFailedModal(task)));
+    }
 
     await loadInstalledApps();
 

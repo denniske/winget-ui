@@ -8,11 +8,12 @@ import {faChevronDown, faChevronLeft, faChevronRight} from "@fortawesome/free-so
 
 interface Props {
     task: ITask;
+    opened?: boolean;
 }
 
 export default function TaskItem(props: Props) {
-    const {task} = props;
-    const [visible, setVisible] = useState(false);
+    const {task, opened} = props;
+    const [visible, setVisible] = useState(opened);
 
     return (
         <div className="flex flex-col">
