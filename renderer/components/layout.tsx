@@ -13,7 +13,7 @@ import {useMutate, useSelector} from "../state/store";
 import {setSearch} from "../state/action";
 import Link from "next/link";
 import {useRouter} from "next/router";
-import {browserCanGoBack, browserCanGoForward} from "../helper/bridge";
+import {ipcRenderer} from "../helper/bridge";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -48,8 +48,8 @@ export default function Layout(props: any) {
 
     useEffect(() => {
        // console.log(router.route);
-       browserCanGoBack().then(x => setCanGoBack(x));
-       browserCanGoForward().then(x => setCanGoForward(x));
+       ipcRenderer.invoke('browser-can-go-back').then(x => setCanGoBack(x));
+       ipcRenderer.invoke('browser-can-go-forward').then(x => setCanGoForward(x));
     }, [router.route]);
 
     const goBack = () => {

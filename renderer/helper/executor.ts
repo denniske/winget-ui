@@ -6,6 +6,7 @@ import {toCamelCase} from "./util";
 import {dummyApps} from "../data/apps";
 import {dummyInstalled} from "../data/installed";
 import {dummyPopularity} from "../data/popularity";
+import { ipcRenderer } from "./bridge";
 
 let executing = false;
 
@@ -40,10 +41,10 @@ async function execute() {
 
     console.log('execute', task);
 
-    // const resultStr = await ipcRenderer.invoke('winget-upgrade', task);
+    const resultStr = await ipcRenderer.invoke('winget-upgrade', task);
     // console.log('resultStr', resultStr);
-    // task.exitCode = resultStr.exitCode;
-    // task.signal = resultStr.signal;
+    task.exitCode = resultStr.exitCode;
+    task.signal = resultStr.signal;
     updateStore();
 
     await loadInstalledApps();
@@ -55,39 +56,39 @@ async function execute() {
 }
 
 function init() {
-    // ipcRenderer.on('terminal', (event, taskInfo: ITask, data) => {
-    //     console.log('client terminal', taskInfo, data);
-    //     // console.log('tasks', tasks);
-    //
-    //     const task = tasks.find(t => t.id == taskInfo.id);
-    //     task.buffer ??= [];
-    //     task.buffer.push(data);
-    //
-    //     task.progressTask ??= 'downloading';
-    //
-    //     const progressRegex = /9;4;1;(\d+)/;
-    //     if (progressRegex.test(data)) {
-    //         const match = progressRegex.exec(data);
-    //         const progress = parseInt(match[1]);
-    //         console.log('==> progress', progress);
-    //         task.progress = progress / 100;
-    //         task.progressReal = progress / 100;
-    //         if (progress == 100) {
-    //             task.progressTask = 'installing';
-    //         }
-    //     }
-    //     const progressIndRegex = /9;4;3;0/;
-    //     if (progressIndRegex.test(data)) {
-    //         console.log('==> progress indetermined');
-    //         task.progress = 2;
-    //     }
-    //     const progressFinRegex = /9;4;0;0/;
-    //     if (progressFinRegex.test(data)) {
-    //         console.log('==> progress finished');
-    //         task.progress = -1;
-    //     }
-    //     updateStore();
-    // });
+    ipcRenderer.on('terminal', (event, taskInfo: ITask, data) => {
+        console.log('client terminal', taskInfo, data);
+        // console.log('tasks', tasks);
+
+        const task = tasks.find(t => t.id == taskInfo.id);
+        task.buffer ??= [];
+        task.buffer.push(data);
+
+        task.progressTask ??= 'downloading';
+
+        const progressRegex = /9;4;1;(\d+)/;
+        if (progressRegex.test(data)) {
+            const match = progressRegex.exec(data);
+            const progress = parseInt(match[1]);
+            console.log('==> progress', progress);
+            task.progress = progress / 100;
+            task.progressReal = progress / 100;
+            if (progress == 100) {
+                task.progressTask = 'installing';
+            }
+        }
+        const progressIndRegex = /9;4;3;0/;
+        if (progressIndRegex.test(data)) {
+            console.log('==> progress indetermined');
+            task.progress = 2;
+        }
+        const progressFinRegex = /9;4;0;0/;
+        if (progressFinRegex.test(data)) {
+            console.log('==> progress finished');
+            task.progress = -1;
+        }
+        updateStore();
+    });
 }
 
 

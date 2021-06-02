@@ -18,7 +18,7 @@ export default function AppItem(props: Props) {
         );
     }
 
-    console.log(app);
+    // console.log(app);
 
     return (
         <div className="flex max-w-[500px] w-[500px] space-x-8">
