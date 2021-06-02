@@ -21,7 +21,7 @@ export default function AppItem(props: Props) {
     console.log(app);
 
     return (
-        <div className="flex space-x-8">
+        <div className="flex max-w-[500px] w-[500px] space-x-8">
             <AppIcon app={app} className="w-11 h-11"/>
 
             <div className="flex flex-col flex-1">
@@ -29,13 +29,12 @@ export default function AppItem(props: Props) {
                     <a className="font-bold text-white">{app.packageName}</a>
                 </Link>
 
-                {/*<div className="text-2xl font-bold">*/}
-                {/*    {app.packageName}*/}
-                {/*</div>*/}
-
+                {/*<div className="text-sm mt-1 mb-2 truncate max-w-[400px]">*/}
                 <div className="text-sm mt-1 mb-2">
                     {app.shortDescription}
                 </div>
+
+                {/*<div className="h-2"></div>*/}
 
                 <div className="flex items-center space-x-4">
                     <AppStatus app={app} uninstall={uninstall} />

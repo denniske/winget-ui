@@ -35,7 +35,7 @@ export default function Home() {
                 ,
                 a => a.views, 'desc'
             )
-                .filter((x, i) => i < 2)
+                .filter((x, i) => i < 20)
         );
         // console.log(localApps);
     }, [search, allLocalApps]);
@@ -91,7 +91,7 @@ export default function Home() {
                 <title>Winget</title>
             </Head>
 
-            <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">
+            <div className="flex flex-wrap gap-8 flex-1 overflow-auto px-12 py-8">
                 {
                     localApps.map(app => (
                         <AppItem
