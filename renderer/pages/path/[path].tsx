@@ -42,7 +42,7 @@ export default function Path() {
                 <title>{path} | Winget</title>
             </Head>
 
-            <div className="flex flex-col flex-1 overflow-auto px-12 py-4 space-y-4">
+            <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">
 
                 <Breadcrumb publisher={localApps[0].publisher} parts={parts} />
 

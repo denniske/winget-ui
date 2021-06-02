@@ -4,12 +4,7 @@ import {IApp, IInstalledApp, IPendingApp, IPopularity, ITask} from "../helper/ty
 
 
 export function selectLocalApps(state: AppState) {
-
     return state.availableApps.map(foundApp => {
-        // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
-        //     console.log('not found', p.packageIdentifier);
-        // }
-
         const foundTasks = state.tasks.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
         const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
 
@@ -26,25 +21,25 @@ export function selectLocalApps(state: AppState) {
         .filter((x, i) => x.packageName)
         // .filter((x, i) => i < 50)
         ;
+}
 
-    // return state.installedApps.map(installedApp => {
-    //     // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
-    //     //     console.log('not found', p.packageIdentifier);
-    //     // }
-    //
-    //     const foundApp = state.availableApps
-    //         .find(a => a.packageIdentifier === installedApp.packageIdentifier);
-    //
-    //     const foundTasks = state.tasks
-    //         .filter(a => a.packageIdentifier === installedApp.packageIdentifier);
-    //     const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
-    //
-    //     return {
-    //         ...foundApp,
-    //         installedVersion: installedApp.version,
-    //         task: foundTask,
-    //     };
-    // });
+export function selectLocalInstalledApps(state: AppState) {
+    return state.installedApps.map(installedApp => {
+        // if (!apps.find(a => a.packageIdentifier === p.packageIdentifier)) {
+        //     console.log('not found', p.packageIdentifier);
+        // }
+
+        const foundApp = state.availableApps.find(a => a.packageIdentifier === installedApp.packageIdentifier);
+
+        const foundTasks = state.tasks.filter(a => a.packageIdentifier === installedApp.packageIdentifier);
+        const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+
+        return {
+            ...foundApp,
+            installedVersion: installedApp.version,
+            task: foundTask,
+        };
+    });
 }
 
 

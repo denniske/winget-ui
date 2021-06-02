@@ -139,6 +139,14 @@ ipcMain.handle('get-apps', async (event, arg) => {
     return data.toString();
 });
 
+ipcMain.handle('browser-can-go-back', (event, arg) => {
+    return mainWindow.webContents.canGoBack();
+});
+
+ipcMain.handle('browser-can-go-forward', (event, arg) => {
+    return mainWindow.webContents.canGoForward();
+});
+
 // ipcMain.handle('get-apps', async (event, arg) => {
 //
 //   return new Promise(async (resolve) => {

@@ -38,7 +38,7 @@ export default function AppItem(props: Props) {
             <div className="flex flex-col flex-1">
 
                 <Link href={`/app/${encodeURIComponent(app.packageIdentifier)}`}>
-                    <a className="font-bold">{app.packageName}</a>
+                    <a className="font-bold text-white">{app.packageName}</a>
                 </Link>
 
                 {/*<div className="text-2xl font-bold">*/}
@@ -50,7 +50,7 @@ export default function AppItem(props: Props) {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <button className="bg-blue-600 text-white rounded px-2 py-1 text-sm"
+                    <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
                             onClick={() => updateApp(app)}>
                         Install
                     </button>

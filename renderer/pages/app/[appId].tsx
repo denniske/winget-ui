@@ -50,7 +50,7 @@ export default function AppId() {
                 <title>{app.packageName} | Winget</title>
             </Head>
 
-            <div className="flex flex-col flex-1 overflow-auto px-12 py-4 space-y-4">
+            <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">
 
                 <Breadcrumb parts={parts} publisher={app.publisher}/>
 
@@ -58,7 +58,7 @@ export default function AppId() {
                     <img src={fixPackageIcon(app.packageIcon)} className="w-32 h-32 mt-1 mb-2"/>
 
                     <div className="flex flex-col flex-1 pt-4">
-                        <div className="text-2xl font-bold">
+                        <div className="text-2xl font-bold text-white">
                             {app.packageName}
                         </div>
 
@@ -67,7 +67,7 @@ export default function AppId() {
                         </div>
 
                         <div className="flex items-center space-x-4">
-                            <button className="bg-blue-600 text-white rounded px-2 py-1 text-sm"
+                            <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
                                     onClick={() => updateApp(app)}>
                                 Install
                             </button>
@@ -83,14 +83,14 @@ export default function AppId() {
                 </div>
 
                 <div className="text-sm mt-1 mb-2">
-                    <img src={app.packageImage} className="max-h-[250px] rounded-lg bg-gray-300"/>
+                    <img src={app.packageImage} className="max-h-[250px] rounded-lg bg-gray-800"/>
                 </div>
 
                 <div className="flex flex-wrap gap-4 items-center mt-1 mb-2">
                     {
                         app.tags?.map(tag => (
                             <Link key={tag} href={`/tag/${encodeURIComponent(tag)}`}>
-                                <a className="text-sm bg-gray-300 p-2 rounded">{tag}</a>
+                                <a className="text-sm bg-gray-800 p-2 rounded">{tag}</a>
                             </Link>
                         ))
                     }

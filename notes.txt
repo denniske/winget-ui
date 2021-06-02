@@ -1,0 +1,3 @@
+
+https://api.winget.run/v2/packages?ensureContains=true&partialMatch=true&take=12&order=1&page=1
+https://api.winget.run/v2/stats?packageId=Microsoft.VisualStudioCode&resolution=day&after=2021-05-10&before=2021-05-31
