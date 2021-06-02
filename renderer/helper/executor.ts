@@ -57,11 +57,11 @@ async function execute() {
 
 function init() {
     ipcRenderer.on('terminal', (event, taskInfo: ITask, data) => {
-        console.log('client terminal', taskInfo.id, data);
+        // console.log('client terminal', taskInfo.id, data);
         // console.log('tasks', tasks.length, tasks[0].id, tasks);
 
         const task = tasks.find(t => t.id == taskInfo.id);
-        console.log('found task', task);
+        // console.log('found task', task);
         task.buffer ??= [];
         task.buffer.push(data);
 
@@ -71,7 +71,7 @@ function init() {
         if (progressRegex.test(data)) {
             const match = progressRegex.exec(data);
             const progress = parseInt(match[1]);
-            console.log('==> progress', progress);
+            // console.log('==> progress', progress);
             task.progress = progress / 100;
             task.progressReal = progress / 100;
             if (progress == 100) {
@@ -80,38 +80,58 @@ function init() {
         }
         const progressIndRegex = /9;4;3;0/;
         if (progressIndRegex.test(data)) {
-            console.log('==> progress indetermined');
+            // console.log('==> progress indetermined');
             task.progress = 2;
         }
         const progressFinRegex = /9;4;0;0/;
         if (progressFinRegex.test(data)) {
-            console.log('==> progress finished');
+            // console.log('==> progress finished');
             task.progress = -1;
         }
         updateStore();
     });
 }
 
+let loadedAvailableApps = false;
 
 export async function loadAvailableApps() {
-    console.log('loadAvailableApps');
-    // console.log(new Date());
-    // const appsStr = await ipcRenderer.invoke('get-apps');
-    // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-    const apps = JSON.parse(JSON.stringify(dummyApps), toCamelCase);
-    getStore().dispatch(exec((setAvailableApps(apps))));
-    // console.log(new Date());
-}
-
-export async function loadPopularity() {
     console.log('loadPopularity');
     // console.log(new Date());
     // const appsStr = await ipcRenderer.invoke('get-apps');
     // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
     const popularity = JSON.parse(JSON.stringify(dummyPopularity), toCamelCase);
-    getStore().dispatch(exec((setPopularity(popularity))));
+    // getStore().dispatch(exec((setPopularity(popularity))));
     // console.log(new Date());
+
+    console.log('loadAvailableApps');
+    // console.log(new Date());
+    // const appsStr = await ipcRenderer.invoke('get-apps');
+    // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
+    const apps = JSON.parse(JSON.stringify(dummyApps), toCamelCase).filter(x => x.packageName);
+    // console.log(new Date());
+
+    const result = apps.map(foundApp => {
+        const foundPop = popularity.find(a => a.id === foundApp.packageIdentifier);
+        return {
+            ...foundApp,
+            views: foundPop?.views || 0,
+        };
+    });
+
+    getStore().dispatch(exec((setAvailableApps(result))));
+
+    loadedAvailableApps = true;
 }
+
+// export async function loadPopularity() {
+//     console.log('loadPopularity');
+//     // console.log(new Date());
+//     // const appsStr = await ipcRenderer.invoke('get-apps');
+//     // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
+//     const popularity = JSON.parse(JSON.stringify(dummyPopularity), toCamelCase);
+//     getStore().dispatch(exec((setPopularity(popularity))));
+//     // console.log(new Date());
+// }
 
 export async function loadInstalledApps() {
     console.log('loadInstalledApps');
@@ -132,6 +152,6 @@ export async function loadInstalledApps() {
 export async function loadApps() {
     init();
     await loadAvailableApps();
-    await loadPopularity();
+    // await loadPopularity();
     await loadInstalledApps();
 }

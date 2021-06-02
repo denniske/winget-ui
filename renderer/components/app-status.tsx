@@ -3,6 +3,8 @@ import {IApp, ITask} from "../helper/types";
 import {fixPackageIcon} from "../helper/util";
 import ProgressBarFull from "./progress-bar-full";
 import {addTaskToQueue, getTaskId} from "../helper/executor";
+import {useSelector} from "../state/store";
+import {selectInstalledForApp, selectQueuedTaskForApp, selectTaskForApp} from "../state/action";
 
 interface Props {
     app: IApp;
@@ -11,6 +13,9 @@ interface Props {
 
 export default function AppStatus(props: Props) {
     const {app, uninstall} = props;
+    const task = useSelector(selectTaskForApp(app));
+    const queuedtask = useSelector(selectQueuedTaskForApp(app));
+    const installed = useSelector(selectInstalledForApp(app));
 
     const updateApp = async (app: IApp) => {
         const task: ITask = {
@@ -30,17 +35,17 @@ export default function AppStatus(props: Props) {
     return (
         <>
             {
-                !app.task && !app.queuedtask && !uninstall &&
-                <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
+                !task && !queuedtask && installed?.version &&
+                <button className="bg-[#c21717] text-[14px] w-[120px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
-                    {app.installedVersion ? 'Update' : 'Install'}
+                    Uninstall
                 </button>
             }
             {
-                !app.task && !app.queuedtask && uninstall &&
-                <button className="bg-[#c21717] text-[14px] text-white rounded px-8 py-1"
+                !task && !queuedtask && installed?.version != app.packageVersion &&
+                <button className="bg-[#1F6FFF] text-[14px] w-[120px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
-                    Uninstall
+                    {app.installedVersion ? 'Update' : 'Install'}
                 </button>
             }
 

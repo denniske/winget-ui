@@ -8,17 +8,16 @@ import {selectLocalInstalledApps} from "../state/action";
 
 
 export default function Updates() {
-    const [localApps, setLocalApps] = useState<IApp[]>([]);
-    const allLocalApps = useSelector(selectLocalInstalledApps);
+    const [apps, setApps] = useState<IApp[]>([]);
+    const allLocalInstalledApps = useSelector(selectLocalInstalledApps);
 
     useEffect(() => {
         loadApps();
     }, []);
 
     useEffect(() => {
-        setLocalApps(allLocalApps.filter(a => a.installedVersion != a.packageVersion));
-        // console.log(localApps);
-    }, [allLocalApps]);
+        setApps(allLocalInstalledApps.filter(a => a.installedVersion != a.packageVersion));
+    }, [allLocalInstalledApps]);
 
     return (
         <React.Fragment>
@@ -33,7 +32,7 @@ export default function Updates() {
                 </div>
 
                 {
-                    localApps.map(app => (
+                    apps.map(app => (
                         <AppItem
                             key={`${app.packageIdentifier}-${app.installedVersion}`}
                             app={app}

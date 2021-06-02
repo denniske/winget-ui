@@ -24,8 +24,6 @@ export default function Layout(props: any) {
     const [canGoForward, setCanGoForward] = useState(false);
     const [searching, setSearching] = useState(false);
 
-    console.log('search', search);
-
     const handleKeyDown = (e: any) => {
         if (e.key === 'Enter') {
             router.push('/home');
@@ -69,6 +67,74 @@ export default function Layout(props: any) {
     };
 
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
+
+
+    // const [cmdProgress, setCmdProgress] = useState(-1);
+    const [terminalBuffer, setTerminalBuffer] = useState([]);
+    const queue = useSelector(state => state.queue);
+    const tasks = useSelector(state => state.tasks);
+    const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
+    const xtermRef = React.useRef(null);
+
+    useEffect(() => {
+        if (!xtermRef.current) return;
+        if (!currentTask.buffer) return;
+
+        const sameBuffer = terminalBuffer.length <= currentTask.buffer.length && terminalBuffer.every((data, i) => currentTask.buffer.length > i && currentTask.buffer[i] === data);
+
+        if (sameBuffer) {
+            currentTask.buffer.forEach((data, i) => {
+                if (terminalBuffer.length > i && terminalBuffer[i] === data) return; // continue
+                xtermRef.current.terminal.write(data);
+            });
+        } else {
+            xtermRef.current.terminal.clear();
+            currentTask.buffer.forEach(data => xtermRef.current.terminal.write(data));
+        }
+        setTerminalBuffer([...currentTask.buffer]);
+    }, [currentTask, xtermRef.current]);
+
+    const doData = async (x: any) => {
+        // console.log('doData', x);
+        // await ipcRenderer.invoke('pty', x);
+    };
+
+    const handleLineFeed = (terminal: any) => {
+        // console.log('lf', terminal);
+        // console.log('lf', terminal._core.buffer.y);
+        // console.log('lf', terminal.cols, terminal._core.buffer.y + 2);
+
+        // setTimeout(() => {
+        //         terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2));
+        //     }
+        // );
+    };
+
+    let ImportedComponent = null
+    // if (global?.window && window !== undefined) {
+    // if (global?.window && window !== undefined) {
+    // const importing = require("insert path here");
+    const importing = require('../helper/XTerm');
+    const MyComponent = importing.default //can also be a different export
+    // @ts-ignore
+    ImportedComponent = <MyComponent
+        ref={xtermRef}
+        onLineFeed={handleLineFeed}
+        onData={doData}
+        options={{ rows: 5 }}
+    />
+    // } else { //for build purposes only
+    //     ImportedComponent = <div><p>Component not available.</p></div>;
+    // }
+
+    // let cmdProgressStr = 'Idle';
+    // if (cmdProgress > 1) {
+    //     cmdProgressStr = 'Working...';
+    // }
+    // if (cmdProgress >= 0 && cmdProgress <= 1) {
+    //     cmdProgressStr = `Working ${cmdProgress * 100}%`;
+    // }
+
 
     return (
         <div className='flex flex-row w-full h-full bg-[#1B1B1B] text-[#C5C5C5]'>
@@ -134,6 +200,41 @@ export default function Layout(props: any) {
                 <div className={`overflow-auto transition-opacity ${searching && search.length === 0 ? 'opacity-50' : ''}`}>
                     {children}
                 </div>
+
+
+                {/*{*/}
+                {/*    currentTask &&*/}
+                {/*    <div className="p-4">*/}
+                {/*        {cmdProgressStr}*/}
+                {/*    </div>*/}
+                {/*}*/}
+
+                <div className="p-4">
+                    {
+                        queue.map(item => (
+                            <div key={`${item.packageIdentifier}-${item.packageVersion}`}>
+                                {item.packageIdentifier} {item.packageVersion}
+                            </div>
+                        ))
+                    }
+                </div>
+
+                {
+                    currentTask &&
+                    <>
+                        <div className="p-4">
+                            <div>Current Task</div>
+                            <div>
+                                {currentTask.packageIdentifier} {currentTask.packageVersion}
+                            </div>
+                        </div>
+
+                        <div className="border-t-2 border-gray-700">
+                            {ImportedComponent}
+                        </div>
+                    </>
+                }
+
             </div>
         </div>
     );

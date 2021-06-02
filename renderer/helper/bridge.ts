@@ -20,7 +20,7 @@ ipcRendererMock.fake('winget-upgrade', async (sentTask: ITask) => {
 
     for (const data of task.buffer) {
         ipcRendererMock.send('terminal', task, data);
-        await sleep(250);
+        await sleep(10);
     }
 
     return { exitCode: task.exitCode, signal: null };

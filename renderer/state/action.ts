@@ -1,29 +1,51 @@
 import { cloneDeep } from "lodash";
 import {IApp, IInstalledApp, IPendingApp, IPopularity, ITask} from "../helper/types";
 
+export function selectTaskForApp(app: IApp) {
+    return (state: AppState) => {
+        const foundTasks = state.tasks.filter(t => t.exitCode != 0 && t.packageIdentifier === app.packageIdentifier);
+        return foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+    };
+}
 
+export function selectQueuedTaskForApp(app: IApp) {
+    return (state: AppState) => {
+        const foundQueuedTasks = state.queue.filter(a => a.packageIdentifier === app.packageIdentifier);
+        return foundQueuedTasks.length > 0 ? foundQueuedTasks[foundQueuedTasks.length-1] : null;
+    };
+}
+
+export function selectInstalledForApp(app: IApp) {
+    return (state: AppState) => {
+        const foundInstalledApps = state.installedApps.filter(a => a.packageIdentifier === app.packageIdentifier);
+        return foundInstalledApps.length > 0 ? foundInstalledApps[foundInstalledApps.length-1] : null;
+    };
+}
 
 export function selectLocalApps(state: AppState) {
-    return state.availableApps.map(foundApp => {
-        const foundTasks = state.tasks.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
-        const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
-        const foundQueuedTasks = state.queue.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
-        const foundQueuedTask = foundQueuedTasks.length > 0 ? foundQueuedTasks[foundQueuedTasks.length-1] : null;
+    // console.log('selectLocalApps');
+    // const start = new Date();
+    const result = state.availableApps
+            // .map(foundApp => {
 
-        const foundPop = state.popularity.find(a => a.id === foundApp.packageIdentifier);
+        // const foundTasks = state.tasks.filter(t => t.exitCode != 0 && t.packageIdentifier === foundApp.packageIdentifier);
+        // const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+        // const foundQueuedTasks = state.queue.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
+        // const foundQueuedTask = foundQueuedTasks.length > 0 ? foundQueuedTasks[foundQueuedTasks.length-1] : null;
 
-        return {
-            ...foundApp,
-            installedVersion: null,
-            task: foundTask,
-            queuedtask: foundQueuedTask,
-            views: foundPop?.views || 0,
-        };
-    })
+
+        // return {
+        //     ...foundApp,
+            // installedVersion: foundInstalledApp?.version,
+            // task: foundTask,
+            // queuedtask: foundQueuedTask,
+        // };
+    // })
         // .filter((x, i) => x.packageIdentifier.toLowerCase().includes('visual'))
-        .filter((x, i) => x.packageName)
         // .filter((x, i) => i < 50)
         ;
+    // console.log((new Date().getTime() - start.getTime()), ' ms');
+    return result;
 }
 
 export function selectLocalInstalledApps(state: AppState) {
@@ -34,13 +56,13 @@ export function selectLocalInstalledApps(state: AppState) {
 
         const foundApp = state.availableApps.find(a => a.packageIdentifier === installedApp.packageIdentifier);
 
-        const foundTasks = state.tasks.filter(a => a.packageIdentifier === installedApp.packageIdentifier);
-        const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+        // const foundTasks = state.tasks.filter(t => t.exitCode != 0 && t.packageIdentifier === installedApp.packageIdentifier);
+        // const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
 
         return {
             ...foundApp,
             installedVersion: installedApp.version,
-            task: foundTask,
+            // task: foundTask,
         };
     });
 }
@@ -105,5 +127,5 @@ export const initialState: AppState = {
     popularity: [],
     queue: [],
     tasks: [],
-    search: 'vivaldi',
+    search: '',
 }

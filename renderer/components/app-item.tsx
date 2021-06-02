@@ -3,6 +3,8 @@ import Link from "next/link";
 import {IApp} from "../helper/types";
 import AppIcon from "./app-icon";
 import AppStatus from "./app-status";
+import {useSelector} from "../state/store";
+import {selectInstalledForApp} from "../state/action";
 
 interface Props {
     app: IApp;
@@ -11,6 +13,7 @@ interface Props {
 
 export default function AppItem(props: Props) {
     const {app, uninstall} = props;
+    const installed = useSelector(selectInstalledForApp(app));
 
     if (!app) {
         return (
@@ -40,7 +43,7 @@ export default function AppItem(props: Props) {
                     <AppStatus app={app} uninstall={uninstall} />
 
                     <div className="text-sm">
-                        Version {uninstall ? app.installedVersion : app.packageVersion}
+                        Version {uninstall ? installed.version : app.packageVersion}
                     </div>
                 </div>
             </div>

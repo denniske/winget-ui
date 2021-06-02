@@ -6,8 +6,8 @@ export const ipcRendererMock = {
     fake: (channel: string, callback: any) => {
         fakes[channel] = callback;
     },
-    invoke: (channel: string, ...args: any[]): Promise<any> => {
-        return fakes[channel](...args);
+    invoke: async (channel: string, ...args: any[]): Promise<any> => {
+        return await fakes[channel](...args);
     },
 
     on(channel: string, callback: any) {

@@ -8,18 +8,16 @@ import {selectLocalInstalledApps} from "../state/action";
 
 
 export default function Installed() {
-    const [localApps, setLocalApps] = useState<IApp[]>([]);
-    const allLocalApps = useSelector(selectLocalInstalledApps);
+    const [apps, setApps] = useState<IApp[]>([]);
+    const allLocalInstalledApps = useSelector(selectLocalInstalledApps);
 
     useEffect(() => {
         loadApps();
     }, []);
 
     useEffect(() => {
-        setLocalApps(allLocalApps);
-        // setLocalApps(allLocalApps.filter(a => a.packageName.toLowerCase().includes(search.toLowerCase())));
-        // console.log(localApps);
-    }, [allLocalApps]);
+        setApps(allLocalInstalledApps);
+    }, [allLocalInstalledApps]);
 
     return (
         <React.Fragment>
@@ -34,7 +32,7 @@ export default function Installed() {
                 </div>
 
                 {
-                    localApps.map(app => (
+                    apps.map(app => (
                         <AppItem
                             key={`${app.packageIdentifier}-${app.installedVersion}`}
                             app={app}

@@ -56,7 +56,7 @@ interface IProps {
     /**
      * Adds an event listener for when a line feed is added.
      */
-    onLineFeed?(): void
+    onLineFeed?(terminal: any): void
 
     /**
      * Adds an event listener for when a scroll occurs. The event value is the
@@ -210,7 +210,7 @@ export default class Xterm extends React.Component<IProps> {
     }
 
     private onLineFeed() {
-        if (this.props.onLineFeed) this.props.onLineFeed()
+        if (this.props.onLineFeed) this.props.onLineFeed(this.terminal)
     }
 
     private onScroll(newPosition: number) {

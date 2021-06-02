@@ -20,9 +20,11 @@ function MyApp({Component, pageProps}: AppProps) {
     return (
         <Provider store={store}>
             <React.Fragment>
-                <Layout>
-                    <SafeHydrate><Component {...pageProps} /></SafeHydrate>
-                </Layout>
+                <SafeHydrate>
+                    <Layout>
+                        <Component {...pageProps} />
+                    </Layout>
+                </SafeHydrate>
             </React.Fragment>
         </Provider>
     )
