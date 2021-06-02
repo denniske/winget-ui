@@ -1,15 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
-import {IApp, ITask} from "../helper/types";
-import {fixPackageIcon} from "../helper/util";
+import {IApp} from "../helper/types";
 import {useMutate, useSelector} from "../state/store";
 import {selectLocalApps} from "../state/action";
-import {addTaskToQueue, getTaskId, loadApps} from "../helper/executor";
-import ProgressBar from "../components/progress-bar";
-import Link from 'next/link';
-import ProgressBarFull from "../components/progress-bar-full";
+import {loadApps} from "../helper/executor";
 import AppItem from "../components/app-item";
 import {orderBy} from "lodash";
+
+function filterApps(apps: IApp[], search: string) {
+    const parts = search.toLowerCase().split(' ');
+    return apps.filter(m => {
+        return parts.every(part =>
+            m.packageName.toLowerCase().indexOf(part) >= 0 ||
+            m.publisher.toLowerCase().indexOf(part) >= 0);
+    });
+}
 
 export default function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);
@@ -29,12 +34,7 @@ export default function Home() {
 
     useEffect(() => {
         setLocalApps(
-            orderBy(
-                allLocalApps
-                    .filter(a => a.packageName.toLowerCase().includes(search.toLowerCase()))
-                ,
-                a => a.views, 'desc'
-            )
+            orderBy(filterApps(allLocalApps, search), a => a.views, 'desc')
                 .filter((x, i) => i < 20)
         );
         // console.log(localApps);
@@ -91,7 +91,7 @@ export default function Home() {
                 <title>Winget</title>
             </Head>
 
-            <div className="flex flex-wrap gap-8 flex-1 overflow-auto px-12 py-8">
+            <div className="flex flex-wrap gap-10 flex-1 overflow-auto px-12 py-8">
                 {
                     localApps.map(app => (
                         <AppItem
