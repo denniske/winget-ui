@@ -33,24 +33,26 @@ export default function AppStatus(props: Props) {
         );
     }
 
+    const currentTask = task && task.exitCode == null ? task : queuedtask;
+
     return (
         <>
             {
-                !task && !queuedtask && installed?.version &&
+                !currentTask && installed?.version &&
                 <button className="bg-[#c21717] text-[14px] w-[120px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
                     Uninstall
                 </button>
             }
             {
-                !task && !queuedtask && installed?.version != app.packageVersion &&
+                !currentTask && installed?.version != app.packageVersion &&
                 <button className="bg-[#1F6FFF] text-[14px] w-[120px] text-white rounded px-8 py-1"
                         onClick={() => updateApp(app)}>
                     {app.installedVersion ? 'Update' : 'Install'}
                 </button>
             }
 
-            <ProgressBarFull task={task && task.exitCode != 0 ? task : queuedtask} />
+            <ProgressBarFull task={currentTask} />
         </>
     );
 }

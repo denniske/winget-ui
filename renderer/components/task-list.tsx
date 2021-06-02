@@ -18,7 +18,6 @@ export default function TaskList(props: Props) {
 
     const queuedTasks = useSelector(state => state.queue);
     const tasks = useSelector(state => state.tasks);
-    // const currentTask = tasks.length > 0 ? tasks[tasks.length - 1] : null;
 
     const pendingTasks = [...tasks, ...queuedTasks].filter(t => t.exitCode == null);
 
@@ -26,7 +25,7 @@ export default function TaskList(props: Props) {
         <div className="fixed bottom-0 left-0 right-0 bg-[#1B1B1B] border-t-[1px] border-[#4A4A4A]">
 
             <div className="px-4 py-4 cursor-pointer" onClick={() => setVisible(x => !x)}>
-                Pending tasks ({pendingTasks.length})
+                Tasks {pendingTasks.length > 0 ? `(${pendingTasks.length} pending)` : ''}
             </div>
 
             {
