@@ -32,6 +32,8 @@ export default function AppItem(props: Props) {
         );
     }
 
+    console.log(app);
+
     return (
         <div className="flex space-x-8">
             <AppIcon app={app} className="w-11 h-11"/>
@@ -50,10 +52,16 @@ export default function AppItem(props: Props) {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
-                            onClick={() => updateApp(app)}>
-                        Install
-                    </button>
+                    {
+                        !app.task && !app.queuedtask &&
+                        <button className="bg-[#1F6FFF] text-[14px] text-white rounded px-8 py-1"
+                                onClick={() => updateApp(app)}>
+                            Install
+                        </button>
+                    }
+
+                    <ProgressBarFull task={app.task} queuedTask={app.queuedtask} />
+
                     <div className="text-sm">
                         Version {app.packageVersion}
                     </div>

@@ -7,6 +7,8 @@ export function selectLocalApps(state: AppState) {
     return state.availableApps.map(foundApp => {
         const foundTasks = state.tasks.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
         const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
+        const foundQueuedTasks = state.queue.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
+        const foundQueuedTask = foundQueuedTasks.length > 0 ? foundQueuedTasks[foundQueuedTasks.length-1] : null;
 
         const foundPop = state.popularity.find(a => a.id === foundApp.packageIdentifier);
 
@@ -14,6 +16,7 @@ export function selectLocalApps(state: AppState) {
             ...foundApp,
             installedVersion: null,
             task: foundTask,
+            queuedtask: foundQueuedTask,
             views: foundPop?.views || 0,
         };
     })

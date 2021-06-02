@@ -5,15 +5,15 @@ import {ITask} from "../helper/types";
 
 interface Props {
     task: ITask;
+    queuedTask: ITask;
 }
 
 export default function ProgressBarFull(props: Props) {
-    const { task } = props;
+    const {task, queuedTask} = props;
 
     if (task && task.exitCode != 0) {
-
         return (
-            <div className="flex flex-row items-center space-x-2 mt-1">
+            <div className="flex flex-row items-center space-x-2 my-[4.5px]">
                 {
                     task.progressTask == 'installing' &&
                     <>
@@ -32,6 +32,19 @@ export default function ProgressBarFull(props: Props) {
                         </div>
                     </>
                 }
+            </div>
+        );
+    }
+
+    if (queuedTask) {
+        return (
+            <div className="flex flex-row items-center space-x-2 my-[4.5px]">
+                <>
+                    <ProgressBar progress={0} width={50}/>
+                    <div className="text-sm">
+                        Waiting...
+                    </div>
+                </>
             </div>
         );
     }

@@ -26,7 +26,7 @@ function updateStore() {
 export function addTaskToQueue(task: ITask) {
     queue.push(task);
     updateStore();
-    execute();
+    // execute();
 }
 
 async function execute() {

@@ -43,6 +43,7 @@ export interface IApp {
     packageIcon: string;
     installedVersion: string;
     task: ITask;
+    queuedtask: ITask;
 
     packageIdentifier: string;
     packageVersion: any;
