@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "ts-node --project tsconfig.tools.json apps-ci.ts && next build",
+    "build": "ts-node --project tsconfig.tools.json helper/apps-ci.ts && next build",
     "start": "next start"
   },
   "dependencies": {

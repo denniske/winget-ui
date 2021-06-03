@@ -1,4 +1,4 @@
-import {loadApps} from "./helper/load-apps";
+import {loadApps} from "./load-apps";
 import fs from "fs";
 
 

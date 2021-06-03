@@ -30,7 +30,7 @@ function folderHasYaml(path: string) {
 
 const apps = [] as any[];
 
-const charFolder = './winget-pkgs-master/manifests/';
+const charFolder = './winget-pkgs-master/manifests';
 
 async function loadApp(config: ILoadAppsConfig, char: string, company: string, ...name: string[]) {
     let folder = `${charFolder}/${char}/${company}/${name.join('/')}`;
