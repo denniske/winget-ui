@@ -27,4 +27,4 @@ async function build() {
     fs.writeFileSync('public/apps.json', JSON.stringify(apps, null, 4));
 }
 
-build().catch(() => process.exit(1)).then(r => console.log('Finished.'));
+build().catch((e) => { console.error(e); process.exit(1); }).then(r => console.log('Finished.'));

@@ -46,27 +46,29 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
 
     if (versions.length > 0) {
         const sortedVersions = customVersionSort(versions, 'desc');
-        console.log(sortedVersions);
+        // console.log(sortedVersions);
 
         const latestVersion = sortedVersions[0];
         // console.log(latestVersion);
 
         folder += `/${latestVersion}`;
 
-        let fileName = `${company}.${name.join('.')}`;
+        let app: any = {};
 
-        const appPath = `${folder}/${fileName}.yaml`;
-        const appEnUsPath = `${folder}/${fileName}.locale.en-US.yaml`;
+        for (const yamlFile of fs.readdirSync(folder)) {
+            if (yamlFile.includes('locale') && !yamlFile.includes('en-US')) continue;
 
-        const appYaml = fs.readFileSync(appPath, 'utf8');
-        let app = YAML.parse(appYaml);
+            const contentStr = fs.readFileSync(`${folder}/${yamlFile}`, 'utf8');
+            let content = YAML.parse(contentStr);
 
-        const appEnUsYaml = fs.existsSync(appEnUsPath) ? fs.readFileSync(appEnUsPath, 'utf8') : null;
-        const appEnUs = appEnUsYaml ? YAML.parse(appEnUsYaml) : null;
+            app = Object.assign(
+                app,
+                content,
+            );
+        }
 
         app = Object.assign(
             app,
-            appEnUs,
             {
                 Versions: versions,
             }
