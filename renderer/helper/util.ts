@@ -18,6 +18,15 @@ export function toCamelCase(key, value) {
     return value;
 }
 
+export function filterApps(apps: IApp[], search: string) {
+    const parts = search.toLowerCase().split(' ');
+    return apps.filter(m => {
+        return parts.every(part =>
+            m.packageName.toLowerCase().indexOf(part) >= 0 ||
+            m.publisher.toLowerCase().indexOf(part) >= 0);
+    });
+}
+
 export function fixPackageIcon(app: IApp) {
 
     const fallbackIcons = {

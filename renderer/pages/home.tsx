@@ -6,15 +6,8 @@ import {selectLocalApps} from "../state/action";
 import {loadApps} from "../helper/executor";
 import AppItem from "../components/app-item";
 import {orderBy} from "lodash";
+import {filterApps} from "../helper/util";
 
-function filterApps(apps: IApp[], search: string) {
-    const parts = search.toLowerCase().split(' ');
-    return apps.filter(m => {
-        return parts.every(part =>
-            m.packageName.toLowerCase().indexOf(part) >= 0 ||
-            m.publisher.toLowerCase().indexOf(part) >= 0);
-    });
-}
 
 export default function Home() {
     const [localApps, setLocalApps] = useState<IApp[]>([]);

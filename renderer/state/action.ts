@@ -104,6 +104,18 @@ export function setSearch(search: string) {
     };
 }
 
+export function setInstalledFilter(installedFilter: string) {
+    return (state: AppState) => {
+        state.installedFilter = installedFilter;
+    };
+}
+
+export function setUpdatesFilter(updatesFilter: string) {
+    return (state: AppState) => {
+        state.updatesFilter = updatesFilter;
+    };
+}
+
 export function showTaskFailedModal(task: ITask) {
     return (state: AppState) => {
         state.modal = {
@@ -138,6 +150,8 @@ export interface AppState {
     queue: ITask[];
     tasks: ITask[];
     search: string;
+    installedFilter: string;
+    updatesFilter: string;
     modal: IModal;
 }
 
@@ -149,5 +163,7 @@ export const initialState: AppState = {
     queue: [],
     tasks: [],
     search: '',
+    installedFilter: '',
+    updatesFilter: '',
     modal: null,
 }

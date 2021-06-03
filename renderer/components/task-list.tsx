@@ -30,7 +30,7 @@ export default function TaskList(props: Props) {
 
             {
                 visible &&
-                <div className="flex flex-col p-4 overflow-auto min-h-[900px] ">
+                <div className="flex flex-col p-4 overflow-auto h-[200px] ">
                     {
                         tasks.map(task => (
                             <TaskItem key={task.id} task={task} />

@@ -70,8 +70,8 @@ export default function Layout(props: any) {
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
 
     return (
-        <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5]'>
-            <div className='flex flex-col w-60 bg-[#2F2F31] text-[#CCCCCC] space-y-6 px-5 py-4'>
+        <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5] pb-[56px]'>
+            <div className='flex flex-col w-60 bg-[#2F2F31] text-[#CCCCCC] space-y-5 px-5 py-4'>
 
                 <div className="flex space-x-4 self-end">
                     <button className="disabled:opacity-50 disabled:cursor-default focus:outline-none p-1"
@@ -87,20 +87,20 @@ export default function Layout(props: any) {
                 <div className=""/>
 
                 <Link href={`/home`}>
-                    <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${myExlorerActive ? 'bg-[#444348] text-white' : ''}`}>
+                    <a className={`flex items-center space-x-3 px-[7px] pt-[4px] pb-[5px] rounded ${myExlorerActive ? 'bg-[#444348] text-white' : ''}`}>
                         <FontAwesomeIcon icon={faStar} className={myExlorerActive ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">My Explorer</div>
                     </a>
                 </Link>
                 <Link href={`/installed`}>
-                    <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${isActive('/installed') ? 'bg-[#444348] text-white' : ''}`}>
+                    <a className={`flex items-center space-x-3 px-[7px] pt-[4px] pb-[5px] rounded ${isActive('/installed') ? 'bg-[#444348] text-white' : ''}`}>
                         <FontAwesomeIcon icon={faBox}
                                          className={isActive('/installed') ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">On This Computer</div>
                     </a>
                 </Link>
                 <Link href={`/updates`}>
-                    <a className={`flex items-center space-x-3 px-[6px] pt-[3px] pb-[4px] rounded ${isActive('/updates') ? 'bg-[#444348] text-white' : ''}`}>
+                    <a className={`flex items-center space-x-3 px-[7px] pt-[4px] pb-[5px] rounded ${isActive('/updates') ? 'bg-[#444348] text-white' : ''}`}>
                         <FontAwesomeIcon icon={faDownload}
                                          className={isActive('/updates') ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">Updates</div>
