@@ -15,6 +15,9 @@
       ]
     }
   ],
+  "appx": {
+    "backgroundColor": "transparent"
+  },
   "win": {
     "icon": "resources/icon.ico",
     "target": [
