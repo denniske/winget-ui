@@ -1,5 +1,6 @@
 import {loadApps} from "./load-apps";
 import * as fs from "fs";
+import {toCamelCase} from "./util";
 
 
 async function build() {
@@ -24,7 +25,7 @@ async function build() {
         };
     });
 
-    fs.writeFileSync('public/apps.json', JSON.stringify(apps, null, 4));
+    fs.writeFileSync('public/apps.json', JSON.stringify(apps, toCamelCase, 4));
 }
 
 build().catch((e) => { console.error(e); process.exit(1); }).then(r => console.log('Finished.'));

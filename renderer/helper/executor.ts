@@ -117,31 +117,9 @@ function init() {
 let loadedAvailableApps = false;
 
 export async function loadAvailableApps() {
-    console.log('loadPopularity');
-    // console.log(new Date());
-    // const appsStr = await ipcRenderer.invoke('get-apps');
-    // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-    const popularity = JSON.parse(JSON.stringify(dummyPopularity), toCamelCase);
-    // getStore().dispatch(exec((setPopularity(popularity))));
-    // console.log(new Date());
-
-    console.log('loadAvailableApps');
-    // console.log(new Date());
-    // const appsStr = await ipcRenderer.invoke('get-apps');
-    // const apps = JSON.parse(appsStr, toCamelCase) as IApp[];
-    const apps = JSON.parse(JSON.stringify(dummyApps), toCamelCase).filter(x => x.packageName);
-    // console.log(new Date());
-
-    const result = apps.map(foundApp => {
-        const foundPop = popularity.find(a => a.id === foundApp.packageIdentifier);
-        return {
-            ...foundApp,
-            views: foundPop?.views || 0,
-        };
-    });
-
-    getStore().dispatch(exec((setAvailableApps(result))));
-
+    const response = await fetch('https://winget-ui.vercel.app/apps.json');
+    const availableApps = await response.json();
+    getStore().dispatch(exec((setAvailableApps(availableApps))));
     loadedAvailableApps = true;
 }
 
