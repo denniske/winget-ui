@@ -118,7 +118,8 @@ let loadedAvailableApps = false;
 
 export async function loadAvailableApps() {
     const response = await fetch('https://winget-ui.vercel.app/apps.json');
-    const availableApps = await response.json();
+    let availableApps = await response.json() as IApp[];
+    availableApps = availableApps.filter(x => x.packageName);
     getStore().dispatch(exec((setAvailableApps(availableApps))));
     loadedAvailableApps = true;
 }

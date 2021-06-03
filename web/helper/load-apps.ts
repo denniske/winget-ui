@@ -56,7 +56,10 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
         let app: any = {};
 
         for (const yamlFile of fs.readdirSync(folder)) {
-            if (yamlFile.includes('locale') && !yamlFile.includes('en-US')) continue;
+            if (
+                yamlFile.toLowerCase().includes('locale') &&
+                !yamlFile.toLowerCase().includes('en-us')
+            ) continue;
 
             const contentStr = fs.readFileSync(`${folder}/${yamlFile}`, 'utf8');
             let content = YAML.parse(contentStr);
