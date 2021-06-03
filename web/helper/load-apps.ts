@@ -1,6 +1,6 @@
 import axios from "axios"
 import * as fs from "fs"
-import YAML from 'yaml'
+import * as YAML from 'yaml'
 import {customVersionSort} from "./version";
 const extract = require('extract-zip')
 
@@ -121,7 +121,7 @@ export async function loadApps(config: ILoadAppsConfig) {
                 // const name = 'VLC';
                 const char = 'o';
                 const company = 'OpenJS';
-                const name = 'Nodejs';
+                const name = 'NodeJS';
 
                 await loadApp(config, char, company, name);
 
