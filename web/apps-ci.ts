@@ -4,7 +4,7 @@ import fs from "fs";
 
 async function build() {
     let apps = await loadApps({
-        downloadPackages: false,
+        downloadPackages: true,
         fetchIconsAndImages: false,
     });
 
