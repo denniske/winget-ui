@@ -99,9 +99,9 @@ export async function loadApps(config: ILoadAppsConfig) {
         console.log('Done.');
     }
 
-    // for (const char of fs.readdirSync(charFolder)) {
-    //     for (const company of fs.readdirSync(charFolder + '/' + char)) {
-    //         for (const name of fs.readdirSync(charFolder + '/' + char + '/' + company)) {
+    for (const char of fs.readdirSync(charFolder)) {
+        for (const company of fs.readdirSync(charFolder + '/' + char)) {
+            for (const name of fs.readdirSync(charFolder + '/' + char + '/' + company)) {
 
                 // const char = 'z';
                 // const company = 'Zoom';
@@ -121,15 +121,15 @@ export async function loadApps(config: ILoadAppsConfig) {
                 // const char = 'v';
                 // const company = 'VideoLAN';
                 // const name = 'VLC';
-                const char = 'o';
-                const company = 'OpenJS';
-                const name = 'NodeJS';
+                // const char = 'o';
+                // const company = 'OpenJS';
+                // const name = 'NodeJS';
 
                 await loadApp(config, char, company, name);
 
-            // }
-        // }
-    // }
+            }
+        }
+    }
 
     if (config.outputFile) {
         fs.writeFileSync(config.outputFile, JSON.stringify(apps, null, 4));
