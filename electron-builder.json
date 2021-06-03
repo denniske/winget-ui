@@ -1,0 +1,28 @@
+{
+  "productName": "Winget UI",
+  "copyright": "Copyright © 2021 Dennis Keil",
+  "directories": {
+    "output": "dist",
+    "buildResources": "resources"
+  },
+  "files": [
+    {
+      "from": ".",
+      "filter": [
+          "package.json",
+          "app"
+      ]
+    }
+  ],
+  "win": {
+    "icon": "resources/icon.ico",
+    "target": [
+      "appx"
+    ],
+    "signAndEditExecutable": false,
+    "forceCodeSigning": false,
+    "verifyUpdateCodeSignature": false,
+    "artifactName": "${productName}-${version}.${ext}"
+  },
+  "publish": null
+}

@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
-  "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "name": "winget.ui",
+  "description": "User Interface for winget",
+  "version": "0.1.0",
+  "author": "Dennis Keil",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
