@@ -6,6 +6,7 @@
     "buildResources": "resources"
   },
   "files": [
+    "resources/**/*",
     {
       "from": ".",
       "filter": [
@@ -19,6 +20,7 @@
     "target": [
       "appx"
     ],
+    "requestedExecutionLevel": "highestAvailable",
     "signAndEditExecutable": false,
     "forceCodeSigning": false,
     "verifyUpdateCodeSignature": false,

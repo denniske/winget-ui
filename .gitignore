@@ -10,3 +10,6 @@ popularity-raw.json
 /app
 dist
 winget-pkgs-master
+*.pfx
+*.p12
+.env
