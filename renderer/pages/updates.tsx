@@ -58,14 +58,22 @@ export default function Updates() {
                     </div>
                 </div>
 
-                {
-                    apps.map(app => (
-                        <AppItem
-                            key={`${app.packageIdentifier}-${app.installedVersion}`}
-                            app={app}
-                        />
-                    ))
-                }
+                <div className="flex flex-wrap gap-10 flex-1">
+                    {
+                        apps.map(app => (
+                            <AppItem
+                                key={`${app.packageIdentifier}-${app.installedVersion}`}
+                                app={app}
+                            />
+                        ))
+                    }
+                    {
+                        apps.length === 0 &&
+                        <div>
+                            No results found.
+                        </div>
+                    }
+                </div>
             </div>
         </React.Fragment>
     );

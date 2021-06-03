@@ -59,15 +59,22 @@ export default function Installed() {
 
                 </div>
 
-                {
-                    apps.map(app => (
-                        <AppItem
-                            key={`${app.packageIdentifier}-${app.installedVersion}`}
-                            app={app}
-                            uninstall={true}
-                        />
-                    ))
-                }
+                <div className="flex flex-wrap gap-10 flex-1">
+                    {
+                        apps.map(app => (
+                            <AppItem
+                                key={`${app.packageIdentifier}-${app.installedVersion}`}
+                                app={app}
+                            />
+                        ))
+                    }
+                    {
+                        apps.length === 0 &&
+                        <div>
+                            No results found.
+                        </div>
+                    }
+                </div>
             </div>
         </React.Fragment>
     );

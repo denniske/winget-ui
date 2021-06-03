@@ -18,6 +18,22 @@ export function toCamelCase(key, value) {
     return value;
 }
 
+export function isElectron() {
+    return eval('typeof require !== "undefined" && typeof require("electron") === "object"');
+}
+
+export function getElectron() {
+    return eval(`require('electron')`);
+}
+
+export function openLink(url: string) {
+    if (isElectron()) {
+        getElectron().shell.openExternal(url);
+    } else {
+        window.open(url, '_blank');
+    }
+}
+
 export function filterApps(apps: IApp[], search: string) {
     const parts = search.toLowerCase().split(' ');
     return apps.filter(m => {

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import {IApp, ITask} from "../../helper/types";
-import {fixPackageIcon} from "../../helper/util";
+import {fixPackageIcon, openLink} from "../../helper/util";
 import {useMutate, useSelector} from "../../state/store";
 import {selectLocalApps} from "../../state/action";
 import {addTaskToQueue, getTaskId, loadApps} from "../../helper/executor";
@@ -70,7 +70,7 @@ export default function AppId() {
                 </div>
 
                 <div className="text-sm mt-1 mb-2">
-                    Website: <a className="text-blue-600 hover:underline" href={app.packageUrl}>{app.packageUrl}</a>
+                    Website: <button className="focus:outline-none text-blue-600 hover:underline" onClick={() => openLink(app.packageUrl)}>{app.packageUrl}</button>
                 </div>
 
                 <div className="text-sm mt-1 mb-2">

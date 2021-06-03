@@ -72,7 +72,6 @@ const env = {
 //     ptyProcess.write(data);
 // })
 
-
 ipcMain.handle('winget-task', async (event, task: ITask) => {
     console.log('upgrading ', task.packageIdentifier, task.packageVersion);
 

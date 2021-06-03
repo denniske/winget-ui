@@ -3,7 +3,7 @@ import {
     faBox,
     faChevronLeft,
     faChevronRight,
-    faDownload,
+    faDownload, faInfo, faInfoCircle,
     faSearch,
     faStar,
     faTimesCircle
@@ -104,6 +104,13 @@ export default function Layout(props: any) {
                         <FontAwesomeIcon icon={faDownload}
                                          className={isActive('/updates') ? 'text-white' : 'text-[#98979A]'}/>
                         <div className="text-[14px]">Updates</div>
+                    </a>
+                </Link>
+                <Link href={`/about`}>
+                    <a className={`flex items-center space-x-3 px-[7px] pt-[4px] pb-[5px] rounded ${isActive('/about') ? 'bg-[#444348] text-white' : ''}`}>
+                        <FontAwesomeIcon icon={faInfoCircle}
+                                         className={isActive('/about') ? 'text-white' : 'text-[#98979A]'}/>
+                        <div className="text-[14px]">About</div>
                     </a>
                 </Link>
 
