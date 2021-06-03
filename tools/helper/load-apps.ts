@@ -109,7 +109,6 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
 
 interface ILoadAppsConfig {
     downloadPackages: boolean;
-    cleanPackages: boolean;
     fetchIconsAndImages: boolean;
     outputFile: string;
 }
