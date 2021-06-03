@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "ts-node ../tools/apps-ci.ts",
+    "build": "ts-node --project tsconfig.tools.json apps-ci.ts",
     "build2": "ts-node build.ts && next build",
     "start": "next start"
   },
@@ -16,7 +16,11 @@
   "devDependencies": {
     "@types/node": "^15.12.0",
     "@types/react": "17.0.9",
+    "axios": "^0.21.1",
+    "logo-scrape": "denniske/logo-scrape",
     "ts-node": "^10.0.0",
-    "typescript": "4.3.2"
+    "tslib": "^2.2.0",
+    "typescript": "4.3.2",
+    "yaml": "^1.10.2"
   }
 }
