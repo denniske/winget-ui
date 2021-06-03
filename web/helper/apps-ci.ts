@@ -1,5 +1,5 @@
 import {loadApps} from "./load-apps";
-import fs from "fs";
+import * as fs from "fs";
 
 
 async function build() {

@@ -90,7 +90,10 @@ export async function loadApps(config: ILoadAppsConfig) {
         console.log('Downloading packages...');
         await downloadPackages();
         console.log('Extracting packages...');
+        console.log('to: ', process.cwd());
         await extract('packages.zip', {dir: process.cwd()});
+        console.log(fs.readdirSync('.'));
+        console.log(fs.readdirSync(process.cwd()));
         console.log('Done.');
     }
 
