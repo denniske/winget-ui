@@ -1,6 +1,5 @@
 import axios from "axios"
 import * as fs from "fs"
-import {LogoScrape} from 'logo-scrape';
 import YAML from 'yaml'
 import {customVersionSort} from "./version";
 const extract = require('extract-zip')
@@ -72,6 +71,8 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
         );
 
         if (config.fetchIconsAndImages) {
+            const { LogoScrape } = await import('logo-scrape');
+
             const targetUrl = app.PackageUrl;
 
             if (targetUrl && !targetUrl.includes('aegisub') && company !== 'HamsterRepublic') {
