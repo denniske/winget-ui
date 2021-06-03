@@ -39,7 +39,7 @@ export default function Path() {
     return (
         <React.Fragment>
             <Head>
-                <title>{path} | Winget</title>
+                <title>{path} | Winget UI</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">

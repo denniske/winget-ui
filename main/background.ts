@@ -20,6 +20,7 @@ let mainWindow: Electron.BrowserWindow = null;
         width: 1000,
         height: 600,
     });
+    mainWindow.setMenuBarVisibility(false);
 
     if (isProd) {
         await mainWindow.loadURL('app://./home.html');

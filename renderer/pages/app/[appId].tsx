@@ -40,7 +40,7 @@ export default function AppId() {
     return (
         <React.Fragment>
             <Head>
-                <title>{app.packageName} | Winget</title>
+                <title>{app.packageName} | Winget UI</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">

@@ -39,7 +39,7 @@ export default function Home() {
     return (
         <React.Fragment>
             <Head>
-                <title>Winget</title>
+                <title>Winget UI</title>
             </Head>
 
             <div className="flex flex-col gap-10 flex-1 overflow-auto px-12 py-8">

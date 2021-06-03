@@ -31,7 +31,7 @@ export default function Updates() {
     return (
         <React.Fragment>
             <Head>
-                <title>Updates | Winget</title>
+                <title>Updates | Winget UI</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">

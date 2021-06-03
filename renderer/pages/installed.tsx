@@ -31,7 +31,7 @@ export default function Installed() {
     return (
         <React.Fragment>
             <Head>
-                <title>Installed | Winget</title>
+                <title>Installed | Winget UI</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">

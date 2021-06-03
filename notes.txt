@@ -1,3 +1,6 @@
 
 https://api.winget.run/v2/packages?ensureContains=true&partialMatch=true&take=12&order=1&page=1
 https://api.winget.run/v2/stats?packageId=Microsoft.VisualStudioCode&resolution=day&after=2021-05-10&before=2021-05-31
+
+Icon
+https://www.flaticon.com/premium-icon/download_4063869?term=download&page=1&position=26&page=1&position=26&related_id=4063869&origin=search

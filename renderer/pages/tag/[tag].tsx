@@ -32,7 +32,7 @@ export default function Tag() {
     return (
         <React.Fragment>
             <Head>
-                <title>{tag} | Winget</title>
+                <title>{tag} | Winget UI</title>
             </Head>
 
             <div className="flex flex-col flex-1 overflow-auto px-12 py-8 space-y-4">
