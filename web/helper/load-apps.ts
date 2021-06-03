@@ -46,6 +46,8 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
 
     if (versions.length > 0) {
         const sortedVersions = customVersionSort(versions, 'desc');
+        console.log(sortedVersions);
+
         const latestVersion = sortedVersions[0];
         // console.log(latestVersion);
 

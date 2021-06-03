@@ -1,38 +1,21 @@
-export function customVersionSort(data, order) {
+export function customVersionSort(data: string[], order: 'asc' | 'desc') {
 
-    function isNumber(v) {
-        return (+v).toString() === v;
-    }
+    const sorted = data.sort((a, b) => {
+        var a1 = a.split('.');
+        var b1 = b.split('.');
+        var len = Math.max(a1.length, b1.length);
 
-    var sort = {
-        asc: function (a, b) {
-            var i = 0,
-                l = Math.min(a.value.length, b.value.length);
-
-            while (i < l && a.value[i] === b.value[i]) {
-                i++;
-            }
-            if (i === l) {
-                return a.value.length - b.value.length;
-            }
-            if (isNumber(a.value[i]) && isNumber(b.value[i])) {
-                return a.value[i] - b.value[i];
-            }
-            return a.value[i].localeCompare(b.value[i]);
-        },
-        desc: function (a, b) {
-            return sort.asc(b, a);
+        for (var i = 0; i < len; i++) {
+            var _a = +a1[i] || 0;
+            var _b = +b1[i] || 0;
+            if (_a === _b) continue;
+            else return _a > _b ? 1 : -1
         }
-    }
-    var mapped = data.map(function (el, i) {
-        return {
-            index: i,
-            value: el.split('')
-        };
+        return 0;
     });
 
-    mapped.sort(sort[order] || sort.asc);
-    return mapped.map(function (el) {
-        return data[el.index];
-    });
+    if (order === 'desc') {
+        return sorted.reverse();
+    }
+    return sorted;
 }
