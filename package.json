@@ -22,6 +22,7 @@
     "electron-store": "^7.0.2",
     "extract-zip": "^2.0.1",
     "immer": "^9.0.1",
+    "is-admin": "^3.0.0",
     "lodash": "^4.17.21",
     "node-pty": "^0.10.1",
     "react-redux": "^7.1.0",

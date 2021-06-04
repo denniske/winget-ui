@@ -1,13 +1,7 @@
-import React, {useState} from "react";
-import {IApp, ITask} from "../helper/types";
-import {fixPackageIcon} from "../helper/util";
-import ProgressBarFull from "./progress-bar-full";
-import Terminal from "./terminal";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronDown, faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import TaskItem from "./task-item";
 import {useMutate, useSelector} from "../state/store";
-import {hideModal, showTaskFailedModal} from "../state/action";
+import {hideModal} from "../state/action";
 
 interface Props {
     // task: ITask;
@@ -29,7 +23,7 @@ export default function TaskFailedModal(props: Props) {
 
     return (
         <div className="fixed flex items-center justify-center top-0 bottom-0 left-0 right-0 bg-gray-900 bg-opacity-40">
-            <div className="bg-[#1B1B1B] border-[1px] border-[#4A4A4A]">
+            <div className="bg-[#1B1B1B] border-[1px] border-[#4A4A4A] rounded">
 
                 <div className="px-8 pt-4">
                     The following task has failed:

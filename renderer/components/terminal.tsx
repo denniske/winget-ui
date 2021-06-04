@@ -39,7 +39,7 @@ export default function Terminal(props: Props) {
     };
 
     const handleLineFeed = (terminal: any) => {
-        setTimeout(() => terminal.resize(terminal.cols, Math.max(5, terminal._core.buffer.y + 2)));
+        setTimeout(() => terminal.resize(terminal.cols, Math.max(8, terminal._core.buffer.y + 2)));
     };
 
     let ImportedComponent = null
@@ -53,7 +53,7 @@ export default function Terminal(props: Props) {
         ref={xtermRef}
         onLineFeed={handleLineFeed}
         onData={doData}
-        options={{ rows: 5, cols: 80 }}
+        options={{ rows: 8, cols: 80 }}
         className="flex"
     />
     // } else { //for build purposes only

@@ -15,6 +15,9 @@
       ]
     }
   ],
+  "extraFiles": [
+    "resources/**/*"
+  ],
   "appx": {
     "backgroundColor": "transparent"
   },
@@ -23,9 +26,10 @@
     "target": [
       "appx"
     ],
+    "certificateFile": "certificate.pfx",
     "requestedExecutionLevel": "highestAvailable",
-    "signAndEditExecutable": false,
-    "forceCodeSigning": false,
+    "signAndEditExecutable": true,
+    "forceCodeSigning": true,
     "verifyUpdateCodeSignature": false,
     "artifactName": "${productName}-${version}.${ext}"
   },

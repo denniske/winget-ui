@@ -10,12 +10,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import React, {useEffect, useState} from "react";
 import {useMutate, useSelector} from "../state/store";
-import {setSearch} from "../state/action";
+import {setSearch, showNoAdminModal} from "../state/action";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {ipcRenderer} from "../helper/bridge";
 import TaskList from "./task-list";
 import TaskFailedModal from "./task-failed-modal";
+import {Simulate} from "react-dom/test-utils";
+import NoAdminModal from "./no-admin-modal";
 
 export default function Layout(props: any) {
     const {children} = props;
@@ -67,7 +69,24 @@ export default function Layout(props: any) {
         return router.route.startsWith(route);
     };
 
+    const checkForAdminRights = async () => {
+        const isAdmin = await ipcRenderer.invoke('is-admin');
+        if (!isAdmin) {
+            mutate(showNoAdminModal());
+        }
+    };
+
+    useEffect(() => {
+        checkForAdminRights();
+    }, []);
+
     const myExlorerActive = isActive('/home') || isActive('/app') || isActive('/tag') || isActive('/path');
+
+    // const restartAsAdmin = async () => {
+    //     alert(await ipcRenderer.invoke('app-path'));
+    //     alert(await ipcRenderer.invoke('is-admin'));
+    //     await ipcRenderer.invoke('restart-as-admin');
+    // };
 
     return (
         <div className='flex flex-row flex-1 h-full bg-[#1B1B1B] text-[#C5C5C5] pb-[56px]'>
@@ -85,6 +104,8 @@ export default function Layout(props: any) {
                 </div>
 
                 <div className=""/>
+
+                {/*<button onClick={restartAsAdmin}>Restart as admin</button>*/}
 
                 <Link href={`/home`}>
                     <a className={`flex items-center space-x-3 px-[7px] pt-[4px] pb-[5px] rounded ${myExlorerActive ? 'bg-[#444348] text-white' : ''}`}>
@@ -150,6 +171,7 @@ export default function Layout(props: any) {
             <TaskList/>
 
             <TaskFailedModal />
+            <NoAdminModal />
         </div>
     );
 }

@@ -3,9 +3,11 @@ import serve from 'electron-serve';
 import {createWindow} from './helpers';
 import {ITask} from "../renderer/helper/types";
 import * as pty from "node-pty";
+import * as path from 'path';
+import * as fs from 'fs';
+import isAdmin from "is-admin";
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
-const fs = require('fs');
 
 const isProd: boolean = process.env.NODE_ENV === 'production';
 
@@ -43,6 +45,26 @@ ipcMain.handle('winget-task', async (event, task: ITask) => {
     console.log('upgrading ', task.packageIdentifier, task.packageVersion);
 
     return new Promise((resolve => {
+        // let cmd = '';
+        // if (task.action === 'uninstall') {
+        //     cmd = `winget.exe uninstall ${task.packageIdentifier} -h`;
+        // } else {
+        //     cmd = `winget.exe install ${task.packageIdentifier} -v ${task.packageVersion} -h`;
+        // }
+
+        // const program = process.cwd() + '/resources/elevate/bin.x86-64/elevate.exe';
+        // console.log(program);
+        //
+        // let args = [];
+        // if (task.action === 'uninstall') {
+        //     args = [`winget.exe`, `uninstall`, `${task.packageIdentifier}`, `-h`];
+        // } else {
+        //     args = [`winget.exe`, `install`, `${task.packageIdentifier}`, `-v`, `${task.packageVersion}`, `-h`];
+        // }
+        //
+        // args = ['-c', '-w', ...args];
+
+
         const program = 'winget.exe';
 
         let args = [];
@@ -85,4 +107,41 @@ ipcMain.handle('browser-can-go-back', (event, arg) => {
 
 ipcMain.handle('browser-can-go-forward', (event, arg) => {
     return mainWindow.webContents.canGoForward();
+});
+
+ipcMain.handle('app-path', (event, arg) => {
+    // return 'C:\\\\Program Files\\\\WindowsApps\\\\winget.ui_0.1.0.0_x64__t42mrn2zmtzxr\\\\app\\\\resources\\\\app.asar';
+    // return app.getAppPath();
+    return JSON.stringify({
+        appPath: app.getAppPath(),
+        appPathParent: path.dirname(app.getAppPath()),
+        appPathParent2: path.dirname(path.dirname(app.getAppPath())),
+        cwd: process.cwd(),
+        // files: fs.readdirSync(app.getAppPath()),
+        // files2: fs.readdirSync('../' + app.getAppPath()),
+        // files3: fs.readdirSync('../../' + app.getAppPath()),
+        // files4: fs.readdirSync('../../../' + app.getAppPath()),
+    });
+});
+
+ipcMain.handle('restart-as-admin', (event, arg) => {
+    const appPath = app.getAppPath();
+    const [all, appHash] = /__([A-Za-z\d]+)/gm.exec(appPath);
+
+    const program = path.dirname(path.dirname(appPath)) + '/resources/elevate/bin.x86-64/elevate.exe';
+    let args = [`-c`, `-w`, `explorer`, `shell:AppsFolder\\winget.ui_${appHash}!winget.ui`];
+
+    const ptyProcess = pty.spawn(program, args, {
+        name: 'xterm-color',
+        cols: 80,
+        rows: 24,
+        cwd: process.env.HOME,
+        env: process.env
+    });
+
+    return true;
+});
+
+ipcMain.handle('is-admin', async (event, arg) => {
+    return await isAdmin();
 });

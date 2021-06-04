@@ -1,4 +1,4 @@
-import { cloneDeep } from "lodash";
+import {cloneDeep} from "lodash";
 import {IApp, IInstalledApp, IPendingApp, IPopularity, ITask} from "../helper/types";
 
 export function selectTaskForApp(app: IApp) {
@@ -23,29 +23,7 @@ export function selectInstalledForApp(app: IApp) {
 }
 
 export function selectLocalApps(state: AppState) {
-    // console.log('selectLocalApps');
-    // const start = new Date();
-    const result = state.availableApps
-            // .map(foundApp => {
-
-        // const foundTasks = state.tasks.filter(t => t.exitCode != 0 && t.packageIdentifier === foundApp.packageIdentifier);
-        // const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
-        // const foundQueuedTasks = state.queue.filter(a => a.packageIdentifier === foundApp.packageIdentifier);
-        // const foundQueuedTask = foundQueuedTasks.length > 0 ? foundQueuedTasks[foundQueuedTasks.length-1] : null;
-
-
-        // return {
-        //     ...foundApp,
-            // installedVersion: foundInstalledApp?.version,
-            // task: foundTask,
-            // queuedtask: foundQueuedTask,
-        // };
-    // })
-        // .filter((x, i) => x.packageIdentifier.toLowerCase().includes('visual'))
-        // .filter((x, i) => i < 50)
-        ;
-    // console.log((new Date().getTime() - start.getTime()), ' ms');
-    return result;
+    return state.availableApps
 }
 
 export function selectLocalInstalledApps(state: AppState) {
@@ -55,18 +33,12 @@ export function selectLocalInstalledApps(state: AppState) {
         // }
 
         const foundApp = state.availableApps.find(a => a.packageIdentifier === installedApp.packageIdentifier);
-
-        // const foundTasks = state.tasks.filter(t => t.exitCode != 0 && t.packageIdentifier === installedApp.packageIdentifier);
-        // const foundTask = foundTasks.length > 0 ? foundTasks[foundTasks.length-1] : null;
-
         return {
             ...foundApp,
             installedVersion: installedApp.version,
-            // task: foundTask,
         };
     });
 }
-
 
 export function setAvailableApps(availableApps: IApp[]) {
     return (state: AppState) => {
@@ -125,21 +97,23 @@ export function showTaskFailedModal(task: ITask) {
     };
 }
 
+export function showNoAdminModal() {
+    return (state: AppState) => {
+        state.modal = {
+            type: 'no-admin',
+        };
+    };
+}
+
 export function hideModal() {
     return (state: AppState) => {
         state.modal = null;
     };
 }
 
-// export function addToQueue(task: ITask) {
-//     return (state: AppState) => {
-//         state.queue.push(task);
-//     };
-// }
-
 interface IModal {
-    type: 'task-failed',
-    task: ITask;
+    type: 'task-failed' | 'no-admin',
+    task?: ITask;
 }
 
 export interface AppState {
