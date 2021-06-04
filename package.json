@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "winget.ui",
+  "name": "38000DennisKeil.WingetUI",
   "description": "User Interface for winget",
   "version": "0.1.0",
   "author": "Dennis Keil",

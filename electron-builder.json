@@ -19,7 +19,8 @@
     "resources/**/*"
   ],
   "appx": {
-    "backgroundColor": "transparent"
+    "backgroundColor": "transparent",
+    "applicationId": "winget.ui"
   },
   "win": {
     "icon": "resources/icon.ico",

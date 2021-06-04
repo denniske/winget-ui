@@ -110,8 +110,6 @@ ipcMain.handle('browser-can-go-forward', (event, arg) => {
 });
 
 ipcMain.handle('app-path', (event, arg) => {
-    // return 'C:\\\\Program Files\\\\WindowsApps\\\\winget.ui_0.1.0.0_x64__t42mrn2zmtzxr\\\\app\\\\resources\\\\app.asar';
-    // return app.getAppPath();
     return JSON.stringify({
         appPath: app.getAppPath(),
         appPathParent: path.dirname(app.getAppPath()),
@@ -129,7 +127,7 @@ ipcMain.handle('restart-as-admin', (event, arg) => {
     const [all, appHash] = /__([A-Za-z\d]+)/gm.exec(appPath);
 
     const program = path.dirname(path.dirname(appPath)) + '/resources/elevate/bin.x86-64/elevate.exe';
-    let args = [`-c`, `-w`, `explorer`, `shell:AppsFolder\\winget.ui_${appHash}!winget.ui`];
+    let args = [`-c`, `-w`, `explorer`, `shell:AppsFolder\\38000DennisKeil.WingetUI_${appHash}!winget.ui`];
 
     const ptyProcess = pty.spawn(program, args, {
         name: 'xterm-color',
