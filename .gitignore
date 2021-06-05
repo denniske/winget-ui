@@ -9,6 +9,7 @@ popularity-raw.json
 .next
 /app
 dist
+dist2
 winget-pkgs-master
 *.pfx
 *.p12

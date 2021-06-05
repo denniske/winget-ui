@@ -1,0 +1,17 @@
+{
+  "name": "script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "channel-from-tag.js",
+  "scripts": {
+    "worker": "node script/worker.js"
+  },
+  "devDependencies": {
+    "semver": "^7.3.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

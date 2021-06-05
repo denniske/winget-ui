@@ -2,7 +2,7 @@
   "productName": "Winget UI",
   "copyright": "Copyright © 2021 Dennis Keil",
   "directories": {
-    "output": "dist",
+    "output": "dist2",
     "buildResources": "resources"
   },
   "files": [
@@ -22,15 +22,25 @@
     "backgroundColor": "transparent",
     "applicationId": "winget.ui"
   },
+  "portable": {
+    "artifactName": "${productName} ${version} Portable.${ext}",
+    "requestExecutionLevel": "admin"
+  },
+  "nsis": {
+    "artifactName": "${productName} ${version} Installer.${ext}",
+    "guid": "eb1a0fbb-fc70-428e-97f1-fa7080894806",
+    "oneClick": true,
+    "perMachine": true
+  },
   "win": {
     "icon": "resources/icon.ico",
     "target": [
-      "appx"
+      "portable"
     ],
     "certificateFile": "certificate.pfx",
-    "requestedExecutionLevel": "highestAvailable",
     "signAndEditExecutable": true,
     "forceCodeSigning": true,
+    "requestedExecutionLevel": "requireAdministrator",
     "verifyUpdateCodeSignature": false,
     "artifactName": "${productName}-${version}.${ext}"
   },
