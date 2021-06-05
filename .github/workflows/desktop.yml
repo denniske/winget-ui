@@ -51,6 +51,6 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: electron/release/aoe2companion-${{ env.VERSION }}.exe
+          file: dist2\Winget UI ${{ env.VERSION }} Portable.exe
           tag: ${{ github.ref }}
           overwrite: true
