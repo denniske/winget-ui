@@ -43,9 +43,9 @@ jobs:
       - name: Build
         run: |
           echo $ELECTRON_WINDOWS_CERT_BASE64 | base64 --decode > certificate.pfx
-          yarn
-          yarn npe version $VERSION
-          yarn run build
+          npm i
+          npx npe version $VERSION
+          npm run build
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2

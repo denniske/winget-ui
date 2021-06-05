@@ -11,4 +11,4 @@ if (tag === 'yarn2') {
     process.exit();
 }
 
-console.log(tag.replace('desktop-v', ''));
+console.log(tag.replace(/^v/, ''));
