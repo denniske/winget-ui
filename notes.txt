@@ -6,3 +6,5 @@ Icon
 https://www.flaticon.com/premium-icon/download_4063869?term=download&page=1&position=26&page=1&position=26&related_id=4063869&origin=search
 
 https://www.markmead.dev/blog/schedule-vercel-deploys/
+
+git tag v0.1.4 && git push --tags
