@@ -1,6 +1,6 @@
 import axios from "axios"
 import * as fs from "fs"
-import YAML from 'yaml'
+import * as YAML from 'yaml'
 import {customVersionSort} from "./version";
 const extract = require('extract-zip')
 
@@ -70,34 +70,34 @@ async function loadApp(config: ILoadAppsConfig, char: string, company: string, .
             }
         );
 
-        if (config.fetchIconsAndImages) {
-            const { LogoScrape } = await import('logo-scrape');
-
-            const targetUrl = app.PackageUrl;
-
-            if (targetUrl && !targetUrl.includes('aegisub') && company !== 'HamsterRepublic') {
-                try {
-                    const urls = [targetUrl];
-                    const logosResult = await LogoScrape.getLogos(urls) as any[];
-                    // console.log(logosResult);
-
-                    if (logosResult.length > 0) {
-                        const logosUrls = logosResult[0];
-
-                        if (logosUrls.length > 0) {
-                            app.PackageIcon = logosUrls[0].url;
-                        }
-
-                        const image = logosUrls.find((l: any) => l.type == 'og:image');
-                        if (image) {
-                            app.PackageImage = image.url;
-                        }
-                    }
-                } catch (e) {
-                    console.log('error', e);
-                }
-            }
-        }
+        // if (config.fetchIconsAndImages) {
+        //     const { LogoScrape } = await import('logo-scrape');
+        //
+        //     const targetUrl = app.PackageUrl;
+        //
+        //     if (targetUrl && !targetUrl.includes('aegisub') && company !== 'HamsterRepublic') {
+        //         try {
+        //             const urls = [targetUrl];
+        //             const logosResult = await LogoScrape.getLogos(urls) as any[];
+        //             // console.log(logosResult);
+        //
+        //             if (logosResult.length > 0) {
+        //                 const logosUrls = logosResult[0];
+        //
+        //                 if (logosUrls.length > 0) {
+        //                     app.PackageIcon = logosUrls[0].url;
+        //                 }
+        //
+        //                 const image = logosUrls.find((l: any) => l.type == 'og:image');
+        //                 if (image) {
+        //                     app.PackageImage = image.url;
+        //                 }
+        //             }
+        //         } catch (e) {
+        //             console.log('error', e);
+        //         }
+        //     }
+        // }
 
         // console.log(app);
         apps.push(app);

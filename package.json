@@ -7,7 +7,7 @@
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
-    "build": "nextron build",
+    "build2": "nextron build",
     "postinstall": "electron-builder install-app-deps",
     "apps": "ts-node tools/apps.ts"
   },
@@ -23,6 +23,7 @@
     "immer": "^9.0.1",
     "is-admin": "^3.0.0",
     "lodash": "^4.17.21",
+    "node-gyp": "^8.1.0",
     "node-pty": "^0.10.1",
     "react-redux": "^7.1.0",
     "react-xterm": "^2.0.4",
