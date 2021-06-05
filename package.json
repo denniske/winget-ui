@@ -20,7 +20,6 @@
     "cli-progress": "^3.9.0",
     "electron-serve": "^1.1.0",
     "electron-store": "^7.0.2",
-    "extract-zip": "^2.0.1",
     "immer": "^9.0.1",
     "is-admin": "^3.0.0",
     "lodash": "^4.17.21",
