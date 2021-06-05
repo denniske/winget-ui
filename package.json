@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "38000DennisKeil.WingetUI",
+  "name": "winget.ui",
   "description": "User Interface for winget",
   "version": "0.1.0",
   "author": "Dennis Keil",
@@ -42,6 +42,7 @@
     "electron-builder": "^22.10.5",
     "next": "^10.1.3",
     "nextron": "^6.0.6",
+    "npe": "^1.1.4",
     "postcss": "^8.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

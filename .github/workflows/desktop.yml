@@ -44,8 +44,8 @@ jobs:
         run: |
           echo $ELECTRON_WINDOWS_CERT_BASE64 | base64 --decode > certificate.pfx
           yarn
+          yarn npe version $VERSION
           yarn run build
-#          yarn run electron:build:ci --publish never -c.extraMetadata.version=$VERSION
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
