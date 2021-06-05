@@ -7,7 +7,7 @@
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
-    "build2": "nextron build",
+    "build": "nextron build",
     "postinstall": "electron-builder install-app-deps",
     "apps": "ts-node tools/apps.ts"
   },
